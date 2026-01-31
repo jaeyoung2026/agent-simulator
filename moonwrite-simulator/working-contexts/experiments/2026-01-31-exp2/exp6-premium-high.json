@@ -1,0 +1,642 @@
+{
+  "simulation_info": {
+    "option": "Premium",
+    "resolution": "High (1-5 units/slide)",
+    "model_allocation": {
+      "flash_steps": [
+        "step1",
+        "step2",
+        "step3"
+      ],
+      "pro_steps": [
+        "step4"
+      ],
+      "premium_flash_calls": [
+        "detailed_placeholders"
+      ],
+      "premium_pro_calls": [
+        "reverse_outline_verification",
+        "writing_principles_detailed"
+      ]
+    },
+    "premium_features": [
+      "self_critique",
+      "reverse_outline_verification",
+      "writing_principles_full_6_items",
+      "detailed_placeholders_with_experiments",
+      "deep_image_analysis",
+      "sub_claims_analysis"
+    ]
+  },
+  "total_slides": 45,
+  "total_units": 115,
+  "avg_units_per_slide": 2.56,
+  "key_metrics": {
+    "total_units": 115,
+    "avg_units_per_slide": 2.56,
+    "quality_score": 0.71,
+    "consistency_score": 0.86,
+    "alignment_rate": 0.92,
+    "self_critique_avg": 0.8,
+    "writing_principles_avg": 0.85,
+    "total_cost": 0.000989,
+    "cost_per_slide": 2.2e-05,
+    "gap_count": {
+      "total": 4,
+      "high": 1,
+      "medium": 3,
+      "low": 0
+    }
+  },
+  "step1_results": {
+    "model": "flash (sonnet)",
+    "thesis": {
+      "question": "How can thermal-aware control policies improve long-term stability and energy efficiency in legged robots?",
+      "claim": "By incorporating motor heat state estimation and thermal rewards into reinforcement learning, robots can proactively manage thermal constraints while maintaining task performance.",
+      "evidence": [
+        "Heat2Torque simulation reduces sim-to-real gap by modeling torque degradation",
+        "Thermal-aware reward functions enable proactive heat management",
+        "Online thermal model adaptation improves estimation accuracy",
+        "DRL controllers can balance performance and hardware durability"
+      ],
+      "sub_claims": [
+        {
+          "id": "SC1",
+          "claim": "Motor thermal dynamics can be accurately modeled and simulated",
+          "evidence_count": 8,
+          "supporting_slides": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            8,
+            9,
+            10,
+            11
+          ],
+          "confidence": 0.95
+        },
+        {
+          "id": "SC2",
+          "claim": "Thermal-aware policies outperform baseline in long-term operation",
+          "evidence_count": 6,
+          "supporting_slides": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            9,
+            10
+          ],
+          "confidence": 0.95
+        },
+        {
+          "id": "SC3",
+          "claim": "Online adaptation improves thermal estimation accuracy",
+          "evidence_count": 4,
+          "supporting_slides": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            8,
+            9,
+            10
+          ],
+          "confidence": 0.95
+        }
+      ]
+    },
+    "self_critique_summary": {
+      "avg_score": 0.8,
+      "units_needing_improvement": 95,
+      "aspect_averages": {
+        "clarity": 0.85,
+        "completeness": 0.8,
+        "relevance": 0.84,
+        "evidence_quality": 0.76,
+        "specificity": 0.77
+      }
+    },
+    "category_distribution": {
+      "thesis_support": 31,
+      "thesis_elaboration": 67,
+      "core_thesis": 9,
+      "thesis_context": 8
+    },
+    "total_images": 41,
+    "tokens": {
+      "input": 55040,
+      "output": 34500,
+      "images": 41
+    }
+  },
+  "step2_results": {
+    "model": "flash (sonnet) parallel",
+    "total_clusters": 12,
+    "domain_summary": {
+      "thermal_management": 4,
+      "legged_locomotion": 1,
+      "general": 4,
+      "reinforcement_learning": 3
+    },
+    "connection_strength_distribution": {
+      "high": 7,
+      "medium": 1,
+      "low": 4
+    },
+    "tokens": {
+      "input": 14400,
+      "output": 7200
+    }
+  },
+  "step3_results": {
+    "model": "flash (sonnet)",
+    "consistency_score": 0.86,
+    "alignment_rate": 0.92,
+    "reverse_outline": {
+      "title": "Thermal-Aware Control for Long-Term Stability in Legged Robots",
+      "sections": [
+        {
+          "name": "1. Introduction & Thesis",
+          "thesis_category": "core_thesis",
+          "clusters": [
+            "cluster_5",
+            "cluster_12"
+          ],
+          "unit_count": 9,
+          "key_points": [
+            "Domain-specific insight for general",
+            "Integration with overall thermal management system",
+            "Motor temperature significantly impacts torque capacity",
+            "Online thermal estimation improves prediction accuracy"
+          ],
+          "thesis_alignment": 0.89
+        },
+        {
+          "name": "2. Background & Problem Definition",
+          "thesis_category": "thesis_context",
+          "clusters": [
+            "cluster_7",
+            "cluster_8",
+            "cluster_10"
+          ],
+          "unit_count": 8,
+          "key_points": [
+            "Motor temperature significantly impacts torque capacity",
+            "Online thermal estimation improves prediction accuracy",
+            "Thermal-aware rewards enable learned heat management",
+            "Policy adaptation maintains performance under thermal constraints",
+            "Domain-specific insight for general",
+            "Integration with overall thermal management system"
+          ],
+          "thesis_alignment": 0.74
+        },
+        {
+          "name": "3. Methodology",
+          "thesis_category": "thesis_elaboration",
+          "clusters": [
+            "cluster_4",
+            "cluster_2",
+            "cluster_3",
+            "cluster_9"
+          ],
+          "unit_count": 67,
+          "key_points": [
+            "Thermal-aware rewards enable learned heat management",
+            "Policy adaptation maintains performance under thermal constraints",
+            "Domain-specific insight for general",
+            "Integration with overall thermal management system",
+            "Motor temperature significantly impacts torque capacity",
+            "Online thermal estimation improves prediction accuracy"
+          ],
+          "thesis_alignment": 0.67
+        },
+        {
+          "name": "4. Experiments & Results",
+          "thesis_category": "thesis_support",
+          "clusters": [
+            "cluster_1",
+            "cluster_11",
+            "cluster_6"
+          ],
+          "unit_count": 31,
+          "key_points": [
+            "Domain-specific insight for general",
+            "Integration with overall thermal management system",
+            "Motor temperature significantly impacts torque capacity",
+            "Online thermal estimation improves prediction accuracy",
+            "Thermal-aware rewards enable learned heat management",
+            "Policy adaptation maintains performance under thermal constraints"
+          ],
+          "thesis_alignment": 0.81
+        }
+      ]
+    },
+    "validation_summary": {
+      "total_units": 115,
+      "aligned_units": 106,
+      "misaligned_units": 9,
+      "sections_count": 4,
+      "avg_section_alignment": 0.78
+    },
+    "tokens": {
+      "input": 26600,
+      "output": 2500
+    }
+  },
+  "step4_results": {
+    "model": "pro (opus)",
+    "quality_score": 0.71,
+    "writing_principles_evaluation": {
+      "thesis_clarity": {
+        "score": 0.92,
+        "weight": 0.2,
+        "feedback": "Main thesis is clearly stated with supporting sub-claims",
+        "improvement": "Consider emphasizing the novelty aspect more prominently",
+        "examples": [
+          "Current state: 'We propose thermal-aware control'",
+          "Improved: 'We propose the first proactive thermal management framework for legged robots'"
+        ]
+      },
+      "evidence_integration": {
+        "score": 0.81,
+        "weight": 0.2,
+        "feedback": "Evidence is presented but integration could be tighter",
+        "improvement": "Link experimental results directly to specific claims",
+        "examples": [
+          "Add explicit references: 'As shown in Figure 3, this supports SC2'"
+        ]
+      },
+      "logical_flow": {
+        "score": 0.84,
+        "weight": 0.15,
+        "feedback": "Overall structure follows academic conventions",
+        "improvement": "Add more explicit signposting between sections",
+        "examples": [
+          "Add transition sentences at section boundaries"
+        ]
+      },
+      "technical_precision": {
+        "score": 0.91,
+        "weight": 0.15,
+        "feedback": "Technical terms are used appropriately",
+        "improvement": "Define key terms on first use",
+        "examples": [
+          "Define 'thermal-aware policy' on first mention"
+        ]
+      },
+      "reproducibility": {
+        "score": 0.82,
+        "weight": 0.15,
+        "feedback": "Some experimental details need clarification",
+        "improvement": "Include hyperparameter tables and hardware specifications",
+        "examples": [
+          "Add Table 1 with complete hyperparameters",
+          "Specify GPU model and training time"
+        ]
+      },
+      "contribution_clarity": {
+        "score": 0.82,
+        "weight": 0.15,
+        "feedback": "Contributions are listed but could be more distinctive",
+        "improvement": "Explicitly compare with prior work limitations",
+        "examples": [
+          "Add comparison table: 'Unlike [Prior Work], our method provides...'"
+        ]
+      }
+    },
+    "writing_principles_avg": 0.85,
+    "gap_analysis": [
+      {
+        "type": "weak_evidence",
+        "severity": "medium",
+        "priority": 2,
+        "location": "Sub-claim: SC2",
+        "description": "Evidence exists but could be strengthened",
+        "suggestion": "Consider adding statistical analysis or comparison data"
+      },
+      {
+        "type": "missing_evidence",
+        "severity": "high",
+        "priority": 1,
+        "location": "Sub-claim: SC3",
+        "description": "Insufficient evidence for claim: Online adaptation improves thermal estimation accuracy",
+        "suggestion": "Add experimental results or literature support",
+        "placeholder": "[INSERT: Additional evidence for Online adaptation improves thermal estimation accu...]",
+        "experiment_suggestion": "Consider conducting comparative experiment with baseline method"
+      },
+      {
+        "type": "logical_gap",
+        "severity": "medium",
+        "priority": 2,
+        "location": "Between 2. Background & Problem Definition and 3. Methodology",
+        "description": "Transition between sections could be clearer",
+        "suggestion": "Add transitional paragraph connecting the sections",
+        "placeholder": "[INSERT: Transition from thesis_context to thesis_elaboration]"
+      },
+      {
+        "type": "logical_gap",
+        "severity": "medium",
+        "priority": 2,
+        "location": "Between 3. Methodology and 4. Experiments & Results",
+        "description": "Transition between sections could be clearer",
+        "suggestion": "Add transitional paragraph connecting the sections",
+        "placeholder": "[INSERT: Transition from thesis_elaboration to thesis_support]"
+      }
+    ],
+    "placeholder_suggestions": [
+      {
+        "location": "Abstract",
+        "type": "summary_statement",
+        "template": "[INSERT: Quantitative improvement over baseline - e.g., 'X% longer operation time under thermal constraints']",
+        "experiment_suggestion": "Run endurance test comparing thermal-aware vs baseline policy over 1 hour"
+      },
+      {
+        "location": "Introduction",
+        "type": "motivation_gap",
+        "template": "[INSERT: Specific failure case study motivating thermal management need]",
+        "experiment_suggestion": "Document actual motor overheating incident with temperature logs"
+      },
+      {
+        "location": "Methodology",
+        "type": "technical_detail",
+        "template": "[INSERT: Thermal model parameter table with values and units]",
+        "experiment_suggestion": "Characterize motor thermal parameters through controlled heating tests"
+      },
+      {
+        "location": "Experiments",
+        "type": "comparison_baseline",
+        "template": "[INSERT: Comparison table with baseline methods showing improvement metrics]",
+        "experiment_suggestion": "Implement and evaluate: (1) No thermal awareness, (2) Simple threshold, (3) Our method"
+      },
+      {
+        "location": "Results",
+        "type": "statistical_significance",
+        "template": "[INSERT: Statistical analysis (p-values, confidence intervals) for main results]",
+        "experiment_suggestion": "Run 10+ trials per condition and compute paired t-test"
+      },
+      {
+        "location": "Discussion",
+        "type": "limitations",
+        "template": "[INSERT: Honest discussion of method limitations and failure cases]",
+        "experiment_suggestion": "Identify edge cases where thermal prediction fails"
+      }
+    ],
+    "summary": {
+      "total_gaps": 4,
+      "high_severity_gaps": 1,
+      "medium_severity_gaps": 3,
+      "low_severity_gaps": 0,
+      "avg_principle_score": 0.85,
+      "sections_verified": 4,
+      "sections_needing_work": 2
+    },
+    "tokens": {
+      "input": 10000,
+      "output": 5000
+    }
+  },
+  "premium_additional": {
+    "reverse_outline_verification": {
+      "result": {
+        "overall_alignment": 0.89,
+        "section_thesis_mapping": [
+          {
+            "section": "1. Introduction & Thesis",
+            "covers_thesis_aspects": [
+              "sub_claims",
+              "question"
+            ],
+            "alignment_score": 0.71
+          },
+          {
+            "section": "2. Background & Problem Definition",
+            "covers_thesis_aspects": [
+              "sub_claims",
+              "question"
+            ],
+            "alignment_score": 0.79
+          },
+          {
+            "section": "3. Methodology",
+            "covers_thesis_aspects": [
+              "claim",
+              "sub_claims",
+              "evidence"
+            ],
+            "alignment_score": 0.94
+          },
+          {
+            "section": "4. Experiments & Results",
+            "covers_thesis_aspects": [
+              "question",
+              "claim"
+            ],
+            "alignment_score": 0.76
+          }
+        ],
+        "missing_thesis_elements": [],
+        "redundant_sections": []
+      },
+      "tokens": {
+        "input": 2000,
+        "output": 1000
+      }
+    },
+    "writing_principles_detailed": {
+      "result": {
+        "principle_interactions": [],
+        "improvement_priority": [
+          {
+            "rank": 1,
+            "principle": "evidence_integration",
+            "current_score": 0.81,
+            "target_score": 0.95,
+            "improvement": "Link experimental results directly to specific claims"
+          },
+          {
+            "rank": 2,
+            "principle": "reproducibility",
+            "current_score": 0.82,
+            "target_score": 0.95,
+            "improvement": "Include hyperparameter tables and hardware specifications"
+          },
+          {
+            "rank": 3,
+            "principle": "contribution_clarity",
+            "current_score": 0.82,
+            "target_score": 0.95,
+            "improvement": "Explicitly compare with prior work limitations"
+          }
+        ],
+        "actionable_steps": [
+          "1. Review all section introductions for explicit thesis references",
+          "2. Add data visualization for key experimental results",
+          "3. Create comparison table with prior work",
+          "4. Add confidence intervals to all quantitative claims",
+          "5. Include code/model availability statement"
+        ]
+      },
+      "tokens": {
+        "input": 1500,
+        "output": 800
+      }
+    },
+    "detailed_placeholders": {
+      "result": {
+        "detailed_placeholders": [
+          {
+            "location": "Abstract",
+            "type": "summary_statement",
+            "template": "[INSERT: Quantitative improvement over baseline - e.g., 'X% longer operation time under thermal constraints']",
+            "experiment_suggestion": "Run endurance test comparing thermal-aware vs baseline policy over 1 hour",
+            "detailed_template": "[DETAILED: [INSERT: Quantitative improvement over baseline - e.g., 'X% longer operation time under thermal constraints'] with specific values and formatting guidelines]",
+            "example_content": "Example for Abstract: [Specific example text here]",
+            "formatting_hints": {
+              "style": "figure_caption",
+              "word_count_target": 86,
+              "required_elements": [
+                "equation"
+              ]
+            }
+          },
+          {
+            "location": "Introduction",
+            "type": "motivation_gap",
+            "template": "[INSERT: Specific failure case study motivating thermal management need]",
+            "experiment_suggestion": "Document actual motor overheating incident with temperature logs",
+            "detailed_template": "[DETAILED: [INSERT: Specific failure case study motivating thermal management need] with specific values and formatting guidelines]",
+            "example_content": "Example for Introduction: [Specific example text here]",
+            "formatting_hints": {
+              "style": "table",
+              "word_count_target": 175,
+              "required_elements": [
+                "data",
+                "citation",
+                "equation"
+              ]
+            }
+          },
+          {
+            "location": "Methodology",
+            "type": "technical_detail",
+            "template": "[INSERT: Thermal model parameter table with values and units]",
+            "experiment_suggestion": "Characterize motor thermal parameters through controlled heating tests",
+            "detailed_template": "[DETAILED: [INSERT: Thermal model parameter table with values and units] with specific values and formatting guidelines]",
+            "example_content": "Example for Methodology: [Specific example text here]",
+            "formatting_hints": {
+              "style": "paragraph",
+              "word_count_target": 198,
+              "required_elements": [
+                "figure_ref"
+              ]
+            }
+          },
+          {
+            "location": "Experiments",
+            "type": "comparison_baseline",
+            "template": "[INSERT: Comparison table with baseline methods showing improvement metrics]",
+            "experiment_suggestion": "Implement and evaluate: (1) No thermal awareness, (2) Simple threshold, (3) Our method",
+            "detailed_template": "[DETAILED: [INSERT: Comparison table with baseline methods showing improvement metrics] with specific values and formatting guidelines]",
+            "example_content": "Example for Experiments: [Specific example text here]",
+            "formatting_hints": {
+              "style": "table",
+              "word_count_target": 159,
+              "required_elements": [
+                "data",
+                "citation",
+                "equation"
+              ]
+            }
+          },
+          {
+            "location": "Results",
+            "type": "statistical_significance",
+            "template": "[INSERT: Statistical analysis (p-values, confidence intervals) for main results]",
+            "experiment_suggestion": "Run 10+ trials per condition and compute paired t-test",
+            "detailed_template": "[DETAILED: [INSERT: Statistical analysis (p-values, confidence intervals) for main results] with specific values and formatting guidelines]",
+            "example_content": "Example for Results: [Specific example text here]",
+            "formatting_hints": {
+              "style": "figure_caption",
+              "word_count_target": 97,
+              "required_elements": [
+                "equation",
+                "data"
+              ]
+            }
+          },
+          {
+            "location": "Discussion",
+            "type": "limitations",
+            "template": "[INSERT: Honest discussion of method limitations and failure cases]",
+            "experiment_suggestion": "Identify edge cases where thermal prediction fails",
+            "detailed_template": "[DETAILED: [INSERT: Honest discussion of method limitations and failure cases] with specific values and formatting guidelines]",
+            "example_content": "Example for Discussion: [Specific example text here]",
+            "formatting_hints": {
+              "style": "bullet_list",
+              "word_count_target": 163,
+              "required_elements": [
+                "figure_ref",
+                "equation"
+              ]
+            }
+          }
+        ]
+      },
+      "tokens": {
+        "input": 1000,
+        "output": 500
+      }
+    }
+  },
+  "cost_estimate": {
+    "flash_tokens": {
+      "input": 97040,
+      "output": 44700,
+      "total": 141740,
+      "breakdown": {
+        "step1": 89540,
+        "step2": 21600,
+        "step3": 29100,
+        "premium_placeholders": 1500
+      }
+    },
+    "pro_tokens": {
+      "input": 13500,
+      "output": 6800,
+      "total": 20300,
+      "breakdown": {
+        "step4": 15000,
+        "premium_reverse_outline": 3000,
+        "premium_writing_principles": 2300
+      }
+    },
+    "image_count": 41,
+    "costs": {
+      "flash_input": 2.4e-05,
+      "flash_output": 5.6e-05,
+      "flash_total": 8e-05,
+      "pro_input": 0.000202,
+      "pro_output": 0.00051,
+      "pro_total": 0.000712,
+      "images": 0.000197,
+      "total": 0.000989
+    },
+    "cost_per_slide": 2.2e-05,
+    "model_distribution": {
+      "flash_token_ratio": 87.5,
+      "pro_token_ratio": 12.5
+    }
+  },
+  "execution_timestamp": "2026-01-31T13:38:14.946462"
+}

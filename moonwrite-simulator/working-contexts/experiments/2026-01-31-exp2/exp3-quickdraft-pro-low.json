@@ -1,0 +1,1468 @@
+{
+  "condition": "Quick Draft + Pro (Low)",
+  "model": "flash + pro",
+  "resolution": "1-2 units/slide",
+  "total_samples": 45,
+  "total_units": 52,
+  "total_accepted_units": 45,
+  "avg_units_per_slide": 1.16,
+  "sample_extractions": [
+    {
+      "filename": "WR 07_01 - EunwooSong.pptx",
+      "slide_number": 37,
+      "original_content": "Result - Video\nCopyright 2024 Global School of Media\nRTX 5080: 3h 43m 43s",
+      "has_images": true,
+      "image_count": 2,
+      "units_extracted": 1,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 07_01 - EunwooSong.pptx_37_1",
+          "type": "primary",
+          "text": "Result - Video: RTX 5080: 3h 43m 43s (연구 진행 중)",
+          "category": "result",
+          "source_lines": [
+            "Result - Video",
+            "RTX 5080: 3h 43m 43s"
+          ],
+          "confidence": 0.7603975837831114,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 9_23.pptx",
+      "slide_number": 38,
+      "original_content": "Method - Result\nCopyright 2024 Global School of Media",
+      "has_images": true,
+      "image_count": 1,
+      "units_extracted": 1,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 9_23.pptx_38_1",
+          "type": "primary",
+          "text": "Method - Result",
+          "category": "method",
+          "source_lines": [
+            "Method - Result"
+          ],
+          "confidence": 0.9372964071831431,
+          "verification_status": "accepted",
+          "verification_reason": "높은 신뢰도로 수용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 07_14 - EunwooSong.pptx",
+      "slide_number": 10,
+      "original_content": "Algorithm으로 관리하는 것과의 차별점?\nCopyright 2024 Global School of Media\n단순히 특정 이상 온도로 올라가면 동작을 멈추게 할 수 있지만, 냉각이 될 때까지 Agent가 멈춰야하는 문제점이 있다.\noverload로 인해 예상한 토크가 부족한 상황을 극복하는 것에 초점",
+      "has_images": false,
+      "image_count": 0,
+      "units_extracted": 1,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 07_14 - EunwooSong.pptx_10_1",
+          "type": "primary",
+          "text": "Algorithm으로 관리하는 것과의 차별점?: 단순히 특정 이상 온도로 올라가면 동작을 멈추게 할 수 있지만, 냉각이 될 때까지 Agent가 멈춰야하는 문제점이 있다. overload로 인해 예상한 토크가 부족한 상황을 극복하는 것에 초점 (연구 진행 중)",
+          "category": "method",
+          "source_lines": [
+            "Algorithm으로 관리하는 것과의 차별점?",
+            "단순히 특정 이상 온도로 올라가면 동작을 멈추게 할 수 있지만, 냉각이 될 때까지 Agent가 멈춰야하는 문제점이 있다.",
+            "overload로 인해 예상한 토크가 부족한 상황을 극복하는 것에 초점"
+          ],
+          "confidence": 0.788593746960637,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 07_14 - EunwooSong.pptx",
+      "slide_number": 13,
+      "original_content": "모터의 발열량\n모터의 발열량은 입력 전력에서 기계적인 출력을 빼어 구한다\n입력 전력과 출력의 차이를 발열로 가정\n권선에서 발생하는 열손실이 주를 이룸\nMujoco에서 Torque, velocity를 구할 수 있음\nmaxon motor - key information\nCopyright 2024 Global School of Media",
+      "has_images": true,
+      "image_count": 2,
+      "units_extracted": 2,
+      "units_accepted": 2,
+      "semantic_units": [
+        {
+          "id": "unit_WR 07_14 - EunwooSong.pptx_13_1",
+          "type": "primary",
+          "text": "모터의 발열량: 모터의 발열량은 입력 전력에서 기계적인 출력을 빼어 구한다 입력 전력과 출력의 차이를 발열로 가정 권선에서 발생하는 열손실이 주를 이룸 (연구 진행 중)",
+          "category": "concept",
+          "source_lines": [
+            "모터의 발열량",
+            "모터의 발열량은 입력 전력에서 기계적인 출력을 빼어 구한다",
+            "입력 전력과 출력의 차이를 발열로 가정",
+            "권선에서 발생하는 열손실이 주를 이룸"
+          ],
+          "confidence": 0.7639930263766577,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        },
+        {
+          "id": "unit_WR 07_14 - EunwooSong.pptx_13_2",
+          "type": "supporting",
+          "text": "권선에서 발생하는 열손실이 주를 이룸 Mujoco에서 Torque, velocity를 구할 수 있음 maxon motor - key information (연구 진행 중)",
+          "category": "concept",
+          "source_lines": [
+            "권선에서 발생하는 열손실이 주를 이룸",
+            "Mujoco에서 Torque, velocity를 구할 수 있음",
+            "maxon motor - key information"
+          ],
+          "confidence": 0.7396950874426518,
+          "has_visual": true,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 9_23.pptx",
+      "slide_number": 52,
+      "original_content": "Method - C. Thermal Esimator: Estimation of Motor Core Temperature\nΔt_est = 0.02 (sec)\nCopyright 2024 Global School of Media",
+      "has_images": true,
+      "image_count": 1,
+      "units_extracted": 1,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 9_23.pptx_52_1",
+          "type": "primary",
+          "text": "Method - C. Thermal Esimator: Estimation of Motor Core Temperature: Δt_est = 0.02 (sec) (연구 진행 중)",
+          "category": "concept",
+          "source_lines": [
+            "Method - C. Thermal Esimator: Estimation of Motor Core Temperature",
+            "Δt_est = 0.02 (sec)"
+          ],
+          "confidence": 0.768490002273597,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 9_23.pptx",
+      "slide_number": 63,
+      "original_content": "Method?\nCopyright 2024 Global School of Media",
+      "has_images": true,
+      "image_count": 1,
+      "units_extracted": 1,
+      "units_accepted": 0,
+      "semantic_units": [
+        {
+          "id": "unit_WR 9_23.pptx_63_1",
+          "type": "primary",
+          "text": "Method?",
+          "category": "method",
+          "source_lines": [
+            "Method?"
+          ],
+          "confidence": 0.8338280640699139,
+          "verification_status": "rejected",
+          "verification_reason": "텍스트가 너무 짧아 의미 단위로 부적합"
+        }
+      ]
+    },
+    {
+      "filename": "WR 11_18.pptx",
+      "slide_number": 5,
+      "original_content": "Reward 2, warm_up\nCopyright 2024 Global School of Media",
+      "has_images": true,
+      "image_count": 1,
+      "units_extracted": 1,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 11_18.pptx_5_1",
+          "type": "primary",
+          "text": "Reward 2, warm_up",
+          "category": "concept",
+          "source_lines": [
+            "Reward 2, warm_up"
+          ],
+          "confidence": 0.8635784586000279,
+          "verification_status": "accepted",
+          "verification_reason": "높은 신뢰도로 수용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 8_26.pptx",
+      "slide_number": 10,
+      "original_content": "heat2torque module - jax 코드 속도 비교\nCopyright 2024 Global School of Media",
+      "has_images": true,
+      "image_count": 1,
+      "units_extracted": 1,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 8_26.pptx_10_1",
+          "type": "primary",
+          "text": "heat2torque module - jax 코드 속도 비교 (연구 진행 중)",
+          "category": "concept",
+          "source_lines": [
+            "heat2torque module - jax 코드 속도 비교"
+          ],
+          "confidence": 0.8495558247976862,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 8_5.pptx",
+      "slide_number": 13,
+      "original_content": "Contributions - 2\n실시간 발열 인식 및 예측 프레임워크 개발\n센서 데이터와 발열 모델을 결합해 모터의 현재 열 상태를 실시간으로 추정, 미래 발열 누적을 예측할 수 있는 모델을 구현\n선제적 발열 관리를 위한 기반 마련 \n\n발열 인식을 통한 장기 동작 계획 제안\nMPC, RL Planner을 활용해 발열 상태와 미래 발열을 예측해 동작을 계획함.\n장기 운용 중 발생할 수 있는 과열을 사전에 완화하고, 작업 수행과 안정성 간 균형을 유지하도록 설계\n\n장기 운용 안정성 향상\n과열로 인한 모터 제한 횟수 감소\nCopyright 2024 Global School of Media",
+      "has_images": false,
+      "image_count": 0,
+      "units_extracted": 1,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 8_5.pptx_13_1",
+          "type": "primary",
+          "text": "Contributions - 2: 실시간 발열 인식 및 예측 프레임워크 개발 센서 데이터와 발열 모델을 결합해 모터의 현재 열 상태를 실시간으로 추정, 미래 발열 누적을 예측할 수 있는 모델을 구현 선제적 발열 관리를 위한 기반 마련 (연구 진행 중)",
+          "category": "method",
+          "source_lines": [
+            "Contributions - 2",
+            "실시간 발열 인식 및 예측 프레임워크 개발",
+            "센서 데이터와 발열 모델을 결합해 모터의 현재 열 상태를 실시간으로 추정, 미래 발열 누적을 예측할 수 있는 모델을 구현",
+            "선제적 발열 관리를 위한 기반 마련"
+          ],
+          "confidence": 0.772111936418382,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 12_23.pptx",
+      "slide_number": 6,
+      "original_content": "세팅 방법\n아래 노션에 정리해두었습니다!\n\nhttps://www.notion.so/RealityLab-2cdf6f41de51803f9997d7d7559a4599#2cff6f41de5180d6b772ffd0f7996ef4\nCopyright 2024 Global School of Media",
+      "has_images": false,
+      "image_count": 0,
+      "units_extracted": 1,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 12_23.pptx_6_1",
+          "type": "primary",
+          "text": "세팅 방법: 아래 노션에 정리해두었습니다! https://www.notion.so/RealityLab-2cdf6f41de51803f9997d7d7559a4599#2cff6f41de5180d6b772ffd0f7996ef4 (연구 진행 중)",
+          "category": "method",
+          "source_lines": [
+            "세팅 방법",
+            "아래 노션에 정리해두었습니다!",
+            "https://www.notion.so/RealityLab-2cdf6f41de51803f9997d7d7559a4599#2cff6f41de5180d6b772ffd0f7996ef4"
+          ],
+          "confidence": 0.8060586192170413,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        }
+      ]
+    }
+  ],
+  "category_distribution": {
+    "result": 8,
+    "method": 11,
+    "concept": 13,
+    "implementation": 6,
+    "general": 6,
+    "problem": 1
+  },
+  "pro_verification_stats": {
+    "accepted": 12,
+    "refined": 33,
+    "rejected": 7
+  },
+  "extraction_details": [
+    {
+      "filename": "WR 07_01 - EunwooSong.pptx",
+      "slide_number": 37,
+      "original_content": "Result - Video\nCopyright 2024 Global School of Media\nRTX 5080: 3h 43m 43s",
+      "has_images": true,
+      "image_count": 2,
+      "units_extracted": 1,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 07_01 - EunwooSong.pptx_37_1",
+          "type": "primary",
+          "text": "Result - Video: RTX 5080: 3h 43m 43s (연구 진행 중)",
+          "category": "result",
+          "source_lines": [
+            "Result - Video",
+            "RTX 5080: 3h 43m 43s"
+          ],
+          "confidence": 0.7603975837831114,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 9_23.pptx",
+      "slide_number": 38,
+      "original_content": "Method - Result\nCopyright 2024 Global School of Media",
+      "has_images": true,
+      "image_count": 1,
+      "units_extracted": 1,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 9_23.pptx_38_1",
+          "type": "primary",
+          "text": "Method - Result",
+          "category": "method",
+          "source_lines": [
+            "Method - Result"
+          ],
+          "confidence": 0.9372964071831431,
+          "verification_status": "accepted",
+          "verification_reason": "높은 신뢰도로 수용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 07_14 - EunwooSong.pptx",
+      "slide_number": 10,
+      "original_content": "Algorithm으로 관리하는 것과의 차별점?\nCopyright 2024 Global School of Media\n단순히 특정 이상 온도로 올라가면 동작을 멈추게 할 수 있지만, 냉각이 될 때까지 Agent가 멈춰야하는 문제점이 있다.\noverload로 인해 예상한 토크가 부족한 상황을 극복하는 것에 초점",
+      "has_images": false,
+      "image_count": 0,
+      "units_extracted": 1,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 07_14 - EunwooSong.pptx_10_1",
+          "type": "primary",
+          "text": "Algorithm으로 관리하는 것과의 차별점?: 단순히 특정 이상 온도로 올라가면 동작을 멈추게 할 수 있지만, 냉각이 될 때까지 Agent가 멈춰야하는 문제점이 있다. overload로 인해 예상한 토크가 부족한 상황을 극복하는 것에 초점 (연구 진행 중)",
+          "category": "method",
+          "source_lines": [
+            "Algorithm으로 관리하는 것과의 차별점?",
+            "단순히 특정 이상 온도로 올라가면 동작을 멈추게 할 수 있지만, 냉각이 될 때까지 Agent가 멈춰야하는 문제점이 있다.",
+            "overload로 인해 예상한 토크가 부족한 상황을 극복하는 것에 초점"
+          ],
+          "confidence": 0.788593746960637,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 07_14 - EunwooSong.pptx",
+      "slide_number": 13,
+      "original_content": "모터의 발열량\n모터의 발열량은 입력 전력에서 기계적인 출력을 빼어 구한다\n입력 전력과 출력의 차이를 발열로 가정\n권선에서 발생하는 열손실이 주를 이룸\nMujoco에서 Torque, velocity를 구할 수 있음\nmaxon motor - key information\nCopyright 2024 Global School of Media",
+      "has_images": true,
+      "image_count": 2,
+      "units_extracted": 2,
+      "units_accepted": 2,
+      "semantic_units": [
+        {
+          "id": "unit_WR 07_14 - EunwooSong.pptx_13_1",
+          "type": "primary",
+          "text": "모터의 발열량: 모터의 발열량은 입력 전력에서 기계적인 출력을 빼어 구한다 입력 전력과 출력의 차이를 발열로 가정 권선에서 발생하는 열손실이 주를 이룸 (연구 진행 중)",
+          "category": "concept",
+          "source_lines": [
+            "모터의 발열량",
+            "모터의 발열량은 입력 전력에서 기계적인 출력을 빼어 구한다",
+            "입력 전력과 출력의 차이를 발열로 가정",
+            "권선에서 발생하는 열손실이 주를 이룸"
+          ],
+          "confidence": 0.7639930263766577,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        },
+        {
+          "id": "unit_WR 07_14 - EunwooSong.pptx_13_2",
+          "type": "supporting",
+          "text": "권선에서 발생하는 열손실이 주를 이룸 Mujoco에서 Torque, velocity를 구할 수 있음 maxon motor - key information (연구 진행 중)",
+          "category": "concept",
+          "source_lines": [
+            "권선에서 발생하는 열손실이 주를 이룸",
+            "Mujoco에서 Torque, velocity를 구할 수 있음",
+            "maxon motor - key information"
+          ],
+          "confidence": 0.7396950874426518,
+          "has_visual": true,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 9_23.pptx",
+      "slide_number": 52,
+      "original_content": "Method - C. Thermal Esimator: Estimation of Motor Core Temperature\nΔt_est = 0.02 (sec)\nCopyright 2024 Global School of Media",
+      "has_images": true,
+      "image_count": 1,
+      "units_extracted": 1,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 9_23.pptx_52_1",
+          "type": "primary",
+          "text": "Method - C. Thermal Esimator: Estimation of Motor Core Temperature: Δt_est = 0.02 (sec) (연구 진행 중)",
+          "category": "concept",
+          "source_lines": [
+            "Method - C. Thermal Esimator: Estimation of Motor Core Temperature",
+            "Δt_est = 0.02 (sec)"
+          ],
+          "confidence": 0.768490002273597,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 9_23.pptx",
+      "slide_number": 63,
+      "original_content": "Method?\nCopyright 2024 Global School of Media",
+      "has_images": true,
+      "image_count": 1,
+      "units_extracted": 1,
+      "units_accepted": 0,
+      "semantic_units": [
+        {
+          "id": "unit_WR 9_23.pptx_63_1",
+          "type": "primary",
+          "text": "Method?",
+          "category": "method",
+          "source_lines": [
+            "Method?"
+          ],
+          "confidence": 0.8338280640699139,
+          "verification_status": "rejected",
+          "verification_reason": "텍스트가 너무 짧아 의미 단위로 부적합"
+        }
+      ]
+    },
+    {
+      "filename": "WR 11_18.pptx",
+      "slide_number": 5,
+      "original_content": "Reward 2, warm_up\nCopyright 2024 Global School of Media",
+      "has_images": true,
+      "image_count": 1,
+      "units_extracted": 1,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 11_18.pptx_5_1",
+          "type": "primary",
+          "text": "Reward 2, warm_up",
+          "category": "concept",
+          "source_lines": [
+            "Reward 2, warm_up"
+          ],
+          "confidence": 0.8635784586000279,
+          "verification_status": "accepted",
+          "verification_reason": "높은 신뢰도로 수용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 8_26.pptx",
+      "slide_number": 10,
+      "original_content": "heat2torque module - jax 코드 속도 비교\nCopyright 2024 Global School of Media",
+      "has_images": true,
+      "image_count": 1,
+      "units_extracted": 1,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 8_26.pptx_10_1",
+          "type": "primary",
+          "text": "heat2torque module - jax 코드 속도 비교 (연구 진행 중)",
+          "category": "concept",
+          "source_lines": [
+            "heat2torque module - jax 코드 속도 비교"
+          ],
+          "confidence": 0.8495558247976862,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 8_5.pptx",
+      "slide_number": 13,
+      "original_content": "Contributions - 2\n실시간 발열 인식 및 예측 프레임워크 개발\n센서 데이터와 발열 모델을 결합해 모터의 현재 열 상태를 실시간으로 추정, 미래 발열 누적을 예측할 수 있는 모델을 구현\n선제적 발열 관리를 위한 기반 마련 \n\n발열 인식을 통한 장기 동작 계획 제안\nMPC, RL Planner을 활용해 발열 상태와 미래 발열을 예측해 동작을 계획함.\n장기 운용 중 발생할 수 있는 과열을 사전에 완화하고, 작업 수행과 안정성 간 균형을 유지하도록 설계\n\n장기 운용 안정성 향상\n과열로 인한 모터 제한 횟수 감소\nCopyright 2024 Global School of Media",
+      "has_images": false,
+      "image_count": 0,
+      "units_extracted": 1,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 8_5.pptx_13_1",
+          "type": "primary",
+          "text": "Contributions - 2: 실시간 발열 인식 및 예측 프레임워크 개발 센서 데이터와 발열 모델을 결합해 모터의 현재 열 상태를 실시간으로 추정, 미래 발열 누적을 예측할 수 있는 모델을 구현 선제적 발열 관리를 위한 기반 마련 (연구 진행 중)",
+          "category": "method",
+          "source_lines": [
+            "Contributions - 2",
+            "실시간 발열 인식 및 예측 프레임워크 개발",
+            "센서 데이터와 발열 모델을 결합해 모터의 현재 열 상태를 실시간으로 추정, 미래 발열 누적을 예측할 수 있는 모델을 구현",
+            "선제적 발열 관리를 위한 기반 마련"
+          ],
+          "confidence": 0.772111936418382,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 12_23.pptx",
+      "slide_number": 6,
+      "original_content": "세팅 방법\n아래 노션에 정리해두었습니다!\n\nhttps://www.notion.so/RealityLab-2cdf6f41de51803f9997d7d7559a4599#2cff6f41de5180d6b772ffd0f7996ef4\nCopyright 2024 Global School of Media",
+      "has_images": false,
+      "image_count": 0,
+      "units_extracted": 1,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 12_23.pptx_6_1",
+          "type": "primary",
+          "text": "세팅 방법: 아래 노션에 정리해두었습니다! https://www.notion.so/RealityLab-2cdf6f41de51803f9997d7d7559a4599#2cff6f41de5180d6b772ffd0f7996ef4 (연구 진행 중)",
+          "category": "method",
+          "source_lines": [
+            "세팅 방법",
+            "아래 노션에 정리해두었습니다!",
+            "https://www.notion.so/RealityLab-2cdf6f41de51803f9997d7d7559a4599#2cff6f41de5180d6b772ffd0f7996ef4"
+          ],
+          "confidence": 0.8060586192170413,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 9_23.pptx",
+      "slide_number": 53,
+      "original_content": "Δt_data = 1.0 (sec)\nN_seq = 30 (step)\nN_batch = 10 (seq)\nMethod - D. Online Learning of Thermal Model\nCopyright 2024 Global School of Media",
+      "has_images": true,
+      "image_count": 3,
+      "units_extracted": 2,
+      "units_accepted": 2,
+      "semantic_units": [
+        {
+          "id": "unit_WR 9_23.pptx_53_1",
+          "type": "primary",
+          "text": "Δt_data = 1.0 (sec): N_seq = 30 (step) N_batch = 10 (seq) Method - D. Online Learning of Thermal Model (연구 진행 중)",
+          "category": "method",
+          "source_lines": [
+            "Δt_data = 1.0 (sec)",
+            "N_seq = 30 (step)",
+            "N_batch = 10 (seq)",
+            "Method - D. Online Learning of Thermal Model"
+          ],
+          "confidence": 0.7862618565396757,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        },
+        {
+          "id": "unit_WR 9_23.pptx_53_2",
+          "type": "supporting",
+          "text": "Method - D. Online Learning of Thermal Model (연구 진행 중)",
+          "category": "method",
+          "source_lines": [
+            "Method - D. Online Learning of Thermal Model"
+          ],
+          "confidence": 0.7235267602604751,
+          "has_visual": true,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 11_18.pptx",
+      "slide_number": 19,
+      "original_content": "Result.\n19000000 policy\t\t\t\t\t\tbest policy\nCopyright 2024 Global School of Media",
+      "has_images": true,
+      "image_count": 2,
+      "units_extracted": 1,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 11_18.pptx_19_1",
+          "type": "primary",
+          "text": "Result.: 19000000 policy\t\t\t\t\t\tbest policy",
+          "category": "result",
+          "source_lines": [
+            "Result.",
+            "19000000 policy\t\t\t\t\t\tbest policy"
+          ],
+          "confidence": 0.935816379937715,
+          "verification_status": "accepted",
+          "verification_reason": "높은 신뢰도로 수용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 07_22.pptx",
+      "slide_number": 4,
+      "original_content": "시뮬레이션 함수 테스트\nCopyright 2024 Global School of Media",
+      "has_images": true,
+      "image_count": 1,
+      "units_extracted": 1,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 07_22.pptx_4_1",
+          "type": "primary",
+          "text": "시뮬레이션 함수 테스트 (연구 진행 중)",
+          "category": "implementation",
+          "source_lines": [
+            "시뮬레이션 함수 테스트"
+          ],
+          "confidence": 0.7784663984821824,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 10_14.pptx",
+      "slide_number": 10,
+      "original_content": "Meta Learning - Result\nCopyright 2024 Global School of Media",
+      "has_images": true,
+      "image_count": 1,
+      "units_extracted": 1,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 10_14.pptx_10_1",
+          "type": "primary",
+          "text": "Meta Learning - Result (연구 진행 중)",
+          "category": "result",
+          "source_lines": [
+            "Meta Learning - Result"
+          ],
+          "confidence": 0.8170720921571252,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 9_23.pptx",
+      "slide_number": 22,
+      "original_content": "Quadruped 로봇은 극한 환경에 대해 강한 적응성을 가지고 있지만, 결함이 발생할 수 있다.\n결함 중 가장 대표적으로 장치 노후화 또는 예상치 못한 운영 이벤트와 같은 요인으로 액추에이터 손상이다.\nteacher-student 프레임워크인 Actuator Degradation Adaptation Transformer를 제안한다.\nAbstract\nCopyright 2024 Global School of Media",
+      "has_images": true,
+      "image_count": 1,
+      "units_extracted": 2,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 9_23.pptx_22_1",
+          "type": "primary",
+          "text": "Quadruped 로봇은 극한 환경에 대해 강한 적응성을 가지고 있지만, 결함이 발생할 수 있다.: 결함 중 가장 대표적으로 장치 노후화 또는 예상치 못한 운영 이벤트와 같은 요인으로 액추에이터 손상이다. teacher-student 프레임워크인 Actuator Degradation Adaptation Transformer를 제안한다. Abstract",
+          "category": "concept",
+          "source_lines": [
+            "Quadruped 로봇은 극한 환경에 대해 강한 적응성을 가지고 있지만, 결함이 발생할 수 있다.",
+            "결함 중 가장 대표적으로 장치 노후화 또는 예상치 못한 운영 이벤트와 같은 요인으로 액추에이터 손상이다.",
+            "teacher-student 프레임워크인 Actuator Degradation Adaptation Transformer를 제안한다.",
+            "Abstract"
+          ],
+          "confidence": 0.9432274740869369,
+          "verification_status": "accepted",
+          "verification_reason": "높은 신뢰도로 수용"
+        },
+        {
+          "id": "unit_WR 9_23.pptx_22_2",
+          "type": "supporting",
+          "text": "Abstract",
+          "category": "concept",
+          "source_lines": [
+            "Abstract"
+          ],
+          "confidence": 0.8263000267718297,
+          "has_visual": true,
+          "verification_status": "rejected",
+          "verification_reason": "텍스트가 너무 짧아 의미 단위로 부적합"
+        }
+      ]
+    },
+    {
+      "filename": "WR 9_23.pptx",
+      "slide_number": 55,
+      "original_content": "Method - F. Thermal Controller: Control of Motor Core Temperature\nCopyright 2024 Global School of Media",
+      "has_images": true,
+      "image_count": 2,
+      "units_extracted": 1,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 9_23.pptx_55_1",
+          "type": "primary",
+          "text": "Method - F. Thermal Controller: Control of Motor Core Temperature (연구 진행 중)",
+          "category": "method",
+          "source_lines": [
+            "Method - F. Thermal Controller: Control of Motor Core Temperature"
+          ],
+          "confidence": 0.8331874960144832,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 07_01 - EunwooSong.pptx",
+      "slide_number": 34,
+      "original_content": "Training ToddlerBot with Brax\n커스텀된 Brax를 사용하지 않고, 최신의 Brax를 이용해 간단한 샘플 코드 실행\ntoddlerbot/locomotion/train_mjx.py를 참고하여 코드 작성\nlearning_rate_schedule_fn, randomization_fn 등 여러 옵션 무시\nrandomization_fn 추가시 JAX Tracer Leak 발생\n누수가 버전에 따른 것인지 교차 확인 필요\nToddlerbot의 train 코드 실행 예정\n\ntoddlerbot.locomotion.walk_env.WalkEnv에서 train 진행\nCopyright 2024 Global School of Media",
+      "has_images": false,
+      "image_count": 0,
+      "units_extracted": 1,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 07_01 - EunwooSong.pptx_34_1",
+          "type": "primary",
+          "text": "Training ToddlerBot with Brax: 커스텀된 Brax를 사용하지 않고, 최신의 Brax를 이용해 간단한 샘플 코드 실행 toddlerbot/locomotion/train_mjx.py를 참고하여 코드 작성 learning_rate_schedule_fn, randomization_fn 등 여러 옵션 무시 (연구 진행 중)",
+          "category": "implementation",
+          "source_lines": [
+            "Training ToddlerBot with Brax",
+            "커스텀된 Brax를 사용하지 않고, 최신의 Brax를 이용해 간단한 샘플 코드 실행",
+            "toddlerbot/locomotion/train_mjx.py를 참고하여 코드 작성",
+            "learning_rate_schedule_fn, randomization_fn 등 여러 옵션 무시"
+          ],
+          "confidence": 0.7577894545057853,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 07_14 - EunwooSong.pptx",
+      "slide_number": 27,
+      "original_content": "FT-Net: Learning Failure Recovery and Fault-Tolerant Locomotion for Quadruped Robots\nCopyright 2024 Global School of Media\n혹독하고 위험한 환경에서 발생할 수 있는 로봇의 내고장성을 고려해야한다.\nFT-Net을 통해 고장 관리\n실제 토크에 고장 계수를 곱하여 토크를 계산하고 이를 시뮬레이션 한다.\n다양한 고장 상황에서도 보행할 수 있는 범용적인 정책을 학습하는 것이 목표",
+      "has_images": true,
+      "image_count": 1,
+      "units_extracted": 2,
+      "units_accepted": 2,
+      "semantic_units": [
+        {
+          "id": "unit_WR 07_14 - EunwooSong.pptx_27_1",
+          "type": "primary",
+          "text": "FT-Net: Learning Failure Recovery and Fault-Tolerant Locomotion for Quadruped Robots: 혹독하고 위험한 환경에서 발생할 수 있는 로봇의 내고장성을 고려해야한다. FT-Net을 통해 고장 관리 실제 토크에 고장 계수를 곱하여 토크를 계산하고 이를 시뮬레이션 한다.",
+          "category": "concept",
+          "source_lines": [
+            "FT-Net: Learning Failure Recovery and Fault-Tolerant Locomotion for Quadruped Robots",
+            "혹독하고 위험한 환경에서 발생할 수 있는 로봇의 내고장성을 고려해야한다.",
+            "FT-Net을 통해 고장 관리",
+            "실제 토크에 고장 계수를 곱하여 토크를 계산하고 이를 시뮬레이션 한다."
+          ],
+          "confidence": 0.8155564478487703,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        },
+        {
+          "id": "unit_WR 07_14 - EunwooSong.pptx_27_2",
+          "type": "supporting",
+          "text": "실제 토크에 고장 계수를 곱하여 토크를 계산하고 이를 시뮬레이션 한다. 다양한 고장 상황에서도 보행할 수 있는 범용적인 정책을 학습하는 것이 목표 (연구 진행 중)",
+          "category": "implementation",
+          "source_lines": [
+            "실제 토크에 고장 계수를 곱하여 토크를 계산하고 이를 시뮬레이션 한다.",
+            "다양한 고장 상황에서도 보행할 수 있는 범용적인 정책을 학습하는 것이 목표"
+          ],
+          "confidence": 0.7746386918296659,
+          "has_visual": true,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 07_14 - EunwooSong.pptx",
+      "slide_number": 16,
+      "original_content": "1차 열 모델\nCopyright 2024 Global School of Media",
+      "has_images": true,
+      "image_count": 2,
+      "units_extracted": 1,
+      "units_accepted": 0,
+      "semantic_units": [
+        {
+          "id": "unit_WR 07_14 - EunwooSong.pptx_16_1",
+          "type": "primary",
+          "text": "1차 열 모델",
+          "category": "method",
+          "source_lines": [
+            "1차 열 모델"
+          ],
+          "confidence": 0.8698983641702678,
+          "verification_status": "rejected",
+          "verification_reason": "텍스트가 너무 짧아 의미 단위로 부적합"
+        }
+      ]
+    },
+    {
+      "filename": "WR 12_23.pptx",
+      "slide_number": 8,
+      "original_content": "Migration 진행 상황\n버전 충돌 해결\n학습 가능\n\nToddlerbot sim to real 시, 오류 발생\nDynamicel SDK, C++로 이전한 코드에서 오류 발생\n마무리 이후, Endurance Test 진행\nCopyright 2024 Global School of Media",
+      "has_images": false,
+      "image_count": 0,
+      "units_extracted": 1,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 12_23.pptx_8_1",
+          "type": "primary",
+          "text": "Migration 진행 상황: 버전 충돌 해결 학습 가능 Toddlerbot sim to real 시, 오류 발생 (연구 진행 중)",
+          "category": "implementation",
+          "source_lines": [
+            "Migration 진행 상황",
+            "버전 충돌 해결",
+            "학습 가능",
+            "Toddlerbot sim to real 시, 오류 발생"
+          ],
+          "confidence": 0.7974926217163798,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 9_23.pptx",
+      "slide_number": 10,
+      "original_content": "Problems\nCopyright 2024 Global School of Media",
+      "has_images": true,
+      "image_count": 1,
+      "units_extracted": 1,
+      "units_accepted": 0,
+      "semantic_units": [
+        {
+          "id": "unit_WR 9_23.pptx_10_1",
+          "type": "primary",
+          "text": "Problems",
+          "category": "problem",
+          "source_lines": [
+            "Problems"
+          ],
+          "confidence": 0.8263150351517575,
+          "verification_status": "rejected",
+          "verification_reason": "텍스트가 너무 짧아 의미 단위로 부적합"
+        }
+      ]
+    },
+    {
+      "filename": "WR 10_14.pptx",
+      "slide_number": 3,
+      "original_content": "Toddlerbot 학습 결과\nCopyright 2024 Global School of Media",
+      "has_images": false,
+      "image_count": 0,
+      "units_extracted": 1,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 10_14.pptx_3_1",
+          "type": "primary",
+          "text": "Toddlerbot 학습 결과 (연구 진행 중)",
+          "category": "result",
+          "source_lines": [
+            "Toddlerbot 학습 결과"
+          ],
+          "confidence": 0.8407470082279105,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 9_2.pptx",
+      "slide_number": 7,
+      "original_content": "Result (HeatState)\nCopyright 2024 Global School of Media",
+      "has_images": true,
+      "image_count": 1,
+      "units_extracted": 1,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 9_2.pptx_7_1",
+          "type": "primary",
+          "text": "Result (HeatState) (연구 진행 중)",
+          "category": "result",
+          "source_lines": [
+            "Result (HeatState)"
+          ],
+          "confidence": 0.7514946982348034,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 9_2.pptx",
+      "slide_number": 6,
+      "original_content": "Result (1000~1389 steps)\nCopyright 2024 Global School of Media\nNormal (0~500steps)\nTorque limited (1000~1389 steps)",
+      "has_images": true,
+      "image_count": 2,
+      "units_extracted": 1,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 9_2.pptx_6_1",
+          "type": "primary",
+          "text": "Result (1000~1389 steps): Normal (0~500steps) Torque limited (1000~1389 steps)",
+          "category": "result",
+          "source_lines": [
+            "Result (1000~1389 steps)",
+            "Normal (0~500steps)",
+            "Torque limited (1000~1389 steps)"
+          ],
+          "confidence": 0.9263882358606341,
+          "verification_status": "accepted",
+          "verification_reason": "높은 신뢰도로 수용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 07_14 - EunwooSong.pptx",
+      "slide_number": 4,
+      "original_content": "개요\nrobot이 특정 task를 잘 수행하는 것 또한 중요하지만, 장기적인 안정성 또한 고려되어야 한다.\n지금의 시뮬레이션에서는 이상적인 motor 상황에 너무 과적합되어 있다.\n누적된 사용(발열)으로 인한 motor의 torque 감소를 시뮬레이션 하면 sim to real gap을 줄이는데 유용할 것이다.\n추가로 로봇의 에너지 효율성을 개선할 수 있을 것이다.\n\n따라서 Heat2Torque simulation을 제안\nCopyright 2024 Global School of Media",
+      "has_images": false,
+      "image_count": 0,
+      "units_extracted": 1,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 07_14 - EunwooSong.pptx_4_1",
+          "type": "primary",
+          "text": "개요: robot이 특정 task를 잘 수행하는 것 또한 중요하지만, 장기적인 안정성 또한 고려되어야 한다. 지금의 시뮬레이션에서는 이상적인 motor 상황에 너무 과적합되어 있다. 누적된 사용(발열)으로 인한 motor의 torque 감소를 시뮬레이션 하면 sim to real gap을 줄이는데 유용할 것이다.",
+          "category": "concept",
+          "source_lines": [
+            "개요",
+            "robot이 특정 task를 잘 수행하는 것 또한 중요하지만, 장기적인 안정성 또한 고려되어야 한다.",
+            "지금의 시뮬레이션에서는 이상적인 motor 상황에 너무 과적합되어 있다.",
+            "누적된 사용(발열)으로 인한 motor의 torque 감소를 시뮬레이션 하면 sim to real gap을 줄이는데 유용할 것이다."
+          ],
+          "confidence": 0.851340504951661,
+          "verification_status": "accepted",
+          "verification_reason": "높은 신뢰도로 수용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 9_23.pptx",
+      "slide_number": 28,
+      "original_content": "τ^i: i번째 actuator가 손상된 시나리오\nactuator가 12개이므로, 12개의 시나리오 고려\n\ntraj^i_n: i번째 시나리오에서의 n번째 trajectory\nN은 20000으로 설정\n각각의 traj은 (s, d, )     의 값으로 구성된다.\n\n학습된 teacher policy에서 데이터를 생성함\nMethod - Data Collection\nCopyright 2024 Global School of Media",
+      "has_images": true,
+      "image_count": 2,
+      "units_extracted": 2,
+      "units_accepted": 2,
+      "semantic_units": [
+        {
+          "id": "unit_WR 9_23.pptx_28_1",
+          "type": "primary",
+          "text": "τ^i: i번째 actuator가 손상된 시나리오: actuator가 12개이므로, 12개의 시나리오 고려 traj^i_n: i번째 시나리오에서의 n번째 trajectory N은 20000으로 설정 (연구 진행 중)",
+          "category": "general",
+          "source_lines": [
+            "τ^i: i번째 actuator가 손상된 시나리오",
+            "actuator가 12개이므로, 12개의 시나리오 고려",
+            "traj^i_n: i번째 시나리오에서의 n번째 trajectory",
+            "N은 20000으로 설정"
+          ],
+          "confidence": 0.8366712403079741,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        },
+        {
+          "id": "unit_WR 9_23.pptx_28_2",
+          "type": "supporting",
+          "text": "N은 20000으로 설정 각각의 traj은 (s, d, )     의 값으로 구성된다. 학습된 teacher policy에서 데이터를 생성함 (연구 진행 중)",
+          "category": "concept",
+          "source_lines": [
+            "N은 20000으로 설정",
+            "각각의 traj은 (s, d, )     의 값으로 구성된다.",
+            "학습된 teacher policy에서 데이터를 생성함"
+          ],
+          "confidence": 0.774865094727331,
+          "has_visual": true,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 1_14.pptx",
+      "slide_number": 3,
+      "original_content": "Toddlerbot Thermal Weight\nCopyright 2024 Global School of Media",
+      "has_images": false,
+      "image_count": 0,
+      "units_extracted": 1,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 1_14.pptx_3_1",
+          "type": "primary",
+          "text": "Toddlerbot Thermal Weight",
+          "category": "concept",
+          "source_lines": [
+            "Toddlerbot Thermal Weight"
+          ],
+          "confidence": 0.8963740628249215,
+          "verification_status": "accepted",
+          "verification_reason": "높은 신뢰도로 수용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 1_14.pptx",
+      "slide_number": 11,
+      "original_content": "Results\nCopyright 2024 Global School of Media",
+      "has_images": true,
+      "image_count": 1,
+      "units_extracted": 1,
+      "units_accepted": 0,
+      "semantic_units": [
+        {
+          "id": "unit_WR 1_14.pptx_11_1",
+          "type": "primary",
+          "text": "Results",
+          "category": "result",
+          "source_lines": [
+            "Results"
+          ],
+          "confidence": 0.8791048242273288,
+          "verification_status": "rejected",
+          "verification_reason": "텍스트가 너무 짧아 의미 단위로 부적합"
+        }
+      ]
+    },
+    {
+      "filename": "WR 07_14 - EunwooSong.pptx",
+      "slide_number": 24,
+      "original_content": "적용 Task 및 성능 비교\nCopyright 2024 Global School of Media\nToddlerBot에 있는 정책에서 Thermal-reward를 추가, 해당 정책을 반복 수행했을 때, 어떤 모델이 더 오래 지속되는지를 타이머로 비교 실험\n시뮬레이션에서 과열 상황을 부여하고, 각 모델(original, ours)를 비교",
+      "has_images": false,
+      "image_count": 0,
+      "units_extracted": 1,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 07_14 - EunwooSong.pptx_24_1",
+          "type": "primary",
+          "text": "적용 Task 및 성능 비교: ToddlerBot에 있는 정책에서 Thermal-reward를 추가, 해당 정책을 반복 수행했을 때, 어떤 모델이 더 오래 지속되는지를 타이머로 비교 실험 시뮬레이션에서 과열 상황을 부여하고, 각 모델(original, ours)를 비교 (연구 진행 중)",
+          "category": "concept",
+          "source_lines": [
+            "적용 Task 및 성능 비교",
+            "ToddlerBot에 있는 정책에서 Thermal-reward를 추가, 해당 정책을 반복 수행했을 때, 어떤 모델이 더 오래 지속되는지를 타이머로 비교 실험",
+            "시뮬레이션에서 과열 상황을 부여하고, 각 모델(original, ours)를 비교"
+          ],
+          "confidence": 0.8345248445710405,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 07_14 - EunwooSong.pptx",
+      "slide_number": 11,
+      "original_content": "기존의 에너지 효율성 보상 함수\nCopyright 2024 Global School of Media\nToddlerbot에서 사용하는 보상 함수는 system 총량",
+      "has_images": true,
+      "image_count": 1,
+      "units_extracted": 1,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 07_14 - EunwooSong.pptx_11_1",
+          "type": "primary",
+          "text": "기존의 에너지 효율성 보상 함수: Toddlerbot에서 사용하는 보상 함수는 system 총량",
+          "category": "general",
+          "source_lines": [
+            "기존의 에너지 효율성 보상 함수",
+            "Toddlerbot에서 사용하는 보상 함수는 system 총량"
+          ],
+          "confidence": 0.9011484025148622,
+          "verification_status": "accepted",
+          "verification_reason": "높은 신뢰도로 수용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 9_23.pptx",
+      "slide_number": 35,
+      "original_content": "Method - DreamFLEX\nCopyright 2024 Global School of Media",
+      "has_images": true,
+      "image_count": 1,
+      "units_extracted": 1,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 9_23.pptx_35_1",
+          "type": "primary",
+          "text": "Method - DreamFLEX",
+          "category": "method",
+          "source_lines": [
+            "Method - DreamFLEX"
+          ],
+          "confidence": 0.8720965907482712,
+          "verification_status": "accepted",
+          "verification_reason": "높은 신뢰도로 수용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 9_23.pptx",
+      "slide_number": 32,
+      "original_content": "DreamFLEX: Learning Fault-Aware Quadrupedal Locomotion Controller for Anomaly Situation in Rough Terrains\nCopyright 2024 Global School of Media",
+      "has_images": false,
+      "image_count": 0,
+      "units_extracted": 1,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 9_23.pptx_32_1",
+          "type": "primary",
+          "text": "DreamFLEX: Learning Fault-Aware Quadrupedal Locomotion Controller for Anomaly Situation in Rough Terrains (연구 진행 중)",
+          "category": "method",
+          "source_lines": [
+            "DreamFLEX: Learning Fault-Aware Quadrupedal Locomotion Controller for Anomaly Situation in Rough Terrains"
+          ],
+          "confidence": 0.7573631229616375,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 07_01 - EunwooSong.pptx",
+      "slide_number": 14,
+      "original_content": "Rendering the “ToddlerBot” simulation\nCopyright 2024 Global School of Media\nUbuntu 24.04",
+      "has_images": false,
+      "image_count": 0,
+      "units_extracted": 1,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 07_01 - EunwooSong.pptx_14_1",
+          "type": "primary",
+          "text": "Rendering the “ToddlerBot” simulation: Ubuntu 24.04 (연구 진행 중)",
+          "category": "implementation",
+          "source_lines": [
+            "Rendering the “ToddlerBot” simulation",
+            "Ubuntu 24.04"
+          ],
+          "confidence": 0.8194856085320084,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 9_23.pptx",
+      "slide_number": 50,
+      "original_content": "two-resistor thermal model (2-저항 열 모델)\n열 파라미터의 업데이트 필요성은 다음과 같다.\n부착된 금속 부품으로의 열 방출, 주변 온도 오차, 모터의 열화 또는 손상 등\n\nNew와, Old에게 각각 200N의 부하를 걸었을 때 생기는 그래프는 다음과 같다\nNew: 새로운 모터, Old: 오래된 모터 (90초 이후 15℃ 차이를 보임)\nCopyright 2024 Global School of Media",
+      "has_images": true,
+      "image_count": 1,
+      "units_extracted": 2,
+      "units_accepted": 2,
+      "semantic_units": [
+        {
+          "id": "unit_WR 9_23.pptx_50_1",
+          "type": "primary",
+          "text": "two-resistor thermal model (2-저항 열 모델): 열 파라미터의 업데이트 필요성은 다음과 같다. 부착된 금속 부품으로의 열 방출, 주변 온도 오차, 모터의 열화 또는 손상 등 New와, Old에게 각각 200N의 부하를 걸었을 때 생기는 그래프는 다음과 같다",
+          "category": "method",
+          "source_lines": [
+            "two-resistor thermal model (2-저항 열 모델)",
+            "열 파라미터의 업데이트 필요성은 다음과 같다.",
+            "부착된 금속 부품으로의 열 방출, 주변 온도 오차, 모터의 열화 또는 손상 등",
+            "New와, Old에게 각각 200N의 부하를 걸었을 때 생기는 그래프는 다음과 같다"
+          ],
+          "confidence": 0.8367710926980417,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        },
+        {
+          "id": "unit_WR 9_23.pptx_50_2",
+          "type": "supporting",
+          "text": "New와, Old에게 각각 200N의 부하를 걸었을 때 생기는 그래프는 다음과 같다 New: 새로운 모터, Old: 오래된 모터 (90초 이후 15℃ 차이를 보임) (연구 진행 중)",
+          "category": "general",
+          "source_lines": [
+            "New와, Old에게 각각 200N의 부하를 걸었을 때 생기는 그래프는 다음과 같다",
+            "New: 새로운 모터, Old: 오래된 모터 (90초 이후 15℃ 차이를 보임)"
+          ],
+          "confidence": 0.7034926915639557,
+          "has_visual": true,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 07_01 - EunwooSong.pptx",
+      "slide_number": 21,
+      "original_content": "Result.\nCopyright 2024 Global School of Media",
+      "has_images": true,
+      "image_count": 1,
+      "units_extracted": 1,
+      "units_accepted": 0,
+      "semantic_units": [
+        {
+          "id": "unit_WR 07_01 - EunwooSong.pptx_21_1",
+          "type": "primary",
+          "text": "Result.",
+          "category": "result",
+          "source_lines": [
+            "Result."
+          ],
+          "confidence": 0.793619726214803,
+          "verification_status": "rejected",
+          "verification_reason": "텍스트가 너무 짧아 의미 단위로 부적합"
+        }
+      ]
+    },
+    {
+      "filename": "WR 11_18.pptx",
+      "slide_number": 24,
+      "original_content": "obs(step by step… 1 to 4), torso_ang_vel, torso_euler\nCopyright 2024 Global School of Media",
+      "has_images": true,
+      "image_count": 1,
+      "units_extracted": 1,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 11_18.pptx_24_1",
+          "type": "primary",
+          "text": "obs(step by step… 1 to 4), torso_ang_vel, torso_euler (연구 진행 중)",
+          "category": "general",
+          "source_lines": [
+            "obs(step by step… 1 to 4), torso_ang_vel, torso_euler"
+          ],
+          "confidence": 0.8394354938851337,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 07_01 - EunwooSong.pptx",
+      "slide_number": 26,
+      "original_content": "Result - 1\nCopyright 2024 Global School of Media\nRTX 5080: 3m 42s/ A100:6m",
+      "has_images": true,
+      "image_count": 1,
+      "units_extracted": 1,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 07_01 - EunwooSong.pptx_26_1",
+          "type": "primary",
+          "text": "Result - 1: RTX 5080: 3m 42s/ A100:6m",
+          "category": "result",
+          "source_lines": [
+            "Result - 1",
+            "RTX 5080: 3m 42s/ A100:6m"
+          ],
+          "confidence": 0.8500040986721904,
+          "verification_status": "accepted",
+          "verification_reason": "높은 신뢰도로 수용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 07_01 - EunwooSong.pptx",
+      "slide_number": 38,
+      "original_content": "Graphics..?\nCopyright 2024 Global School of Media\nnotion link",
+      "has_images": false,
+      "image_count": 0,
+      "units_extracted": 1,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 07_01 - EunwooSong.pptx_38_1",
+          "type": "primary",
+          "text": "Graphics..?: notion link",
+          "category": "general",
+          "source_lines": [
+            "Graphics..?",
+            "notion link"
+          ],
+          "confidence": 0.9242085818080722,
+          "verification_status": "accepted",
+          "verification_reason": "높은 신뢰도로 수용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 9_23.pptx",
+      "slide_number": 62,
+      "original_content": "Reward\n기존 Reward에 다음 core temp safe 구역에 따른 보상 함수를 추가한다.\n최적온도(c1, min) 이내는 최대 보상, 아니면 리워드 점차 감소(c1,max)\n가우시안 분포 꼴 이용\n( α∝1/σ2 )\nCopyright 2024 Global School of Media",
+      "has_images": true,
+      "image_count": 1,
+      "units_extracted": 2,
+      "units_accepted": 2,
+      "semantic_units": [
+        {
+          "id": "unit_WR 9_23.pptx_62_1",
+          "type": "primary",
+          "text": "Reward: 기존 Reward에 다음 core temp safe 구역에 따른 보상 함수를 추가한다. 최적온도(c1, min) 이내는 최대 보상, 아니면 리워드 점차 감소(c1,max) 가우시안 분포 꼴 이용 (연구 진행 중)",
+          "category": "concept",
+          "source_lines": [
+            "Reward",
+            "기존 Reward에 다음 core temp safe 구역에 따른 보상 함수를 추가한다.",
+            "최적온도(c1, min) 이내는 최대 보상, 아니면 리워드 점차 감소(c1,max)",
+            "가우시안 분포 꼴 이용"
+          ],
+          "confidence": 0.7970365644913124,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        },
+        {
+          "id": "unit_WR 9_23.pptx_62_2",
+          "type": "supporting",
+          "text": "가우시안 분포 꼴 이용 ( α∝1/σ2 ) (연구 진행 중)",
+          "category": "general",
+          "source_lines": [
+            "가우시안 분포 꼴 이용",
+            "( α∝1/σ2 )"
+          ],
+          "confidence": 0.7990974967739186,
+          "has_visual": true,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 9_23.pptx",
+      "slide_number": 61,
+      "original_content": "Limitations of Prior Research & Our Method\n기존의 DRL 기반 제어기들은 예측하지 못한 외란에 대응하는 것에 초점을 맞췄다.\n이러한 문제를 해결하기 위해 로봇의 미래 상태를 모터의 온도에 기반해 예측하고, 성능과 하드웨어 내구성 사이의 균형을 맞춘다.\n과열에 대한 것도, 과열 상황이 발생한 뒤 생긴 토크 제한에 대응\n\n선제적 건강 관리 프레임워크 제안\n기존의 고장 후 대응 방식 -> 예측가능한 고장을 미리 예방하는 접근법이다.\n2족 보행은 추가로 지지할 수 있는 다리가 없으므로, 선제적으로 대응해주어야 한다.\nCopyright 2024 Global School of Media",
+      "has_images": false,
+      "image_count": 0,
+      "units_extracted": 1,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 9_23.pptx_61_1",
+          "type": "primary",
+          "text": "Limitations of Prior Research & Our Method: 기존의 DRL 기반 제어기들은 예측하지 못한 외란에 대응하는 것에 초점을 맞췄다. 이러한 문제를 해결하기 위해 로봇의 미래 상태를 모터의 온도에 기반해 예측하고, 성능과 하드웨어 내구성 사이의 균형을 맞춘다. 과열에 대한 것도, 과열 상황이 발생한 뒤 생긴 토크 제한에 대응",
+          "category": "problem",
+          "source_lines": [
+            "Limitations of Prior Research & Our Method",
+            "기존의 DRL 기반 제어기들은 예측하지 못한 외란에 대응하는 것에 초점을 맞췄다.",
+            "이러한 문제를 해결하기 위해 로봇의 미래 상태를 모터의 온도에 기반해 예측하고, 성능과 하드웨어 내구성 사이의 균형을 맞춘다.",
+            "과열에 대한 것도, 과열 상황이 발생한 뒤 생긴 토크 제한에 대응"
+          ],
+          "confidence": 0.9386236932460374,
+          "verification_status": "accepted",
+          "verification_reason": "높은 신뢰도로 수용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 11_18.pptx",
+      "slide_number": 9,
+      "original_content": "실험 결과 (19456000 steps, high temperature)\nCopyright 2024 Global School of Media",
+      "has_images": false,
+      "image_count": 0,
+      "units_extracted": 1,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 11_18.pptx_9_1",
+          "type": "primary",
+          "text": "실험 결과 (19456000 steps, high temperature) (연구 진행 중)",
+          "category": "result",
+          "source_lines": [
+            "실험 결과 (19456000 steps, high temperature)"
+          ],
+          "confidence": 0.8091784429190959,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 9_23.pptx",
+      "slide_number": 46,
+      "original_content": "Method - F. Thermal Controller: Control of Motor Core Temperature\nCopyright 2024 Global School of Media",
+      "has_images": true,
+      "image_count": 3,
+      "units_extracted": 1,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 9_23.pptx_46_1",
+          "type": "primary",
+          "text": "Method - F. Thermal Controller: Control of Motor Core Temperature (연구 진행 중)",
+          "category": "method",
+          "source_lines": [
+            "Method - F. Thermal Controller: Control of Motor Core Temperature"
+          ],
+          "confidence": 0.7985785661878784,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 1_14.pptx",
+      "slide_number": 15,
+      "original_content": "다른 Policy…\nCopyright 2024 Global School of Media",
+      "has_images": false,
+      "image_count": 0,
+      "units_extracted": 1,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 1_14.pptx_15_1",
+          "type": "primary",
+          "text": "다른 Policy… (연구 진행 중)",
+          "category": "concept",
+          "source_lines": [
+            "다른 Policy…"
+          ],
+          "confidence": 0.798232565534292,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        }
+      ]
+    },
+    {
+      "filename": "WR 11_18.pptx",
+      "slide_number": 16,
+      "original_content": "But…\nCopyright 2024 Global School of Media",
+      "has_images": true,
+      "image_count": 1,
+      "units_extracted": 1,
+      "units_accepted": 0,
+      "semantic_units": [
+        {
+          "id": "unit_WR 11_18.pptx_16_1",
+          "type": "primary",
+          "text": "But…",
+          "category": "general",
+          "source_lines": [
+            "But…"
+          ],
+          "confidence": 0.8333475787175455,
+          "verification_status": "rejected",
+          "verification_reason": "텍스트가 너무 짧아 의미 단위로 부적합"
+        }
+      ]
+    },
+    {
+      "filename": "WR 07_01 - EunwooSong.pptx",
+      "slide_number": 13,
+      "original_content": "Sample Code - Result\nmujoco 환경을 render해서 현재 shell의 display를 지우고 다시 plt를 출력한다.\nCopyright 2024 Global School of Media",
+      "has_images": true,
+      "image_count": 1,
+      "units_extracted": 1,
+      "units_accepted": 1,
+      "semantic_units": [
+        {
+          "id": "unit_WR 07_01 - EunwooSong.pptx_13_1",
+          "type": "primary",
+          "text": "Sample Code - Result: mujoco 환경을 render해서 현재 shell의 display를 지우고 다시 plt를 출력한다.",
+          "category": "implementation",
+          "source_lines": [
+            "Sample Code - Result",
+            "mujoco 환경을 render해서 현재 shell의 display를 지우고 다시 plt를 출력한다."
+          ],
+          "confidence": 0.8279492648220415,
+          "verification_status": "refined",
+          "verification_reason": "보통 신뢰도 - 텍스트 보완 적용"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "condition": "Quick Draft (haiku+opus)",
+  "extraction_model": "haiku",
+  "verification_model": "opus",
+  "resolution": "1-2 units/slide",
+  "total_slides": 45,
+  "total_units": 65,
+  "avg_units_per_slide": 1.44,
+  "verification_stats": {
+    "accepted": 9,
+    "refined": 1,
+    "rejected": 0
+  },
+  "category_distribution": {
+    "planning": 9,
+    "setup": 1,
+    "execution": 25,
+    "finding": 9,
+    "interpretation": 1
+  },
+  "image_type_distribution": {
+    "plot": 11,
+    "diagram": 4,
+    "visualization": 3,
+    "video_animation": 3,
+    "formula": 2,
+    "screenshot": 1,
+    "other": 17
+  },
+  "sample_extractions": [
+    {
+      "slide_number": 37,
+      "filename": "WR 07_01 - EunwooSong.pptx",
+      "units": [
+        {
+          "text": "Result - Video",
+          "type": "title"
+        }
+      ],
+      "category": "finding",
+      "verification_result": "accepted",
+      "has_images": true,
+      "image_types": [
+        "plot",
+        "plot"
+      ]
+    },
+    {
+      "slide_number": 10,
+      "filename": "WR 07_14 - EunwooSong.pptx",
+      "units": [
+        {
+          "text": "Algorithm으로 관리하는 것과의 차별점?",
+          "type": "title"
+        },
+        {
+          "text": "단순히 특정 이상 온도로 올라가면 동작을 멈추게 할 수 있지만, 냉각이 될 때까지 Agent가 멈춰야하는 문제점이 있다.",
+          "type": "detail"
+        }
+      ],
+      "category": "planning",
+      "verification_result": "accepted",
+      "has_images": false,
+      "image_types": []
+    },
+    {
+      "slide_number": 63,
+      "filename": "WR 9_23.pptx",
+      "units": [
+        {
+          "text": "Method?",
+          "type": "title"
+        }
+      ],
+      "category": "planning",
+      "verification_result": "accepted",
+      "has_images": true,
+      "image_types": [
+        "other"
+      ]
+    },
+    {
+      "slide_number": 53,
+      "filename": "WR 9_23.pptx",
+      "units": [
+        {
+          "text": "Δt_data = 1.0 (sec)",
+          "type": "title"
+        },
+        {
+          "text": "Method - D. Online Learning of Thermal Model",
+          "type": "detail"
+        }
+      ],
+      "category": "execution",
+      "verification_result": "accepted",
+      "has_images": true,
+      "image_types": [
+        "diagram",
+        "diagram",
+        "diagram"
+      ]
+    },
+    {
+      "slide_number": 55,
+      "filename": "WR 9_23.pptx",
+      "units": [
+        {
+          "text": "Method - F. Thermal Controller: Control of Motor Core Temperature",
+          "type": "title"
+        }
+      ],
+      "category": "planning",
+      "verification_result": "accepted",
+      "has_images": true,
+      "image_types": [
+        "other",
+        "other"
+      ]
+    },
+    {
+      "slide_number": 10,
+      "filename": "WR 9_23.pptx",
+      "units": [
+        {
+          "text": "Problems",
+          "type": "title"
+        }
+      ],
+      "category": "execution",
+      "verification_result": "refined",
+      "has_images": true,
+      "image_types": [
+        "video_animation"
+      ]
+    },
+    {
+      "slide_number": 28,
+      "filename": "WR 9_23.pptx",
+      "units": [
+        {
+          "text": "τ^i: i번째 actuator가 손상된 시나리오",
+          "type": "title"
+        },
+        {
+          "text": "actuator가 12개이므로, 12개의 시나리오 고려",
+          "type": "detail"
+        }
+      ],
+      "category": "planning",
+      "verification_result": "accepted",
+      "has_images": true,
+      "image_types": [
+        "formula",
+        "formula"
+      ]
+    },
+    {
+      "slide_number": 35,
+      "filename": "WR 9_23.pptx",
+      "units": [
+        {
+          "text": "Method - DreamFLEX",
+          "type": "title"
+        }
+      ],
+      "category": "planning",
+      "verification_result": "accepted",
+      "has_images": true,
+      "image_types": [
+        "other"
+      ]
+    },
+    {
+      "slide_number": 24,
+      "filename": "WR 11_18.pptx",
+      "units": [
+        {
+          "text": "obs(step by step… 1 to 4), torso_ang_vel, torso_euler",
+          "type": "title"
+        }
+      ],
+      "category": "execution",
+      "verification_result": "accepted",
+      "has_images": true,
+      "image_types": [
+        "other"
+      ]
+    },
+    {
+      "slide_number": 9,
+      "filename": "WR 11_18.pptx",
+      "units": [
+        {
+          "text": "실험 결과 (19456000 steps, high temperature)",
+          "type": "title"
+        }
+      ],
+      "category": "execution",
+      "verification_result": "accepted",
+      "has_images": false,
+      "image_types": []
+    }
+  ]
+}

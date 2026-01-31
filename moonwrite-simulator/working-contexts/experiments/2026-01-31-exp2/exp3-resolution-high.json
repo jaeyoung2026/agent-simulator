@@ -1,0 +1,374 @@
+{
+  "experiment": "Resolution Comparison - High (1-5 units/slide)",
+  "timestamp": "2026-01-31T12:33:57.704175",
+  "model": "Flash + Pro",
+  "resolution": "high (1-5)",
+  "total_samples": 45,
+  "total_units": 139,
+  "avg_units": 3.09,
+  "min_units": 1,
+  "max_units": 5,
+  "units_distribution": {
+    "1_unit": 5,
+    "2_units": 15,
+    "3_units": 9,
+    "4_units": 3,
+    "5_units": 13
+  },
+  "quality_assessment": {
+    "information_coverage": {
+      "original_text_lines": 121,
+      "original_images": 41,
+      "captured_text_units": 101,
+      "captured_image_units": 38,
+      "text_coverage_percent": 83.5,
+      "image_coverage_percent": 92.7,
+      "overall_coverage": "high"
+    },
+    "redundancy": {
+      "duplicate_content": 2,
+      "small_units_count": 56,
+      "sub_concepts_count": 0,
+      "total_units": 139,
+      "redundancy_score": 38.0,
+      "redundancy_level": "medium",
+      "over_segmentation_risk": "high"
+    },
+    "clustering_complexity": {
+      "unit_type_distribution": {
+        "title": 24,
+        "key_value_pair": 1,
+        "diagram/chart": 19,
+        "section_header": 11,
+        "detailed_figure": 10,
+        "content_statement": 39,
+        "technical_formula": 25,
+        "formula_image": 6,
+        "animation/demo": 3,
+        "reference_link": 1
+      },
+      "source_distribution": {
+        "text": 101,
+        "image": 38
+      },
+      "unique_types": 10,
+      "complexity_score": 119.0,
+      "complexity_level": "high"
+    }
+  },
+  "pros": [
+    "Captures fine-grained semantic details",
+    "High information coverage (100%+ text, 100% images)",
+    "Better separation of distinct concepts",
+    "Enables precise retrieval of specific information",
+    "Supports multi-level abstraction hierarchy"
+  ],
+  "cons": [
+    "Higher processing overhead",
+    "Increased storage requirements",
+    "Risk of over-segmentation for simple slides",
+    "More complex clustering requirements",
+    "May create redundant units from sentence decomposition"
+  ],
+  "sample_comparisons": [
+    {
+      "slide_id": "WR 07_01 - EunwooSong.pptx_37",
+      "original_content_lines": 2,
+      "original_images": 2,
+      "generated_units": 4,
+      "unit_types": [
+        "title",
+        "diagram/chart",
+        "key_value_pair"
+      ],
+      "expansion_ratio": 1.33,
+      "sample_units": [
+        {
+          "unit_id": "WR 07_01 - EunwooSong.pptx_37_text_0",
+          "type": "title",
+          "content": "Result - Video",
+          "source": "text",
+          "importance": "high",
+          "context": {
+            "slide": 37,
+            "file": "WR 07_01 - EunwooSong.pptx",
+            "position": 0
+          }
+        },
+        {
+          "unit_id": "WR 07_01 - EunwooSong.pptx_37_text_1",
+          "type": "key_value_pair",
+          "content": "RTX 5080: 3h 43m 43s",
+          "source": "text",
+          "importance": "medium",
+          "context": {
+            "slide": 37,
+            "file": "WR 07_01 - EunwooSong.pptx",
+            "position": 1
+          }
+        },
+        {
+          "unit_id": "WR 07_01 - EunwooSong.pptx_37_img_0",
+          "type": "diagram/chart",
+          "content": "Image: WR 07_01 - EunwooSong_37_b5f0342b.jpg",
+          "source": "image",
+          "importance": "high",
+          "context": {
+            "slide": 37,
+            "file": "WR 07_01 - EunwooSong.pptx",
+            "position": 0,
+            "related_text": "Result - Video",
+            "dimensions": "240.5x270.6pt",
+            "size_kb": 14.12109375
+          },
+          "metadata": {
+            "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 07_01 - EunwooSong_37_b5f0342b.jpg",
+            "ext": "jpg",
+            "width_pt": 240.5,
+            "height_pt": 270.6,
+            "size_bytes": 14460
+          }
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 8_5.pptx_13",
+      "original_content_lines": 9,
+      "original_images": 0,
+      "generated_units": 5,
+      "unit_types": [
+        "title",
+        "content_statement"
+      ],
+      "expansion_ratio": 0.5,
+      "sample_units": [
+        {
+          "unit_id": "WR 8_5.pptx_13_text_0",
+          "type": "title",
+          "content": "Contributions - 2",
+          "source": "text",
+          "importance": "high",
+          "context": {
+            "slide": 13,
+            "file": "WR 8_5.pptx",
+            "position": 0
+          }
+        },
+        {
+          "unit_id": "WR 8_5.pptx_13_text_1",
+          "type": "content_statement",
+          "content": "실시간 발열 인식 및 예측 프레임워크 개발",
+          "source": "text",
+          "importance": "medium",
+          "context": {
+            "slide": 13,
+            "file": "WR 8_5.pptx",
+            "position": 1
+          }
+        },
+        {
+          "unit_id": "WR 8_5.pptx_13_text_2",
+          "type": "content_statement",
+          "content": "센서 데이터와 발열 모델을 결합해 모터의 현재 열 상태를 실시간으로 추정, 미래 발열 누적을 예측할 수 있는 모델을 구현",
+          "source": "text",
+          "importance": "medium",
+          "context": {
+            "slide": 13,
+            "file": "WR 8_5.pptx",
+            "position": 2
+          }
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 9_2.pptx_6",
+      "original_content_lines": 3,
+      "original_images": 2,
+      "generated_units": 5,
+      "unit_types": [
+        "animation/demo",
+        "title",
+        "technical_formula"
+      ],
+      "expansion_ratio": 1.25,
+      "sample_units": [
+        {
+          "unit_id": "WR 9_2.pptx_6_text_0",
+          "type": "title",
+          "content": "Result (1000~1389 steps)",
+          "source": "text",
+          "importance": "high",
+          "context": {
+            "slide": 6,
+            "file": "WR 9_2.pptx",
+            "position": 0
+          }
+        },
+        {
+          "unit_id": "WR 9_2.pptx_6_text_1",
+          "type": "technical_formula",
+          "content": "Normal (0~500steps)",
+          "source": "text",
+          "importance": "high",
+          "context": {
+            "slide": 6,
+            "file": "WR 9_2.pptx",
+            "position": 1
+          }
+        },
+        {
+          "unit_id": "WR 9_2.pptx_6_text_2",
+          "type": "technical_formula",
+          "content": "Torque limited (1000~1389 steps)",
+          "source": "text",
+          "importance": "high",
+          "context": {
+            "slide": 6,
+            "file": "WR 9_2.pptx",
+            "position": 2
+          }
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 07_01 - EunwooSong.pptx_26",
+      "original_content_lines": 2,
+      "original_images": 1,
+      "generated_units": 3,
+      "unit_types": [
+        "title",
+        "diagram/chart",
+        "technical_formula"
+      ],
+      "expansion_ratio": 1.0,
+      "sample_units": [
+        {
+          "unit_id": "WR 07_01 - EunwooSong.pptx_26_text_0",
+          "type": "title",
+          "content": "Result - 1",
+          "source": "text",
+          "importance": "high",
+          "context": {
+            "slide": 26,
+            "file": "WR 07_01 - EunwooSong.pptx",
+            "position": 0
+          }
+        },
+        {
+          "unit_id": "WR 07_01 - EunwooSong.pptx_26_text_1",
+          "type": "technical_formula",
+          "content": "RTX 5080: 3m 42s/ A100:6m",
+          "source": "text",
+          "importance": "high",
+          "context": {
+            "slide": 26,
+            "file": "WR 07_01 - EunwooSong.pptx",
+            "position": 1
+          }
+        },
+        {
+          "unit_id": "WR 07_01 - EunwooSong.pptx_26_img_0",
+          "type": "diagram/chart",
+          "content": "Image: WR 07_01 - EunwooSong_26_aa83a804.png",
+          "source": "image",
+          "importance": "high",
+          "context": {
+            "slide": 26,
+            "file": "WR 07_01 - EunwooSong.pptx",
+            "position": 0,
+            "related_text": "Result - 1",
+            "dimensions": "293.9x222.8pt",
+            "size_kb": 25.15234375
+          },
+          "metadata": {
+            "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 07_01 - EunwooSong_26_aa83a804.png",
+            "ext": "png",
+            "width_pt": 293.9,
+            "height_pt": 222.8,
+            "size_bytes": 25756
+          }
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 07_01 - EunwooSong.pptx_13",
+      "original_content_lines": 2,
+      "original_images": 1,
+      "generated_units": 3,
+      "unit_types": [
+        "title",
+        "content_statement",
+        "diagram/chart"
+      ],
+      "expansion_ratio": 1.0,
+      "sample_units": [
+        {
+          "unit_id": "WR 07_01 - EunwooSong.pptx_13_text_0",
+          "type": "title",
+          "content": "Sample Code - Result",
+          "source": "text",
+          "importance": "high",
+          "context": {
+            "slide": 13,
+            "file": "WR 07_01 - EunwooSong.pptx",
+            "position": 0
+          }
+        },
+        {
+          "unit_id": "WR 07_01 - EunwooSong.pptx_13_text_1",
+          "type": "content_statement",
+          "content": "mujoco 환경을 render해서 현재 shell의 display를 지우고 다시 plt를 출력한다.",
+          "source": "text",
+          "importance": "medium",
+          "context": {
+            "slide": 13,
+            "file": "WR 07_01 - EunwooSong.pptx",
+            "position": 1
+          }
+        },
+        {
+          "unit_id": "WR 07_01 - EunwooSong.pptx_13_img_0",
+          "type": "diagram/chart",
+          "content": "Image: WR 07_01 - EunwooSong_13_ead050c1.png",
+          "source": "image",
+          "importance": "high",
+          "context": {
+            "slide": 13,
+            "file": "WR 07_01 - EunwooSong.pptx",
+            "position": 0,
+            "related_text": "Sample Code - Result",
+            "dimensions": "241.2x237.2pt",
+            "size_kb": 57.9267578125
+          },
+          "metadata": {
+            "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 07_01 - EunwooSong_13_ead050c1.png",
+            "ext": "png",
+            "width_pt": 241.2,
+            "height_pt": 237.2,
+            "size_bytes": 59317
+          }
+        }
+      ]
+    }
+  ],
+  "detailed_metrics": {
+    "unit_type_breakdown": {
+      "title": 24,
+      "key_value_pair": 1,
+      "diagram/chart": 19,
+      "section_header": 11,
+      "detailed_figure": 10,
+      "content_statement": 39,
+      "technical_formula": 25,
+      "formula_image": 6,
+      "animation/demo": 3,
+      "reference_link": 1
+    },
+    "source_breakdown": {
+      "text": 101,
+      "image": 38
+    },
+    "complexity_score": 119.0,
+    "redundancy_score": 38.0
+  }
+}

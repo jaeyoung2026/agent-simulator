@@ -1,0 +1,582 @@
+[
+  {
+    "filename": "WR 1_14.pptx",
+    "slide_number": 10,
+    "content": "실제 측정된 하우징 온도          와, 2저항 열 모델에서 계산된           사이의 MSE 사용\n\nAdam Optimizer를 사용해 학습\n\n       ,        ,       ,      ,           가 항상 양수가 되도록 로그 스케일에서 학습\nOptimization\nCopyright 2024 Global School of Media",
+    "images": [
+      {
+        "filename": "WR 1_14_10_ccc6b05b.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 1_14_10_ccc6b05b.png",
+        "ext": "png",
+        "width_pt": 25.9,
+        "height_pt": 20.0,
+        "size_bytes": 4844
+      },
+      {
+        "filename": "WR 1_14_10_ec749ef3.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 1_14_10_ec749ef3.png",
+        "ext": "png",
+        "width_pt": 24.5,
+        "height_pt": 20.6,
+        "size_bytes": 4599
+      },
+      {
+        "filename": "WR 1_14_10_619acf98.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 1_14_10_619acf98.png",
+        "ext": "png",
+        "width_pt": 37.2,
+        "height_pt": 20.6,
+        "size_bytes": 6218
+      },
+      {
+        "filename": "WR 1_14_10_506a9821.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 1_14_10_506a9821.png",
+        "ext": "png",
+        "width_pt": 34.3,
+        "height_pt": 20.6,
+        "size_bytes": 5760
+      },
+      {
+        "filename": "WR 1_14_10_40eed291.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 1_14_10_40eed291.png",
+        "ext": "png",
+        "width_pt": 37.6,
+        "height_pt": 21.7,
+        "size_bytes": 6937
+      },
+      {
+        "filename": "WR 1_14_10_4684c0f3.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 1_14_10_4684c0f3.png",
+        "ext": "png",
+        "width_pt": 42.6,
+        "height_pt": 21.7,
+        "size_bytes": 7680
+      },
+      {
+        "filename": "WR 1_14_10_ec532149.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 1_14_10_ec532149.png",
+        "ext": "png",
+        "width_pt": 44.5,
+        "height_pt": 20.6,
+        "size_bytes": 8923
+      }
+    ],
+    "score": 1605,
+    "text_len": 205,
+    "img_count": 7
+  },
+  {
+    "filename": "WR 9_23.pptx",
+    "slide_number": 37,
+    "content": "Method - FEMNet\nCopyright 2024 Global School of Media",
+    "images": [
+      {
+        "filename": "WR 9_23_37_3aae5672.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_23_37_3aae5672.png",
+        "ext": "png",
+        "width_pt": 331.4,
+        "height_pt": 99.4,
+        "size_bytes": 115115
+      },
+      {
+        "filename": "WR 9_23_37_02b61480.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_23_37_02b61480.png",
+        "ext": "png",
+        "width_pt": 152.2,
+        "height_pt": 30.0,
+        "size_bytes": 2751
+      },
+      {
+        "filename": "WR 9_23_37_d069c247.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_23_37_d069c247.png",
+        "ext": "png",
+        "width_pt": 278.2,
+        "height_pt": 30.0,
+        "size_bytes": 5049
+      },
+      {
+        "filename": "WR 9_23_37_e241a32e.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_23_37_e241a32e.png",
+        "ext": "png",
+        "width_pt": 189.8,
+        "height_pt": 35.2,
+        "size_bytes": 4702
+      },
+      {
+        "filename": "WR 9_23_37_fc83ad91.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_23_37_fc83ad91.png",
+        "ext": "png",
+        "width_pt": 189.0,
+        "height_pt": 30.8,
+        "size_bytes": 4597
+      },
+      {
+        "filename": "WR 9_23_37_9b0597a5.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_23_37_9b0597a5.png",
+        "ext": "png",
+        "width_pt": 387.0,
+        "height_pt": 30.8,
+        "size_bytes": 8396
+      }
+    ],
+    "score": 1253,
+    "text_len": 53,
+    "img_count": 6
+  },
+  {
+    "filename": "WR 8_5.pptx",
+    "slide_number": 7,
+    "content": "Thermal Control of Electrical Motors for High-Power Humanoid Robots\nCopyright 2024 Global School of Media\n전기 모터의 최대 성능을 안전하게 활용하기 위해 수냉을 적용해 안정적으로 활용하는 방법을 제안\n사진의 파란색 점선은 개조된 모터로, 장기적으로 모터를 사용할 수 있다는 의미\n센서 정보로부터 모터의 권선 온도, 코어 온도를 계산한다.\n모터 온도 계산을 위해 two-resister model을 사용한다.",
+    "images": [
+      {
+        "filename": "WR 8_5_7_5906ffd6.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 8_5_7_5906ffd6.png",
+        "ext": "png",
+        "width_pt": 224.3,
+        "height_pt": 192.6,
+        "size_bytes": 37909
+      },
+      {
+        "filename": "WR 8_5_7_8319b5e7.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 8_5_7_8319b5e7.png",
+        "ext": "png",
+        "width_pt": 237.8,
+        "height_pt": 102.8,
+        "size_bytes": 11117
+      },
+      {
+        "filename": "WR 8_5_7_69135ba5.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 8_5_7_69135ba5.png",
+        "ext": "png",
+        "width_pt": 237.8,
+        "height_pt": 97.2,
+        "size_bytes": 9114
+      }
+    ],
+    "score": 874,
+    "text_len": 274,
+    "img_count": 3
+  },
+  {
+    "filename": "WR 07_14 - EunwooSong.pptx",
+    "slide_number": 14,
+    "content": "입력 전력과 출력 전력\nCopyright 2024 Global School of Media",
+    "images": [
+      {
+        "filename": "WR 07_14 - EunwooSong_14_8a12fd62.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 07_14 - EunwooSong_14_8a12fd62.png",
+        "ext": "png",
+        "width_pt": 157.2,
+        "height_pt": 35.9,
+        "size_bytes": 1205
+      },
+      {
+        "filename": "WR 07_14 - EunwooSong_14_f68b80eb.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 07_14 - EunwooSong_14_f68b80eb.png",
+        "ext": "png",
+        "width_pt": 138.7,
+        "height_pt": 68.1,
+        "size_bytes": 1322
+      },
+      {
+        "filename": "WR 07_14 - EunwooSong_14_cd4970ee.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 07_14 - EunwooSong_14_cd4970ee.png",
+        "ext": "png",
+        "width_pt": 138.7,
+        "height_pt": 59.9,
+        "size_bytes": 1987
+      },
+      {
+        "filename": "WR 07_14 - EunwooSong_14_8f9df549.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 07_14 - EunwooSong_14_8f9df549.png",
+        "ext": "png",
+        "width_pt": 340.7,
+        "height_pt": 74.9,
+        "size_bytes": 4326
+      }
+    ],
+    "score": 850,
+    "text_len": 50,
+    "img_count": 4
+  },
+  {
+    "filename": "WR 07_01 - EunwooSong.pptx",
+    "slide_number": 17,
+    "content": "Problem 2. toddlerbot 모듈의 경로 문제\n파일을 불러오는 코드에서 os.path의 상대경로가 올바르게 동작하지 않음\ntoddlerbot/descriptions/assamblies/ 를 pathlib를 이용해 절대경로로 코드를 수정함\nCopyright 2024 Global School of Media\nclass Robot:\n   \"\"\"This class defines some data strucutres, FK, IK of ToddlerBot.\"\"\"\n   def __init__(self, robot_name: str):\n       \"\"\"Initializes a robot with specified configurations and paths.\n       Args:\n           robot_name (str): The name of the robot, used to set up directory paths and configurations.\n       \"\"\"\n       self.root_path = Path(__file__).parent.parent\n       self.root_path = self.root_path / \"descriptions\" / self.name\n       self.config_path = self.root_path / \"config.json\"\n       self.collision_config_path = self.root_path / \"config_collision.json\"\n       self.cache_path = self.root_path / f\"{self.name}_cache.pkl\"",
+    "images": [],
+    "score": 821,
+    "text_len": 821,
+    "img_count": 0
+  },
+  {
+    "filename": "WR 07_01 - EunwooSong.pptx",
+    "slide_number": 8,
+    "content": "Step 5. Test the MuJoCo Installation\nGithub에 ssh key 등록이 되어있어야 합니다.\nCopyright 2024 Global School of Media\nimport mujoco_py\nimport os\nmj_path = mujoco_py.utils.discover_mujoco()\nxml_path = os.path.join(mj_path, 'model', 'humanoid.xml')\nmodel = mujoco_py.load_model_from_path(xml_path)\nsim = mujoco_py.MjSim(model)\n##  [0.  0.  1.4 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.\n##  0.  0.  0.  0.  0.  0.  0.  0.  0.  0. ]\nprint(sim.data.qpos)\n#[-1.12164337e-05  7.29847036e-22  1.39975300e+00  9.99999999e-01\n# 1.80085466e-21  4.45933954e-05 -2.70143345e-20  1.30126513e-19\n# ...\n# -1.37554006e-03 -5.54173825e-05 -5.73572648e-05  7.63833991e-05\n# -2.12765194e-05  5.73572648e-05 -7.63833991e-05 -2.12765194e-05]\nsim.step()\nprint(sim.data.qpos)",
+    "images": [],
+    "score": 756,
+    "text_len": 756,
+    "img_count": 0
+  },
+  {
+    "filename": "WR 9_23.pptx",
+    "slide_number": 53,
+    "content": "Δt_data = 1.0 (sec)\nN_seq = 30 (step)\nN_batch = 10 (seq)\nMethod - D. Online Learning of Thermal Model\nCopyright 2024 Global School of Media",
+    "images": [
+      {
+        "filename": "WR 9_23_53_a0222499.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_23_53_a0222499.png",
+        "ext": "png",
+        "width_pt": 436.8,
+        "height_pt": 29.8,
+        "size_bytes": 23057
+      },
+      {
+        "filename": "WR 9_23_53_ce4e9a48.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_23_53_ce4e9a48.png",
+        "ext": "png",
+        "width_pt": 436.8,
+        "height_pt": 32.8,
+        "size_bytes": 22144
+      },
+      {
+        "filename": "WR 9_23_53_376d12aa.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_23_53_376d12aa.png",
+        "ext": "png",
+        "width_pt": 389.9,
+        "height_pt": 58.8,
+        "size_bytes": 36804
+      }
+    ],
+    "score": 739,
+    "text_len": 139,
+    "img_count": 3
+  },
+  {
+    "filename": "WR 07_01 - EunwooSong.pptx",
+    "slide_number": 18,
+    "content": "Problem 2. toddlerbot 모듈의 경로 문제\ntoddlerbot/utils/file_utils.py\nCopyright 2024 Global School of Media\ndef find_robot_file_path(robot_name: str, suffix: str = \".urdf\") -> str:\n   \"\"\"\n   Dynamically finds the URDF file path for a given robot name.\n\t...\n   \"\"\"\n   robot_dir = Path(__file__).parent.parent\n   robot_dir = robot_dir / \"descriptions\" / robot_name\n   if os.path.exists(robot_dir):\n       file_path = os.path.join(robot_dir.resolve(), robot_name + suffix)\n       if os.path.exists(file_path):\n           return file_path\n   else:\n       assembly_dir = Path(__file__).parent.parent\n       assembly_dir = assembly_dir / \"descriptions\" / \"assemblies\"\n       file_path = os.path.join(assembly_dir.resolve(), robot_name + suffix)",
+    "images": [],
+    "score": 731,
+    "text_len": 731,
+    "img_count": 0
+  },
+  {
+    "filename": "WR 9_23.pptx",
+    "slide_number": 46,
+    "content": "Method - F. Thermal Controller: Control of Motor Core Temperature\nCopyright 2024 Global School of Media",
+    "images": [
+      {
+        "filename": "WR 9_23_46_37d62c00.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_23_46_37d62c00.png",
+        "ext": "png",
+        "width_pt": 588.9,
+        "height_pt": 34.7,
+        "size_bytes": 43052
+      },
+      {
+        "filename": "WR 9_23_46_37d62c00.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_23_46_37d62c00.png",
+        "ext": "png",
+        "width_pt": 368.8,
+        "height_pt": 34.7,
+        "size_bytes": 43052
+      },
+      {
+        "filename": "WR 9_23_46_ecdfdc6a.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_23_46_ecdfdc6a.png",
+        "ext": "png",
+        "width_pt": 588.9,
+        "height_pt": 70.5,
+        "size_bytes": 48350
+      }
+    ],
+    "score": 703,
+    "text_len": 103,
+    "img_count": 3
+  },
+  {
+    "filename": "WR 07_14 - EunwooSong.pptx",
+    "slide_number": 17,
+    "content": "과열로 인한 토크 감소, 최대 토크 감소\nCopyright 2024 Global School of Media\nKOLLMORGEN - derating",
+    "images": [
+      {
+        "filename": "WR 07_14 - EunwooSong_17_8d6f4d72.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 07_14 - EunwooSong_17_8d6f4d72.png",
+        "ext": "png",
+        "width_pt": 547.5,
+        "height_pt": 84.8,
+        "size_bytes": 10460
+      },
+      {
+        "filename": "WR 07_14 - EunwooSong_17_02830801.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 07_14 - EunwooSong_17_02830801.png",
+        "ext": "png",
+        "width_pt": 461.8,
+        "height_pt": 90.3,
+        "size_bytes": 9657
+      },
+      {
+        "filename": "WR 07_14 - EunwooSong_17_be8cd8f8.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 07_14 - EunwooSong_17_be8cd8f8.png",
+        "ext": "png",
+        "width_pt": 251.3,
+        "height_pt": 144.6,
+        "size_bytes": 48820
+      }
+    ],
+    "score": 682,
+    "text_len": 82,
+    "img_count": 3
+  },
+  {
+    "filename": "WR 1_14.pptx",
+    "slide_number": 14,
+    "content": "Limitation (2축 모델 측정 결과)\nCopyright 2024 Global School of Media",
+    "images": [
+      {
+        "filename": "WR 1_14_14_c4136248.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 1_14_14_c4136248.png",
+        "ext": "png",
+        "width_pt": 266.8,
+        "height_pt": 167.0,
+        "size_bytes": 65102
+      },
+      {
+        "filename": "WR 1_14_14_c4136248.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 1_14_14_c4136248.png",
+        "ext": "png",
+        "width_pt": 278.2,
+        "height_pt": 167.0,
+        "size_bytes": 65102
+      },
+      {
+        "filename": "WR 1_14_14_5b8937e4.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 1_14_14_5b8937e4.png",
+        "ext": "png",
+        "width_pt": 145.0,
+        "height_pt": 271.4,
+        "size_bytes": 717967
+      }
+    ],
+    "score": 662,
+    "text_len": 62,
+    "img_count": 3
+  },
+  {
+    "filename": "WR 9_2.pptx",
+    "slide_number": 11,
+    "content": "Result (HeatState)\nCopyright 2024 Global School of Media",
+    "images": [
+      {
+        "filename": "WR 9_2_11_cba565de.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_2_11_cba565de.png",
+        "ext": "png",
+        "width_pt": 293.0,
+        "height_pt": 156.2,
+        "size_bytes": 128699
+      },
+      {
+        "filename": "WR 9_2_11_7b930c3b.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_2_11_7b930c3b.png",
+        "ext": "png",
+        "width_pt": 210.7,
+        "height_pt": 152.2,
+        "size_bytes": 137165
+      },
+      {
+        "filename": "WR 9_2_11_1debef15.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_2_11_1debef15.png",
+        "ext": "png",
+        "width_pt": 249.5,
+        "height_pt": 139.7,
+        "size_bytes": 55012
+      }
+    ],
+    "score": 656,
+    "text_len": 56,
+    "img_count": 3
+  },
+  {
+    "filename": "WR 07_14 - EunwooSong.pptx",
+    "slide_number": 5,
+    "content": "아이디어\n다리를 다쳐도 절뚝거리며 이동하는 동물\n이동에 제약이 있지만, 아프지 않은 쪽의 부위를 이용해 이동한다.\n\nToddlerBot의 walking RL 정책 실행시, servo motor의 overload 로 인한 토크 감소와 기능 정지로 19분 이후 Fall Count 증가\n\n기능의 문제 없이 더 오래\u000b동작하는 방법은 없는가?\n\n누적되는 risk에 대응하기\u000b위한 방법?\nCopyright 2024 Global School of Media",
+    "images": [
+      {
+        "filename": "WR 07_14 - EunwooSong_5_b433764d.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 07_14 - EunwooSong_5_b433764d.png",
+        "ext": "png",
+        "width_pt": 142.8,
+        "height_pt": 166.3,
+        "size_bytes": 1473045
+      },
+      {
+        "filename": "WR 07_14 - EunwooSong_5_9a1cca42.jpg",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 07_14 - EunwooSong_5_9a1cca42.jpg",
+        "ext": "jpg",
+        "width_pt": 295.7,
+        "height_pt": 166.3,
+        "size_bytes": 117822
+      }
+    ],
+    "score": 649,
+    "text_len": 249,
+    "img_count": 2
+  },
+  {
+    "filename": "WR 9_23.pptx",
+    "slide_number": 28,
+    "content": "τ^i: i번째 actuator가 손상된 시나리오\nactuator가 12개이므로, 12개의 시나리오 고려\n\ntraj^i_n: i번째 시나리오에서의 n번째 trajectory\nN은 20000으로 설정\n각각의 traj은 (s, d, )     의 값으로 구성된다.\n\n학습된 teacher policy에서 데이터를 생성함\nMethod - Data Collection\nCopyright 2024 Global School of Media",
+    "images": [
+      {
+        "filename": "WR 9_23_28_89158026.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_23_28_89158026.png",
+        "ext": "png",
+        "width_pt": 305.2,
+        "height_pt": 104.2,
+        "size_bytes": 12573
+      },
+      {
+        "filename": "WR 9_23_28_5c555da7.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_23_28_5c555da7.png",
+        "ext": "png",
+        "width_pt": 71.6,
+        "height_pt": 19.3,
+        "size_bytes": 8270
+      }
+    ],
+    "score": 639,
+    "text_len": 239,
+    "img_count": 2
+  },
+  {
+    "filename": "WR 07_01 - EunwooSong.pptx",
+    "slide_number": 12,
+    "content": "Sample Code\nmujoco 환경을 render해서 현재 shell의 display를 지우고 다시 plt를 출력한다.\nCopyright 2024 Global School of Media\n# 환경 설치 테스트용\nimport gym\nfrom IPython import display\nimport matplotlib.pyplot as plt\n\nenv = gym.make('HalfCheetah-v3', render_mode=\"rgb_array\")\nobservation = env.reset()\nfor _ in range(50):\n   screen = env.render() # 현재 환경을 'rgb_array'로 출력하여 screen 변수로 저장합니다.\n   display.clear_output(wait=True) # display에 이미지를 지워줍니다. display하기 전에 하는 이유는 초기화하는 것으로 생각하면 됩니다.\n   display.display(plt.gcf()) # 현재 figure의 정보를 display에 출력합니다.\n   plt.imshow(screen) # screen 배열을 이미지로 출력합니다.\n   env.step(env.action_space.sample())\nplt.close()\nenv.close()",
+    "images": [],
+    "score": 636,
+    "text_len": 636,
+    "img_count": 0
+  },
+  {
+    "filename": "WR 07_14 - EunwooSong.pptx",
+    "slide_number": 13,
+    "content": "모터의 발열량\n모터의 발열량은 입력 전력에서 기계적인 출력을 빼어 구한다\n입력 전력과 출력의 차이를 발열로 가정\n권선에서 발생하는 열손실이 주를 이룸\nMujoco에서 Torque, velocity를 구할 수 있음\nmaxon motor - key information\nCopyright 2024 Global School of Media",
+    "images": [
+      {
+        "filename": "WR 07_14 - EunwooSong_13_8a98986e.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 07_14 - EunwooSong_13_8a98986e.png",
+        "ext": "png",
+        "width_pt": 369.0,
+        "height_pt": 61.5,
+        "size_bytes": 4736
+      },
+      {
+        "filename": "WR 07_14 - EunwooSong_13_67b13e92.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 07_14 - EunwooSong_13_67b13e92.png",
+        "ext": "png",
+        "width_pt": 319.8,
+        "height_pt": 65.7,
+        "size_bytes": 4862
+      }
+    ],
+    "score": 586,
+    "text_len": 186,
+    "img_count": 2
+  },
+  {
+    "filename": "WR 9_23.pptx",
+    "slide_number": 51,
+    "content": "Method - B. Proposed Termal Model\n학습을 통해 P1~P5를 학습하는 것, P_i가 0인 것은 기존 2저항 열모델과 동일하다.\nCopyright 2024 Global School of Media",
+    "images": [
+      {
+        "filename": "WR 9_23_51_cc6c663a.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_23_51_cc6c663a.png",
+        "ext": "png",
+        "width_pt": 347.2,
+        "height_pt": 151.5,
+        "size_bytes": 30782
+      },
+      {
+        "filename": "WR 9_23_51_81c04e99.png",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_23_51_81c04e99.png",
+        "ext": "png",
+        "width_pt": 300.0,
+        "height_pt": 132.8,
+        "size_bytes": 19009
+      }
+    ],
+    "score": 522,
+    "text_len": 122,
+    "img_count": 2
+  },
+  {
+    "filename": "WR 9_2.pptx",
+    "slide_number": 6,
+    "content": "Result (1000~1389 steps)\nCopyright 2024 Global School of Media\nNormal (0~500steps)\nTorque limited (1000~1389 steps)",
+    "images": [
+      {
+        "filename": "WR 9_2_6_5fabdf36.gif",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_2_6_5fabdf36.gif",
+        "ext": "gif",
+        "width_pt": 239.3,
+        "height_pt": 239.3,
+        "size_bytes": 2176480
+      },
+      {
+        "filename": "WR 9_2_6_859f42a8.gif",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_2_6_859f42a8.gif",
+        "ext": "gif",
+        "width_pt": 239.3,
+        "height_pt": 239.3,
+        "size_bytes": 2707757
+      }
+    ],
+    "score": 515,
+    "text_len": 115,
+    "img_count": 2
+  },
+  {
+    "filename": "WR 07_14 - EunwooSong.pptx",
+    "slide_number": 26,
+    "content": "DreamFLEX: Learning Fault-Aware Quadrupedal Locomotion Controller for Anomaly Situation in Rough Terrains\nCopyright 2024 Global School of Media\n험지에서의 이상 상황에 대한 결함을 다음으로 정의하고, 이를 학습해 sim2real gap을 최소화\n잠긴 관절: 외부 충격 등으로 인해 특정 관절이 고정되거나 움직임 범위 제한\n약화된 모터: 과열, 전력 부족 등으로 특정 관절 모터가 정상적인 토크 발생 제한\n\n*  빨간색 원은 결함이 생긴 관절을 의미",
+    "images": [
+      {
+        "filename": "WR 07_14 - EunwooSong_26_dcefa7e7.jpg",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 07_14 - EunwooSong_26_dcefa7e7.jpg",
+        "ext": "jpg",
+        "width_pt": 320.7,
+        "height_pt": 180.4,
+        "size_bytes": 12126
+      }
+    ],
+    "score": 513,
+    "text_len": 313,
+    "img_count": 1
+  },
+  {
+    "filename": "WR 07_29.pptx",
+    "slide_number": 9,
+    "content": "Result\nCopyright 2024 Global School of Media\nRTX 5080 / 10h, left: 5120000 steps, right: 302080000 steps",
+    "images": [
+      {
+        "filename": "WR 07_29_9_39d2273c.jpg",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 07_29_9_39d2273c.jpg",
+        "ext": "jpg",
+        "width_pt": 322.1,
+        "height_pt": 241.6,
+        "size_bytes": 26174
+      },
+      {
+        "filename": "WR 07_29_9_6aeca4f0.jpg",
+        "path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 07_29_9_6aeca4f0.jpg",
+        "ext": "jpg",
+        "width_pt": 322.1,
+        "height_pt": 241.6,
+        "size_bytes": 26501
+      }
+    ],
+    "score": 504,
+    "text_len": 104,
+    "img_count": 2
+  }
+]

@@ -1,0 +1,443 @@
+{
+  "extractionMethod": "Premium: Self-Critique + Image Analysis",
+  "promptStages": [
+    "Stage 1: CoT Analysis (3-step reasoning)",
+    "Stage 2: Image Analysis (type, key information, classification impact)",
+    "Stage 3: Self-Critique (alternative classification consideration)",
+    "Stage 4: Final Confirmation"
+  ],
+  "thesis": {
+    "coreQuestion": "How can humanoid robots maintain stable locomotion when motor thermal limits or actuator failures occur?",
+    "coreArgument": "By combining physics-based thermal modeling with learned failure estimation networks, robots can predict and adapt to motor degradation in real-time",
+    "coreEvidence": "Two-resistor thermal model with online learning achieves accurate temperature prediction; FEMNet enables fault-aware policy adaptation"
+  },
+  "semanticUnits": [
+    {
+      "id": "SU-001",
+      "slideRef": "WR 8_5.pptx/slide7",
+      "category": "Introduction/Problem",
+      "content": "Thermal Control of Electrical Motors for High-Power Humanoid Robots",
+      "details": {
+        "problem": "Electric motors in humanoid robots face thermal limits that restrict maximum performance",
+        "solution": "Water cooling system proposed for stable long-term motor operation",
+        "evidence": "Blue dashed line in graph shows modified motor with extended operational time"
+      },
+      "imageAnalysis": {
+        "type": "Performance Graph (Log-scale)",
+        "keyInfo": "Time vs Max Motor Current Rational showing three motor configurations: EC16 40W 32V (green), ECpowermax30 200W 48V (black solid), ECpowermax30 200W 48V with water-cooling (blue dashed)",
+        "classificationImpact": "Demonstrates quantitative benefit of cooling - supports Methods/Hardware section"
+      },
+      "selfCritique": {
+        "alternativeClassification": "Could be classified as Results if graph shows experimental data rather than spec sheet",
+        "finalDecision": "Introduction/Problem is appropriate as it establishes the motivation and context"
+      },
+      "thesisConnection": "Directly addresses core question by showing thermal limits constrain motor performance",
+      "confidence": 0.95
+    },
+    {
+      "id": "SU-002",
+      "slideRef": "WR 8_5.pptx/slide7",
+      "category": "Methods/Modeling",
+      "content": "Two-resistor thermal model for calculating winding and core temperatures from sensor data",
+      "details": {
+        "approach": "Physics-based thermal modeling using equivalent circuit representation",
+        "components": "P (power input), T1/T2 (temperatures), R1/R2 (thermal resistances), C1/C2 (thermal capacitances), Ta (ambient)",
+        "purpose": "To estimate internal motor temperatures that cannot be directly measured"
+      },
+      "imageAnalysis": {
+        "type": "Circuit Diagram",
+        "keyInfo": "Two-stage RC thermal network: Power input P -> R1-C1 stage (winding) -> R2-C2 stage (housing) -> Ambient Ta",
+        "classificationImpact": "Core methodology figure - essential for Methods section"
+      },
+      "selfCritique": {
+        "alternativeClassification": "Could be Background/Related Work if this is a standard model from literature",
+        "finalDecision": "Methods/Modeling is correct as the paper adapts and extends this model"
+      },
+      "thesisConnection": "Physics-based foundation that the learned parameters augment",
+      "confidence": 0.98
+    },
+    {
+      "id": "SU-003",
+      "slideRef": "WR 1_14.pptx/slide10",
+      "category": "Methods/Optimization",
+      "content": "Optimization using MSE between measured housing temperature and 2-resistor model prediction",
+      "details": {
+        "lossFunction": "MSE(T_measured, T_predicted)",
+        "optimizer": "Adam Optimizer",
+        "constraints": "Log-scale learning to ensure R1, R2, C1, C2, and other parameters remain positive",
+        "parameters": "5 learnable thermal parameters"
+      },
+      "imageAnalysis": {
+        "type": "Mathematical Equations",
+        "keyInfo": "Parameter symbols indicating thermal resistances and capacitances being optimized",
+        "classificationImpact": "Technical detail for Methods/Optimization subsection"
+      },
+      "selfCritique": {
+        "alternativeClassification": "Could be Implementation Details rather than core Methods",
+        "finalDecision": "Methods/Optimization captures the algorithmic contribution accurately"
+      },
+      "thesisConnection": "Online learning mechanism for adapting thermal model - key to real-time adaptation claim",
+      "confidence": 0.92
+    },
+    {
+      "id": "SU-004",
+      "slideRef": "WR 9_23.pptx/slide37",
+      "category": "Methods/Architecture",
+      "content": "FEMNet (Failure Estimation Model Network) architecture for fault detection and adaptation",
+      "details": {
+        "encoderNetwork": "512x256x128 MLP processing observation history o_t^H",
+        "outputs": {
+          "v_t": "Body linear velocity estimate",
+          "f_t": "Joint fault vector (identifies damaged actuators)",
+          "z_t": "Context vector for policy modulation"
+        },
+        "modulationModel": "64x64 network computing gamma_1, gamma_2 parameters for context modulation z_tilde = gamma_1 * z_t + gamma_2",
+        "decoderNetwork": "64x128 network predicting next observation o_{t+1}"
+      },
+      "imageAnalysis": {
+        "type": "Neural Network Architecture Diagram",
+        "keyInfo": "Two-part architecture: (a) Failure estimation model with encoder producing v_t, f_t, z_t; (b) Modulation model transforming context vector",
+        "classificationImpact": "Core contribution figure - central to Methods section"
+      },
+      "selfCritique": {
+        "alternativeClassification": "None - this is clearly the main methodological contribution",
+        "finalDecision": "Methods/Architecture is the only appropriate classification"
+      },
+      "thesisConnection": "The learned failure estimation network that enables fault-aware adaptation",
+      "confidence": 0.99
+    },
+    {
+      "id": "SU-005",
+      "slideRef": "WR 9_23.pptx/slide28",
+      "category": "Methods/DataCollection",
+      "content": "Data collection strategy using 12 actuator damage scenarios",
+      "details": {
+        "scenarios": "tau^i represents i-th actuator damaged scenario (i=0,1,...,11)",
+        "trajectories": "traj^i_n is n-th trajectory in i-th scenario, N=20000 trajectories per scenario",
+        "dataFormat": "Each trajectory contains (s, d, state-action pairs) tuples",
+        "source": "Generated from trained teacher policy"
+      },
+      "imageAnalysis": {
+        "type": "Mathematical Notation",
+        "keyInfo": "Set notation defining trajectory collection T = {T^i}_{i=0,1,...,11} with each T^i containing N trajectories",
+        "classificationImpact": "Supports Methods/Training Data subsection"
+      },
+      "selfCritique": {
+        "alternativeClassification": "Could be Experimental Setup rather than Methods",
+        "finalDecision": "Methods/DataCollection is appropriate as it describes the training data generation methodology"
+      },
+      "thesisConnection": "Simulation-based data generation enables learning without real hardware damage",
+      "confidence": 0.90
+    },
+    {
+      "id": "SU-006",
+      "slideRef": "WR 07_14 - EunwooSong.pptx/slide5",
+      "category": "Motivation/Inspiration",
+      "content": "Bio-inspired concept: Animals continue locomotion with injured limbs",
+      "details": {
+        "observation": "Injured animals adapt gait to compensate for damaged limbs",
+        "robotProblem": "ToddlerBot falls after 19 minutes due to servo motor overload causing torque reduction",
+        "researchQuestion": "How to operate longer without functional failure? How to respond to accumulated risk?"
+      },
+      "imageAnalysis": {
+        "type": "Metaphor Image",
+        "keyInfo": "Hedgehog with bandaged/cast leg - visual metaphor for injured-but-mobile creature",
+        "classificationImpact": "Introduction/Motivation rather than technical content"
+      },
+      "selfCritique": {
+        "alternativeClassification": "Could be excluded as non-technical content",
+        "finalDecision": "Include as Motivation - provides important research context and intuition"
+      },
+      "thesisConnection": "Biological inspiration for fault-tolerant locomotion research",
+      "confidence": 0.85
+    },
+    {
+      "id": "SU-007",
+      "slideRef": "WR 07_14 - EunwooSong.pptx/slide13",
+      "category": "Methods/Physics",
+      "content": "Motor heat generation model: P_loss = P_el - P_mech",
+      "details": {
+        "heatSource": "Difference between electrical input power and mechanical output power",
+        "dominantLoss": "Winding copper losses (I^2R) are the primary heat source",
+        "simulation": "MuJoCo provides torque and velocity for heat calculation"
+      },
+      "imageAnalysis": {
+        "type": "Mathematical Equation",
+        "keyInfo": "P_loss = P_el - P_mech = (tau*omega)/eta - tau*omega, showing heat as efficiency loss",
+        "classificationImpact": "Methods/Physics foundation for thermal model"
+      },
+      "selfCritique": {
+        "alternativeClassification": "Background/Theory if this is well-established physics",
+        "finalDecision": "Methods/Physics as it is applied specifically to the simulation context"
+      },
+      "thesisConnection": "Physical grounding for heat prediction in simulation",
+      "confidence": 0.93
+    },
+    {
+      "id": "SU-008",
+      "slideRef": "WR 07_14 - EunwooSong.pptx/slide14",
+      "category": "Methods/Physics",
+      "content": "Input and output power equations for motor thermal analysis",
+      "details": {
+        "mechanicalPower": "P_mech = tau * omega (torque times angular velocity)",
+        "application": "Foundation for calculating heat generation in simulation"
+      },
+      "imageAnalysis": {
+        "type": "Mathematical Equation",
+        "keyInfo": "P_mech = tau * omega - basic mechanical power formula",
+        "classificationImpact": "Supporting equation for Methods/Physics"
+      },
+      "selfCritique": {
+        "alternativeClassification": "Could be merged with SU-007 as single unit",
+        "finalDecision": "Keep separate for atomic documentation of each formula"
+      },
+      "thesisConnection": "Building block for thermal simulation",
+      "confidence": 0.88
+    },
+    {
+      "id": "SU-009",
+      "slideRef": "WR 07_14 - EunwooSong.pptx/slide17",
+      "category": "Background/Problem",
+      "content": "Torque derating due to motor overheating - KOLLMORGEN reference",
+      "details": {
+        "phenomenon": "Motor temperature rise causes maximum torque reduction",
+        "industryPractice": "Manufacturers specify derating curves for thermal limits",
+        "implication": "Robots must account for reduced capability at high temperatures"
+      },
+      "imageAnalysis": {
+        "type": "Derating Equations",
+        "keyInfo": "alpha_i(T_i) piecewise function: 1 when T<T_th, linear reduction between T_th and T_max, 0 when T>=T_max; tau_out = alpha_i(T_i) * tau_cmd",
+        "classificationImpact": "Key equation for thermal-aware torque limiting"
+      },
+      "selfCritique": {
+        "alternativeClassification": "Methods/Control if this is the proposed controller",
+        "finalDecision": "Background/Problem as it describes the phenomenon to be addressed"
+      },
+      "thesisConnection": "Formal model of the thermal constraint the system must handle",
+      "confidence": 0.91
+    },
+    {
+      "id": "SU-010",
+      "slideRef": "WR 9_23.pptx/slide46",
+      "category": "Methods/Control",
+      "content": "Thermal Controller: Motor core temperature control objective",
+      "details": {
+        "controlObjective": "Regulate motor core temperature by limiting torque commands",
+        "lossFunction": "L_control = MSE(c1_predicted, c1_max) + W_control * MSE(0, f_limit)"
+      },
+      "imageAnalysis": {
+        "type": "Mathematical Equation",
+        "keyInfo": "Loss function combining temperature tracking (c1 vs c1_max) and fault vector regularization",
+        "classificationImpact": "Methods/Control objective formulation"
+      },
+      "selfCritique": {
+        "alternativeClassification": "Could be Optimization/Training rather than Control",
+        "finalDecision": "Methods/Control is appropriate as it defines the control objective"
+      },
+      "thesisConnection": "Directly implements thermal-aware control for safe operation",
+      "confidence": 0.94
+    },
+    {
+      "id": "SU-011",
+      "slideRef": "WR 9_23.pptx/slide51",
+      "category": "Methods/Modeling",
+      "content": "Proposed thermal model with learnable parameters P1-P5",
+      "details": {
+        "extension": "Augments standard 2-resistor model with 5 learnable correction terms",
+        "equations": "c1_dot = W1*exp(P1)*tau^2 - (c1-c2)/(W2*exp(P2)); c2_dot = (c1-c2)/(W3*exp(P3)) - (c2-W5*(1+P5))/(W4*exp(P4))",
+        "baseline": "P_i = 0 recovers standard 2-resistor model"
+      },
+      "imageAnalysis": {
+        "type": "Differential Equations",
+        "keyInfo": "Modified heat equations (7') and (8') with exponential parameterization of thermal resistances",
+        "classificationImpact": "Core methodological contribution for thermal modeling"
+      },
+      "selfCritique": {
+        "alternativeClassification": "None - this is clearly the proposed model extension",
+        "finalDecision": "Methods/Modeling captures the novel contribution"
+      },
+      "thesisConnection": "Learnable physics model combining domain knowledge with data-driven adaptation",
+      "confidence": 0.97
+    },
+    {
+      "id": "SU-012",
+      "slideRef": "WR 9_23.pptx/slide53",
+      "category": "Methods/Training",
+      "content": "Online learning parameters for thermal model",
+      "details": {
+        "temporalResolution": "delta_t_data = 1.0 second",
+        "sequenceLength": "N_seq = 30 steps",
+        "batchSize": "N_batch = 10 sequences",
+        "updateRule": "Gradient descent on thermal parameters P_{1,2,3,4,5}"
+      },
+      "imageAnalysis": {
+        "type": "Mathematical Equation",
+        "keyInfo": "Parameter update rule: P_{1,2,3,4,5} <- P_{1,2,3,4,5} - alpha * dL_update/dP_{1,2,3,4,5}",
+        "classificationImpact": "Methods/Training hyperparameters and update procedure"
+      },
+      "selfCritique": {
+        "alternativeClassification": "Implementation Details rather than Methods",
+        "finalDecision": "Methods/Training as these are key algorithmic choices"
+      },
+      "thesisConnection": "Online learning enables real-time model adaptation",
+      "confidence": 0.89
+    },
+    {
+      "id": "SU-013",
+      "slideRef": "WR 9_2.pptx/slide11",
+      "category": "Results/HeatState",
+      "content": "HeatState simulation results showing torque and temperature profiles",
+      "details": {
+        "visualization": "Time-series plots of actuator torque (st_torque) and target torque (target_tau)",
+        "actuator": "act 13 (right_knee_actuator) shown as example",
+        "range": "Torque values between -2.0 and 1.0 Nm over 100+ seconds"
+      },
+      "imageAnalysis": {
+        "type": "Time-Series Plots",
+        "keyInfo": "Two plots showing torque oscillations characteristic of walking gait; high-frequency variations indicate rapid control adjustments",
+        "classificationImpact": "Results/Visualization for thermal simulation validation"
+      },
+      "selfCritique": {
+        "alternativeClassification": "Could be Experimental Setup showing test conditions",
+        "finalDecision": "Results/HeatState as slide title explicitly indicates results"
+      },
+      "thesisConnection": "Empirical validation of thermal-aware control in simulation",
+      "confidence": 0.86
+    },
+    {
+      "id": "SU-014",
+      "slideRef": "WR 1_14.pptx/slide14",
+      "category": "Results/Limitations",
+      "content": "Limitations of 2-axis thermal model measurement results",
+      "details": {
+        "finding": "Simplified model shows limitations in certain operating conditions",
+        "robot": "ToddlerBot humanoid platform used for validation"
+      },
+      "imageAnalysis": {
+        "type": "CAD Model + Graph",
+        "keyInfo": "ToddlerBot CAD model showing actuator locations; accompanying graph shows model prediction errors",
+        "classificationImpact": "Results/Limitations discussing model accuracy bounds"
+      },
+      "selfCritique": {
+        "alternativeClassification": "Discussion section rather than Results",
+        "finalDecision": "Results/Limitations is appropriate as it presents empirical findings"
+      },
+      "thesisConnection": "Honest assessment of current model limitations - motivates future work",
+      "confidence": 0.84
+    },
+    {
+      "id": "SU-015",
+      "slideRef": "WR 07_01 - EunwooSong.pptx/slide17",
+      "category": "Implementation/Software",
+      "content": "ToddlerBot module path resolution fix using pathlib",
+      "details": {
+        "problem": "os.path relative paths not working correctly",
+        "solution": "Use pathlib for absolute path resolution",
+        "code": "self.root_path = Path(__file__).parent.parent / 'descriptions' / self.name"
+      },
+      "selfCritique": {
+        "alternativeClassification": "Exclude as implementation detail",
+        "finalDecision": "Include as Implementation/Software for reproducibility"
+      },
+      "thesisConnection": "Supporting code infrastructure for experiments",
+      "confidence": 0.70
+    },
+    {
+      "id": "SU-016",
+      "slideRef": "WR 07_01 - EunwooSong.pptx/slide8",
+      "category": "Implementation/Environment",
+      "content": "MuJoCo installation test procedure",
+      "details": {
+        "prerequisite": "SSH key registration on GitHub required",
+        "testCode": "mujoco_py simulation step test with humanoid model"
+      },
+      "selfCritique": {
+        "alternativeClassification": "Exclude as setup documentation",
+        "finalDecision": "Include as Implementation/Environment for reproducibility"
+      },
+      "thesisConnection": "Simulation environment setup for experiments",
+      "confidence": 0.65
+    },
+    {
+      "id": "SU-017",
+      "slideRef": "WR 07_01 - EunwooSong.pptx/slide12",
+      "category": "Implementation/Visualization",
+      "content": "MuJoCo environment rendering sample code",
+      "details": {
+        "environment": "HalfCheetah-v3 with rgb_array render mode",
+        "display": "IPython display with matplotlib for Jupyter visualization"
+      },
+      "selfCritique": {
+        "alternativeClassification": "Exclude as tutorial content",
+        "finalDecision": "Include for completeness in Implementation section"
+      },
+      "thesisConnection": "Visualization infrastructure for analysis",
+      "confidence": 0.60
+    },
+    {
+      "id": "SU-018",
+      "slideRef": "WR 9_2.pptx/slide6",
+      "category": "Results/Comparison",
+      "content": "Normal vs Torque-limited walking comparison",
+      "details": {
+        "normalCondition": "0-500 steps with full torque capability",
+        "limitedCondition": "1000-1389 steps with torque constraints",
+        "hardware": "RTX 5080 / 10h training time"
+      },
+      "selfCritique": {
+        "alternativeClassification": "Results/Qualitative rather than Comparison",
+        "finalDecision": "Results/Comparison captures the A/B nature of the visualization"
+      },
+      "thesisConnection": "Demonstrates policy adaptation to torque constraints",
+      "confidence": 0.82
+    },
+    {
+      "id": "SU-019",
+      "slideRef": "WR 07_14 - EunwooSong.pptx/slide26",
+      "category": "RelatedWork",
+      "content": "DreamFLEX: Fault-aware quadrupedal locomotion on rough terrain",
+      "details": {
+        "faultTypes": {
+          "lockedJoint": "External impact causing joint fixation or range limitation",
+          "weakenedMotor": "Overheating or power shortage limiting torque output"
+        },
+        "approach": "Learn to minimize sim2real gap for fault conditions"
+      },
+      "selfCritique": {
+        "alternativeClassification": "Background rather than Related Work",
+        "finalDecision": "RelatedWork as it cites specific prior work"
+      },
+      "thesisConnection": "Prior work on fault-tolerant locomotion that this research extends",
+      "confidence": 0.88
+    },
+    {
+      "id": "SU-020",
+      "slideRef": "WR 07_29.pptx/slide9",
+      "category": "Results/Training",
+      "content": "RL training results at 5M and 302M steps",
+      "details": {
+        "hardware": "RTX 5080 GPU with 10 hours training",
+        "comparison": "Left image at 5,120,000 steps vs Right image at 302,080,000 steps"
+      },
+      "selfCritique": {
+        "alternativeClassification": "Results/Learning curves",
+        "finalDecision": "Results/Training captures the training progression"
+      },
+      "thesisConnection": "Empirical training results showing policy improvement",
+      "confidence": 0.80
+    }
+  ],
+  "extractionStatistics": {
+    "totalSlides": 20,
+    "totalSemanticUnits": 20,
+    "unitsPerSlide": 1.0,
+    "categoryDistribution": {
+      "Methods": 10,
+      "Results": 5,
+      "Implementation": 3,
+      "Background/RelatedWork": 2
+    },
+    "averageConfidence": 0.85,
+    "imageAnalyzedCount": 15
+  }
+}

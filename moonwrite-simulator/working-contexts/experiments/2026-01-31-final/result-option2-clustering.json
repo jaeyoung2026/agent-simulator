@@ -1,0 +1,204 @@
+{
+  "clustering_method": "Hybrid (Keyword Initial + LLM Refinement)",
+  "strategy": "Standard",
+  "thesis_extraction": {
+    "method": "Chain-of-Thought",
+    "core_question": "휴머노이드 로봇의 전기 모터에서 발생하는 열 문제를 어떻게 효과적으로 관리하고, 고장 상황에서도 안정적인 보행을 유지할 수 있는가?",
+    "core_claim": "확장된 열 모델과 온라인 학습 기반 열 제어기를 통해 모터의 코어 온도를 정확히 예측하고 제어할 수 있으며, FEMNet 기반 고장 인식 및 적응 시스템을 통해 액추에이터 고장 상황에서도 안정적인 보행을 유지할 수 있다.",
+    "research_contribution": [
+      "기존 2저항 열 모델을 확장한 P1-P5 파라미터 학습 기반 열 모델 제안",
+      "실시간 온라인 학습으로 환경 변화에 적응하는 열 모델 파라미터 업데이트 방법",
+      "MSE 기반 열 제어기로 안전한 온도 범위 내 최대 토크 활용",
+      "FEMNet을 통한 고장 상황 인식 및 적응적 보행 제어"
+    ]
+  },
+  "classification_phases": {
+    "phase1_keyword_classification": {
+      "description": "키워드 기반 초벌 분류 - High/Low 신뢰도 결정",
+      "high_confidence_keywords": {
+        "introduction": ["동기", "배경", "문제 정의", "필요성", "motivation", "background"],
+        "related_work": ["관련 연구", "선행 연구", "DreamFLEX", "related work", "prior work"],
+        "method": ["방법", "제안", "알고리즘", "모델", "아키텍처", "method", "proposed"],
+        "experiment": ["실험", "구현", "테스트", "설정", "experiment", "implementation"],
+        "result": ["결과", "검증", "비교", "그래프", "result", "validation"]
+      },
+      "classification_results": {
+        "high_confidence": [
+          {"id": "SU-003", "section": "introduction", "reason": "연구 배경 및 동기 명확히 언급"},
+          {"id": "SU-013", "section": "introduction", "reason": "연구 동기 - 적응 보행 필요성"},
+          {"id": "SU-026", "section": "introduction", "reason": "문제 정의 - 낙상 데이터"},
+          {"id": "SU-010", "section": "introduction", "reason": "문제 정의 - 과열 디레이팅"},
+          {"id": "SU-019", "section": "related_work", "reason": "DreamFLEX 관련 연구 직접 언급"},
+          {"id": "SU-031", "section": "related_work", "reason": "DreamFLEX 결함 시각화"},
+          {"id": "SU-002", "section": "method", "reason": "FEMNet 아키텍처 제안"},
+          {"id": "SU-017", "section": "method", "reason": "확장 열 모델 제안"},
+          {"id": "SU-009", "section": "method", "reason": "열 제어기 손실 함수"},
+          {"id": "SU-014", "section": "method", "reason": "데이터 수집 방법론"},
+          {"id": "SU-028", "section": "method", "reason": "열 모델 미분 방정식"},
+          {"id": "SU-001", "section": "method", "reason": "최적화 방법론 명확"},
+          {"id": "SU-006", "section": "experiment", "reason": "MuJoCo 설치 테스트"},
+          {"id": "SU-015", "section": "experiment", "reason": "MuJoCo 렌더링 구현"},
+          {"id": "SU-012", "section": "result", "reason": "HeatState 실험 결과"},
+          {"id": "SU-018", "section": "result", "reason": "토크 제한 비교 결과"},
+          {"id": "SU-011", "section": "result", "reason": "2축 모델 한계점 결과"},
+          {"id": "SU-020", "section": "result", "reason": "학습 진행 결과"}
+        ],
+        "low_confidence": [
+          {"id": "SU-004", "candidate_sections": ["introduction", "method"]},
+          {"id": "SU-005", "candidate_sections": ["experiment", "method"]},
+          {"id": "SU-007", "candidate_sections": ["method", "experiment"]},
+          {"id": "SU-008", "candidate_sections": ["experiment", "method"]},
+          {"id": "SU-016", "candidate_sections": ["method", "introduction"]},
+          {"id": "SU-021", "candidate_sections": ["introduction", "result"]},
+          {"id": "SU-022", "candidate_sections": ["method", "experiment"]},
+          {"id": "SU-023", "candidate_sections": ["method", "related_work"]},
+          {"id": "SU-024", "candidate_sections": ["method", "experiment"]},
+          {"id": "SU-025", "candidate_sections": ["method", "result"]},
+          {"id": "SU-027", "candidate_sections": ["method", "introduction"]},
+          {"id": "SU-029", "candidate_sections": ["result", "method"]},
+          {"id": "SU-030", "candidate_sections": ["method", "experiment"]},
+          {"id": "SU-032", "candidate_sections": ["result", "experiment"]},
+          {"id": "SU-033", "candidate_sections": ["introduction", "method"]},
+          {"id": "SU-034", "candidate_sections": ["result", "conclusion"]},
+          {"id": "SU-035", "candidate_sections": ["result", "experiment"]}
+        ]
+      }
+    },
+    "phase2_llm_refinement": {
+      "description": "Low 신뢰도 항목에 대한 LLM 정밀 분류",
+      "prompt_used": "다음 SemanticUnit이 논문의 어떤 섹션에 가장 적합한지 판단하세요. 후보 섹션들 중 선택하고 이유를 설명하세요.",
+      "refinement_results": [
+        {"id": "SU-004", "final_section": "introduction", "reason": "모터 전력 관계는 문제 이해를 위한 배경 지식으로, 독자에게 기초 개념을 제공함"},
+        {"id": "SU-005", "final_section": "experiment", "reason": "ToddlerBot 경로 수정은 실험 환경 구축의 구현 세부사항"},
+        {"id": "SU-007", "final_section": "method", "reason": "온라인 학습 파라미터는 제안 방법론의 핵심 설정값"},
+        {"id": "SU-008", "final_section": "experiment", "reason": "파일 경로 유틸리티는 실험 구현 세부사항"},
+        {"id": "SU-016", "final_section": "introduction", "reason": "발열량 계산 원리는 문제 이해를 위한 물리적 배경"},
+        {"id": "SU-021", "final_section": "introduction", "reason": "수냉 효과는 연구 동기를 뒷받침하는 선행 데이터"},
+        {"id": "SU-022", "final_section": "method", "reason": "열 파라미터 표기법은 방법론 설명의 일부"},
+        {"id": "SU-023", "final_section": "method", "reason": "FEMNet 출력 정의는 방법론의 핵심 구성요소"},
+        {"id": "SU-024", "final_section": "method", "reason": "온라인 학습 알고리즘은 제안 방법론의 핵심"},
+        {"id": "SU-025", "final_section": "method", "reason": "코어 온도 제어 전략은 방법론의 핵심 기여"},
+        {"id": "SU-027", "final_section": "method", "reason": "maxon 모터 사양은 열 모델링 방법론의 근거"},
+        {"id": "SU-029", "final_section": "result", "reason": "열 상태 추정 검증은 실험 결과에 해당"},
+        {"id": "SU-030", "final_section": "method", "reason": "Trajectory 데이터 구조는 방법론의 데이터 표현 설명"},
+        {"id": "SU-032", "final_section": "result", "reason": "학습 곡선 분석은 실험 결과에 해당"},
+        {"id": "SU-033", "final_section": "introduction", "reason": "전력 수식은 문제 이해를 위한 기초 배경"},
+        {"id": "SU-034", "final_section": "result", "reason": "모델 개선 방향은 결과 분석 및 향후 연구에 해당"},
+        {"id": "SU-035", "final_section": "result", "reason": "보행 안정성 비교는 실험 결과에 해당"}
+      ]
+    }
+  },
+  "final_classification": {
+    "1_introduction": {
+      "title": "서론 (Introduction)",
+      "semantic_units": ["SU-003", "SU-013", "SU-026", "SU-010", "SU-004", "SU-016", "SU-021", "SU-033"],
+      "unit_details": [
+        {"id": "SU-003", "title": "고출력 휴머노이드 로봇 모터의 열 제어 필요성", "role": "연구 배경"},
+        {"id": "SU-013", "title": "적응적 보행의 연구 동기", "role": "연구 동기"},
+        {"id": "SU-026", "title": "ToddlerBot 낙상 문제", "role": "문제의 심각성"},
+        {"id": "SU-010", "title": "모터 과열로 인한 토크 디레이팅", "role": "문제 정의"},
+        {"id": "SU-004", "title": "모터 입력/출력 전력 관계", "role": "물리적 배경"},
+        {"id": "SU-016", "title": "모터 발열량 계산", "role": "기초 원리"},
+        {"id": "SU-021", "title": "수냉 시스템의 효과", "role": "선행 연구 동기"},
+        {"id": "SU-033", "title": "전력 관계 수식", "role": "수학적 배경"}
+      ],
+      "flow_summary": "휴머노이드 로봇의 모터 열 관리 필요성 -> 과열로 인한 성능 저하 문제 -> 적응적 보행의 필요성"
+    },
+    "2_related_work": {
+      "title": "관련 연구 (Related Work)",
+      "semantic_units": ["SU-019", "SU-031"],
+      "unit_details": [
+        {"id": "SU-019", "title": "DreamFLEX: 결함 인식 사족보행 제어기", "role": "결함 인식 선행 연구"},
+        {"id": "SU-031", "title": "결함 시각화", "role": "결함 표현 방법"}
+      ],
+      "flow_summary": "결함 인식 로코모션의 선행 연구와 그 한계점 분석"
+    },
+    "3_method": {
+      "title": "방법론 (Methodology)",
+      "semantic_units": ["SU-002", "SU-023", "SU-017", "SU-028", "SU-022", "SU-001", "SU-007", "SU-024", "SU-009", "SU-025", "SU-014", "SU-030", "SU-027"],
+      "unit_details": [
+        {"id": "SU-002", "title": "FEMNet 아키텍처", "role": "핵심 신경망 구조"},
+        {"id": "SU-023", "title": "FEMNet 출력 변수 정의", "role": "네트워크 출력 설명"},
+        {"id": "SU-017", "title": "확장된 열 모델 (Proposed Thermal Model)", "role": "열 모델 핵심 기여"},
+        {"id": "SU-028", "title": "열 모델 미분 방정식", "role": "열역학 수식"},
+        {"id": "SU-022", "title": "열 모델 파라미터 표기법", "role": "표기법 정의"},
+        {"id": "SU-001", "title": "2저항 열 모델 파라미터 최적화", "role": "최적화 방법"},
+        {"id": "SU-007", "title": "온라인 열 모델 학습 파라미터", "role": "온라인 학습 설정"},
+        {"id": "SU-024", "title": "온라인 열 모델 학습 알고리즘", "role": "학습 알고리즘"},
+        {"id": "SU-009", "title": "열 제어기 손실 함수", "role": "제어 목표 함수"},
+        {"id": "SU-025", "title": "모터 코어 온도 제어 전략", "role": "제어 전략"},
+        {"id": "SU-014", "title": "고장 시나리오 데이터 수집", "role": "데이터 수집"},
+        {"id": "SU-030", "title": "Trajectory 데이터 구조", "role": "데이터 표현"},
+        {"id": "SU-027", "title": "maxon 모터 사양 참조", "role": "실제 하드웨어 기반"}
+      ],
+      "flow_summary": "FEMNet 아키텍처 -> 확장 열 모델 -> 온라인 학습 -> 열 제어기 -> 데이터 수집"
+    },
+    "4_experiment": {
+      "title": "실험 (Experiments)",
+      "semantic_units": ["SU-006", "SU-015", "SU-005", "SU-008"],
+      "unit_details": [
+        {"id": "SU-006", "title": "MuJoCo 설치 및 테스트", "role": "환경 설정"},
+        {"id": "SU-015", "title": "MuJoCo 환경 렌더링", "role": "시각화 구현"},
+        {"id": "SU-005", "title": "ToddlerBot 경로 문제 해결", "role": "구현 이슈 해결"},
+        {"id": "SU-008", "title": "로봇 파일 경로 탐색 유틸리티", "role": "유틸리티 구현"}
+      ],
+      "flow_summary": "시뮬레이션 환경 구축 -> 구현 이슈 해결 -> 시각화 설정"
+    },
+    "5_result": {
+      "title": "결과 및 논의 (Results and Discussion)",
+      "semantic_units": ["SU-012", "SU-029", "SU-018", "SU-035", "SU-011", "SU-034", "SU-020", "SU-032"],
+      "unit_details": [
+        {"id": "SU-012", "title": "HeatState 실험 결과", "role": "열 상태 추정 결과"},
+        {"id": "SU-029", "title": "열 상태 추정 검증", "role": "검증 결과"},
+        {"id": "SU-018", "title": "토크 제한 적용 전후 비교", "role": "제어 효과 비교"},
+        {"id": "SU-035", "title": "보행 안정성 비교", "role": "안정성 분석"},
+        {"id": "SU-011", "title": "2축 열 모델의 한계", "role": "기존 모델 한계"},
+        {"id": "SU-034", "title": "모델 개선 방향", "role": "향후 연구 방향"},
+        {"id": "SU-020", "title": "학습 진행 결과", "role": "학습 성능"},
+        {"id": "SU-032", "title": "학습 곡선 분석", "role": "수렴 분석"}
+      ],
+      "flow_summary": "열 상태 추정 검증 -> 토크 제어 효과 -> 보행 안정성 분석 -> 한계점 및 개선 방향"
+    }
+  },
+  "gap_analysis": {
+    "identified_gaps": [
+      {
+        "section": "related_work",
+        "gap": "열 모델링 관련 선행 연구 부족",
+        "description": "DreamFLEX 등 고장 인식 연구는 있으나, 2저항 열 모델의 발전 과정이나 다른 열 제어 방법론에 대한 리뷰가 필요함",
+        "placeholder": "[선행 열 모델링 연구 검토 필요: 2저항 모델의 기원, 다중 저항 모델, 신경망 기반 열 추정 방법 등]"
+      },
+      {
+        "section": "experiment",
+        "gap": "실험 설정 세부사항 부족",
+        "description": "실제 하드웨어 실험 환경, 센서 사양, 데이터 수집 프로토콜에 대한 상세 정보 필요",
+        "placeholder": "[실험 설정 상세화 필요: 사용된 로봇 플랫폼, 센서 종류, 샘플링 주파수, 실험 프로토콜]"
+      },
+      {
+        "section": "result",
+        "gap": "정량적 비교 부족",
+        "description": "제안 방법과 기존 방법의 정량적 성능 비교 (RMSE, MAE 등) 데이터 필요",
+        "placeholder": "[정량적 비교 결과 추가 필요: 기존 방법 대비 온도 추정 오차 감소율, 보행 안정성 향상 지표]"
+      },
+      {
+        "section": "result",
+        "gap": "실제 로봇 검증 부족",
+        "description": "시뮬레이션 결과는 있으나 실제 로봇에서의 검증 결과가 필요함",
+        "placeholder": "[실제 로봇 실험 결과 추가 필요: sim2real 전이 성능, 실제 환경에서의 열 제어 효과]"
+      }
+    ]
+  },
+  "statistics": {
+    "total_semantic_units": 35,
+    "units_per_section": {
+      "introduction": 8,
+      "related_work": 2,
+      "method": 13,
+      "experiment": 4,
+      "result": 8
+    },
+    "high_confidence_count": 18,
+    "low_confidence_count": 17,
+    "classification_accuracy_estimate": 0.89
+  }
+}

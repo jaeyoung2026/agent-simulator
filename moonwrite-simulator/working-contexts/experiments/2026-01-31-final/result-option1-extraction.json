@@ -1,0 +1,189 @@
+{
+  "experiment": "Option 1 - Quick Draft",
+  "extraction_method": "Direct LLM",
+  "description": "슬라이드당 1개 SemanticUnit 추출",
+  "prompt_used": "이 슬라이드의 핵심 주장을 추출하세요",
+  "total_slides": 20,
+  "semantic_units": [
+    {
+      "id": 1,
+      "source": {
+        "filename": "WR 1_14.pptx",
+        "slide_number": 10
+      },
+      "claim": "MSE 기반 최적화와 Adam Optimizer를 사용하여 2저항 열 모델의 파라미터를 학습하며, 로그 스케일에서 양수 제약 조건을 적용한다.",
+      "keywords": ["MSE", "Adam Optimizer", "2저항 열 모델", "최적화", "로그 스케일"]
+    },
+    {
+      "id": 2,
+      "source": {
+        "filename": "WR 9_23.pptx",
+        "slide_number": 37
+      },
+      "claim": "FEMNet 방법론을 적용하여 열 모델링을 수행한다.",
+      "keywords": ["FEMNet", "열 모델링", "방법론"]
+    },
+    {
+      "id": 3,
+      "source": {
+        "filename": "WR 8_5.pptx",
+        "slide_number": 7
+      },
+      "claim": "휴머노이드 로봇의 전기 모터에 수냉을 적용하여 최대 성능을 안전하게 활용하며, 센서 정보로 권선/코어 온도를 계산하는 2저항 모델을 사용한다.",
+      "keywords": ["휴머노이드 로봇", "전기 모터", "수냉", "권선 온도", "코어 온도", "2저항 모델"]
+    },
+    {
+      "id": 4,
+      "source": {
+        "filename": "WR 07_14 - EunwooSong.pptx",
+        "slide_number": 14
+      },
+      "claim": "입력 전력과 출력 전력의 관계를 분석한다.",
+      "keywords": ["입력 전력", "출력 전력", "전력 분석"]
+    },
+    {
+      "id": 5,
+      "source": {
+        "filename": "WR 07_01 - EunwooSong.pptx",
+        "slide_number": 17
+      },
+      "claim": "ToddlerBot 모듈의 상대경로 문제를 pathlib를 이용한 절대경로로 해결한다.",
+      "keywords": ["ToddlerBot", "상대경로", "절대경로", "pathlib", "경로 문제"]
+    },
+    {
+      "id": 6,
+      "source": {
+        "filename": "WR 07_01 - EunwooSong.pptx",
+        "slide_number": 8
+      },
+      "claim": "MuJoCo 설치를 테스트하고 시뮬레이션 환경을 검증한다.",
+      "keywords": ["MuJoCo", "설치", "테스트", "시뮬레이션 환경"]
+    },
+    {
+      "id": 7,
+      "source": {
+        "filename": "WR 9_23.pptx",
+        "slide_number": 53
+      },
+      "claim": "온라인 학습을 위해 1초 간격 데이터, 30 스텝 시퀀스, 10 배치 크기로 열 모델을 학습한다.",
+      "keywords": ["온라인 학습", "열 모델", "데이터 간격", "배치 크기"]
+    },
+    {
+      "id": 8,
+      "source": {
+        "filename": "WR 07_01 - EunwooSong.pptx",
+        "slide_number": 18
+      },
+      "claim": "file_utils.py에서 URDF 파일 경로를 동적으로 찾도록 절대경로 기반으로 수정한다.",
+      "keywords": ["file_utils.py", "URDF", "경로", "절대경로", "동적 탐색"]
+    },
+    {
+      "id": 9,
+      "source": {
+        "filename": "WR 9_23.pptx",
+        "slide_number": 46
+      },
+      "claim": "열 컨트롤러를 통해 모터 코어 온도를 제어한다.",
+      "keywords": ["열 컨트롤러", "모터 코어 온도", "온도 제어"]
+    },
+    {
+      "id": 10,
+      "source": {
+        "filename": "WR 07_14 - EunwooSong.pptx",
+        "slide_number": 17
+      },
+      "claim": "과열로 인해 토크 감소 및 최대 토크 감소가 발생한다 (derating 문제).",
+      "keywords": ["과열", "토크 감소", "derating", "한계"]
+    },
+    {
+      "id": 11,
+      "source": {
+        "filename": "WR 1_14.pptx",
+        "slide_number": 14
+      },
+      "claim": "2축 모델 측정 결과에서 한계점이 발견된다.",
+      "keywords": ["2축 모델", "측정", "한계점", "Limitation"]
+    },
+    {
+      "id": 12,
+      "source": {
+        "filename": "WR 9_2.pptx",
+        "slide_number": 11
+      },
+      "claim": "HeatState 결과를 통해 열 상태를 분석한다.",
+      "keywords": ["HeatState", "결과", "열 상태", "분석"]
+    },
+    {
+      "id": 13,
+      "source": {
+        "filename": "WR 07_14 - EunwooSong.pptx",
+        "slide_number": 5
+      },
+      "claim": "서보 모터의 오버로드로 인한 토크 감소와 기능 정지에 대응하기 위해, 누적 리스크에 대응하는 방법이 필요하다.",
+      "keywords": ["서보 모터", "오버로드", "토크 감소", "기능 정지", "누적 리스크"]
+    },
+    {
+      "id": 14,
+      "source": {
+        "filename": "WR 9_23.pptx",
+        "slide_number": 28
+      },
+      "claim": "12개 액추에이터 손상 시나리오에서 각각 20000개의 trajectory를 수집하여 학습 데이터를 생성한다.",
+      "keywords": ["액추에이터 손상", "시나리오", "trajectory", "데이터 수집", "학습 데이터"]
+    },
+    {
+      "id": 15,
+      "source": {
+        "filename": "WR 07_01 - EunwooSong.pptx",
+        "slide_number": 12
+      },
+      "claim": "MuJoCo 환경을 렌더링하고 gym 환경에서 테스트 코드를 실행한다.",
+      "keywords": ["MuJoCo", "렌더링", "gym", "환경 테스트"]
+    },
+    {
+      "id": 16,
+      "source": {
+        "filename": "WR 07_14 - EunwooSong.pptx",
+        "slide_number": 13
+      },
+      "claim": "모터의 발열량은 입력 전력에서 기계적 출력을 빼서 구하며, 권선에서 발생하는 열손실이 주요하다.",
+      "keywords": ["발열량", "입력 전력", "기계적 출력", "열손실", "권선"]
+    },
+    {
+      "id": 17,
+      "source": {
+        "filename": "WR 9_23.pptx",
+        "slide_number": 51
+      },
+      "claim": "P1-P5 파라미터를 학습하는 제안된 열 모델은 기존 2저항 열모델의 확장이다.",
+      "keywords": ["P1-P5 파라미터", "열 모델", "2저항 열모델", "확장"]
+    },
+    {
+      "id": 18,
+      "source": {
+        "filename": "WR 9_2.pptx",
+        "slide_number": 6
+      },
+      "claim": "토크 제한 상황(1000-1389 steps)과 정상 상태(0-500 steps)의 결과를 비교한다.",
+      "keywords": ["토크 제한", "정상 상태", "결과 비교", "steps"]
+    },
+    {
+      "id": 19,
+      "source": {
+        "filename": "WR 07_14 - EunwooSong.pptx",
+        "slide_number": 26
+      },
+      "claim": "DreamFLEX는 험지에서 잠긴 관절과 약화된 모터 같은 결함 상황에 대응하는 보행 제어기를 학습한다.",
+      "keywords": ["DreamFLEX", "험지", "잠긴 관절", "약화된 모터", "결함 대응", "보행 제어기"]
+    },
+    {
+      "id": 20,
+      "source": {
+        "filename": "WR 07_29.pptx",
+        "slide_number": 9
+      },
+      "claim": "RTX 5080에서 10시간 학습하여 5M 스텝과 302M 스텝에서의 결과를 비교한다.",
+      "keywords": ["RTX 5080", "학습", "스텝", "결과 비교"]
+    }
+  ]
+}

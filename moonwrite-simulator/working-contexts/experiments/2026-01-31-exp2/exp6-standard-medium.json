@@ -1,0 +1,797 @@
+{
+  "condition": "Standard",
+  "resolution": "medium (1-3)",
+  "model_usage": {
+    "step1": "flash (sonnet)",
+    "step2": "flash (sonnet)",
+    "step3": "flash (sonnet)",
+    "step4": "pro (opus)"
+  },
+  "standard_features": {
+    "self_critique": false,
+    "reverse_outline": false,
+    "writing_principles_count": 3,
+    "placeholder_type": "location_markers_only",
+    "image_analysis_depth": "type_and_role_only"
+  },
+  "total_slides": 45,
+  "total_units": 91,
+  "avg_units_per_slide": 2.02,
+  "step1_results": {
+    "model": "flash (sonnet)",
+    "thesis": {
+      "question": "How can thermal-aware control policies improve long-term stability and energy efficiency in legged robots?",
+      "claim": "By incorporating motor heat state estimation and thermal rewards into reinforcement learning, robots can proactively manage thermal constraints while maintaining task performance.",
+      "evidence": [
+        "Heat2Torque simulation reduces sim-to-real gap by modeling torque degradation",
+        "Thermal-aware reward functions enable proactive heat management",
+        "Online thermal model adaptation improves estimation accuracy",
+        "DRL controllers can balance performance and hardware durability"
+      ],
+      "sub_claims": [
+        {
+          "id": "SC1",
+          "claim": "Motor thermal dynamics can be accurately modeled and simulated",
+          "evidence_count": 8
+        },
+        {
+          "id": "SC2",
+          "claim": "Thermal-aware policies outperform baseline in long-term operation",
+          "evidence_count": 6
+        },
+        {
+          "id": "SC3",
+          "claim": "Online adaptation improves thermal estimation accuracy",
+          "evidence_count": 4
+        }
+      ]
+    },
+    "slide_analyses_sample": [
+      {
+        "slide_idx": 0,
+        "slide_type": "result",
+        "domains": [
+          "general"
+        ],
+        "units_count": 1
+      },
+      {
+        "slide_idx": 1,
+        "slide_type": "result",
+        "domains": [
+          "general"
+        ],
+        "units_count": 3
+      },
+      {
+        "slide_idx": 2,
+        "slide_type": "problem",
+        "domains": [
+          "thermal_management",
+          "motor_control"
+        ],
+        "units_count": 1
+      },
+      {
+        "slide_idx": 3,
+        "slide_type": "setup",
+        "domains": [
+          "thermal_management",
+          "motor_control"
+        ],
+        "units_count": 1
+      },
+      {
+        "slide_idx": 4,
+        "slide_type": "method",
+        "domains": [
+          "thermal_management",
+          "motor_control",
+          "simulation"
+        ],
+        "units_count": 2
+      },
+      {
+        "slide_idx": 5,
+        "slide_type": "method",
+        "domains": [
+          "general"
+        ],
+        "units_count": 1
+      },
+      {
+        "slide_idx": 6,
+        "slide_type": "training",
+        "domains": [
+          "reinforcement_learning"
+        ],
+        "units_count": 3
+      },
+      {
+        "slide_idx": 7,
+        "slide_type": "analysis",
+        "domains": [
+          "thermal_management",
+          "motor_control"
+        ],
+        "units_count": 2
+      },
+      {
+        "slide_idx": 8,
+        "slide_type": "contribution",
+        "domains": [
+          "thermal_management",
+          "motor_control"
+        ],
+        "units_count": 3
+      },
+      {
+        "slide_idx": 9,
+        "slide_type": "method",
+        "domains": [
+          "general"
+        ],
+        "units_count": 2
+      }
+    ],
+    "image_analysis_summary": {
+      "total_images": 41,
+      "slides_with_images": 30
+    },
+    "tokens": {
+      "input": 35805,
+      "output": 13650,
+      "images": 41
+    }
+  },
+  "step2_results": {
+    "model": "flash (sonnet)",
+    "cluster_analyses": [
+      {
+        "cluster_id": "cluster_13",
+        "domain": "legged_locomotion",
+        "thesis_category": "thesis_support",
+        "unit_count": 4,
+        "thesis_connection": {
+          "type": "supporting",
+          "strength": "medium",
+          "relevance_score": 0.91,
+          "connected_sub_claims": [
+            "SC1",
+            "SC2"
+          ]
+        },
+        "connection_strength": "medium",
+        "key_insights": [
+          "Domain-specific insight for legged_locomotion"
+        ]
+      },
+      {
+        "cluster_id": "cluster_1",
+        "domain": "general",
+        "thesis_category": "thesis_support",
+        "unit_count": 13,
+        "thesis_connection": {
+          "type": "supporting",
+          "strength": "medium",
+          "relevance_score": 0.88,
+          "connected_sub_claims": [
+            "SC1",
+            "SC2",
+            "SC3"
+          ]
+        },
+        "connection_strength": "medium",
+        "key_insights": [
+          "Domain-specific insight for general"
+        ]
+      },
+      {
+        "cluster_id": "cluster_6",
+        "domain": "thermal_management",
+        "thesis_category": "core_thesis",
+        "unit_count": 3,
+        "thesis_connection": {
+          "type": "direct",
+          "strength": "high",
+          "relevance_score": 0.88,
+          "connected_sub_claims": [
+            "SC1",
+            "SC2",
+            "SC3"
+          ]
+        },
+        "connection_strength": "high",
+        "key_insights": [
+          "Motor temperature impacts torque capacity",
+          "Thermal estimation improves prediction"
+        ]
+      },
+      {
+        "cluster_id": "cluster_17",
+        "domain": "general",
+        "thesis_category": "core_thesis",
+        "unit_count": 1,
+        "thesis_connection": {
+          "type": "direct",
+          "strength": "high",
+          "relevance_score": 0.87,
+          "connected_sub_claims": [
+            "SC1",
+            "SC2"
+          ]
+        },
+        "connection_strength": "high",
+        "key_insights": [
+          "Domain-specific insight for general"
+        ]
+      },
+      {
+        "cluster_id": "cluster_14",
+        "domain": "thermal_management",
+        "thesis_category": "thesis_support",
+        "unit_count": 5,
+        "thesis_connection": {
+          "type": "supporting",
+          "strength": "medium",
+          "relevance_score": 0.86,
+          "connected_sub_claims": [
+            "SC1",
+            "SC2",
+            "SC3"
+          ]
+        },
+        "connection_strength": "medium",
+        "key_insights": [
+          "Motor temperature impacts torque capacity",
+          "Thermal estimation improves prediction"
+        ]
+      },
+      {
+        "cluster_id": "cluster_15",
+        "domain": "motor_control",
+        "thesis_category": "thesis_support",
+        "unit_count": 3,
+        "thesis_connection": {
+          "type": "supporting",
+          "strength": "high",
+          "relevance_score": 0.86,
+          "connected_sub_claims": [
+            "SC2",
+            "SC3"
+          ]
+        },
+        "connection_strength": "high",
+        "key_insights": [
+          "Heat-to-torque mapping enables simulation",
+          "Torque limiting prevents damage"
+        ]
+      },
+      {
+        "cluster_id": "cluster_3",
+        "domain": "thermal_management",
+        "thesis_category": "thesis_elaboration",
+        "unit_count": 21,
+        "thesis_connection": {
+          "type": "elaborative",
+          "strength": "low",
+          "relevance_score": 0.81,
+          "connected_sub_claims": [
+            "SC1",
+            "SC3"
+          ]
+        },
+        "connection_strength": "low",
+        "key_insights": [
+          "Motor temperature impacts torque capacity",
+          "Thermal estimation improves prediction"
+        ]
+      },
+      {
+        "cluster_id": "cluster_4",
+        "domain": "general",
+        "thesis_category": "thesis_elaboration",
+        "unit_count": 10,
+        "thesis_connection": {
+          "type": "elaborative",
+          "strength": "medium",
+          "relevance_score": 0.81,
+          "connected_sub_claims": []
+        },
+        "connection_strength": "medium",
+        "key_insights": [
+          "Domain-specific insight for general"
+        ]
+      },
+      {
+        "cluster_id": "cluster_7",
+        "domain": "reinforcement_learning",
+        "thesis_category": "thesis_support",
+        "unit_count": 4,
+        "thesis_connection": {
+          "type": "supporting",
+          "strength": "high",
+          "relevance_score": 0.79,
+          "connected_sub_claims": [
+            "SC1",
+            "SC2"
+          ]
+        },
+        "connection_strength": "high",
+        "key_insights": [
+          "Thermal-aware rewards enable heat management",
+          "Policy adaptation maintains performance"
+        ]
+      },
+      {
+        "cluster_id": "cluster_5",
+        "domain": "reinforcement_learning",
+        "thesis_category": "thesis_elaboration",
+        "unit_count": 11,
+        "thesis_connection": {
+          "type": "elaborative",
+          "strength": "medium",
+          "relevance_score": 0.78,
+          "connected_sub_claims": [
+            "SC1",
+            "SC2"
+          ]
+        },
+        "connection_strength": "medium",
+        "key_insights": [
+          "Thermal-aware rewards enable heat management",
+          "Policy adaptation maintains performance"
+        ]
+      },
+      {
+        "cluster_id": "cluster_11",
+        "domain": "legged_locomotion",
+        "thesis_category": "thesis_elaboration",
+        "unit_count": 2,
+        "thesis_connection": {
+          "type": "elaborative",
+          "strength": "high",
+          "relevance_score": 0.78,
+          "connected_sub_claims": []
+        },
+        "connection_strength": "high",
+        "key_insights": [
+          "Domain-specific insight for legged_locomotion"
+        ]
+      },
+      {
+        "cluster_id": "cluster_9",
+        "domain": "motor_control",
+        "thesis_category": "thesis_context",
+        "unit_count": 3,
+        "thesis_connection": {
+          "type": "contextual",
+          "strength": "medium",
+          "relevance_score": 0.75,
+          "connected_sub_claims": [
+            "SC1",
+            "SC2"
+          ]
+        },
+        "connection_strength": "medium",
+        "key_insights": [
+          "Heat-to-torque mapping enables simulation",
+          "Torque limiting prevents damage"
+        ]
+      },
+      {
+        "cluster_id": "cluster_12",
+        "domain": "general",
+        "thesis_category": "thesis_context",
+        "unit_count": 3,
+        "thesis_connection": {
+          "type": "contextual",
+          "strength": "medium",
+          "relevance_score": 0.73,
+          "connected_sub_claims": [
+            "SC1"
+          ]
+        },
+        "connection_strength": "medium",
+        "key_insights": [
+          "Domain-specific insight for general"
+        ]
+      },
+      {
+        "cluster_id": "cluster_10",
+        "domain": "motor_control",
+        "thesis_category": "thesis_elaboration",
+        "unit_count": 4,
+        "thesis_connection": {
+          "type": "elaborative",
+          "strength": "high",
+          "relevance_score": 0.72,
+          "connected_sub_claims": [
+            "SC1"
+          ]
+        },
+        "connection_strength": "high",
+        "key_insights": [
+          "Heat-to-torque mapping enables simulation",
+          "Torque limiting prevents damage"
+        ]
+      },
+      {
+        "cluster_id": "cluster_16",
+        "domain": "reinforcement_learning",
+        "thesis_category": "thesis_context",
+        "unit_count": 1,
+        "thesis_connection": {
+          "type": "contextual",
+          "strength": "low",
+          "relevance_score": 0.7,
+          "connected_sub_claims": [
+            "SC1",
+            "SC2"
+          ]
+        },
+        "connection_strength": "low",
+        "key_insights": [
+          "Thermal-aware rewards enable heat management",
+          "Policy adaptation maintains performance"
+        ]
+      },
+      {
+        "cluster_id": "cluster_2",
+        "domain": "thermal_management",
+        "thesis_category": "thesis_context",
+        "unit_count": 2,
+        "thesis_connection": {
+          "type": "contextual",
+          "strength": "low",
+          "relevance_score": 0.62,
+          "connected_sub_claims": [
+            "SC2"
+          ]
+        },
+        "connection_strength": "low",
+        "key_insights": [
+          "Motor temperature impacts torque capacity",
+          "Thermal estimation improves prediction"
+        ]
+      },
+      {
+        "cluster_id": "cluster_8",
+        "domain": "simulation",
+        "thesis_category": "thesis_elaboration",
+        "unit_count": 1,
+        "thesis_connection": {
+          "type": "elaborative",
+          "strength": "high",
+          "relevance_score": 0.6,
+          "connected_sub_claims": [
+            "SC1",
+            "SC2"
+          ]
+        },
+        "connection_strength": "high",
+        "key_insights": [
+          "MuJoCo/Brax enables fast training",
+          "Thermal simulation reduces sim-to-real gap"
+        ]
+      }
+    ],
+    "domain_summary": {
+      "legged_locomotion": 2,
+      "motor_control": 3,
+      "thermal_management": 4,
+      "general": 4,
+      "reinforcement_learning": 3,
+      "simulation": 1
+    },
+    "connection_strength_distribution": {
+      "high": 7,
+      "medium": 7,
+      "low": 3
+    },
+    "tokens": {
+      "input": 13600,
+      "output": 6800
+    }
+  },
+  "step3_results": {
+    "model": "flash (sonnet)",
+    "consistency_score": 0.91,
+    "alignment_rate": 1.0,
+    "section_stats": {
+      "Introduction": {
+        "cluster_count": 2,
+        "unit_count": 4,
+        "avg_relevance": 0.88
+      },
+      "Background": {
+        "cluster_count": 4,
+        "unit_count": 9,
+        "avg_relevance": 0.7
+      },
+      "Methodology": {
+        "cluster_count": 6,
+        "unit_count": 49,
+        "avg_relevance": 0.75
+      },
+      "Results": {
+        "cluster_count": 5,
+        "unit_count": 29,
+        "avg_relevance": 0.86
+      }
+    },
+    "validation_summary": {
+      "total_units": 91,
+      "aligned_units": 91,
+      "weak_connections": 0,
+      "avg_cluster_relevance": 0.79
+    },
+    "tokens": {
+      "input": 11650,
+      "output": 600
+    }
+  },
+  "step4_results": {
+    "model": "pro (opus)",
+    "gap_analysis": [
+      {
+        "type": "weak_evidence",
+        "severity": "medium",
+        "location": "Sub-claim: SC2",
+        "description": "Evidence exists but could be strengthened"
+      },
+      {
+        "type": "missing_evidence",
+        "severity": "high",
+        "location": "Sub-claim: SC3",
+        "description": "Insufficient evidence for claim: Online adaptation improves thermal estimation accuracy"
+      },
+      {
+        "type": "methodology_unclear",
+        "severity": "medium",
+        "location": "Methodology section",
+        "description": "Technical methodology could be explained more clearly"
+      }
+    ],
+    "writing_principles_evaluation": {
+      "thesis_clarity": {
+        "score": 0.86,
+        "feedback": "Main thesis is clearly stated"
+      },
+      "evidence_integration": {
+        "score": 0.74,
+        "feedback": "Evidence is presented but integration could be tighter"
+      },
+      "logical_flow": {
+        "score": 0.76,
+        "feedback": "Overall structure follows academic conventions"
+      }
+    },
+    "placeholder_markers": [
+      {
+        "location": "Abstract",
+        "marker": "[INSERT: Summary statement]"
+      },
+      {
+        "location": "Introduction",
+        "marker": "[INSERT: Motivation]"
+      },
+      {
+        "location": "Methodology",
+        "marker": "[INSERT: Technical detail]"
+      },
+      {
+        "location": "Results",
+        "marker": "[INSERT: Comparison data]"
+      }
+    ],
+    "quality_score": 0.76,
+    "summary": {
+      "total_gaps": 3,
+      "high_severity_gaps": 1,
+      "medium_severity_gaps": 2,
+      "low_severity_gaps": 0,
+      "avg_principle_score": 0.79
+    },
+    "tokens": {
+      "input": 6000,
+      "output": 3000
+    }
+  },
+  "quality_metrics": {
+    "quality_score": 0.76,
+    "consistency_score": 0.91,
+    "alignment_rate": 1.0,
+    "avg_principle_score": 0.79,
+    "gap_count": 3
+  },
+  "category_distribution": {
+    "thesis_support": 29,
+    "thesis_context": 9,
+    "thesis_elaboration": 49,
+    "core_thesis": 4
+  },
+  "sample_extractions": [
+    {
+      "slide_idx": 0,
+      "unit_id": "su_36ba16f5",
+      "thesis_category": "thesis_support",
+      "domains": [
+        "general"
+      ],
+      "confidence": 0.79
+    },
+    {
+      "slide_idx": 1,
+      "unit_id": "su_8830b3b0",
+      "thesis_category": "thesis_support",
+      "domains": [
+        "general"
+      ],
+      "confidence": 0.84
+    },
+    {
+      "slide_idx": 1,
+      "unit_id": "su_63bd4d97",
+      "thesis_category": "thesis_support",
+      "domains": [
+        "general"
+      ],
+      "confidence": 0.86
+    },
+    {
+      "slide_idx": 1,
+      "unit_id": "su_17c288e6",
+      "thesis_category": "thesis_support",
+      "domains": [
+        "general"
+      ],
+      "confidence": 0.82
+    },
+    {
+      "slide_idx": 2,
+      "unit_id": "su_45a8c175",
+      "thesis_category": "thesis_context",
+      "domains": [
+        "thermal_management",
+        "motor_control"
+      ],
+      "confidence": 0.97
+    },
+    {
+      "slide_idx": 3,
+      "unit_id": "su_bcd49bf0",
+      "thesis_category": "thesis_elaboration",
+      "domains": [
+        "thermal_management",
+        "motor_control"
+      ],
+      "confidence": 0.84
+    },
+    {
+      "slide_idx": 4,
+      "unit_id": "su_74d1d9aa",
+      "thesis_category": "thesis_elaboration",
+      "domains": [
+        "thermal_management",
+        "motor_control",
+        "simulation"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "slide_idx": 4,
+      "unit_id": "su_82299ac6",
+      "thesis_category": "thesis_elaboration",
+      "domains": [
+        "thermal_management",
+        "motor_control",
+        "simulation"
+      ],
+      "confidence": 0.96
+    },
+    {
+      "slide_idx": 5,
+      "unit_id": "su_98a3c75d",
+      "thesis_category": "thesis_elaboration",
+      "domains": [
+        "general"
+      ],
+      "confidence": 0.88
+    },
+    {
+      "slide_idx": 6,
+      "unit_id": "su_97c57e35",
+      "thesis_category": "thesis_elaboration",
+      "domains": [
+        "reinforcement_learning"
+      ],
+      "confidence": 0.82
+    },
+    {
+      "slide_idx": 6,
+      "unit_id": "su_ffb191e0",
+      "thesis_category": "thesis_elaboration",
+      "domains": [
+        "reinforcement_learning"
+      ],
+      "confidence": 0.76
+    },
+    {
+      "slide_idx": 6,
+      "unit_id": "su_96063745",
+      "thesis_category": "thesis_elaboration",
+      "domains": [
+        "reinforcement_learning"
+      ],
+      "confidence": 0.88
+    },
+    {
+      "slide_idx": 7,
+      "unit_id": "su_b95d2329",
+      "thesis_category": "thesis_elaboration",
+      "domains": [
+        "thermal_management",
+        "motor_control"
+      ],
+      "confidence": 0.83
+    },
+    {
+      "slide_idx": 7,
+      "unit_id": "su_d733ba3b",
+      "thesis_category": "thesis_elaboration",
+      "domains": [
+        "thermal_management",
+        "motor_control"
+      ],
+      "confidence": 0.94
+    },
+    {
+      "slide_idx": 8,
+      "unit_id": "su_c201d798",
+      "thesis_category": "core_thesis",
+      "domains": [
+        "thermal_management",
+        "motor_control"
+      ],
+      "confidence": 0.78
+    }
+  ],
+  "cost_estimate": {
+    "flash_tokens": {
+      "input": 61055,
+      "output": 21050,
+      "total": 82105,
+      "breakdown": {
+        "step1": 49455,
+        "step2": 20400,
+        "step3": 12250
+      }
+    },
+    "pro_tokens": {
+      "input": 6000,
+      "output": 3000,
+      "total": 9000,
+      "breakdown": {
+        "step4": 9000
+      }
+    },
+    "image_count": 41,
+    "costs": {
+      "flash_input": 1.5e-05,
+      "flash_output": 2.6e-05,
+      "flash_total": 4.2e-05,
+      "pro_input": 9e-05,
+      "pro_output": 0.000225,
+      "pro_total": 0.000315,
+      "images": 0.000197,
+      "total": 0.000553
+    },
+    "cost_per_slide": 1.2e-05,
+    "token_distribution": {
+      "flash_ratio": 90.1,
+      "pro_ratio": 9.9
+    }
+  },
+  "execution_timestamp": "2026-01-31T13:36:41.683318"
+}

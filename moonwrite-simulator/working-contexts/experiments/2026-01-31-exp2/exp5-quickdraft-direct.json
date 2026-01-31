@@ -1,0 +1,227 @@
+{
+  "condition": "Quick Draft (Direct)",
+  "strategy": "direct",
+  "resolution": "low (1-2)",
+  "model_usage": {
+    "flash": "whole_slide_analysis",
+    "pro": "gap_validation"
+  },
+  "timestamp": "2026-01-31T12:56:46.418888",
+  "total_slides": 45,
+  "total_units": 66,
+  "avg_units_per_slide": 1.47,
+  "flash_analysis": {
+    "extraction_method": "direct",
+    "image_analysis_depth": "basic",
+    "classification_method": "keyword_based",
+    "total_units_extracted": 66
+  },
+  "pro_gap_validation": {
+    "gaps_identified": [],
+    "gaps_count": 0,
+    "thesis_consistency": 0.46,
+    "coverage_rate": 1.0,
+    "quality_assessment": {
+      "average_unit_quality": 0.96,
+      "total_units_assessed": 66,
+      "quality_distribution": [
+        {
+          "unit_idx": 0,
+          "quality_score": 1.0,
+          "issues": []
+        },
+        {
+          "unit_idx": 1,
+          "quality_score": 0.93,
+          "issues": []
+        },
+        {
+          "unit_idx": 2,
+          "quality_score": 1.0,
+          "issues": []
+        },
+        {
+          "unit_idx": 3,
+          "quality_score": 0.93,
+          "issues": []
+        },
+        {
+          "unit_idx": 4,
+          "quality_score": 0.93,
+          "issues": []
+        },
+        {
+          "unit_idx": 5,
+          "quality_score": 0.93,
+          "issues": []
+        },
+        {
+          "unit_idx": 6,
+          "quality_score": 0.93,
+          "issues": []
+        },
+        {
+          "unit_idx": 7,
+          "quality_score": 0.93,
+          "issues": []
+        },
+        {
+          "unit_idx": 8,
+          "quality_score": 0.93,
+          "issues": []
+        },
+        {
+          "unit_idx": 9,
+          "quality_score": 0.93,
+          "issues": []
+        }
+      ]
+    }
+  },
+  "thesis": {
+    "main_themes": [
+      "experiment",
+      "thermal",
+      "robot"
+    ],
+    "focus_areas": [
+      "Thermal Management and Heat Control",
+      "Robotics and Locomotion"
+    ],
+    "methodology_present": true,
+    "results_present": true,
+    "problems_addressed": true,
+    "key_contributions": [
+      "Contributions - 2\n실시간 발열 인식 및 예측 프레임워크 개발\n센서 데이터와 발열 모델을 결합해 모터의 현재 열 상태를 실시간으로 추정, 미래 발열 누적을 예측할 수 ",
+      "Problems\nCopyright 2024 Global School of Media",
+      "Sample Code - Result\nmujoco 환경을 render해서 현재 shell의 display를 지우고 다시 plt를 출력한다.\nCopyright 2024 Global "
+    ]
+  },
+  "category_distribution": {
+    "by_type": {
+      "result": 10,
+      "method": 15,
+      "technical": 30,
+      "contribution": 3,
+      "problem": 8
+    },
+    "by_tags": {
+      "experiment": 22,
+      "learning": 15,
+      "thermal": 19,
+      "motor": 16,
+      "simulation": 12,
+      "general": 17,
+      "control": 4,
+      "robot": 18,
+      "fault": 4
+    },
+    "by_priority": {
+      "3": 11,
+      "4": 8,
+      "5": 19,
+      "6": 11,
+      "7": 10,
+      "8": 4,
+      "9": 3
+    },
+    "temporal_distribution": [
+      7,
+      4,
+      8,
+      6,
+      8,
+      5,
+      8,
+      6,
+      8,
+      6
+    ]
+  },
+  "sample_extractions": [
+    {
+      "slide_idx": 13,
+      "type": "result",
+      "priority": 7,
+      "content_snippet": "Meta Learning - Result\nCopyright 2024 Global School of Media",
+      "keywords": [
+        "learning"
+      ],
+      "tags": [
+        "learning",
+        "experiment"
+      ]
+    },
+    {
+      "slide_idx": 13,
+      "type": "method",
+      "priority": 5,
+      "content_snippet": "Meta Learning - Result\nCopyright 2024 Global School of Media",
+      "keywords": [
+        "learning"
+      ],
+      "tags": [
+        "learning",
+        "experiment"
+      ]
+    },
+    {
+      "slide_idx": 22,
+      "type": "result",
+      "priority": 7,
+      "content_snippet": "Result (HeatState)\nCopyright 2024 Global School of Media",
+      "keywords": [
+        "thermal_management"
+      ],
+      "tags": [
+        "thermal",
+        "experiment"
+      ]
+    },
+    {
+      "slide_idx": 23,
+      "type": "result",
+      "priority": 8,
+      "content_snippet": "Result (1000~1389 steps)\nCopyright 2024 Global School of Media\nNormal (0~500steps)\nTorque limited (1000~1389 steps)",
+      "keywords": [
+        "general"
+      ],
+      "tags": [
+        "motor",
+        "experiment"
+      ]
+    },
+    {
+      "slide_idx": 38,
+      "type": "technical",
+      "priority": 7,
+      "content_snippet": "Reward\n기존 Reward에 다음 core temp safe 구역에 따른 보상 함수를 추가한다.\n최적온도(c1, min) 이내는 최대 보상, 아니면 리워드 점차 감소(c1,max)\n가우시안 분포 꼴 이용\n( α∝1/σ2 )\nCopyright 2024 Global S",
+      "keywords": [
+        "general"
+      ],
+      "tags": [
+        "general"
+      ]
+    }
+  ],
+  "cost_estimate": {
+    "flash_analysis": {
+      "input_tokens": 6750,
+      "output_tokens": 6600,
+      "cost_usd": 0.0025
+    },
+    "pro_validation": {
+      "input_tokens": 6750,
+      "output_tokens": 3300,
+      "cost_usd": 0.0599
+    },
+    "total_cost_usd": 0.0623,
+    "token_efficiency": 0.004
+  },
+  "metrics": {
+    "extraction_speed": "optimized (flash)",
+    "validation_depth": "comprehensive (pro)",
+    "overall_efficiency": "high",
+    "quality_vs_speed": "balanced"
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "resolution": "high (1-5)",
+  "strategy": "distributed",
+  "total_slides": 45,
+  "total_units": 117,
+  "avg_units_per_slide": 2.6,
+  "unit_size_distribution": {
+    "1_unit": 5,
+    "2_units": 16,
+    "3_units": 17,
+    "4_units": 6,
+    "5_units": 1
+  },
+  "step1_thesis": {
+    "thesis": {
+      "main_topic": "Thermal-Aware Robotic Control",
+      "sub_topics": [
+        "thermal",
+        "motor",
+        "control",
+        "learning",
+        "temperature"
+      ],
+      "presentation_structure": {
+        "introduction": 5,
+        "methodology": 15,
+        "results": 12,
+        "discussion": 8,
+        "conclusion": 5
+      }
+    },
+    "flash_calls": 1,
+    "tokens": 7361
+  },
+  "step2_cluster_analysis": {
+    "total_units": 117,
+    "clustering_complexity": {
+      "avg_thesis_connection": 0.768,
+      "max_units_in_slide": 5,
+      "min_units_in_slide": 1
+    },
+    "small_units_ratio": 0.467,
+    "flash_calls": 45,
+    "tokens": 14782
+  },
+  "step3_consistency": {
+    "score": 0.632,
+    "reverse_outline": {
+      "introduction_units": 2,
+      "methodology_units": 27,
+      "results_units": 29,
+      "discussion_units": 55,
+      "conclusion_units": 4
+    },
+    "alignment_rate": 0.883,
+    "inconsistencies_found": 43,
+    "flash_calls": 1,
+    "tokens": 9360
+  },
+  "step4_pro_validation": {
+    "quality_metrics": {
+      "information_coverage": 0.923,
+      "granularity_appropriateness": 0.825,
+      "thesis_alignment": 0.883,
+      "over_segmentation_risk": 0
+    },
+    "quality_score": 0.789,
+    "gaps": [],
+    "pro_calls": 1,
+    "tokens": 5850
+  },
+  "cost_analysis": {
+    "flash_tokens": 31503,
+    "pro_tokens": 5850,
+    "flash_cost_usd": 0.0095,
+    "pro_cost_usd": 0.0439,
+    "total_cost_usd": 0.0533,
+    "cost_per_slide_usd": 0.0012
+  },
+  "quality_assessment": {
+    "strengths": [
+      "Extremely detailed information coverage (88-96%)",
+      "High thesis connection accuracy (avg 0.80+)",
+      "Comprehensive micro-level analysis",
+      "Excellent for complex technical content"
+    ],
+    "weaknesses": [
+      "High over-segmentation risk (0.0%)",
+      "Many atomic units (46.7% small units)",
+      "May fragment narrative flow",
+      "Increased processing complexity"
+    ],
+    "overall_rating": "B+"
+  },
+  "pros": [
+    "Maximum information detail and granularity",
+    "Excellent for technical/scientific presentations",
+    "Distributed strategy reduces single-point complexity",
+    "Thesis-first approach ensures coherent structure",
+    "Parallel processing enables efficient computation",
+    "Strong quality validation with Pro model"
+  ],
+  "cons": [
+    "High risk of over-segmentation",
+    "Many small atomic units may lack context",
+    "Complex cluster management (100+ units)",
+    "May lose narrative flow with too many units",
+    "Higher token consumption in step 2",
+    "Potential information fragmentation"
+  ],
+  "suitable_for": [
+    "Highly technical research presentations",
+    "Detailed tutorial or educational content",
+    "Complex multi-topic presentations",
+    "When maximum information preservation is critical",
+    "Scientific papers with dense methodology",
+    "Content requiring fine-grained analysis"
+  ],
+  "not_suitable_for": [
+    "Simple narrative presentations",
+    "Marketing or pitch decks",
+    "High-level executive summaries",
+    "Story-driven content",
+    "When processing speed is priority",
+    "Budget-constrained projects"
+  ]
+}

@@ -1,0 +1,568 @@
+{
+  "extraction_method": "Chain-of-Thought (3-step prompt)",
+  "strategy": "Standard",
+  "total_slides": 20,
+  "total_semantic_units": 35,
+  "semantic_units": [
+    {
+      "id": "SU-001",
+      "source_slide": {"filename": "WR 1_14.pptx", "slide_number": 10},
+      "cot_analysis": {
+        "step1_summary": "2저항 열 모델을 이용한 모터 온도 예측에서 실제 하우징 온도와 계산 온도 간의 MSE를 최소화하기 위해 Adam Optimizer로 학습. 열 파라미터들(열 저항, 열 용량 등)을 양수로 유지하기 위해 로그 스케일 학습 적용.",
+        "step2_role": "방법론 - 열 모델 파라미터 최적화 과정을 설명하는 핵심 기술적 기여",
+        "step3_unit": "thermal_model_optimization"
+      },
+      "content": {
+        "type": "method",
+        "title": "2저항 열 모델 파라미터 최적화",
+        "description": "실제 측정된 하우징 온도와 2저항 열 모델에서 계산된 온도 사이의 MSE를 손실 함수로 사용하여 Adam Optimizer로 학습한다. 열 저항(Rth1, Rth2), 열 용량(Cth1, Cth2), 열 발생률(Q)이 항상 양수가 되도록 로그 스케일에서 학습을 진행한다.",
+        "keywords": ["MSE", "Adam Optimizer", "로그 스케일", "열 파라미터", "2저항 모델"]
+      },
+      "confidence": 0.95
+    },
+    {
+      "id": "SU-002",
+      "source_slide": {"filename": "WR 9_23.pptx", "slide_number": 37},
+      "cot_analysis": {
+        "step1_summary": "FEMNet 아키텍처: Encoder가 관측 이력에서 속도, 고장 벡터, 컨텍스트를 추출하고, Modulation 모델이 컨텍스트를 변조하여 고장 상황에 적응. Decoder는 다음 관측을 예측.",
+        "step2_role": "핵심 방법론 - 고장 인식 신경망 아키텍처의 구조적 설계",
+        "step3_unit": "femnet_architecture"
+      },
+      "content": {
+        "type": "method",
+        "title": "FEMNet (Failure Estimation & Modulation Network) 아키텍처",
+        "description": "FEMNet은 (a) Failure Estimation Model과 (b) Modulation Model로 구성된다. Encoder Network(512×256×128)는 관측 이력(o_t^H)에서 속도(v_t), 고장 벡터(f_t), 컨텍스트(z_t)를 추출한다. Modulation Model(64×64)은 변조 파라미터(γ1, γ2)를 학습하여 컨텍스트를 변조된 컨텍스트(z̃_t)로 변환한다. Decoder Network(64×128)는 다음 관측(o_{t+1})을 예측한다.",
+        "keywords": ["FEMNet", "Encoder", "Decoder", "Modulation", "고장 추정", "컨텍스트 변조"]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "SU-003",
+      "source_slide": {"filename": "WR 8_5.pptx", "slide_number": 7},
+      "cot_analysis": {
+        "step1_summary": "휴머노이드 로봇의 전기 모터에 수냉을 적용하여 장기적 안정 사용 가능. 센서 정보로 권선 및 코어 온도를 2저항 열 모델로 계산.",
+        "step2_role": "연구 배경 및 동기 - 고출력 휴머노이드 로봇의 열 관리 필요성 제시",
+        "step3_unit": "thermal_control_motivation"
+      },
+      "content": {
+        "type": "background",
+        "title": "고출력 휴머노이드 로봇 모터의 열 제어 필요성",
+        "description": "전기 모터의 최대 성능을 안전하게 활용하기 위해 수냉을 적용하여 안정적으로 운용하는 방법을 제안한다. 파란색 점선(개조된 모터)은 장기 사용 가능성을 보여준다. 센서 정보로부터 모터의 권선 온도와 코어 온도를 2저항 열 모델(two-resistor thermal model)을 사용하여 계산한다.",
+        "keywords": ["휴머노이드 로봇", "수냉", "권선 온도", "코어 온도", "2저항 열 모델"]
+      },
+      "confidence": 0.92
+    },
+    {
+      "id": "SU-004",
+      "source_slide": {"filename": "WR 07_14 - EunwooSong.pptx", "slide_number": 14},
+      "cot_analysis": {
+        "step1_summary": "모터의 입력 전력과 출력 전력 관계를 수식으로 표현. 전력 손실이 열로 변환되는 원리 설명.",
+        "step2_role": "배경 지식 - 모터 발열의 물리적 원리 설명",
+        "step3_unit": "motor_power_equation"
+      },
+      "content": {
+        "type": "background",
+        "title": "모터 입력/출력 전력 관계",
+        "description": "모터에 공급되는 입력 전력(P_in = V × I)과 기계적 출력 전력(P_out = τ × ω)의 차이가 열 손실로 변환된다. 이 전력 손실이 모터 발열의 주요 원인이며, 열 모델링의 기초가 된다.",
+        "keywords": ["입력 전력", "출력 전력", "전력 손실", "열 변환"]
+      },
+      "confidence": 0.88
+    },
+    {
+      "id": "SU-005",
+      "source_slide": {"filename": "WR 07_01 - EunwooSong.pptx", "slide_number": 17},
+      "cot_analysis": {
+        "step1_summary": "ToddlerBot 모듈에서 상대경로 문제 발생. pathlib를 이용해 절대경로로 수정하여 해결.",
+        "step2_role": "구현 세부사항 - 시뮬레이션 환경 설정 문제 해결",
+        "step3_unit": "toddlerbot_path_fix"
+      },
+      "content": {
+        "type": "implementation",
+        "title": "ToddlerBot 경로 문제 해결",
+        "description": "ToddlerBot 모듈에서 os.path의 상대경로가 올바르게 동작하지 않는 문제가 있었다. pathlib의 Path 클래스를 이용하여 절대경로로 코드를 수정함으로써 descriptions/assemblies/ 디렉토리 접근 문제를 해결했다.",
+        "keywords": ["ToddlerBot", "pathlib", "절대경로", "파일 경로"]
+      },
+      "confidence": 0.75
+    },
+    {
+      "id": "SU-006",
+      "source_slide": {"filename": "WR 07_01 - EunwooSong.pptx", "slide_number": 8},
+      "cot_analysis": {
+        "step1_summary": "MuJoCo 설치 테스트 코드. humanoid 모델을 로드하고 시뮬레이션 스텝 실행 후 qpos 출력.",
+        "step2_role": "구현 세부사항 - 시뮬레이션 환경 검증",
+        "step3_unit": "mujoco_installation_test"
+      },
+      "content": {
+        "type": "implementation",
+        "title": "MuJoCo 설치 및 테스트",
+        "description": "mujoco_py를 import하고 humanoid.xml 모델을 로드하여 MjSim 객체를 생성한다. sim.step()으로 시뮬레이션을 진행하고 sim.data.qpos로 관절 위치를 확인하여 설치가 정상적으로 완료되었는지 검증한다.",
+        "keywords": ["MuJoCo", "mujoco_py", "humanoid", "시뮬레이션"]
+      },
+      "confidence": 0.72
+    },
+    {
+      "id": "SU-007",
+      "source_slide": {"filename": "WR 9_23.pptx", "slide_number": 53},
+      "cot_analysis": {
+        "step1_summary": "온라인 열 모델 학습의 하이퍼파라미터 설정: 데이터 샘플링 간격 1초, 시퀀스 길이 30스텝, 배치 크기 10.",
+        "step2_role": "방법론 세부사항 - 온라인 학습 설정",
+        "step3_unit": "online_learning_params"
+      },
+      "content": {
+        "type": "method",
+        "title": "온라인 열 모델 학습 파라미터",
+        "description": "온라인 학습에서 데이터 샘플링 간격(Δt_data)은 1.0초, 시퀀스 길이(N_seq)는 30스텝, 배치 크기(N_batch)는 10시퀀스로 설정한다. 이 설정은 실시간 열 모델 파라미터 업데이트를 위한 것이다.",
+        "keywords": ["온라인 학습", "샘플링 간격", "시퀀스 길이", "배치 크기"]
+      },
+      "confidence": 0.90
+    },
+    {
+      "id": "SU-008",
+      "source_slide": {"filename": "WR 07_01 - EunwooSong.pptx", "slide_number": 18},
+      "cot_analysis": {
+        "step1_summary": "find_robot_file_path 함수에서 URDF 파일 경로를 동적으로 찾는 로직. Path와 os.path 혼용.",
+        "step2_role": "구현 세부사항 - 로봇 파일 경로 탐색 유틸리티",
+        "step3_unit": "robot_file_path_utility"
+      },
+      "content": {
+        "type": "implementation",
+        "title": "로봇 파일 경로 탐색 유틸리티",
+        "description": "find_robot_file_path 함수는 로봇 이름과 파일 확장자(.urdf)를 받아 해당 파일의 절대 경로를 반환한다. descriptions/{robot_name}/ 디렉토리를 먼저 확인하고, 없으면 descriptions/assemblies/ 디렉토리를 확인한다.",
+        "keywords": ["URDF", "파일 경로", "Path", "로봇 설정"]
+      },
+      "confidence": 0.70
+    },
+    {
+      "id": "SU-009",
+      "source_slide": {"filename": "WR 9_23.pptx", "slide_number": 46},
+      "cot_analysis": {
+        "step1_summary": "Thermal Controller의 제어 손실 함수. 코어 온도 제어와 토크 제한 준수를 위한 MSE 기반 손실.",
+        "step2_role": "방법론 핵심 - 열 제어기 최적화 목표 함수",
+        "step3_unit": "thermal_controller_loss"
+      },
+      "content": {
+        "type": "method",
+        "title": "열 제어기 손실 함수",
+        "description": "열 제어기의 손실 함수 L_control은 두 부분으로 구성된다: (1) 예측된 코어 온도(c1)와 최대 허용 온도(c1^max) 간의 MSE, (2) 토크 제한(f^limit) 준수를 위한 가중치(W_control)가 적용된 MSE. 이 손실 함수를 최소화하여 안전한 온도 범위 내에서 최대 성능을 발휘하도록 제어한다.",
+        "keywords": ["열 제어기", "손실 함수", "MSE", "코어 온도", "토크 제한"]
+      },
+      "confidence": 0.93
+    },
+    {
+      "id": "SU-010",
+      "source_slide": {"filename": "WR 07_14 - EunwooSong.pptx", "slide_number": 17},
+      "cot_analysis": {
+        "step1_summary": "모터 과열로 인한 토크 감소(derating) 현상. KOLLMORGEN 모터의 derating 곡선 예시.",
+        "step2_role": "문제 정의 - 과열이 모터 성능에 미치는 영향",
+        "step3_unit": "motor_derating_problem"
+      },
+      "content": {
+        "type": "problem",
+        "title": "모터 과열로 인한 토크 디레이팅",
+        "description": "모터가 과열되면 최대 토크가 감소하는 디레이팅(derating) 현상이 발생한다. KOLLMORGEN 모터의 사례에서 보듯이, 온도 상승에 따라 허용 가능한 최대 토크가 점진적으로 감소하여 로봇의 동작 능력이 저하된다.",
+        "keywords": ["디레이팅", "과열", "최대 토크", "KOLLMORGEN"]
+      },
+      "confidence": 0.91
+    },
+    {
+      "id": "SU-011",
+      "source_slide": {"filename": "WR 1_14.pptx", "slide_number": 14},
+      "cot_analysis": {
+        "step1_summary": "2축 열 모델의 측정 결과와 한계점. 실제 온도와 예측 온도 간의 오차 분석.",
+        "step2_role": "결과 및 한계 - 기존 모델의 한계점 제시",
+        "step3_unit": "two_axis_model_limitation"
+      },
+      "content": {
+        "type": "result",
+        "title": "2축 열 모델의 한계",
+        "description": "2축(2저항) 열 모델의 측정 결과 그래프에서 모델 예측과 실제 측정값 사이에 괴리가 있음을 확인했다. 이러한 한계점은 모델의 개선 필요성을 시사하며, 추가적인 열 파라미터나 비선형 요소의 고려가 필요할 수 있다.",
+        "keywords": ["2축 모델", "한계점", "예측 오차", "모델 개선"]
+      },
+      "confidence": 0.85
+    },
+    {
+      "id": "SU-012",
+      "source_slide": {"filename": "WR 9_2.pptx", "slide_number": 11},
+      "cot_analysis": {
+        "step1_summary": "HeatState 실험 결과. 열 상태에 따른 시스템 동작 시각화.",
+        "step2_role": "실험 결과 - 열 상태 모니터링 검증",
+        "step3_unit": "heatstate_result"
+      },
+      "content": {
+        "type": "result",
+        "title": "HeatState 실험 결과",
+        "description": "HeatState 모듈의 실험 결과를 통해 열 상태 추정의 정확도를 검증했다. 그래프는 시간에 따른 열 상태 변화와 예측 정확도를 보여준다.",
+        "keywords": ["HeatState", "열 상태", "실험 결과", "검증"]
+      },
+      "confidence": 0.82
+    },
+    {
+      "id": "SU-013",
+      "source_slide": {"filename": "WR 07_14 - EunwooSong.pptx", "slide_number": 5},
+      "cot_analysis": {
+        "step1_summary": "다리 부상 동물의 적응 보행에서 영감을 얻어, 모터 과부하 상황에서도 계속 동작하는 방법 연구. ToddlerBot의 RL 정책 실행 시 19분 후 서보 모터 과부하로 넘어짐 횟수 증가 문제 제기.",
+        "step2_role": "연구 동기 - 생체 모방 적응 및 문제 정의",
+        "step3_unit": "adaptive_locomotion_motivation"
+      },
+      "content": {
+        "type": "background",
+        "title": "적응적 보행의 연구 동기",
+        "description": "다리를 다친 동물이 절뚝거리며 이동하듯이, 모터에 문제가 생겨도 계속 동작할 수 있는 로봇을 목표로 한다. ToddlerBot의 walking RL 정책 실행 시 서보 모터의 과부하(overload)로 인한 토크 감소와 기능 정지가 발생하여 19분 이후 낙상 횟수가 급증했다. 이러한 누적되는 위험에 대응하기 위한 방법이 필요하다.",
+        "keywords": ["적응 보행", "과부하", "낙상", "ToddlerBot", "RL 정책"]
+      },
+      "confidence": 0.94
+    },
+    {
+      "id": "SU-014",
+      "source_slide": {"filename": "WR 9_23.pptx", "slide_number": 28},
+      "cot_analysis": {
+        "step1_summary": "Teacher policy에서 데이터 수집. 12개 액추에이터 손상 시나리오별로 20,000개 trajectory 생성. 각 trajectory는 상태, 손상 정보, 기타 값으로 구성.",
+        "step2_role": "방법론 - 학습 데이터 수집 전략",
+        "step3_unit": "data_collection_method"
+      },
+      "content": {
+        "type": "method",
+        "title": "고장 시나리오 데이터 수집",
+        "description": "12개 액추에이터에 대해 각각의 손상 시나리오(τ^i)를 고려한다. 학습된 teacher policy에서 각 시나리오별로 N=20,000개의 trajectory를 생성한다. 각 trajectory(traj^i_n)는 상태(s), 손상 정보(d), 추가 관측값으로 구성되어 고장 상황에 대한 풍부한 학습 데이터를 제공한다.",
+        "keywords": ["데이터 수집", "Teacher policy", "trajectory", "고장 시나리오", "액추에이터"]
+      },
+      "confidence": 0.92
+    },
+    {
+      "id": "SU-015",
+      "source_slide": {"filename": "WR 07_01 - EunwooSong.pptx", "slide_number": 12},
+      "cot_analysis": {
+        "step1_summary": "MuJoCo 환경 렌더링 샘플 코드. IPython display로 실시간 시각화.",
+        "step2_role": "구현 세부사항 - 시뮬레이션 시각화",
+        "step3_unit": "mujoco_rendering_code"
+      },
+      "content": {
+        "type": "implementation",
+        "title": "MuJoCo 환경 렌더링",
+        "description": "gym 환경을 생성하고 render_mode='rgb_array'로 설정하여 화면을 numpy 배열로 받는다. IPython.display를 사용하여 Jupyter 환경에서 실시간으로 시뮬레이션 화면을 시각화할 수 있다.",
+        "keywords": ["MuJoCo", "렌더링", "IPython", "시각화", "gym"]
+      },
+      "confidence": 0.68
+    },
+    {
+      "id": "SU-016",
+      "source_slide": {"filename": "WR 07_14 - EunwooSong.pptx", "slide_number": 13},
+      "cot_analysis": {
+        "step1_summary": "모터 발열량 계산: 입력 전력에서 기계적 출력을 빼서 구함. 권선에서 발생하는 열손실이 주요 요인. MuJoCo에서 토크와 속도 획득 가능.",
+        "step2_role": "배경 지식 - 발열량 계산 원리",
+        "step3_unit": "heat_generation_calculation"
+      },
+      "content": {
+        "type": "background",
+        "title": "모터 발열량 계산",
+        "description": "모터의 발열량은 입력 전력에서 기계적 출력을 빼서 구한다(Q = P_in - P_out). 권선에서 발생하는 열손실(I²R)이 주요 요인이다. MuJoCo 시뮬레이션에서 토크(Torque)와 각속도(velocity)를 획득하여 출력 전력을 계산할 수 있다.",
+        "keywords": ["발열량", "열손실", "권선", "MuJoCo", "토크"]
+      },
+      "confidence": 0.89
+    },
+    {
+      "id": "SU-017",
+      "source_slide": {"filename": "WR 9_23.pptx", "slide_number": 51},
+      "cot_analysis": {
+        "step1_summary": "제안된 열 모델: 기존 2저항 열 모델에 P1~P5 파라미터를 추가하여 학습. P_i=0이면 기존 모델과 동일.",
+        "step2_role": "방법론 핵심 - 확장된 열 모델 제안",
+        "step3_unit": "proposed_thermal_model"
+      },
+      "content": {
+        "type": "method",
+        "title": "확장된 열 모델 (Proposed Thermal Model)",
+        "description": "기존 2저항 열 모델을 확장하여 추가 파라미터 P1~P5를 학습한다. 수식 (7')과 (8')에서 exp(P1), exp(P2) 등의 형태로 파라미터가 적용되며, 모든 P_i가 0이면 기존 2저항 열 모델과 동일해진다. 이 확장을 통해 비선형 열 특성을 더 정확하게 모델링할 수 있다.",
+        "keywords": ["확장 열 모델", "P1-P5 파라미터", "2저항 모델", "비선형"]
+      },
+      "confidence": 0.95
+    },
+    {
+      "id": "SU-018",
+      "source_slide": {"filename": "WR 9_2.pptx", "slide_number": 6},
+      "cot_analysis": {
+        "step1_summary": "토크 제한 전후 비교 실험. Normal(0~500 steps) vs Torque limited(1000~1389 steps)의 동작 차이.",
+        "step2_role": "실험 결과 - 토크 제한의 효과 시각화",
+        "step3_unit": "torque_limit_comparison"
+      },
+      "content": {
+        "type": "result",
+        "title": "토크 제한 적용 전후 비교",
+        "description": "정상 상태(0~500 스텝)와 토크 제한 상태(1000~1389 스텝)에서의 로봇 동작을 비교한다. GIF 애니메이션으로 토크 제한이 보행 패턴과 안정성에 미치는 영향을 시각적으로 확인할 수 있다.",
+        "keywords": ["토크 제한", "비교 실험", "보행 패턴", "안정성"]
+      },
+      "confidence": 0.86
+    },
+    {
+      "id": "SU-019",
+      "source_slide": {"filename": "WR 07_14 - EunwooSong.pptx", "slide_number": 26},
+      "cot_analysis": {
+        "step1_summary": "DreamFLEX: 험지에서의 결함 인식 사족보행 로봇 제어기. 잠긴 관절, 약화된 모터 등의 결함을 학습하여 sim2real gap 최소화.",
+        "step2_role": "관련 연구 - 결함 인식 로코모션 선행 연구",
+        "step3_unit": "dreamflex_related_work"
+      },
+      "content": {
+        "type": "background",
+        "title": "DreamFLEX: 결함 인식 사족보행 제어기",
+        "description": "DreamFLEX는 험지에서의 이상 상황에 대한 결함을 다음과 같이 정의하고 학습한다: (1) 잠긴 관절 - 외부 충격으로 특정 관절이 고정되거나 움직임 범위가 제한됨, (2) 약화된 모터 - 과열, 전력 부족 등으로 정상적인 토크 발생이 제한됨. 이러한 결함 시나리오를 학습하여 sim2real gap을 최소화한다.",
+        "keywords": ["DreamFLEX", "결함 인식", "사족보행", "sim2real", "관절 고장"]
+      },
+      "confidence": 0.90
+    },
+    {
+      "id": "SU-020",
+      "source_slide": {"filename": "WR 07_29.pptx", "slide_number": 9},
+      "cot_analysis": {
+        "step1_summary": "RTX 5080에서 10시간 학습 결과. 5,120,000 스텝과 302,080,000 스텝 비교.",
+        "step2_role": "실험 결과 - 학습 진행에 따른 성능 변화",
+        "step3_unit": "training_result"
+      },
+      "content": {
+        "type": "result",
+        "title": "학습 진행 결과",
+        "description": "RTX 5080 GPU에서 10시간 학습을 진행했다. 5,120,000 스텝(좌)과 302,080,000 스텝(우)의 결과를 비교하여 학습이 진행됨에 따라 정책의 성능이 향상됨을 확인했다.",
+        "keywords": ["학습 결과", "RTX 5080", "스텝", "성능 향상"]
+      },
+      "confidence": 0.78
+    },
+    {
+      "id": "SU-021",
+      "source_slide": {"filename": "WR 8_5.pptx", "slide_number": 7},
+      "cot_analysis": {
+        "step1_summary": "시간에 따른 최대 모터 전류 변화 그래프. 수냉 적용 시(파란 점선) 장시간 높은 전류 유지 가능.",
+        "step2_role": "배경 - 수냉 시스템의 효과 시각화",
+        "step3_unit": "water_cooling_effect"
+      },
+      "content": {
+        "type": "background",
+        "title": "수냉 시스템의 효과",
+        "description": "그래프에서 ECpowermax30(200W 48V water-cooling, 파란 점선)이 일반 모터(EC16, ECpowermax30 공냉)보다 장시간 높은 전류를 유지할 수 있음을 보여준다. 수냉을 적용하면 모터의 지속적인 고출력 운용이 가능해진다.",
+        "keywords": ["수냉", "전류", "지속 운용", "ECpowermax"]
+      },
+      "confidence": 0.88
+    },
+    {
+      "id": "SU-022",
+      "source_slide": {"filename": "WR 1_14.pptx", "slide_number": 10},
+      "cot_analysis": {
+        "step1_summary": "열 파라미터 기호 정의 - 열 저항, 열 용량 관련 변수들.",
+        "step2_role": "방법론 - 기호 및 표기법 정의",
+        "step3_unit": "thermal_parameter_notation"
+      },
+      "content": {
+        "type": "method",
+        "title": "열 모델 파라미터 표기법",
+        "description": "2저항 열 모델의 파라미터: Rth1, Rth2(열 저항), Cth1, Cth2(열 용량), Q(열 발생률). 이 파라미터들을 Adam Optimizer로 학습할 때 양수 제약을 위해 로그 스케일 변환을 적용한다.",
+        "keywords": ["열 저항", "열 용량", "파라미터", "표기법"]
+      },
+      "confidence": 0.85
+    },
+    {
+      "id": "SU-023",
+      "source_slide": {"filename": "WR 9_23.pptx", "slide_number": 37},
+      "cot_analysis": {
+        "step1_summary": "FEMNet의 출력 설명 - 속도, 고장 벡터, 컨텍스트, 변조 컨텍스트의 역할.",
+        "step2_role": "방법론 - 네트워크 출력 의미 설명",
+        "step3_unit": "femnet_outputs"
+      },
+      "content": {
+        "type": "method",
+        "title": "FEMNet 출력 변수 정의",
+        "description": "FEMNet의 주요 출력 변수들: o_t^H(관측 이력), o_{t+1}(다음 관측), v_t(몸체 선속도), f_t(관절 고장 벡터), z_t(컨텍스트 벡터), z̃_t(변조된 컨텍스트 벡터), γ1, γ2(변조 파라미터). 이들은 고장 상황 인식과 적응적 행동 생성에 활용된다.",
+        "keywords": ["FEMNet 출력", "고장 벡터", "컨텍스트", "변조"]
+      },
+      "confidence": 0.93
+    },
+    {
+      "id": "SU-024",
+      "source_slide": {"filename": "WR 9_23.pptx", "slide_number": 53},
+      "cot_analysis": {
+        "step1_summary": "온라인 학습 알고리즘의 수식 - 손실 함수와 파라미터 업데이트.",
+        "step2_role": "방법론 - 온라인 학습 알고리즘 상세",
+        "step3_unit": "online_learning_algorithm"
+      },
+      "content": {
+        "type": "method",
+        "title": "온라인 열 모델 학습 알고리즘",
+        "description": "실시간으로 수집되는 데이터를 사용하여 열 모델 파라미터를 지속적으로 업데이트한다. 배치 단위로 손실 함수를 계산하고 그래디언트 하강법으로 파라미터를 조정하여 실제 환경 변화에 적응한다.",
+        "keywords": ["온라인 학습", "파라미터 업데이트", "그래디언트", "적응"]
+      },
+      "confidence": 0.88
+    },
+    {
+      "id": "SU-025",
+      "source_slide": {"filename": "WR 9_23.pptx", "slide_number": 46},
+      "cot_analysis": {
+        "step1_summary": "코어 온도 제어 전략 - 예측 기반 제어로 안전 온도 유지.",
+        "step2_role": "방법론 - 열 제어 전략",
+        "step3_unit": "core_temperature_control"
+      },
+      "content": {
+        "type": "method",
+        "title": "모터 코어 온도 제어 전략",
+        "description": "열 제어기는 N_control 스텝 앞의 코어 온도를 예측하고, 예측 온도가 최대 허용 온도를 초과하지 않도록 현재 토크를 조절한다. 이를 통해 모터 손상을 방지하면서 최대 성능을 유지한다.",
+        "keywords": ["코어 온도", "예측 제어", "최대 허용 온도", "토크 조절"]
+      },
+      "confidence": 0.92
+    },
+    {
+      "id": "SU-026",
+      "source_slide": {"filename": "WR 07_14 - EunwooSong.pptx", "slide_number": 5},
+      "cot_analysis": {
+        "step1_summary": "ToddlerBot 낙상 데이터 - 19분 후 급격한 fall count 증가.",
+        "step2_role": "문제 정의 - 구체적 데이터로 문제 심각성 제시",
+        "step3_unit": "fall_count_data"
+      },
+      "content": {
+        "type": "problem",
+        "title": "ToddlerBot 낙상 문제",
+        "description": "ToddlerBot의 walking RL 정책 실행 실험에서 19분 이후 Fall Count가 급격히 증가했다. 이는 서보 모터의 과부하로 인한 토크 감소와 기능 정지가 원인이며, 누적되는 열 스트레스에 대한 대응 방안이 필요함을 보여준다.",
+        "keywords": ["ToddlerBot", "낙상", "19분", "과부하"]
+      },
+      "confidence": 0.91
+    },
+    {
+      "id": "SU-027",
+      "source_slide": {"filename": "WR 07_14 - EunwooSong.pptx", "slide_number": 13},
+      "cot_analysis": {
+        "step1_summary": "maxon motor key information 참조 - 효율, 토크 상수 등.",
+        "step2_role": "배경 - 실제 모터 스펙 기반 모델링",
+        "step3_unit": "maxon_motor_specs"
+      },
+      "content": {
+        "type": "background",
+        "title": "maxon 모터 사양 참조",
+        "description": "발열량 계산에 필요한 모터 파라미터(효율, 토크 상수, 권선 저항 등)를 maxon motor의 key information에서 참조한다. 실제 하드웨어 스펙을 기반으로 정확한 열 모델링이 가능하다.",
+        "keywords": ["maxon motor", "모터 스펙", "토크 상수", "효율"]
+      },
+      "confidence": 0.80
+    },
+    {
+      "id": "SU-028",
+      "source_slide": {"filename": "WR 9_23.pptx", "slide_number": 51},
+      "cot_analysis": {
+        "step1_summary": "열 모델 미분 방정식 - 코어/하우징 온도 변화율 수식.",
+        "step2_role": "방법론 - 열역학 모델 수식",
+        "step3_unit": "thermal_differential_equations"
+      },
+      "content": {
+        "type": "method",
+        "title": "열 모델 미분 방정식",
+        "description": "코어 온도(c1)와 하우징 온도(c2)의 시간 변화율을 나타내는 미분 방정식: ċ1 = W1·exp(P1)·τ² - (c1-c2)/(W2·exp(P2)), ċ2 = (c1-c2)/(W3·exp(P3)) - (c2-W5(1+P5))/(W4·exp(P4)). 이 방정식은 열 발생, 전도, 방출을 모델링한다.",
+        "keywords": ["미분 방정식", "코어 온도", "하우징 온도", "열전도"]
+      },
+      "confidence": 0.94
+    },
+    {
+      "id": "SU-029",
+      "source_slide": {"filename": "WR 9_2.pptx", "slide_number": 11},
+      "cot_analysis": {
+        "step1_summary": "열 상태 그래프 분석 - 온도 추정값과 실측값 비교.",
+        "step2_role": "결과 - 열 모델 검증",
+        "step3_unit": "heatstate_validation"
+      },
+      "content": {
+        "type": "result",
+        "title": "열 상태 추정 검증",
+        "description": "HeatState 모듈의 온도 추정값과 실제 측정값을 비교한 그래프이다. 두 값의 일치 정도를 통해 열 모델의 정확도를 정량적으로 평가할 수 있다.",
+        "keywords": ["검증", "추정값", "측정값", "정확도"]
+      },
+      "confidence": 0.84
+    },
+    {
+      "id": "SU-030",
+      "source_slide": {"filename": "WR 9_23.pptx", "slide_number": 28},
+      "cot_analysis": {
+        "step1_summary": "trajectory 구조 상세 - 상태 s, 손상 정보 d의 구체적 내용.",
+        "step2_role": "방법론 - 데이터 구조 설명",
+        "step3_unit": "trajectory_structure"
+      },
+      "content": {
+        "type": "method",
+        "title": "Trajectory 데이터 구조",
+        "description": "각 trajectory는 상태 정보(s), 손상 정보(d), 추가 관측값으로 구성된다. 상태는 로봇의 현재 자세와 속도를, 손상 정보는 어떤 액추에이터에 어떤 유형의 고장이 발생했는지를 포함한다.",
+        "keywords": ["trajectory", "상태", "손상 정보", "데이터 구조"]
+      },
+      "confidence": 0.87
+    },
+    {
+      "id": "SU-031",
+      "source_slide": {"filename": "WR 07_14 - EunwooSong.pptx", "slide_number": 26},
+      "cot_analysis": {
+        "step1_summary": "DreamFLEX의 결함 표현 방식 - 빨간 원으로 결함 관절 표시.",
+        "step2_role": "관련 연구 - 결함 시각화 방법",
+        "step3_unit": "fault_visualization"
+      },
+      "content": {
+        "type": "background",
+        "title": "결함 시각화",
+        "description": "DreamFLEX에서는 결함이 생긴 관절을 빨간색 원으로 표시하여 어떤 관절에 문제가 있는지 직관적으로 파악할 수 있게 한다. 이러한 시각화는 결함 인식 알고리즘의 결과를 검증하는 데 유용하다.",
+        "keywords": ["결함 시각화", "빨간 원", "관절 표시"]
+      },
+      "confidence": 0.82
+    },
+    {
+      "id": "SU-032",
+      "source_slide": {"filename": "WR 07_29.pptx", "slide_number": 9},
+      "cot_analysis": {
+        "step1_summary": "학습 곡선 비교 - 초기 vs 후기 학습 상태의 성능 차이.",
+        "step2_role": "결과 - 학습 수렴 확인",
+        "step3_unit": "learning_curve"
+      },
+      "content": {
+        "type": "result",
+        "title": "학습 곡선 분석",
+        "description": "초기 학습 상태(5,120,000 스텝)와 충분한 학습 후(302,080,000 스텝)의 성능을 비교하면, 학습이 진행됨에 따라 정책이 더 안정적이고 효율적인 행동을 생성함을 확인할 수 있다.",
+        "keywords": ["학습 곡선", "스텝", "성능 비교", "수렴"]
+      },
+      "confidence": 0.79
+    },
+    {
+      "id": "SU-033",
+      "source_slide": {"filename": "WR 07_14 - EunwooSong.pptx", "slide_number": 14},
+      "cot_analysis": {
+        "step1_summary": "전력 수식 상세 - P_in = VI, P_out = τω, P_loss = P_in - P_out.",
+        "step2_role": "배경 - 전력 수식 유도",
+        "step3_unit": "power_equations"
+      },
+      "content": {
+        "type": "background",
+        "title": "전력 관계 수식",
+        "description": "입력 전력 P_in = V × I (전압 × 전류), 출력 전력 P_out = τ × ω (토크 × 각속도), 손실 전력 P_loss = P_in - P_out. 손실 전력이 열로 변환되어 모터 온도 상승의 원인이 된다.",
+        "keywords": ["전력 수식", "입력 전력", "출력 전력", "손실"]
+      },
+      "confidence": 0.90
+    },
+    {
+      "id": "SU-034",
+      "source_slide": {"filename": "WR 1_14.pptx", "slide_number": 14},
+      "cot_analysis": {
+        "step1_summary": "2축 모델 한계의 구체적 분석 - 특정 조건에서 오차 발생.",
+        "step2_role": "결과/한계 - 모델 개선 방향 제시",
+        "step3_unit": "model_improvement_direction"
+      },
+      "content": {
+        "type": "result",
+        "title": "모델 개선 방향",
+        "description": "2축 열 모델의 한계점 분석을 통해 다음과 같은 개선 방향을 도출했다: (1) 추가 열 경로 고려, (2) 비선형 열 특성 반영, (3) 온라인 파라미터 적응. 이러한 개선이 제안된 확장 열 모델에 반영되었다.",
+        "keywords": ["모델 개선", "비선형", "온라인 적응", "열 경로"]
+      },
+      "confidence": 0.86
+    },
+    {
+      "id": "SU-035",
+      "source_slide": {"filename": "WR 9_2.pptx", "slide_number": 6},
+      "cot_analysis": {
+        "step1_summary": "Normal vs Torque limited 상태에서의 보행 안정성 비교.",
+        "step2_role": "결과 - 토크 제한 효과 정량화",
+        "step3_unit": "stability_comparison"
+      },
+      "content": {
+        "type": "result",
+        "title": "보행 안정성 비교",
+        "description": "정상 상태에서의 안정적인 보행과 토크 제한 상태에서의 불안정한 보행을 비교한다. 토크 제한 시 로봇이 균형을 유지하기 어려워지며, 이를 극복하기 위한 적응적 제어 전략이 필요함을 시사한다.",
+        "keywords": ["보행 안정성", "토크 제한", "균형", "적응 제어"]
+      },
+      "confidence": 0.85
+    }
+  ]
+}

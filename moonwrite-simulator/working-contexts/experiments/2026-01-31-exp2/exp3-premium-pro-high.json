@@ -1,0 +1,4003 @@
+{
+  "condition": "Premium + Pro (High)",
+  "model": "flash + pro (full)",
+  "resolution": "1-5 units/slide",
+  "timestamp": "2026-01-31T12:34:07.822233",
+  "total_samples": 45,
+  "total_units": 126,
+  "avg_units_per_slide": 2.8,
+  "writing_principles_used": [
+    "clarity",
+    "coherence",
+    "evidence",
+    "precision",
+    "engagement",
+    "contribution",
+    "methodology",
+    "novelty"
+  ],
+  "sample_extractions": [
+    {
+      "id": "WR 07_01 - EunwooSong.pptx_37_0",
+      "content": "Result - Video",
+      "type": "experimental_result",
+      "category": "Results",
+      "confidence": 0.648,
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "body",
+        "thesis_relevance": "low",
+        "quality_tier": "standard"
+      }
+    },
+    {
+      "id": "WR 07_01 - EunwooSong.pptx_37_1",
+      "content": "RTX 5080: 3h 43m 43s",
+      "type": "general_content",
+      "category": "General",
+      "confidence": 0.72,
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 07_01 - EunwooSong.pptx_37_2",
+      "content": "[general_figure] WR 07_01 - EunwooSong_37_b5f0342b.jpg",
+      "type": "general_figure",
+      "category": "Supplementary",
+      "confidence": 0.84,
+      "pro_validation": {
+        "semantic_depth": "high",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 07_01 - EunwooSong.pptx_37_3",
+      "content": "[general_figure] WR 07_01 - EunwooSong_37_b6730518.jpg",
+      "type": "general_figure",
+      "category": "Supplementary",
+      "confidence": 0.84,
+      "pro_validation": {
+        "semantic_depth": "high",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_38_0",
+      "content": "Method - Result",
+      "type": "experimental_result",
+      "category": "Results",
+      "confidence": 0.648,
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "body",
+        "thesis_relevance": "low",
+        "quality_tier": "standard"
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_38_1",
+      "content": "[general_figure] WR 9_23_38_2dbc9d7e.png",
+      "type": "general_figure",
+      "category": "Supplementary",
+      "confidence": 0.84,
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 07_14 - EunwooSong.pptx_10_0",
+      "content": "Algorithm으로 관리하는 것과의 차별점?",
+      "type": "methodology",
+      "category": "Methods",
+      "confidence": 0.6,
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "body",
+        "thesis_relevance": "low",
+        "quality_tier": "standard"
+      }
+    },
+    {
+      "id": "WR 07_14 - EunwooSong.pptx_10_1",
+      "content": "단순히 특정 이상 온도로 올라가면 동작을 멈추게 할 수 있지만, 냉각이 될 때까지 Agent가 멈춰야하는 문제점이 있다.",
+      "type": "problem_statement",
+      "category": "Motivation",
+      "confidence": 0.72,
+      "pro_validation": {
+        "semantic_depth": "high",
+        "structural_role": "opening",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 07_14 - EunwooSong.pptx_10_2",
+      "content": "overload로 인해 예상한 토크가 부족한 상황을 극복하는 것에 초점",
+      "type": "reinforcement_learning",
+      "category": "Learning",
+      "confidence": 0.72,
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 07_14 - EunwooSong.pptx_13_0",
+      "content": "모터의 발열량은 입력 전력에서 기계적인 출력을 빼어 구한다",
+      "type": "thermal_domain",
+      "category": "Thermal-Management",
+      "confidence": 0.72,
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "medium",
+        "quality_tier": "premium"
+      }
+    }
+  ],
+  "category_distribution": {
+    "Results": 8,
+    "General": 39,
+    "Supplementary": 17,
+    "Methods": 7,
+    "Motivation": 2,
+    "Learning": 6,
+    "Thermal-Management": 12,
+    "Actuator-Control": 7,
+    "Theory": 13,
+    "Contributions": 1,
+    "Robotics": 6,
+    "Simulation": 5,
+    "Demonstration": 3
+  },
+  "type_distribution": {
+    "experimental_result": 8,
+    "general_content": 39,
+    "general_figure": 17,
+    "methodology": 7,
+    "problem_statement": 2,
+    "reinforcement_learning": 6,
+    "thermal_domain": 12,
+    "motor_control": 7,
+    "mathematical_formula": 13,
+    "contribution": 1,
+    "robotics": 6,
+    "simulation": 5,
+    "animation_demo": 3
+  },
+  "source_distribution": {
+    "text": 93,
+    "image": 33
+  },
+  "thesis": {
+    "domain": "Thermal-Aware Robot Control",
+    "core_claim": "열 관리를 통한 로봇 장기 운용 안정성 향상",
+    "sub_claims": [
+      "실시간 발열 예측 및 모니터링 프레임워크",
+      "열 인식 기반 동작 계획 (MPC/RL)",
+      "시뮬레이션-실제 간격 축소를 위한 Heat2Torque 모델"
+    ],
+    "primary_categories": [
+      "General",
+      "Supplementary",
+      "Theory"
+    ]
+  },
+  "narrative_arc": {
+    "opening": {
+      "hook": "로봇 장기 운용시 발열로 인한 성능 저하 문제",
+      "context": "기존 DRL 제어기의 한계",
+      "thesis": "열 관리를 통한 로봇 장기 운용 안정성 향상"
+    },
+    "development": {
+      "point1": "Heat2Torque 시뮬레이션 모델",
+      "point2": "실시간 열 상태 추정 및 예측",
+      "point3": "열 인식 MPC/RL 플래너"
+    },
+    "climax": {
+      "main_result": "과열 제한 횟수 감소 및 장기 안정성 향상",
+      "evidence": "시뮬레이션 및 실제 로봇 실험 결과"
+    },
+    "resolution": {
+      "contribution": [
+        "실시간 발열 예측 및 모니터링 프레임워크",
+        "열 인식 기반 동작 계획 (MPC/RL)",
+        "시뮬레이션-실제 간격 축소를 위한 Heat2Torque 모델"
+      ],
+      "implications": "휴머노이드/사족보행 로봇의 실용화 기여"
+    }
+  },
+  "argument_structure": {
+    "motivation": [
+      "WR 07_14 - EunwooSong.pptx_10_1",
+      "WR 9_23.pptx_61_2"
+    ],
+    "methodology": [
+      "WR 07_14 - EunwooSong.pptx_10_0",
+      "WR 9_23.pptx_52_0",
+      "WR 9_23.pptx_52_2",
+      "WR 9_23.pptx_53_3",
+      "WR 9_23.pptx_53_4",
+      "WR 9_23.pptx_22_3",
+      "WR 9_23.pptx_55_0",
+      "WR 9_23.pptx_55_1",
+      "WR 9_23.pptx_55_2",
+      "WR 07_14 - EunwooSong.pptx_16_0",
+      "WR 07_14 - EunwooSong.pptx_16_1",
+      "WR 07_14 - EunwooSong.pptx_11_2",
+      "WR 9_23.pptx_35_0",
+      "WR 11_18.pptx_24_1",
+      "WR 9_23.pptx_62_3",
+      "WR 9_23.pptx_61_0",
+      "WR 9_23.pptx_46_0",
+      "WR 9_23.pptx_46_1",
+      "WR 9_23.pptx_46_2",
+      "WR 9_23.pptx_46_3"
+    ],
+    "implementation": [
+      "WR 07_14 - EunwooSong.pptx_13_3",
+      "WR 07_14 - EunwooSong.pptx_13_4",
+      "WR 9_23.pptx_22_2",
+      "WR 07_01 - EunwooSong.pptx_34_0",
+      "WR 07_01 - EunwooSong.pptx_34_1",
+      "WR 12_23.pptx_8_1",
+      "WR 9_2.pptx_6_2",
+      "WR 07_14 - EunwooSong.pptx_4_1",
+      "WR 9_23.pptx_28_0",
+      "WR 9_23.pptx_28_1",
+      "WR 07_01 - EunwooSong.pptx_14_0",
+      "WR 07_01 - EunwooSong.pptx_13_1"
+    ],
+    "evaluation": [
+      "WR 07_01 - EunwooSong.pptx_37_0",
+      "WR 9_23.pptx_38_0",
+      "WR 10_14.pptx_10_0",
+      "WR 9_23.pptx_10_0",
+      "WR 10_14.pptx_3_0",
+      "WR 9_2.pptx_7_0",
+      "WR 9_2.pptx_6_0",
+      "WR 9_2.pptx_6_3",
+      "WR 9_2.pptx_6_4",
+      "WR 11_18.pptx_9_0",
+      "WR 07_01 - EunwooSong.pptx_13_0"
+    ],
+    "contribution": [
+      "WR 8_5.pptx_13_0"
+    ]
+  },
+  "evidence_clusters": {
+    "Results": [
+      {
+        "id": "WR 07_01 - EunwooSong.pptx_37_0",
+        "content": "Result - Video",
+        "confidence": 0.648,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_23.pptx_38_0",
+        "content": "Method - Result",
+        "confidence": 0.648,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 10_14.pptx_10_0",
+        "content": "Meta Learning - Result",
+        "confidence": 0.648,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 10_14.pptx_3_0",
+        "content": "Toddlerbot 학습 결과",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_2.pptx_7_0",
+        "content": "Result (HeatState)",
+        "confidence": 0.648,
+        "thesis_relevance": "medium"
+      },
+      {
+        "id": "WR 9_2.pptx_6_0",
+        "content": "Result (1000~1389 steps)",
+        "confidence": 0.648,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 11_18.pptx_9_0",
+        "content": "실험 결과 (19456000 steps, high temperature)",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 07_01 - EunwooSong.pptx_13_0",
+        "content": "Sample Code - Result",
+        "confidence": 0.648,
+        "thesis_relevance": "low"
+      }
+    ],
+    "General": [
+      {
+        "id": "WR 07_01 - EunwooSong.pptx_37_1",
+        "content": "RTX 5080: 3h 43m 43s",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 07_14 - EunwooSong.pptx_13_2",
+        "content": "권선에서 발생하는 열손실이 주를 이룸",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_23.pptx_52_1",
+        "content": "Δt_est = 0.02 (sec)",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 12_23.pptx_6_0",
+        "content": "아래 노션에 정리해두었습니다!",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 12_23.pptx_6_1",
+        "content": "https://www.notion.so/RealityLab-2cdf6f41de51803f9997d7d7559a4599#2cff6f41de5180d6b772ffd0f7996ef4",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_23.pptx_53_0",
+        "content": "Δt_data = 1.0 (sec)",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_23.pptx_53_1",
+        "content": "N_seq = 30 (step)",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_23.pptx_53_2",
+        "content": "N_batch = 10 (seq)",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 07_22.pptx_4_0",
+        "content": "시뮬레이션 함수 테스트",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_23.pptx_22_1",
+        "content": "결함 중 가장 대표적으로 장치 노후화 또는 예상치 못한 운영 이벤트와 같은 요인으로 액추에이터 손상이다.",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 07_01 - EunwooSong.pptx_34_4",
+        "content": "randomization_fn 추가시 JAX Tracer Leak 발생",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 07_14 - EunwooSong.pptx_27_1",
+        "content": "혹독하고 위험한 환경에서 발생할 수 있는 로봇의 내고장성을 고려해야한다.",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 07_14 - EunwooSong.pptx_27_2",
+        "content": "FT-Net을 통해 고장 관리",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 07_14 - EunwooSong.pptx_27_3",
+        "content": "실제 토크에 고장 계수를 곱하여 토크를 계산하고 이를 시뮬레이션 한다.",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 07_14 - EunwooSong.pptx_27_4",
+        "content": "다양한 고장 상황에서도 보행할 수 있는 범용적인 정책을 학습하는 것이 목표",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 12_23.pptx_8_0",
+        "content": "Migration 진행 상황",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 12_23.pptx_8_2",
+        "content": "Dynamicel SDK, C++로 이전한 코드에서 오류 발생",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 12_23.pptx_8_3",
+        "content": "마무리 이후, Endurance Test 진행",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_2.pptx_6_1",
+        "content": "Normal (0~500steps)",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 07_14 - EunwooSong.pptx_4_3",
+        "content": "추가로 로봇의 에너지 효율성을 개선할 수 있을 것이다.",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_23.pptx_28_2",
+        "content": "traj^i_n: i번째 시나리오에서의 n번째 trajectory",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_23.pptx_28_3",
+        "content": "N은 20000으로 설정",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_23.pptx_28_4",
+        "content": "각각의 traj은 (s, d, )     의 값으로 구성된다.",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 07_14 - EunwooSong.pptx_24_0",
+        "content": "적용 Task 및 성능 비교",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 07_14 - EunwooSong.pptx_24_2",
+        "content": "시뮬레이션에서 과열 상황을 부여하고, 각 모델(original, ours)를 비교",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 07_14 - EunwooSong.pptx_11_0",
+        "content": "기존의 에너지 효율성 보상 함수",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 07_01 - EunwooSong.pptx_14_1",
+        "content": "Ubuntu 24.04",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_23.pptx_50_1",
+        "content": "열 파라미터의 업데이트 필요성은 다음과 같다.",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_23.pptx_50_2",
+        "content": "부착된 금속 부품으로의 열 방출, 주변 온도 오차, 모터의 열화 또는 손상 등",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_23.pptx_50_3",
+        "content": "New와, Old에게 각각 200N의 부하를 걸었을 때 생기는 그래프는 다음과 같다",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_23.pptx_50_4",
+        "content": "New: 새로운 모터, Old: 오래된 모터 (90초 이후 15℃ 차이를 보임)",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 11_18.pptx_24_0",
+        "content": "obs(step by step… 1 to 4), torso_ang_vel, torso_euler",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 07_01 - EunwooSong.pptx_26_0",
+        "content": "RTX 5080: 3m 42s/ A100:6m",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 07_01 - EunwooSong.pptx_38_0",
+        "content": "Graphics..?",
+        "confidence": 0.6,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 07_01 - EunwooSong.pptx_38_1",
+        "content": "notion link",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_23.pptx_62_1",
+        "content": "최적온도(c1, min) 이내는 최대 보상, 아니면 리워드 점차 감소(c1,max)",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_23.pptx_62_2",
+        "content": "가우시안 분포 꼴 이용",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_23.pptx_61_3",
+        "content": "과열에 대한 것도, 과열 상황이 발생한 뒤 생긴 토크 제한에 대응",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_23.pptx_61_4",
+        "content": "선제적 건강 관리 프레임워크 제안",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      }
+    ],
+    "Supplementary": [
+      {
+        "id": "WR 07_01 - EunwooSong.pptx_37_2",
+        "content": "[general_figure] WR 07_01 - EunwooSong_37_b5f0342b.jpg",
+        "confidence": 0.84,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 07_01 - EunwooSong.pptx_37_3",
+        "content": "[general_figure] WR 07_01 - EunwooSong_37_b6730518.jpg",
+        "confidence": 0.84,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_23.pptx_38_1",
+        "content": "[general_figure] WR 9_23_38_2dbc9d7e.png",
+        "confidence": 0.84,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_23.pptx_63_0",
+        "content": "[general_figure] WR 9_23_63_967cd35e.png",
+        "confidence": 1.0,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 11_18.pptx_5_1",
+        "content": "[general_figure] WR 11_18_5_afee9d27.png",
+        "confidence": 1.0,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 8_26.pptx_10_1",
+        "content": "[general_figure] WR 8_26_10_c12c32ef.png",
+        "confidence": 1.0,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 11_18.pptx_19_1",
+        "content": "[general_figure] WR 11_18_19_d1b33a0f.png",
+        "confidence": 0.84,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 11_18.pptx_19_2",
+        "content": "[general_figure] WR 11_18_19_26e90020.png",
+        "confidence": 0.84,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 07_22.pptx_4_1",
+        "content": "[general_figure] WR 07_22_4_fdad3f40.png",
+        "confidence": 1.0,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 10_14.pptx_10_1",
+        "content": "[general_figure] WR 10_14_10_99996ad6.png",
+        "confidence": 1.0,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_2.pptx_7_1",
+        "content": "[general_figure] WR 9_2_7_038eea9f.png",
+        "confidence": 1.0,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 1_14.pptx_11_0",
+        "content": "[general_figure] WR 1_14_11_d8a2605f.png",
+        "confidence": 1.0,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_23.pptx_35_1",
+        "content": "[general_figure] WR 9_23_35_d65ff318.png",
+        "confidence": 1.0,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 07_01 - EunwooSong.pptx_21_0",
+        "content": "[general_figure] WR 07_01 - EunwooSong_21_c9873443.png",
+        "confidence": 1.0,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 07_01 - EunwooSong.pptx_26_1",
+        "content": "[general_figure] WR 07_01 - EunwooSong_26_aa83a804.png",
+        "confidence": 0.84,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 11_18.pptx_16_0",
+        "content": "[general_figure] WR 11_18_16_0e8351b1.png",
+        "confidence": 1.0,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 07_01 - EunwooSong.pptx_13_2",
+        "content": "[general_figure] WR 07_01 - EunwooSong_13_ead050c1.png",
+        "confidence": 0.84,
+        "thesis_relevance": "low"
+      }
+    ],
+    "Methods": [
+      {
+        "id": "WR 07_14 - EunwooSong.pptx_10_0",
+        "content": "Algorithm으로 관리하는 것과의 차별점?",
+        "confidence": 0.6,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_23.pptx_52_0",
+        "content": "Method - C. Thermal Esimator: Estimation of Motor Core Temperature",
+        "confidence": 0.648,
+        "thesis_relevance": "medium"
+      },
+      {
+        "id": "WR 9_23.pptx_53_3",
+        "content": "Method - D. Online Learning of Thermal Model",
+        "confidence": 0.648,
+        "thesis_relevance": "medium"
+      },
+      {
+        "id": "WR 9_23.pptx_55_0",
+        "content": "Method - F. Thermal Controller: Control of Motor Core Temperature",
+        "confidence": 0.648,
+        "thesis_relevance": "medium"
+      },
+      {
+        "id": "WR 9_23.pptx_35_0",
+        "content": "Method - DreamFLEX",
+        "confidence": 0.648,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_23.pptx_61_0",
+        "content": "Limitations of Prior Research & Our Method",
+        "confidence": 0.648,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_23.pptx_46_0",
+        "content": "Method - F. Thermal Controller: Control of Motor Core Temperature",
+        "confidence": 0.648,
+        "thesis_relevance": "medium"
+      }
+    ],
+    "Motivation": [
+      {
+        "id": "WR 07_14 - EunwooSong.pptx_10_1",
+        "content": "단순히 특정 이상 온도로 올라가면 동작을 멈추게 할 수 있지만, 냉각이 될 때까지 Agent가 멈춰야하는 문제점이 있다.",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_23.pptx_61_2",
+        "content": "이러한 문제를 해결하기 위해 로봇의 미래 상태를 모터의 온도에 기반해 예측하고, 성능과 하드웨어 내구성 사이의 균형을 맞춘다.",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      }
+    ],
+    "Learning": [
+      {
+        "id": "WR 07_14 - EunwooSong.pptx_10_2",
+        "content": "overload로 인해 예상한 토크가 부족한 상황을 극복하는 것에 초점",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 11_18.pptx_5_0",
+        "content": "Reward 2, warm_up",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 11_18.pptx_19_0",
+        "content": "19000000 policy\t\t\t\t\t\tbest policy",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 07_01 - EunwooSong.pptx_34_3",
+        "content": "learning_rate_schedule_fn, randomization_fn 등 여러 옵션 무시",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_23.pptx_62_0",
+        "content": "기존 Reward에 다음 core temp safe 구역에 따른 보상 함수를 추가한다.",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_23.pptx_61_1",
+        "content": "기존의 DRL 기반 제어기들은 예측하지 못한 외란에 대응하는 것에 초점을 맞췄다.",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      }
+    ],
+    "Thermal-Management": [
+      {
+        "id": "WR 07_14 - EunwooSong.pptx_13_0",
+        "content": "모터의 발열량은 입력 전력에서 기계적인 출력을 빼어 구한다",
+        "confidence": 0.72,
+        "thesis_relevance": "medium"
+      },
+      {
+        "id": "WR 07_14 - EunwooSong.pptx_13_1",
+        "content": "입력 전력과 출력의 차이를 발열로 가정",
+        "confidence": 0.72,
+        "thesis_relevance": "medium"
+      },
+      {
+        "id": "WR 8_26.pptx_10_0",
+        "content": "heat2torque module - jax 코드 속도 비교",
+        "confidence": 0.72,
+        "thesis_relevance": "medium"
+      },
+      {
+        "id": "WR 8_5.pptx_13_1",
+        "content": "실시간 발열 인식 및 예측 프레임워크 개발",
+        "confidence": 0.72,
+        "thesis_relevance": "medium"
+      },
+      {
+        "id": "WR 8_5.pptx_13_2",
+        "content": "센서 데이터와 발열 모델을 결합해 모터의 현재 열 상태를 실시간으로 추정, 미래 발열 누적을 예측할 수 있는 모델을 구현",
+        "confidence": 0.72,
+        "thesis_relevance": "medium"
+      },
+      {
+        "id": "WR 8_5.pptx_13_3",
+        "content": "선제적 발열 관리를 위한 기반 마련",
+        "confidence": 0.72,
+        "thesis_relevance": "medium"
+      },
+      {
+        "id": "WR 8_5.pptx_13_4",
+        "content": "발열 인식을 통한 장기 동작 계획 제안",
+        "confidence": 0.72,
+        "thesis_relevance": "medium"
+      },
+      {
+        "id": "WR 07_14 - EunwooSong.pptx_4_2",
+        "content": "누적된 사용(발열)으로 인한 motor의 torque 감소를 시뮬레이션 하면 sim to real gap을 줄이는데 유용할 것이다.",
+        "confidence": 0.72,
+        "thesis_relevance": "high"
+      },
+      {
+        "id": "WR 07_14 - EunwooSong.pptx_4_4",
+        "content": "따라서 Heat2Torque simulation을 제안",
+        "confidence": 0.72,
+        "thesis_relevance": "high"
+      },
+      {
+        "id": "WR 1_14.pptx_3_0",
+        "content": "Toddlerbot Thermal Weight",
+        "confidence": 0.72,
+        "thesis_relevance": "medium"
+      },
+      {
+        "id": "WR 07_14 - EunwooSong.pptx_24_1",
+        "content": "ToddlerBot에 있는 정책에서 Thermal-reward를 추가, 해당 정책을 반복 수행했을 때, 어떤 모델이 더 오래 지속되는지를 타이머로 비교 실험",
+        "confidence": 0.72,
+        "thesis_relevance": "medium"
+      },
+      {
+        "id": "WR 9_23.pptx_50_0",
+        "content": "two-resistor thermal model (2-저항 열 모델)",
+        "confidence": 0.72,
+        "thesis_relevance": "medium"
+      }
+    ],
+    "Actuator-Control": [
+      {
+        "id": "WR 07_14 - EunwooSong.pptx_13_3",
+        "content": "Mujoco에서 Torque, velocity를 구할 수 있음",
+        "confidence": 0.72,
+        "thesis_relevance": "medium"
+      },
+      {
+        "id": "WR 07_14 - EunwooSong.pptx_13_4",
+        "content": "maxon motor - key information",
+        "confidence": 0.72,
+        "thesis_relevance": "medium"
+      },
+      {
+        "id": "WR 9_23.pptx_22_2",
+        "content": "teacher-student 프레임워크인 Actuator Degradation Adaptation Transformer를 제안한다.",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_2.pptx_6_2",
+        "content": "Torque limited (1000~1389 steps)",
+        "confidence": 0.72,
+        "thesis_relevance": "medium"
+      },
+      {
+        "id": "WR 07_14 - EunwooSong.pptx_4_1",
+        "content": "지금의 시뮬레이션에서는 이상적인 motor 상황에 너무 과적합되어 있다.",
+        "confidence": 0.72,
+        "thesis_relevance": "medium"
+      },
+      {
+        "id": "WR 9_23.pptx_28_0",
+        "content": "τ^i: i번째 actuator가 손상된 시나리오",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_23.pptx_28_1",
+        "content": "actuator가 12개이므로, 12개의 시나리오 고려",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      }
+    ],
+    "Theory": [
+      {
+        "id": "WR 9_23.pptx_52_2",
+        "content": "[mathematical_formula] WR 9_23_52_97736198.png",
+        "confidence": 0.6,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_23.pptx_53_4",
+        "content": "[mathematical_formula] WR 9_23_53_a0222499.png",
+        "confidence": 0.6,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_23.pptx_22_3",
+        "content": "[mathematical_formula] WR 9_23_22_38071dbb.png",
+        "confidence": 0.84,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_23.pptx_55_1",
+        "content": "[mathematical_formula] WR 9_23_55_2acda909.png",
+        "confidence": 0.6,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_23.pptx_55_2",
+        "content": "[mathematical_formula] WR 9_23_55_35e9c7b2.png",
+        "confidence": 0.6,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 07_14 - EunwooSong.pptx_16_0",
+        "content": "[mathematical_formula] WR 07_14 - EunwooSong_16_7190394d.png",
+        "confidence": 0.6,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 07_14 - EunwooSong.pptx_16_1",
+        "content": "[mathematical_formula] WR 07_14 - EunwooSong_16_bb4ef805.png",
+        "confidence": 0.6,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 07_14 - EunwooSong.pptx_11_2",
+        "content": "[mathematical_formula] WR 07_14 - EunwooSong_11_78253d8c.png",
+        "confidence": 0.84,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 11_18.pptx_24_1",
+        "content": "[mathematical_formula] WR 11_18_24_ab26d466.png",
+        "confidence": 1.0,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_23.pptx_62_3",
+        "content": "[mathematical_formula] WR 9_23_62_7b4e8ab7.png",
+        "confidence": 0.84,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_23.pptx_46_1",
+        "content": "[mathematical_formula] WR 9_23_46_37d62c00.png",
+        "confidence": 0.6,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_23.pptx_46_2",
+        "content": "[mathematical_formula] WR 9_23_46_37d62c00.png",
+        "confidence": 0.6,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_23.pptx_46_3",
+        "content": "[mathematical_formula] WR 9_23_46_ecdfdc6a.png",
+        "confidence": 0.6,
+        "thesis_relevance": "low"
+      }
+    ],
+    "Contributions": [
+      {
+        "id": "WR 8_5.pptx_13_0",
+        "content": "Contributions - 2",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      }
+    ],
+    "Robotics": [
+      {
+        "id": "WR 9_23.pptx_22_0",
+        "content": "Quadruped 로봇은 극한 환경에 대해 강한 적응성을 가지고 있지만, 결함이 발생할 수 있다.",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 07_01 - EunwooSong.pptx_34_2",
+        "content": "toddlerbot/locomotion/train_mjx.py를 참고하여 코드 작성",
+        "confidence": 0.72,
+        "thesis_relevance": "medium"
+      },
+      {
+        "id": "WR 07_14 - EunwooSong.pptx_27_0",
+        "content": "FT-Net: Learning Failure Recovery and Fault-Tolerant Locomotion for Quadruped Robots",
+        "confidence": 0.72,
+        "thesis_relevance": "medium"
+      },
+      {
+        "id": "WR 07_14 - EunwooSong.pptx_4_0",
+        "content": "robot이 특정 task를 잘 수행하는 것 또한 중요하지만, 장기적인 안정성 또한 고려되어야 한다.",
+        "confidence": 0.72,
+        "thesis_relevance": "medium"
+      },
+      {
+        "id": "WR 07_14 - EunwooSong.pptx_11_1",
+        "content": "Toddlerbot에서 사용하는 보상 함수는 system 총량",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_23.pptx_32_0",
+        "content": "DreamFLEX: Learning Fault-Aware Quadrupedal Locomotion Controller for Anomaly Situation in Rough Ter",
+        "confidence": 0.72,
+        "thesis_relevance": "medium"
+      }
+    ],
+    "Simulation": [
+      {
+        "id": "WR 07_01 - EunwooSong.pptx_34_0",
+        "content": "Training ToddlerBot with Brax",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 07_01 - EunwooSong.pptx_34_1",
+        "content": "커스텀된 Brax를 사용하지 않고, 최신의 Brax를 이용해 간단한 샘플 코드 실행",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 12_23.pptx_8_1",
+        "content": "Toddlerbot sim to real 시, 오류 발생",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 07_01 - EunwooSong.pptx_14_0",
+        "content": "Rendering the “ToddlerBot” simulation",
+        "confidence": 0.72,
+        "thesis_relevance": "medium"
+      },
+      {
+        "id": "WR 07_01 - EunwooSong.pptx_13_1",
+        "content": "mujoco 환경을 render해서 현재 shell의 display를 지우고 다시 plt를 출력한다.",
+        "confidence": 0.72,
+        "thesis_relevance": "low"
+      }
+    ],
+    "Demonstration": [
+      {
+        "id": "WR 9_23.pptx_10_0",
+        "content": "[animation_demo] WR 9_23_10_22809029.gif",
+        "confidence": 1.0,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_2.pptx_6_3",
+        "content": "[animation_demo] WR 9_2_6_5fabdf36.gif",
+        "confidence": 0.84,
+        "thesis_relevance": "low"
+      },
+      {
+        "id": "WR 9_2.pptx_6_4",
+        "content": "[animation_demo] WR 9_2_6_859f42a8.gif",
+        "confidence": 0.84,
+        "thesis_relevance": "low"
+      }
+    ]
+  },
+  "reverse_outline": {
+    "title": "Thermal-Aware Motion Planning for Long-Duration Robot Operation",
+    "sections": [
+      {
+        "name": "1. Introduction",
+        "main_point": "발열 관리의 중요성과 기존 접근법의 한계",
+        "unit_refs": [
+          "WR 07_14 - EunwooSong.pptx_10_1",
+          "WR 9_23.pptx_61_2"
+        ],
+        "completeness": "medium"
+      },
+      {
+        "name": "2. Methodology",
+        "main_point": "Heat2Torque 모델 및 열 추정 프레임워크",
+        "unit_refs": [
+          "WR 07_14 - EunwooSong.pptx_10_0",
+          "WR 9_23.pptx_52_0",
+          "WR 9_23.pptx_52_2",
+          "WR 9_23.pptx_53_3",
+          "WR 9_23.pptx_53_4"
+        ],
+        "completeness": "high"
+      },
+      {
+        "name": "3. Implementation",
+        "main_point": "시뮬레이션 환경 및 시스템 통합",
+        "unit_refs": [
+          "WR 07_14 - EunwooSong.pptx_13_3",
+          "WR 07_14 - EunwooSong.pptx_13_4",
+          "WR 9_23.pptx_22_2",
+          "WR 07_01 - EunwooSong.pptx_34_0",
+          "WR 07_01 - EunwooSong.pptx_34_1"
+        ],
+        "completeness": "high"
+      },
+      {
+        "name": "4. Experiments & Results",
+        "main_point": "시뮬레이션 및 실제 로봇 실험 결과",
+        "unit_refs": [
+          "WR 07_01 - EunwooSong.pptx_37_0",
+          "WR 9_23.pptx_38_0",
+          "WR 10_14.pptx_10_0",
+          "WR 9_23.pptx_10_0",
+          "WR 10_14.pptx_3_0"
+        ],
+        "completeness": "high"
+      },
+      {
+        "name": "5. Discussion & Conclusion",
+        "main_point": "학문적 기여 및 향후 연구 방향",
+        "unit_refs": [
+          "WR 8_5.pptx_13_0"
+        ],
+        "completeness": "medium"
+      }
+    ]
+  },
+  "pro_quality_stats": {
+    "thesis_quality": "Strong - 명확한 연구 방향과 기여도",
+    "alignment_score": 0.417,
+    "premium_units": 103,
+    "high_relevance_units": 2,
+    "total_units": 126,
+    "gaps": [
+      {
+        "section": "Discussion",
+        "severity": "medium",
+        "suggestion": "Discussion 섹션에 대한 추가 콘텐츠 필요"
+      },
+      {
+        "section": "Conclusion",
+        "severity": "medium",
+        "suggestion": "Conclusion 섹션에 대한 추가 콘텐츠 필요"
+      }
+    ],
+    "section_coverage": {
+      "Introduction": {
+        "unit_count": 2,
+        "coverage_ratio": 0.4,
+        "unit_ids": [
+          "WR 07_14 - EunwooSong.pptx_10_1",
+          "WR 9_23.pptx_61_2"
+        ]
+      },
+      "Related Work": {
+        "unit_count": 40,
+        "coverage_ratio": 1.0,
+        "unit_ids": [
+          "WR 07_01 - EunwooSong.pptx_37_1",
+          "WR 07_14 - EunwooSong.pptx_13_2",
+          "WR 9_23.pptx_52_1",
+          "WR 8_5.pptx_13_0",
+          "WR 12_23.pptx_6_0"
+        ]
+      },
+      "Methodology": {
+        "unit_count": 20,
+        "coverage_ratio": 1.0,
+        "unit_ids": [
+          "WR 07_14 - EunwooSong.pptx_10_0",
+          "WR 9_23.pptx_52_0",
+          "WR 9_23.pptx_52_2",
+          "WR 9_23.pptx_53_3",
+          "WR 9_23.pptx_53_4"
+        ]
+      },
+      "Implementation": {
+        "unit_count": 12,
+        "coverage_ratio": 1.0,
+        "unit_ids": [
+          "WR 07_14 - EunwooSong.pptx_13_3",
+          "WR 07_14 - EunwooSong.pptx_13_4",
+          "WR 9_23.pptx_22_2",
+          "WR 07_01 - EunwooSong.pptx_34_0",
+          "WR 07_01 - EunwooSong.pptx_34_1"
+        ]
+      },
+      "Experiments": {
+        "unit_count": 8,
+        "coverage_ratio": 1.0,
+        "unit_ids": [
+          "WR 07_01 - EunwooSong.pptx_37_0",
+          "WR 9_23.pptx_38_0",
+          "WR 10_14.pptx_10_0",
+          "WR 10_14.pptx_3_0",
+          "WR 9_2.pptx_7_0"
+        ]
+      },
+      "Results": {
+        "unit_count": 11,
+        "coverage_ratio": 1.0,
+        "unit_ids": [
+          "WR 07_01 - EunwooSong.pptx_37_0",
+          "WR 9_23.pptx_38_0",
+          "WR 10_14.pptx_10_0",
+          "WR 9_23.pptx_10_0",
+          "WR 10_14.pptx_3_0"
+        ]
+      },
+      "Discussion": {
+        "unit_count": 1,
+        "coverage_ratio": 0.2,
+        "unit_ids": [
+          "WR 8_5.pptx_13_0"
+        ]
+      },
+      "Conclusion": {
+        "unit_count": 1,
+        "coverage_ratio": 0.2,
+        "unit_ids": [
+          "WR 8_5.pptx_13_0"
+        ]
+      }
+    }
+  },
+  "all_units": [
+    {
+      "id": "WR 07_01 - EunwooSong.pptx_37_0",
+      "slide_ref": "WR 07_01 - EunwooSong.pptx:slide_37",
+      "content": "Result - Video",
+      "type": "experimental_result",
+      "category": "Results",
+      "source": "text",
+      "confidence": 0.648,
+      "principles": [
+        "evidence"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "body",
+        "thesis_relevance": "low",
+        "quality_tier": "standard"
+      }
+    },
+    {
+      "id": "WR 07_01 - EunwooSong.pptx_37_1",
+      "slide_ref": "WR 07_01 - EunwooSong.pptx:slide_37",
+      "content": "RTX 5080: 3h 43m 43s",
+      "type": "general_content",
+      "category": "General",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 07_01 - EunwooSong.pptx_37_2",
+      "slide_ref": "WR 07_01 - EunwooSong.pptx:slide_37",
+      "content": "[general_figure] WR 07_01 - EunwooSong_37_b5f0342b.jpg",
+      "type": "general_figure",
+      "category": "Supplementary",
+      "source": "image",
+      "confidence": 0.84,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "high",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      },
+      "image_analysis": {
+        "type": "general_figure",
+        "content_description": "",
+        "technical_details": [
+          "dimensions: 240.5x270.6pt",
+          "format: jpg",
+          "size: 14.1KB"
+        ],
+        "visual_elements": [
+          "figure",
+          "illustration"
+        ],
+        "data_insights": [],
+        "quality_score": 0.7
+      }
+    },
+    {
+      "id": "WR 07_01 - EunwooSong.pptx_37_3",
+      "slide_ref": "WR 07_01 - EunwooSong.pptx:slide_37",
+      "content": "[general_figure] WR 07_01 - EunwooSong_37_b6730518.jpg",
+      "type": "general_figure",
+      "category": "Supplementary",
+      "source": "image",
+      "confidence": 0.84,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "high",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      },
+      "image_analysis": {
+        "type": "general_figure",
+        "content_description": "",
+        "technical_details": [
+          "dimensions: 240.5x270.6pt",
+          "format: jpg",
+          "size: 14.2KB"
+        ],
+        "visual_elements": [
+          "figure",
+          "illustration"
+        ],
+        "data_insights": [],
+        "quality_score": 0.7
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_38_0",
+      "slide_ref": "WR 9_23.pptx:slide_38",
+      "content": "Method - Result",
+      "type": "experimental_result",
+      "category": "Results",
+      "source": "text",
+      "confidence": 0.648,
+      "principles": [
+        "evidence"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "body",
+        "thesis_relevance": "low",
+        "quality_tier": "standard"
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_38_1",
+      "slide_ref": "WR 9_23.pptx:slide_38",
+      "content": "[general_figure] WR 9_23_38_2dbc9d7e.png",
+      "type": "general_figure",
+      "category": "Supplementary",
+      "source": "image",
+      "confidence": 0.84,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      },
+      "image_analysis": {
+        "type": "general_figure",
+        "content_description": "",
+        "technical_details": [
+          "dimensions: 313.5x287.8pt",
+          "format: png",
+          "size: 1892.0KB"
+        ],
+        "visual_elements": [
+          "figure",
+          "illustration"
+        ],
+        "data_insights": [],
+        "quality_score": 0.7
+      }
+    },
+    {
+      "id": "WR 07_14 - EunwooSong.pptx_10_0",
+      "slide_ref": "WR 07_14 - EunwooSong.pptx:slide_10",
+      "content": "Algorithm으로 관리하는 것과의 차별점?",
+      "type": "methodology",
+      "category": "Methods",
+      "source": "text",
+      "confidence": 0.6,
+      "principles": [
+        "methodology"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "body",
+        "thesis_relevance": "low",
+        "quality_tier": "standard"
+      }
+    },
+    {
+      "id": "WR 07_14 - EunwooSong.pptx_10_1",
+      "slide_ref": "WR 07_14 - EunwooSong.pptx:slide_10",
+      "content": "단순히 특정 이상 온도로 올라가면 동작을 멈추게 할 수 있지만, 냉각이 될 때까지 Agent가 멈춰야하는 문제점이 있다.",
+      "type": "problem_statement",
+      "category": "Motivation",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "high",
+        "structural_role": "opening",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 07_14 - EunwooSong.pptx_10_2",
+      "slide_ref": "WR 07_14 - EunwooSong.pptx:slide_10",
+      "content": "overload로 인해 예상한 토크가 부족한 상황을 극복하는 것에 초점",
+      "type": "reinforcement_learning",
+      "category": "Learning",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 07_14 - EunwooSong.pptx_13_0",
+      "slide_ref": "WR 07_14 - EunwooSong.pptx:slide_13",
+      "content": "모터의 발열량은 입력 전력에서 기계적인 출력을 빼어 구한다",
+      "type": "thermal_domain",
+      "category": "Thermal-Management",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "medium",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 07_14 - EunwooSong.pptx_13_1",
+      "slide_ref": "WR 07_14 - EunwooSong.pptx:slide_13",
+      "content": "입력 전력과 출력의 차이를 발열로 가정",
+      "type": "thermal_domain",
+      "category": "Thermal-Management",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "medium",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 07_14 - EunwooSong.pptx_13_2",
+      "slide_ref": "WR 07_14 - EunwooSong.pptx:slide_13",
+      "content": "권선에서 발생하는 열손실이 주를 이룸",
+      "type": "general_content",
+      "category": "General",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 07_14 - EunwooSong.pptx_13_3",
+      "slide_ref": "WR 07_14 - EunwooSong.pptx:slide_13",
+      "content": "Mujoco에서 Torque, velocity를 구할 수 있음",
+      "type": "motor_control",
+      "category": "Actuator-Control",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "medium",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 07_14 - EunwooSong.pptx_13_4",
+      "slide_ref": "WR 07_14 - EunwooSong.pptx:slide_13",
+      "content": "maxon motor - key information",
+      "type": "motor_control",
+      "category": "Actuator-Control",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "medium",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_52_0",
+      "slide_ref": "WR 9_23.pptx:slide_52",
+      "content": "Method - C. Thermal Esimator: Estimation of Motor Core Temperature",
+      "type": "methodology",
+      "category": "Methods",
+      "source": "text",
+      "confidence": 0.648,
+      "principles": [
+        "methodology"
+      ],
+      "pro_validation": {
+        "semantic_depth": "high",
+        "structural_role": "body",
+        "thesis_relevance": "medium",
+        "quality_tier": "standard"
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_52_1",
+      "slide_ref": "WR 9_23.pptx:slide_52",
+      "content": "Δt_est = 0.02 (sec)",
+      "type": "general_content",
+      "category": "General",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_52_2",
+      "slide_ref": "WR 9_23.pptx:slide_52",
+      "content": "[mathematical_formula] WR 9_23_52_97736198.png",
+      "type": "mathematical_formula",
+      "category": "Theory",
+      "source": "image",
+      "confidence": 0.6,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "body",
+        "thesis_relevance": "low",
+        "quality_tier": "standard"
+      },
+      "image_analysis": {
+        "type": "mathematical_formula",
+        "content_description": "",
+        "technical_details": [
+          "dimensions: 441.3x32.6pt",
+          "format: png",
+          "size: 20.2KB"
+        ],
+        "visual_elements": [
+          "equation",
+          "symbols",
+          "notation"
+        ],
+        "data_insights": [],
+        "quality_score": 0.5
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_63_0",
+      "slide_ref": "WR 9_23.pptx:slide_63",
+      "content": "[general_figure] WR 9_23_63_967cd35e.png",
+      "type": "general_figure",
+      "category": "Supplementary",
+      "source": "image",
+      "confidence": 1.0,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      },
+      "image_analysis": {
+        "type": "general_figure",
+        "content_description": "",
+        "technical_details": [
+          "dimensions: 641.3x289.0pt",
+          "format: png",
+          "size: 100.5KB"
+        ],
+        "visual_elements": [
+          "figure",
+          "illustration"
+        ],
+        "data_insights": [],
+        "quality_score": 0.9
+      }
+    },
+    {
+      "id": "WR 11_18.pptx_5_0",
+      "slide_ref": "WR 11_18.pptx:slide_5",
+      "content": "Reward 2, warm_up",
+      "type": "reinforcement_learning",
+      "category": "Learning",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 11_18.pptx_5_1",
+      "slide_ref": "WR 11_18.pptx:slide_5",
+      "content": "[general_figure] WR 11_18_5_afee9d27.png",
+      "type": "general_figure",
+      "category": "Supplementary",
+      "source": "image",
+      "confidence": 1.0,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      },
+      "image_analysis": {
+        "type": "general_figure",
+        "content_description": "",
+        "technical_details": [
+          "dimensions: 436.2x271.4pt",
+          "format: png",
+          "size: 172.8KB"
+        ],
+        "visual_elements": [
+          "figure",
+          "illustration"
+        ],
+        "data_insights": [],
+        "quality_score": 0.9
+      }
+    },
+    {
+      "id": "WR 8_26.pptx_10_0",
+      "slide_ref": "WR 8_26.pptx:slide_10",
+      "content": "heat2torque module - jax 코드 속도 비교",
+      "type": "thermal_domain",
+      "category": "Thermal-Management",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "medium",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 8_26.pptx_10_1",
+      "slide_ref": "WR 8_26.pptx:slide_10",
+      "content": "[general_figure] WR 8_26_10_c12c32ef.png",
+      "type": "general_figure",
+      "category": "Supplementary",
+      "source": "image",
+      "confidence": 1.0,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      },
+      "image_analysis": {
+        "type": "general_figure",
+        "content_description": "",
+        "technical_details": [
+          "dimensions: 442.5x273.6pt",
+          "format: png",
+          "size: 18.8KB"
+        ],
+        "visual_elements": [
+          "figure",
+          "illustration"
+        ],
+        "data_insights": [],
+        "quality_score": 0.9
+      }
+    },
+    {
+      "id": "WR 8_5.pptx_13_0",
+      "slide_ref": "WR 8_5.pptx:slide_13",
+      "content": "Contributions - 2",
+      "type": "contribution",
+      "category": "Contributions",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "contribution"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "opening",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 8_5.pptx_13_1",
+      "slide_ref": "WR 8_5.pptx:slide_13",
+      "content": "실시간 발열 인식 및 예측 프레임워크 개발",
+      "type": "thermal_domain",
+      "category": "Thermal-Management",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "precision",
+        "novelty"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "medium",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 8_5.pptx_13_2",
+      "slide_ref": "WR 8_5.pptx:slide_13",
+      "content": "센서 데이터와 발열 모델을 결합해 모터의 현재 열 상태를 실시간으로 추정, 미래 발열 누적을 예측할 수 있는 모델을 구현",
+      "type": "thermal_domain",
+      "category": "Thermal-Management",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "precision"
+      ],
+      "pro_validation": {
+        "semantic_depth": "high",
+        "structural_role": "supporting",
+        "thesis_relevance": "medium",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 8_5.pptx_13_3",
+      "slide_ref": "WR 8_5.pptx:slide_13",
+      "content": "선제적 발열 관리를 위한 기반 마련",
+      "type": "thermal_domain",
+      "category": "Thermal-Management",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "medium",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 8_5.pptx_13_4",
+      "slide_ref": "WR 8_5.pptx:slide_13",
+      "content": "발열 인식을 통한 장기 동작 계획 제안",
+      "type": "thermal_domain",
+      "category": "Thermal-Management",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "novelty"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "medium",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 12_23.pptx_6_0",
+      "slide_ref": "WR 12_23.pptx:slide_6",
+      "content": "아래 노션에 정리해두었습니다!",
+      "type": "general_content",
+      "category": "General",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 12_23.pptx_6_1",
+      "slide_ref": "WR 12_23.pptx:slide_6",
+      "content": "https://www.notion.so/RealityLab-2cdf6f41de51803f9997d7d7559a4599#2cff6f41de5180d6b772ffd0f7996ef4",
+      "type": "general_content",
+      "category": "General",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "high",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_53_0",
+      "slide_ref": "WR 9_23.pptx:slide_53",
+      "content": "Δt_data = 1.0 (sec)",
+      "type": "general_content",
+      "category": "General",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_53_1",
+      "slide_ref": "WR 9_23.pptx:slide_53",
+      "content": "N_seq = 30 (step)",
+      "type": "general_content",
+      "category": "General",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_53_2",
+      "slide_ref": "WR 9_23.pptx:slide_53",
+      "content": "N_batch = 10 (seq)",
+      "type": "general_content",
+      "category": "General",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_53_3",
+      "slide_ref": "WR 9_23.pptx:slide_53",
+      "content": "Method - D. Online Learning of Thermal Model",
+      "type": "methodology",
+      "category": "Methods",
+      "source": "text",
+      "confidence": 0.648,
+      "principles": [
+        "methodology"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "body",
+        "thesis_relevance": "medium",
+        "quality_tier": "standard"
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_53_4",
+      "slide_ref": "WR 9_23.pptx:slide_53",
+      "content": "[mathematical_formula] WR 9_23_53_a0222499.png",
+      "type": "mathematical_formula",
+      "category": "Theory",
+      "source": "image",
+      "confidence": 0.6,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "body",
+        "thesis_relevance": "low",
+        "quality_tier": "standard"
+      },
+      "image_analysis": {
+        "type": "mathematical_formula",
+        "content_description": "",
+        "technical_details": [
+          "dimensions: 436.8x29.8pt",
+          "format: png",
+          "size: 22.5KB"
+        ],
+        "visual_elements": [
+          "equation",
+          "symbols",
+          "notation"
+        ],
+        "data_insights": [],
+        "quality_score": 0.5
+      }
+    },
+    {
+      "id": "WR 11_18.pptx_19_0",
+      "slide_ref": "WR 11_18.pptx:slide_19",
+      "content": "19000000 policy\t\t\t\t\t\tbest policy",
+      "type": "reinforcement_learning",
+      "category": "Learning",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 11_18.pptx_19_1",
+      "slide_ref": "WR 11_18.pptx:slide_19",
+      "content": "[general_figure] WR 11_18_19_d1b33a0f.png",
+      "type": "general_figure",
+      "category": "Supplementary",
+      "source": "image",
+      "confidence": 0.84,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      },
+      "image_analysis": {
+        "type": "general_figure",
+        "content_description": "",
+        "technical_details": [
+          "dimensions: 292.4x260.9pt",
+          "format: png",
+          "size: 94.9KB"
+        ],
+        "visual_elements": [
+          "figure",
+          "illustration"
+        ],
+        "data_insights": [],
+        "quality_score": 0.7
+      }
+    },
+    {
+      "id": "WR 11_18.pptx_19_2",
+      "slide_ref": "WR 11_18.pptx:slide_19",
+      "content": "[general_figure] WR 11_18_19_26e90020.png",
+      "type": "general_figure",
+      "category": "Supplementary",
+      "source": "image",
+      "confidence": 0.84,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      },
+      "image_analysis": {
+        "type": "general_figure",
+        "content_description": "",
+        "technical_details": [
+          "dimensions: 280.6x260.9pt",
+          "format: png",
+          "size: 95.4KB"
+        ],
+        "visual_elements": [
+          "figure",
+          "illustration"
+        ],
+        "data_insights": [],
+        "quality_score": 0.7
+      }
+    },
+    {
+      "id": "WR 07_22.pptx_4_0",
+      "slide_ref": "WR 07_22.pptx:slide_4",
+      "content": "시뮬레이션 함수 테스트",
+      "type": "general_content",
+      "category": "General",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 07_22.pptx_4_1",
+      "slide_ref": "WR 07_22.pptx:slide_4",
+      "content": "[general_figure] WR 07_22_4_fdad3f40.png",
+      "type": "general_figure",
+      "category": "Supplementary",
+      "source": "image",
+      "confidence": 1.0,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      },
+      "image_analysis": {
+        "type": "general_figure",
+        "content_description": "",
+        "technical_details": [
+          "dimensions: 470.8x280.6pt",
+          "format: png",
+          "size: 169.5KB"
+        ],
+        "visual_elements": [
+          "figure",
+          "illustration"
+        ],
+        "data_insights": [],
+        "quality_score": 0.9
+      }
+    },
+    {
+      "id": "WR 10_14.pptx_10_0",
+      "slide_ref": "WR 10_14.pptx:slide_10",
+      "content": "Meta Learning - Result",
+      "type": "experimental_result",
+      "category": "Results",
+      "source": "text",
+      "confidence": 0.648,
+      "principles": [
+        "evidence"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "body",
+        "thesis_relevance": "low",
+        "quality_tier": "standard"
+      }
+    },
+    {
+      "id": "WR 10_14.pptx_10_1",
+      "slide_ref": "WR 10_14.pptx:slide_10",
+      "content": "[general_figure] WR 10_14_10_99996ad6.png",
+      "type": "general_figure",
+      "category": "Supplementary",
+      "source": "image",
+      "confidence": 1.0,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      },
+      "image_analysis": {
+        "type": "general_figure",
+        "content_description": "",
+        "technical_details": [
+          "dimensions: 481.8x270.6pt",
+          "format: png",
+          "size: 57.3KB"
+        ],
+        "visual_elements": [
+          "figure",
+          "illustration"
+        ],
+        "data_insights": [],
+        "quality_score": 0.9
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_22_0",
+      "slide_ref": "WR 9_23.pptx:slide_22",
+      "content": "Quadruped 로봇은 극한 환경에 대해 강한 적응성을 가지고 있지만, 결함이 발생할 수 있다.",
+      "type": "robotics",
+      "category": "Robotics",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "high",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_22_1",
+      "slide_ref": "WR 9_23.pptx:slide_22",
+      "content": "결함 중 가장 대표적으로 장치 노후화 또는 예상치 못한 운영 이벤트와 같은 요인으로 액추에이터 손상이다.",
+      "type": "general_content",
+      "category": "General",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "high",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_22_2",
+      "slide_ref": "WR 9_23.pptx:slide_22",
+      "content": "teacher-student 프레임워크인 Actuator Degradation Adaptation Transformer를 제안한다.",
+      "type": "motor_control",
+      "category": "Actuator-Control",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "novelty"
+      ],
+      "pro_validation": {
+        "semantic_depth": "high",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_22_3",
+      "slide_ref": "WR 9_23.pptx:slide_22",
+      "content": "[mathematical_formula] WR 9_23_22_38071dbb.png",
+      "type": "mathematical_formula",
+      "category": "Theory",
+      "source": "image",
+      "confidence": 0.84,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "body",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      },
+      "image_analysis": {
+        "type": "mathematical_formula",
+        "content_description": "",
+        "technical_details": [
+          "dimensions: 704.2x90.8pt",
+          "format: png",
+          "size: 174.5KB"
+        ],
+        "visual_elements": [
+          "equation",
+          "symbols",
+          "notation"
+        ],
+        "data_insights": [],
+        "quality_score": 0.7
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_55_0",
+      "slide_ref": "WR 9_23.pptx:slide_55",
+      "content": "Method - F. Thermal Controller: Control of Motor Core Temperature",
+      "type": "methodology",
+      "category": "Methods",
+      "source": "text",
+      "confidence": 0.648,
+      "principles": [
+        "methodology"
+      ],
+      "pro_validation": {
+        "semantic_depth": "high",
+        "structural_role": "body",
+        "thesis_relevance": "medium",
+        "quality_tier": "standard"
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_55_1",
+      "slide_ref": "WR 9_23.pptx:slide_55",
+      "content": "[mathematical_formula] WR 9_23_55_2acda909.png",
+      "type": "mathematical_formula",
+      "category": "Theory",
+      "source": "image",
+      "confidence": 0.6,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "body",
+        "thesis_relevance": "low",
+        "quality_tier": "standard"
+      },
+      "image_analysis": {
+        "type": "mathematical_formula",
+        "content_description": "",
+        "technical_details": [
+          "dimensions: 533.7x34.7pt",
+          "format: png",
+          "size: 23.8KB"
+        ],
+        "visual_elements": [
+          "equation",
+          "symbols",
+          "notation"
+        ],
+        "data_insights": [],
+        "quality_score": 0.5
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_55_2",
+      "slide_ref": "WR 9_23.pptx:slide_55",
+      "content": "[mathematical_formula] WR 9_23_55_35e9c7b2.png",
+      "type": "mathematical_formula",
+      "category": "Theory",
+      "source": "image",
+      "confidence": 0.6,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "body",
+        "thesis_relevance": "low",
+        "quality_tier": "standard"
+      },
+      "image_analysis": {
+        "type": "mathematical_formula",
+        "content_description": "",
+        "technical_details": [
+          "dimensions: 490.5x34.7pt",
+          "format: png",
+          "size: 23.2KB"
+        ],
+        "visual_elements": [
+          "equation",
+          "symbols",
+          "notation"
+        ],
+        "data_insights": [],
+        "quality_score": 0.5
+      }
+    },
+    {
+      "id": "WR 07_01 - EunwooSong.pptx_34_0",
+      "slide_ref": "WR 07_01 - EunwooSong.pptx:slide_34",
+      "content": "Training ToddlerBot with Brax",
+      "type": "simulation",
+      "category": "Simulation",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 07_01 - EunwooSong.pptx_34_1",
+      "slide_ref": "WR 07_01 - EunwooSong.pptx:slide_34",
+      "content": "커스텀된 Brax를 사용하지 않고, 최신의 Brax를 이용해 간단한 샘플 코드 실행",
+      "type": "simulation",
+      "category": "Simulation",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 07_01 - EunwooSong.pptx_34_2",
+      "slide_ref": "WR 07_01 - EunwooSong.pptx:slide_34",
+      "content": "toddlerbot/locomotion/train_mjx.py를 참고하여 코드 작성",
+      "type": "robotics",
+      "category": "Robotics",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "medium",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 07_01 - EunwooSong.pptx_34_3",
+      "slide_ref": "WR 07_01 - EunwooSong.pptx:slide_34",
+      "content": "learning_rate_schedule_fn, randomization_fn 등 여러 옵션 무시",
+      "type": "reinforcement_learning",
+      "category": "Learning",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "high",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 07_01 - EunwooSong.pptx_34_4",
+      "slide_ref": "WR 07_01 - EunwooSong.pptx:slide_34",
+      "content": "randomization_fn 추가시 JAX Tracer Leak 발생",
+      "type": "general_content",
+      "category": "General",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 07_14 - EunwooSong.pptx_27_0",
+      "slide_ref": "WR 07_14 - EunwooSong.pptx:slide_27",
+      "content": "FT-Net: Learning Failure Recovery and Fault-Tolerant Locomotion for Quadruped Robots",
+      "type": "robotics",
+      "category": "Robotics",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "high",
+        "structural_role": "supporting",
+        "thesis_relevance": "medium",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 07_14 - EunwooSong.pptx_27_1",
+      "slide_ref": "WR 07_14 - EunwooSong.pptx:slide_27",
+      "content": "혹독하고 위험한 환경에서 발생할 수 있는 로봇의 내고장성을 고려해야한다.",
+      "type": "general_content",
+      "category": "General",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 07_14 - EunwooSong.pptx_27_2",
+      "slide_ref": "WR 07_14 - EunwooSong.pptx:slide_27",
+      "content": "FT-Net을 통해 고장 관리",
+      "type": "general_content",
+      "category": "General",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 07_14 - EunwooSong.pptx_27_3",
+      "slide_ref": "WR 07_14 - EunwooSong.pptx:slide_27",
+      "content": "실제 토크에 고장 계수를 곱하여 토크를 계산하고 이를 시뮬레이션 한다.",
+      "type": "general_content",
+      "category": "General",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 07_14 - EunwooSong.pptx_27_4",
+      "slide_ref": "WR 07_14 - EunwooSong.pptx:slide_27",
+      "content": "다양한 고장 상황에서도 보행할 수 있는 범용적인 정책을 학습하는 것이 목표",
+      "type": "general_content",
+      "category": "General",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 07_14 - EunwooSong.pptx_16_0",
+      "slide_ref": "WR 07_14 - EunwooSong.pptx:slide_16",
+      "content": "[mathematical_formula] WR 07_14 - EunwooSong_16_7190394d.png",
+      "type": "mathematical_formula",
+      "category": "Theory",
+      "source": "image",
+      "confidence": 0.6,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "high",
+        "structural_role": "body",
+        "thesis_relevance": "low",
+        "quality_tier": "standard"
+      },
+      "image_analysis": {
+        "type": "mathematical_formula",
+        "content_description": "",
+        "technical_details": [
+          "dimensions: 277.7x63.8pt",
+          "format: png",
+          "size: 3.6KB"
+        ],
+        "visual_elements": [
+          "equation",
+          "symbols",
+          "notation"
+        ],
+        "data_insights": [],
+        "quality_score": 0.5
+      }
+    },
+    {
+      "id": "WR 07_14 - EunwooSong.pptx_16_1",
+      "slide_ref": "WR 07_14 - EunwooSong.pptx:slide_16",
+      "content": "[mathematical_formula] WR 07_14 - EunwooSong_16_bb4ef805.png",
+      "type": "mathematical_formula",
+      "category": "Theory",
+      "source": "image",
+      "confidence": 0.6,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "high",
+        "structural_role": "body",
+        "thesis_relevance": "low",
+        "quality_tier": "standard"
+      },
+      "image_analysis": {
+        "type": "mathematical_formula",
+        "content_description": "",
+        "technical_details": [
+          "dimensions: 458.1x65.9pt",
+          "format: png",
+          "size: 5.3KB"
+        ],
+        "visual_elements": [
+          "equation",
+          "symbols",
+          "notation"
+        ],
+        "data_insights": [],
+        "quality_score": 0.5
+      }
+    },
+    {
+      "id": "WR 12_23.pptx_8_0",
+      "slide_ref": "WR 12_23.pptx:slide_8",
+      "content": "Migration 진행 상황",
+      "type": "general_content",
+      "category": "General",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 12_23.pptx_8_1",
+      "slide_ref": "WR 12_23.pptx:slide_8",
+      "content": "Toddlerbot sim to real 시, 오류 발생",
+      "type": "simulation",
+      "category": "Simulation",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 12_23.pptx_8_2",
+      "slide_ref": "WR 12_23.pptx:slide_8",
+      "content": "Dynamicel SDK, C++로 이전한 코드에서 오류 발생",
+      "type": "general_content",
+      "category": "General",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 12_23.pptx_8_3",
+      "slide_ref": "WR 12_23.pptx:slide_8",
+      "content": "마무리 이후, Endurance Test 진행",
+      "type": "general_content",
+      "category": "General",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_10_0",
+      "slide_ref": "WR 9_23.pptx:slide_10",
+      "content": "[animation_demo] WR 9_23_10_22809029.gif",
+      "type": "animation_demo",
+      "category": "Demonstration",
+      "source": "image",
+      "confidence": 1.0,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "body",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      },
+      "image_analysis": {
+        "type": "animation_demo",
+        "content_description": "",
+        "technical_details": [
+          "dimensions: 471.7x265.7pt",
+          "format: gif",
+          "size: 8241.5KB"
+        ],
+        "visual_elements": [
+          "motion",
+          "sequence",
+          "demonstration"
+        ],
+        "data_insights": [],
+        "quality_score": 0.9
+      }
+    },
+    {
+      "id": "WR 10_14.pptx_3_0",
+      "slide_ref": "WR 10_14.pptx:slide_3",
+      "content": "Toddlerbot 학습 결과",
+      "type": "experimental_result",
+      "category": "Results",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "evidence"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "body",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 9_2.pptx_7_0",
+      "slide_ref": "WR 9_2.pptx:slide_7",
+      "content": "Result (HeatState)",
+      "type": "experimental_result",
+      "category": "Results",
+      "source": "text",
+      "confidence": 0.648,
+      "principles": [
+        "evidence"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "body",
+        "thesis_relevance": "medium",
+        "quality_tier": "standard"
+      }
+    },
+    {
+      "id": "WR 9_2.pptx_7_1",
+      "slide_ref": "WR 9_2.pptx:slide_7",
+      "content": "[general_figure] WR 9_2_7_038eea9f.png",
+      "type": "general_figure",
+      "category": "Supplementary",
+      "source": "image",
+      "confidence": 1.0,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      },
+      "image_analysis": {
+        "type": "general_figure",
+        "content_description": "",
+        "technical_details": [
+          "dimensions: 483.5x270.6pt",
+          "format: png",
+          "size: 889.4KB"
+        ],
+        "visual_elements": [
+          "figure",
+          "illustration"
+        ],
+        "data_insights": [],
+        "quality_score": 0.9
+      }
+    },
+    {
+      "id": "WR 9_2.pptx_6_0",
+      "slide_ref": "WR 9_2.pptx:slide_6",
+      "content": "Result (1000~1389 steps)",
+      "type": "experimental_result",
+      "category": "Results",
+      "source": "text",
+      "confidence": 0.648,
+      "principles": [
+        "evidence"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "body",
+        "thesis_relevance": "low",
+        "quality_tier": "standard"
+      }
+    },
+    {
+      "id": "WR 9_2.pptx_6_1",
+      "slide_ref": "WR 9_2.pptx:slide_6",
+      "content": "Normal (0~500steps)",
+      "type": "general_content",
+      "category": "General",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 9_2.pptx_6_2",
+      "slide_ref": "WR 9_2.pptx:slide_6",
+      "content": "Torque limited (1000~1389 steps)",
+      "type": "motor_control",
+      "category": "Actuator-Control",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "medium",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 9_2.pptx_6_3",
+      "slide_ref": "WR 9_2.pptx:slide_6",
+      "content": "[animation_demo] WR 9_2_6_5fabdf36.gif",
+      "type": "animation_demo",
+      "category": "Demonstration",
+      "source": "image",
+      "confidence": 0.84,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "body",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      },
+      "image_analysis": {
+        "type": "animation_demo",
+        "content_description": "",
+        "technical_details": [
+          "dimensions: 239.3x239.3pt",
+          "format: gif",
+          "size: 2125.5KB"
+        ],
+        "visual_elements": [
+          "motion",
+          "sequence",
+          "demonstration"
+        ],
+        "data_insights": [],
+        "quality_score": 0.7
+      }
+    },
+    {
+      "id": "WR 9_2.pptx_6_4",
+      "slide_ref": "WR 9_2.pptx:slide_6",
+      "content": "[animation_demo] WR 9_2_6_859f42a8.gif",
+      "type": "animation_demo",
+      "category": "Demonstration",
+      "source": "image",
+      "confidence": 0.84,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "body",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      },
+      "image_analysis": {
+        "type": "animation_demo",
+        "content_description": "",
+        "technical_details": [
+          "dimensions: 239.3x239.3pt",
+          "format: gif",
+          "size: 2644.3KB"
+        ],
+        "visual_elements": [
+          "motion",
+          "sequence",
+          "demonstration"
+        ],
+        "data_insights": [],
+        "quality_score": 0.7
+      }
+    },
+    {
+      "id": "WR 07_14 - EunwooSong.pptx_4_0",
+      "slide_ref": "WR 07_14 - EunwooSong.pptx:slide_4",
+      "content": "robot이 특정 task를 잘 수행하는 것 또한 중요하지만, 장기적인 안정성 또한 고려되어야 한다.",
+      "type": "robotics",
+      "category": "Robotics",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "high",
+        "structural_role": "supporting",
+        "thesis_relevance": "medium",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 07_14 - EunwooSong.pptx_4_1",
+      "slide_ref": "WR 07_14 - EunwooSong.pptx:slide_4",
+      "content": "지금의 시뮬레이션에서는 이상적인 motor 상황에 너무 과적합되어 있다.",
+      "type": "motor_control",
+      "category": "Actuator-Control",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "medium",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 07_14 - EunwooSong.pptx_4_2",
+      "slide_ref": "WR 07_14 - EunwooSong.pptx:slide_4",
+      "content": "누적된 사용(발열)으로 인한 motor의 torque 감소를 시뮬레이션 하면 sim to real gap을 줄이는데 유용할 것이다.",
+      "type": "thermal_domain",
+      "category": "Thermal-Management",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "high",
+        "structural_role": "supporting",
+        "thesis_relevance": "high",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 07_14 - EunwooSong.pptx_4_3",
+      "slide_ref": "WR 07_14 - EunwooSong.pptx:slide_4",
+      "content": "추가로 로봇의 에너지 효율성을 개선할 수 있을 것이다.",
+      "type": "general_content",
+      "category": "General",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 07_14 - EunwooSong.pptx_4_4",
+      "slide_ref": "WR 07_14 - EunwooSong.pptx:slide_4",
+      "content": "따라서 Heat2Torque simulation을 제안",
+      "type": "thermal_domain",
+      "category": "Thermal-Management",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "novelty"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "high",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_28_0",
+      "slide_ref": "WR 9_23.pptx:slide_28",
+      "content": "τ^i: i번째 actuator가 손상된 시나리오",
+      "type": "motor_control",
+      "category": "Actuator-Control",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_28_1",
+      "slide_ref": "WR 9_23.pptx:slide_28",
+      "content": "actuator가 12개이므로, 12개의 시나리오 고려",
+      "type": "motor_control",
+      "category": "Actuator-Control",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_28_2",
+      "slide_ref": "WR 9_23.pptx:slide_28",
+      "content": "traj^i_n: i번째 시나리오에서의 n번째 trajectory",
+      "type": "general_content",
+      "category": "General",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_28_3",
+      "slide_ref": "WR 9_23.pptx:slide_28",
+      "content": "N은 20000으로 설정",
+      "type": "general_content",
+      "category": "General",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_28_4",
+      "slide_ref": "WR 9_23.pptx:slide_28",
+      "content": "각각의 traj은 (s, d, )     의 값으로 구성된다.",
+      "type": "general_content",
+      "category": "General",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 1_14.pptx_3_0",
+      "slide_ref": "WR 1_14.pptx:slide_3",
+      "content": "Toddlerbot Thermal Weight",
+      "type": "thermal_domain",
+      "category": "Thermal-Management",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "medium",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 1_14.pptx_11_0",
+      "slide_ref": "WR 1_14.pptx:slide_11",
+      "content": "[general_figure] WR 1_14_11_d8a2605f.png",
+      "type": "general_figure",
+      "category": "Supplementary",
+      "source": "image",
+      "confidence": 1.0,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      },
+      "image_analysis": {
+        "type": "general_figure",
+        "content_description": "",
+        "technical_details": [
+          "dimensions: 498.2x289.1pt",
+          "format: png",
+          "size: 113.7KB"
+        ],
+        "visual_elements": [
+          "figure",
+          "illustration"
+        ],
+        "data_insights": [],
+        "quality_score": 0.9
+      }
+    },
+    {
+      "id": "WR 07_14 - EunwooSong.pptx_24_0",
+      "slide_ref": "WR 07_14 - EunwooSong.pptx:slide_24",
+      "content": "적용 Task 및 성능 비교",
+      "type": "general_content",
+      "category": "General",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 07_14 - EunwooSong.pptx_24_1",
+      "slide_ref": "WR 07_14 - EunwooSong.pptx:slide_24",
+      "content": "ToddlerBot에 있는 정책에서 Thermal-reward를 추가, 해당 정책을 반복 수행했을 때, 어떤 모델이 더 오래 지속되는지를 타이머로 비교 실험",
+      "type": "thermal_domain",
+      "category": "Thermal-Management",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "evidence"
+      ],
+      "pro_validation": {
+        "semantic_depth": "high",
+        "structural_role": "supporting",
+        "thesis_relevance": "medium",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 07_14 - EunwooSong.pptx_24_2",
+      "slide_ref": "WR 07_14 - EunwooSong.pptx:slide_24",
+      "content": "시뮬레이션에서 과열 상황을 부여하고, 각 모델(original, ours)를 비교",
+      "type": "general_content",
+      "category": "General",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 07_14 - EunwooSong.pptx_11_0",
+      "slide_ref": "WR 07_14 - EunwooSong.pptx:slide_11",
+      "content": "기존의 에너지 효율성 보상 함수",
+      "type": "general_content",
+      "category": "General",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 07_14 - EunwooSong.pptx_11_1",
+      "slide_ref": "WR 07_14 - EunwooSong.pptx:slide_11",
+      "content": "Toddlerbot에서 사용하는 보상 함수는 system 총량",
+      "type": "robotics",
+      "category": "Robotics",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 07_14 - EunwooSong.pptx_11_2",
+      "slide_ref": "WR 07_14 - EunwooSong.pptx:slide_11",
+      "content": "[mathematical_formula] WR 07_14 - EunwooSong_11_78253d8c.png",
+      "type": "mathematical_formula",
+      "category": "Theory",
+      "source": "image",
+      "confidence": 0.84,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "high",
+        "structural_role": "body",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      },
+      "image_analysis": {
+        "type": "mathematical_formula",
+        "content_description": "",
+        "technical_details": [
+          "dimensions: 670.9x141.5pt",
+          "format: png",
+          "size: 31.7KB"
+        ],
+        "visual_elements": [
+          "equation",
+          "symbols",
+          "notation"
+        ],
+        "data_insights": [],
+        "quality_score": 0.7
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_35_0",
+      "slide_ref": "WR 9_23.pptx:slide_35",
+      "content": "Method - DreamFLEX",
+      "type": "methodology",
+      "category": "Methods",
+      "source": "text",
+      "confidence": 0.648,
+      "principles": [
+        "methodology"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "body",
+        "thesis_relevance": "low",
+        "quality_tier": "standard"
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_35_1",
+      "slide_ref": "WR 9_23.pptx:slide_35",
+      "content": "[general_figure] WR 9_23_35_d65ff318.png",
+      "type": "general_figure",
+      "category": "Supplementary",
+      "source": "image",
+      "confidence": 1.0,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      },
+      "image_analysis": {
+        "type": "general_figure",
+        "content_description": "",
+        "technical_details": [
+          "dimensions: 662.0x263.6pt",
+          "format: png",
+          "size: 104.4KB"
+        ],
+        "visual_elements": [
+          "figure",
+          "illustration"
+        ],
+        "data_insights": [],
+        "quality_score": 0.9
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_32_0",
+      "slide_ref": "WR 9_23.pptx:slide_32",
+      "content": "DreamFLEX: Learning Fault-Aware Quadrupedal Locomotion Controller for Anomaly Situation in Rough Terrains",
+      "type": "robotics",
+      "category": "Robotics",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "high",
+        "structural_role": "supporting",
+        "thesis_relevance": "medium",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 07_01 - EunwooSong.pptx_14_0",
+      "slide_ref": "WR 07_01 - EunwooSong.pptx:slide_14",
+      "content": "Rendering the “ToddlerBot” simulation",
+      "type": "simulation",
+      "category": "Simulation",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "medium",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 07_01 - EunwooSong.pptx_14_1",
+      "slide_ref": "WR 07_01 - EunwooSong.pptx:slide_14",
+      "content": "Ubuntu 24.04",
+      "type": "general_content",
+      "category": "General",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_50_0",
+      "slide_ref": "WR 9_23.pptx:slide_50",
+      "content": "two-resistor thermal model (2-저항 열 모델)",
+      "type": "thermal_domain",
+      "category": "Thermal-Management",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "medium",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_50_1",
+      "slide_ref": "WR 9_23.pptx:slide_50",
+      "content": "열 파라미터의 업데이트 필요성은 다음과 같다.",
+      "type": "general_content",
+      "category": "General",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_50_2",
+      "slide_ref": "WR 9_23.pptx:slide_50",
+      "content": "부착된 금속 부품으로의 열 방출, 주변 온도 오차, 모터의 열화 또는 손상 등",
+      "type": "general_content",
+      "category": "General",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_50_3",
+      "slide_ref": "WR 9_23.pptx:slide_50",
+      "content": "New와, Old에게 각각 200N의 부하를 걸었을 때 생기는 그래프는 다음과 같다",
+      "type": "general_content",
+      "category": "General",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_50_4",
+      "slide_ref": "WR 9_23.pptx:slide_50",
+      "content": "New: 새로운 모터, Old: 오래된 모터 (90초 이후 15℃ 차이를 보임)",
+      "type": "general_content",
+      "category": "General",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 07_01 - EunwooSong.pptx_21_0",
+      "slide_ref": "WR 07_01 - EunwooSong.pptx:slide_21",
+      "content": "[general_figure] WR 07_01 - EunwooSong_21_c9873443.png",
+      "type": "general_figure",
+      "category": "Supplementary",
+      "source": "image",
+      "confidence": 1.0,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "high",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      },
+      "image_analysis": {
+        "type": "general_figure",
+        "content_description": "",
+        "technical_details": [
+          "dimensions: 443.8x276.6pt",
+          "format: png",
+          "size: 104.1KB"
+        ],
+        "visual_elements": [
+          "figure",
+          "illustration"
+        ],
+        "data_insights": [],
+        "quality_score": 0.9
+      }
+    },
+    {
+      "id": "WR 11_18.pptx_24_0",
+      "slide_ref": "WR 11_18.pptx:slide_24",
+      "content": "obs(step by step… 1 to 4), torso_ang_vel, torso_euler",
+      "type": "general_content",
+      "category": "General",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "high",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 11_18.pptx_24_1",
+      "slide_ref": "WR 11_18.pptx:slide_24",
+      "content": "[mathematical_formula] WR 11_18_24_ab26d466.png",
+      "type": "mathematical_formula",
+      "category": "Theory",
+      "source": "image",
+      "confidence": 1.0,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "body",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      },
+      "image_analysis": {
+        "type": "mathematical_formula",
+        "content_description": "",
+        "technical_details": [
+          "dimensions: 634.5x183.0pt",
+          "format: png",
+          "size: 55.2KB"
+        ],
+        "visual_elements": [
+          "equation",
+          "symbols",
+          "notation"
+        ],
+        "data_insights": [],
+        "quality_score": 0.9
+      }
+    },
+    {
+      "id": "WR 07_01 - EunwooSong.pptx_26_0",
+      "slide_ref": "WR 07_01 - EunwooSong.pptx:slide_26",
+      "content": "RTX 5080: 3m 42s/ A100:6m",
+      "type": "general_content",
+      "category": "General",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 07_01 - EunwooSong.pptx_26_1",
+      "slide_ref": "WR 07_01 - EunwooSong.pptx:slide_26",
+      "content": "[general_figure] WR 07_01 - EunwooSong_26_aa83a804.png",
+      "type": "general_figure",
+      "category": "Supplementary",
+      "source": "image",
+      "confidence": 0.84,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "high",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      },
+      "image_analysis": {
+        "type": "general_figure",
+        "content_description": "",
+        "technical_details": [
+          "dimensions: 293.9x222.8pt",
+          "format: png",
+          "size: 25.2KB"
+        ],
+        "visual_elements": [
+          "figure",
+          "illustration"
+        ],
+        "data_insights": [],
+        "quality_score": 0.7
+      }
+    },
+    {
+      "id": "WR 07_01 - EunwooSong.pptx_38_0",
+      "slide_ref": "WR 07_01 - EunwooSong.pptx:slide_38",
+      "content": "Graphics..?",
+      "type": "general_content",
+      "category": "General",
+      "source": "text",
+      "confidence": 0.6,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "standard"
+      }
+    },
+    {
+      "id": "WR 07_01 - EunwooSong.pptx_38_1",
+      "slide_ref": "WR 07_01 - EunwooSong.pptx:slide_38",
+      "content": "notion link",
+      "type": "general_content",
+      "category": "General",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_62_0",
+      "slide_ref": "WR 9_23.pptx:slide_62",
+      "content": "기존 Reward에 다음 core temp safe 구역에 따른 보상 함수를 추가한다.",
+      "type": "reinforcement_learning",
+      "category": "Learning",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_62_1",
+      "slide_ref": "WR 9_23.pptx:slide_62",
+      "content": "최적온도(c1, min) 이내는 최대 보상, 아니면 리워드 점차 감소(c1,max)",
+      "type": "general_content",
+      "category": "General",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_62_2",
+      "slide_ref": "WR 9_23.pptx:slide_62",
+      "content": "가우시안 분포 꼴 이용",
+      "type": "general_content",
+      "category": "General",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_62_3",
+      "slide_ref": "WR 9_23.pptx:slide_62",
+      "content": "[mathematical_formula] WR 9_23_62_7b4e8ab7.png",
+      "type": "mathematical_formula",
+      "category": "Theory",
+      "source": "image",
+      "confidence": 0.84,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "body",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      },
+      "image_analysis": {
+        "type": "mathematical_formula",
+        "content_description": "",
+        "technical_details": [
+          "dimensions: 494.6x103.5pt",
+          "format: png",
+          "size: 61.9KB"
+        ],
+        "visual_elements": [
+          "equation",
+          "symbols",
+          "notation"
+        ],
+        "data_insights": [],
+        "quality_score": 0.7
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_61_0",
+      "slide_ref": "WR 9_23.pptx:slide_61",
+      "content": "Limitations of Prior Research & Our Method",
+      "type": "methodology",
+      "category": "Methods",
+      "source": "text",
+      "confidence": 0.648,
+      "principles": [
+        "methodology"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "body",
+        "thesis_relevance": "low",
+        "quality_tier": "standard"
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_61_1",
+      "slide_ref": "WR 9_23.pptx:slide_61",
+      "content": "기존의 DRL 기반 제어기들은 예측하지 못한 외란에 대응하는 것에 초점을 맞췄다.",
+      "type": "reinforcement_learning",
+      "category": "Learning",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_61_2",
+      "slide_ref": "WR 9_23.pptx:slide_61",
+      "content": "이러한 문제를 해결하기 위해 로봇의 미래 상태를 모터의 온도에 기반해 예측하고, 성능과 하드웨어 내구성 사이의 균형을 맞춘다.",
+      "type": "problem_statement",
+      "category": "Motivation",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "high",
+        "structural_role": "opening",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_61_3",
+      "slide_ref": "WR 9_23.pptx:slide_61",
+      "content": "과열에 대한 것도, 과열 상황이 발생한 뒤 생긴 토크 제한에 대응",
+      "type": "general_content",
+      "category": "General",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_61_4",
+      "slide_ref": "WR 9_23.pptx:slide_61",
+      "content": "선제적 건강 관리 프레임워크 제안",
+      "type": "general_content",
+      "category": "General",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "novelty"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 11_18.pptx_9_0",
+      "slide_ref": "WR 11_18.pptx:slide_9",
+      "content": "실험 결과 (19456000 steps, high temperature)",
+      "type": "experimental_result",
+      "category": "Results",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "evidence"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "body",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_46_0",
+      "slide_ref": "WR 9_23.pptx:slide_46",
+      "content": "Method - F. Thermal Controller: Control of Motor Core Temperature",
+      "type": "methodology",
+      "category": "Methods",
+      "source": "text",
+      "confidence": 0.648,
+      "principles": [
+        "methodology"
+      ],
+      "pro_validation": {
+        "semantic_depth": "high",
+        "structural_role": "body",
+        "thesis_relevance": "medium",
+        "quality_tier": "standard"
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_46_1",
+      "slide_ref": "WR 9_23.pptx:slide_46",
+      "content": "[mathematical_formula] WR 9_23_46_37d62c00.png",
+      "type": "mathematical_formula",
+      "category": "Theory",
+      "source": "image",
+      "confidence": 0.6,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "body",
+        "thesis_relevance": "low",
+        "quality_tier": "standard"
+      },
+      "image_analysis": {
+        "type": "mathematical_formula",
+        "content_description": "",
+        "technical_details": [
+          "dimensions: 588.9x34.7pt",
+          "format: png",
+          "size: 42.0KB"
+        ],
+        "visual_elements": [
+          "equation",
+          "symbols",
+          "notation"
+        ],
+        "data_insights": [],
+        "quality_score": 0.5
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_46_2",
+      "slide_ref": "WR 9_23.pptx:slide_46",
+      "content": "[mathematical_formula] WR 9_23_46_37d62c00.png",
+      "type": "mathematical_formula",
+      "category": "Theory",
+      "source": "image",
+      "confidence": 0.6,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "body",
+        "thesis_relevance": "low",
+        "quality_tier": "standard"
+      },
+      "image_analysis": {
+        "type": "mathematical_formula",
+        "content_description": "",
+        "technical_details": [
+          "dimensions: 368.8x34.7pt",
+          "format: png",
+          "size: 42.0KB"
+        ],
+        "visual_elements": [
+          "equation",
+          "symbols",
+          "notation"
+        ],
+        "data_insights": [],
+        "quality_score": 0.5
+      }
+    },
+    {
+      "id": "WR 9_23.pptx_46_3",
+      "slide_ref": "WR 9_23.pptx:slide_46",
+      "content": "[mathematical_formula] WR 9_23_46_ecdfdc6a.png",
+      "type": "mathematical_formula",
+      "category": "Theory",
+      "source": "image",
+      "confidence": 0.6,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "body",
+        "thesis_relevance": "low",
+        "quality_tier": "standard"
+      },
+      "image_analysis": {
+        "type": "mathematical_formula",
+        "content_description": "",
+        "technical_details": [
+          "dimensions: 588.9x70.5pt",
+          "format: png",
+          "size: 47.2KB"
+        ],
+        "visual_elements": [
+          "equation",
+          "symbols",
+          "notation"
+        ],
+        "data_insights": [],
+        "quality_score": 0.5
+      }
+    },
+    {
+      "id": "WR 11_18.pptx_16_0",
+      "slide_ref": "WR 11_18.pptx:slide_16",
+      "content": "[general_figure] WR 11_18_16_0e8351b1.png",
+      "type": "general_figure",
+      "category": "Supplementary",
+      "source": "image",
+      "confidence": 1.0,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      },
+      "image_analysis": {
+        "type": "general_figure",
+        "content_description": "",
+        "technical_details": [
+          "dimensions: 420.4x271.4pt",
+          "format: png",
+          "size: 50.4KB"
+        ],
+        "visual_elements": [
+          "figure",
+          "illustration"
+        ],
+        "data_insights": [],
+        "quality_score": 0.9
+      }
+    },
+    {
+      "id": "WR 07_01 - EunwooSong.pptx_13_0",
+      "slide_ref": "WR 07_01 - EunwooSong.pptx:slide_13",
+      "content": "Sample Code - Result",
+      "type": "experimental_result",
+      "category": "Results",
+      "source": "text",
+      "confidence": 0.648,
+      "principles": [
+        "evidence"
+      ],
+      "pro_validation": {
+        "semantic_depth": "medium",
+        "structural_role": "body",
+        "thesis_relevance": "low",
+        "quality_tier": "standard"
+      }
+    },
+    {
+      "id": "WR 07_01 - EunwooSong.pptx_13_1",
+      "slide_ref": "WR 07_01 - EunwooSong.pptx:slide_13",
+      "content": "mujoco 환경을 render해서 현재 shell의 display를 지우고 다시 plt를 출력한다.",
+      "type": "simulation",
+      "category": "Simulation",
+      "source": "text",
+      "confidence": 0.72,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "high",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      }
+    },
+    {
+      "id": "WR 07_01 - EunwooSong.pptx_13_2",
+      "slide_ref": "WR 07_01 - EunwooSong.pptx:slide_13",
+      "content": "[general_figure] WR 07_01 - EunwooSong_13_ead050c1.png",
+      "type": "general_figure",
+      "category": "Supplementary",
+      "source": "image",
+      "confidence": 0.84,
+      "principles": [
+        "clarity"
+      ],
+      "pro_validation": {
+        "semantic_depth": "high",
+        "structural_role": "supporting",
+        "thesis_relevance": "low",
+        "quality_tier": "premium"
+      },
+      "image_analysis": {
+        "type": "general_figure",
+        "content_description": "",
+        "technical_details": [
+          "dimensions: 241.2x237.2pt",
+          "format: png",
+          "size: 57.9KB"
+        ],
+        "visual_elements": [
+          "figure",
+          "illustration"
+        ],
+        "data_insights": [],
+        "quality_score": 0.7
+      }
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "experiment": "exp5-resolution-high-distributed-optimized",
+  "resolution": "high (1-5 units/slide)",
+  "strategy": "distributed",
+  "pattern": "thesis-first-4-stage",
+  "model_usage": {
+    "flash_stages": [
+      "step1",
+      "step2",
+      "step3"
+    ],
+    "pro_stages": [
+      "step4"
+    ],
+    "flash_description": "Thesis extraction, cluster analysis, consistency check",
+    "pro_description": "Quality verification and gap analysis only",
+    "flash_ratio": "14.7%",
+    "pro_ratio": "85.3%"
+  },
+  "timestamp": "2026-01-31T13:12:26.227192",
+  "total_slides": 45,
+  "total_units": 128,
+  "avg_units_per_slide": 2.84,
+  "step1_results": {
+    "thesis": {
+      "research_question": "How can we prevent motor overheating and extend operational time in long-term quadruped robot deployments?",
+      "main_claim": "A thermal-aware control framework with real-time estimation and predictive planning significantly reduces motor failures and extends robot endurance",
+      "supporting_points": [
+        "Real-time thermal state estimation using sensor fusion and thermal models",
+        "Predictive thermal control with MPC and RL-based planners",
+        "Proactive thermal management prevents failures rather than reacting to them",
+        "Thermal-aware reward functions improve long-term stability in RL training",
+        "Experimental validation shows reduced motor limitations and improved endurance"
+      ],
+      "confidence": 0.88
+    },
+    "units_count": 128,
+    "clusters_count": 4,
+    "cross_references_count": 25,
+    "image_analyses_count": 41,
+    "sample_units": [
+      {
+        "id": "unit_1",
+        "type": "result_main",
+        "content": "Result - Video\nCopyright 2024 Global School of Media\nRTX 5080: 3h 43m 43s",
+        "slide_source": "WR 07_01 - EunwooSong.pptx_37",
+        "confidence": 0.7553071939367727,
+        "temporal_stage": 4,
+        "granularity": "fine"
+      },
+      {
+        "id": "unit_2",
+        "type": "result_visual",
+        "content": "Result - Video\nCopyright 2024 Global School of Media\nRTX 5080: 3h 43m 43s",
+        "slide_source": "WR 07_01 - EunwooSong.pptx_37",
+        "confidence": 0.7897675301373297,
+        "temporal_stage": 4,
+        "granularity": "fine"
+      },
+      {
+        "id": "unit_3",
+        "type": "result_main",
+        "content": "Result - Video\nCopyright 2024 Global School of Media\nRTX 5080: 3h 43m 43s",
+        "slide_source": "WR 07_01 - EunwooSong.pptx_37",
+        "confidence": 0.8799768875559046,
+        "temporal_stage": 4,
+        "granularity": "fine"
+      }
+    ]
+  },
+  "step2_results": {
+    "cluster_analyses_count": 4,
+    "sample_analyses": [
+      {
+        "cluster_id": "cluster_stage_1",
+        "description": "Background on motor thermal issues and current limitations",
+        "key_insight": "Motor thermal degradation is critical for long-term deployment",
+        "thesis_connection": "Establishes foundational context for: 'How can we prevent motor overheating and extend operational time in long-term quadruped robot deployments?'",
+        "importance_score": 0.8700823229633687
+      },
+      {
+        "cluster_id": "cluster_stage_2",
+        "description": "Problem formulation and thermal-aware framework proposal",
+        "key_insight": "Proactive thermal-aware control prevents failures before they occur",
+        "thesis_connection": "Directly addresses the core thesis: 'A thermal-aware control framework with real-time estimation and predictive planning significantly reduces motor failures and extends robot endurance'",
+        "importance_score": 0.7742110130134631
+      }
+    ]
+  },
+  "step3_results": {
+    "consistency_score": 0.8326056722219163,
+    "flow_analysis": {
+      "temporal_flow": "Strong sequential progression through research stages",
+      "logical_coherence": "High logical connectivity between clusters",
+      "narrative_strength": "Clear narrative arc supporting thesis",
+      "transition_quality": "Smooth transitions with cross-references",
+      "stage_completeness": {
+        "background": "Complete",
+        "problem": "Complete",
+        "method": "Complete",
+        "results": "Comprehensive with detailed metrics",
+        "discussion": "Moderate - could expand on implications"
+      }
+    },
+    "relation_analysis": {
+      "cross_reference_density": 6.25,
+      "relation_types": {
+        "supports": 6,
+        "evaluates": 5,
+        "contradicts": 4,
+        "implements": 6,
+        "extends": 4
+      },
+      "dominant_relations": [
+        [
+          "supports",
+          6
+        ],
+        [
+          "implements",
+          6
+        ],
+        [
+          "evaluates",
+          5
+        ]
+      ],
+      "network_connectivity": "Highly connected with rich cross-referencing"
+    },
+    "issues_found": [
+      "Some clusters show moderate thesis alignment"
+    ]
+  },
+  "step4_results": {
+    "gaps_count": 4,
+    "quality_issues_count": 3,
+    "sample_gaps": [
+      {
+        "gap_type": "methodological_detail",
+        "description": "Thermal parameter estimation process needs detailed algorithmic explanation",
+        "severity": "medium",
+        "affected_sections": [
+          "Method & Approach"
+        ]
+      },
+      {
+        "gap_type": "evaluation_completeness",
+        "description": "Missing quantitative comparison with baseline thermal management approaches",
+        "severity": "high",
+        "affected_sections": [
+          "Results & Evaluation"
+        ]
+      }
+    ],
+    "sample_issues": [
+      {
+        "issue_type": "over_segmentation",
+        "description": "High granularity (1-5 units/slide) may create excessive fragmentation",
+        "location": "Global",
+        "severity": "medium"
+      },
+      {
+        "issue_type": "unbalanced_importance",
+        "description": "Some clusters have significantly lower importance scores",
+        "location": "Cluster importance distribution",
+        "severity": "low"
+      }
+    ],
+    "section_conversion": {
+      "overall_feasibility": "Very High - detailed structure supports comprehensive paper",
+      "section_scores": {
+        "Introduction & Background": 0.769,
+        "Problem Formulation": 0.724,
+        "Methodology": 0.883,
+        "Experiments & Results": 0.78
+      },
+      "recommended_order": [
+        "Introduction & Background",
+        "Problem Formulation",
+        "Methodology",
+        "Experiments & Results",
+        "Discussion & Conclusion"
+      ],
+      "missing_sections": [
+        "Related Work - needs dedicated section with literature review",
+        "Limitations - should be explicitly discussed"
+      ],
+      "merger_recommendations": [
+        "Consider merging fine-grained method units to avoid fragmentation",
+        "Group related result units into coherent subsections"
+      ],
+      "notes": "High resolution provides rich detail but may need consolidation for coherent narrative"
+    }
+  },
+  "category_distribution": {
+    "result_main": 17,
+    "result_visual": 42,
+    "method_approach": 16,
+    "thesis_question": 4,
+    "method_detail": 2,
+    "method_implementation": 13,
+    "thesis_claim": 9,
+    "general": 23,
+    "background_context": 1,
+    "background_prior_work": 1
+  },
+  "stage_distribution": {
+    "4": 59,
+    "3": 54,
+    "2": 13,
+    "1": 2
+  },
+  "granularity_distribution": {
+    "fine": 52,
+    "coarse": 31,
+    "medium": 45
+  },
+  "cost_analysis": {
+    "flash_cost": 0.0103,
+    "pro_cost": 0.0597,
+    "total_cost": 0.07,
+    "flash_ratio": "14.7%",
+    "pro_ratio": "85.3%",
+    "savings_vs_full_pro": "87.2%",
+    "cost_breakdown": {
+      "flash_input_tokens": 36000,
+      "flash_output_tokens": 25240,
+      "pro_input_tokens": 7400,
+      "pro_output_tokens": 2500
+    }
+  },
+  "quality_assessment": {
+    "information_coverage": "Very High - 1-5 units per slide captures fine details",
+    "thesis_alignment": "0.83",
+    "consistency_score": "0.83",
+    "over_segmentation_risk": "Medium - High granularity may create noise",
+    "cost_efficiency": "High - 75% Flash, 25% Pro ratio optimal"
+  }
+}

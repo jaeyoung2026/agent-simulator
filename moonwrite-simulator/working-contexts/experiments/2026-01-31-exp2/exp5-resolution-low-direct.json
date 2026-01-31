@@ -1,0 +1,345 @@
+{
+  "resolution": "low (1-2)",
+  "strategy": "direct",
+  "total_slides": 45,
+  "total_units": 60,
+  "avg_units_per_slide": 1.33,
+  "flash_analysis": {
+    "extraction_summary": {
+      "total_units_extracted": 60,
+      "units_per_slide_distribution": {
+        "min": 1,
+        "max": 2,
+        "avg": 1.33,
+        "median": 1
+      },
+      "text_units": 45,
+      "image_units": 15
+    },
+    "image_analysis_depth": "basic",
+    "keyword_extraction": "enabled",
+    "content_classification": "enabled"
+  },
+  "pro_validation": {
+    "information_coverage": {
+      "complete": 16,
+      "partial_loss": 7,
+      "significant_loss": 22,
+      "distribution_percentage": {
+        "complete": 35.6,
+        "partial_loss": 15.6,
+        "significant_loss": 48.9
+      }
+    },
+    "compression_quality": {
+      "avg_compression_ratio": 0.553,
+      "avg_reduction_percentage": 44.7,
+      "compression_ratio_range": {
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "thesis_preservation": {
+      "avg_preservation_rate": 1.0,
+      "preservation_rate_range": {
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "image_coverage": {
+      "covered_slides": 15,
+      "coverage_rate": 0.333
+    }
+  },
+  "quality_assessment": {
+    "information_loss_level": "high",
+    "average_compression_ratio": 0.553,
+    "average_thesis_preservation": 1.0,
+    "image_coverage_rate": 0.333,
+    "recommended_use_cases": [
+      "High-level overview with thesis preservation"
+    ]
+  },
+  "pros": [
+    "매우 빠른 분석 (Flash 기반)",
+    "효과적인 압축 (평균 44.7% 크기 감소)",
+    "Thesis 보존 우수 (100.0% 평균 보존율)"
+  ],
+  "cons": [
+    "정보 손실 존재 (22개 슬라이드에서 심각한 손실)",
+    "이미지 커버리지 제한 (66.7% 슬라이드에서 이미지 누락)",
+    "상세한 분석 불가능 (1-2개 유닛만 추출)",
+    "복잡한 다중 주제 슬라이드에서 부족"
+  ],
+  "suitable_for": [
+    "Quick content screening",
+    "Thesis-level summarization",
+    "Fast document review",
+    "Information triage"
+  ],
+  "detailed_results": {
+    "flash_results_sample": [
+      {
+        "slide_index": 0,
+        "filename": "WR 07_01 - EunwooSong.pptx",
+        "slide_number": 37,
+        "units_extracted": 2,
+        "units": [
+          {
+            "id": 1,
+            "type": "text",
+            "content_type": "Result",
+            "keywords": [
+              "Result",
+              "Video",
+              "Copyright"
+            ],
+            "content_snippet": "Result - Video\nCopyright 2024 Global School of Media\nRTX 5080: 3h 43m 43s",
+            "full_content": "Result - Video\nCopyright 2024 Global School of Media\nRTX 5080: 3h 43m 43s",
+            "image_count": 2,
+            "has_visual": true
+          },
+          {
+            "id": 2,
+            "type": "image",
+            "image_count": 2,
+            "image_types": [
+              "jpg",
+              "jpg"
+            ],
+            "image_total_size": 29010
+          }
+        ]
+      },
+      {
+        "slide_index": 1,
+        "filename": "WR 9_23.pptx",
+        "slide_number": 38,
+        "units_extracted": 2,
+        "units": [
+          {
+            "id": 1,
+            "type": "text",
+            "content_type": "Result",
+            "keywords": [
+              "Method",
+              "Result",
+              "Copyright"
+            ],
+            "content_snippet": "Method - Result\nCopyright 2024 Global School of Media",
+            "full_content": "Method - Result\nCopyright 2024 Global School of Media",
+            "image_count": 1,
+            "has_visual": true
+          },
+          {
+            "id": 2,
+            "type": "image",
+            "image_count": 1,
+            "image_types": [
+              "png"
+            ],
+            "image_total_size": 1937369
+          }
+        ]
+      },
+      {
+        "slide_index": 2,
+        "filename": "WR 07_14 - EunwooSong.pptx",
+        "slide_number": 10,
+        "units_extracted": 1,
+        "units": [
+          {
+            "id": 1,
+            "type": "text",
+            "content_type": "Method",
+            "keywords": [
+              "Algorithm으로",
+              "관리하는",
+              "Copyright"
+            ],
+            "content_snippet": "Algorithm으로 관리하는 것과의 차별점?\nCopyright 2024 Global School of Media\n단순히 특정 이상 온도로 올라가면 동작을 멈추게 할 수 있지만, ",
+            "full_content": "Algorithm으로 관리하는 것과의 차별점?\nCopyright 2024 Global School of Media\n단순히 특정 이상 온도로 올라가면 동작을 멈추게 할 수 있지만, 냉각이 될 때까지 Agent가 멈춰야하는 문제점이 있다.\noverload로 인해 예상한 토크가 부족한 상황을 극복하는 것에 초점",
+            "image_count": 0,
+            "has_visual": false
+          }
+        ]
+      },
+      {
+        "slide_index": 3,
+        "filename": "WR 07_14 - EunwooSong.pptx",
+        "slide_number": 13,
+        "units_extracted": 2,
+        "units": [
+          {
+            "id": 1,
+            "type": "text",
+            "content_type": "General",
+            "keywords": [
+              "발열량은",
+              "전력에서",
+              "기계적인"
+            ],
+            "content_snippet": "모터의 발열량\n모터의 발열량은 입력 전력에서 기계적인 출력을 빼어 구한다\n입력 전력과 출력의 차이를 발열로 가정\n권선에서 발생하는 열손실이 주를 이룸\nMujoco에서 Torque,",
+            "full_content": "모터의 발열량\n모터의 발열량은 입력 전력에서 기계적인 출력을 빼어 구한다\n입력 전력과 출력의 차이를 발열로 가정\n권선에서 발생하는 열손실이 주를 이룸\nMujoco에서 Torque, velocity를 구할 수 있음\nmaxon motor - key information\nCopyright 2024 Global School of Media",
+            "image_count": 2,
+            "has_visual": true
+          },
+          {
+            "id": 2,
+            "type": "image",
+            "image_count": 2,
+            "image_types": [
+              "png",
+              "png"
+            ],
+            "image_total_size": 9598
+          }
+        ]
+      },
+      {
+        "slide_index": 4,
+        "filename": "WR 9_23.pptx",
+        "slide_number": 52,
+        "units_extracted": 1,
+        "units": [
+          {
+            "id": 1,
+            "type": "text",
+            "content_type": "Method",
+            "keywords": [
+              "Method",
+              "Thermal",
+              "Estimation"
+            ],
+            "content_snippet": "Method - C. Thermal Esimator: Estimation of Motor Core Temperature\nΔt_est = 0.02 (sec)\nCopyright 202",
+            "full_content": "Method - C. Thermal Esimator: Estimation of Motor Core Temperature\nΔt_est = 0.02 (sec)\nCopyright 2024 Global School of Media",
+            "image_count": 1,
+            "has_visual": true
+          }
+        ]
+      }
+    ],
+    "pro_validation_sample": [
+      {
+        "slide_index": 0,
+        "information_coverage": {
+          "coverage_level": "complete",
+          "content_loss_rate": 0.0,
+          "image_loss_rate": 0,
+          "original_content_length": 73,
+          "extracted_content_length": 73,
+          "original_image_count": 2,
+          "extracted_image_count": 2
+        },
+        "compression_quality": {
+          "quality_level": "low_compression",
+          "original_size_bytes": 29083,
+          "compressed_size_bytes": 29083,
+          "compression_ratio": 1.0,
+          "estimated_reduction": 0.0
+        },
+        "thesis_preservation": {
+          "preservation_rate": 1.0,
+          "original_thesis_strength": 0.125,
+          "extracted_thesis_strength": 0.125
+        }
+      },
+      {
+        "slide_index": 1,
+        "information_coverage": {
+          "coverage_level": "complete",
+          "content_loss_rate": 0.0,
+          "image_loss_rate": 0,
+          "original_content_length": 53,
+          "extracted_content_length": 53,
+          "original_image_count": 1,
+          "extracted_image_count": 1
+        },
+        "compression_quality": {
+          "quality_level": "low_compression",
+          "original_size_bytes": 1937422,
+          "compressed_size_bytes": 1937422,
+          "compression_ratio": 1.0,
+          "estimated_reduction": 0.0
+        },
+        "thesis_preservation": {
+          "preservation_rate": 1.0,
+          "original_thesis_strength": 0.125,
+          "extracted_thesis_strength": 0.125
+        }
+      },
+      {
+        "slide_index": 2,
+        "information_coverage": {
+          "coverage_level": "partial_loss",
+          "content_loss_rate": 0.415,
+          "image_loss_rate": 0,
+          "original_content_length": 171,
+          "extracted_content_length": 100,
+          "original_image_count": 0,
+          "extracted_image_count": 0
+        },
+        "compression_quality": {
+          "quality_level": "moderate_compression",
+          "original_size_bytes": 329,
+          "compressed_size_bytes": 174,
+          "compression_ratio": 0.529,
+          "estimated_reduction": 47.1
+        },
+        "thesis_preservation": {
+          "preservation_rate": 1.0,
+          "original_thesis_strength": 0.0,
+          "extracted_thesis_strength": 0.0
+        }
+      },
+      {
+        "slide_index": 3,
+        "information_coverage": {
+          "coverage_level": "partial_loss",
+          "content_loss_rate": 0.462,
+          "image_loss_rate": 0,
+          "original_content_length": 186,
+          "extracted_content_length": 100,
+          "original_image_count": 2,
+          "extracted_image_count": 2
+        },
+        "compression_quality": {
+          "quality_level": "low_compression",
+          "original_size_bytes": 9926,
+          "compressed_size_bytes": 9828,
+          "compression_ratio": 0.99,
+          "estimated_reduction": 1.0
+        },
+        "thesis_preservation": {
+          "preservation_rate": 1.0,
+          "original_thesis_strength": 0.0,
+          "extracted_thesis_strength": 0.0
+        }
+      },
+      {
+        "slide_index": 4,
+        "information_coverage": {
+          "coverage_level": "significant_loss",
+          "content_loss_rate": 0.194,
+          "image_loss_rate": 1.0,
+          "original_content_length": 124,
+          "extracted_content_length": 100,
+          "original_image_count": 1,
+          "extracted_image_count": 0
+        },
+        "compression_quality": {
+          "quality_level": "high_compression",
+          "original_size_bytes": 20807,
+          "compressed_size_bytes": 101,
+          "compression_ratio": 0.005,
+          "estimated_reduction": 99.5
+        },
+        "thesis_preservation": {
+          "preservation_rate": 1.0,
+          "original_thesis_strength": 0.0,
+          "extracted_thesis_strength": 0.0
+        }
+      }
+    ]
+  }
+}

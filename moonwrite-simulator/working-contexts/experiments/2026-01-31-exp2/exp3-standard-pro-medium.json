@@ -1,0 +1,138 @@
+{
+  "condition": "Standard + Pro (Medium)",
+  "model": "flash (CoT) + pro (refinement)",
+  "resolution": "1-3 units/slide",
+  "total_samples": 45,
+  "total_units": 89,
+  "avg_units_per_slide": 1.98,
+
+  "extraction_strategy": {
+    "method": "Chain-of-Thought 3단계 + Pro 분류 정제",
+    "flash_role": "CoT 기반 의미 추출",
+    "pro_role": "분류 정제 및 Gap 분석"
+  },
+
+  "pro_refinement_stats": {
+    "total_refined": 89,
+    "classification_refined": 34,
+    "classification_refined_pct": 38.2,
+    "category_corrections": 12,
+    "confidence_upgrades": 22,
+    "gaps_identified": 4
+  },
+
+  "category_distribution": {
+    "introduction": 8,
+    "related_work": 5,
+    "method": 28,
+    "implementation": 12,
+    "result": 18,
+    "discussion": 8,
+    "conclusion": 6,
+    "other": 4
+  },
+
+  "thesis": {
+    "core_question": "ToddlerBot의 장시간 보행 시 모터 과열 문제를 어떻게 해결할 것인가?",
+    "core_claim": "Two-resistor 열 모델 기반 온라인 학습과 FEMNet을 통한 결함 상태 추론으로 열 인식 결함 허용 보행 제어 실현",
+    "extraction_method": "cot_with_pro_refinement"
+  },
+
+  "gap_analysis": {
+    "model": "pro",
+    "gaps": [
+      {
+        "type": "evidence_gap",
+        "severity": "major",
+        "description": "실제 하드웨어 검증 결과 부족"
+      },
+      {
+        "type": "comparison_gap",
+        "severity": "minor",
+        "description": "기존 방법과의 정량적 비교 불충분"
+      },
+      {
+        "type": "ablation_gap",
+        "severity": "minor",
+        "description": "구성요소별 기여도 분석 필요"
+      },
+      {
+        "type": "generalization_gap",
+        "severity": "moderate",
+        "description": "다른 로봇 플랫폼 적용 가능성 미검증"
+      }
+    ]
+  },
+
+  "image_analysis": {
+    "total_images": 52,
+    "analyzed_images": 52,
+    "analysis_depth": "standard",
+    "analysis_elements": ["type", "content", "role"]
+  },
+
+  "quality_metrics": {
+    "thesis_clarity": "high",
+    "section_balance": "good",
+    "thesis_alignment": 0.72,
+    "writing_principles_applied": ["signpost", "glue_sentence", "skeleton_drafting"]
+  },
+
+  "sample_extractions": [
+    {
+      "slide_ref": "WR 07_01:37",
+      "units": [
+        {
+          "title": "ToddlerBot 보행 학습 결과 시연",
+          "category": "result",
+          "summary": "RTX 5080 GPU에서 3시간 43분 학습된 보행 정책의 시뮬레이션 결과",
+          "pro_refined": true,
+          "refinement": "category를 'general'에서 'result'로 수정"
+        }
+      ]
+    },
+    {
+      "slide_ref": "WR 07_14:13",
+      "units": [
+        {
+          "title": "모터 발열량 물리적 모델",
+          "category": "method",
+          "summary": "입력 전력에서 기계적 출력을 빼서 발열량 계산",
+          "pro_refined": false
+        },
+        {
+          "title": "MuJoCo 기반 토크/속도 측정",
+          "category": "implementation",
+          "summary": "시뮬레이터에서 모터 파라미터 측정 방법",
+          "pro_refined": true,
+          "refinement": "기술적 세부사항 보완"
+        }
+      ]
+    },
+    {
+      "slide_ref": "WR 9_23:52",
+      "units": [
+        {
+          "title": "Thermal Estimator 온도 추정 알고리즘",
+          "category": "method",
+          "summary": "0.02초 간격 실시간 코어 온도 추정",
+          "pro_refined": false
+        }
+      ]
+    }
+  ],
+
+  "comparison_with_quick_draft": {
+    "unit_increase": "+71%",
+    "refinement_benefit": "38.2% 분류 정제로 정확도 향상",
+    "gap_analysis_added": true,
+    "thesis_quality": "significantly improved"
+  },
+
+  "processing_estimate": {
+    "flash_calls": 89,
+    "pro_calls": 45,
+    "total_calls": 134,
+    "estimated_cost_usd": 0.082
+  }
+}

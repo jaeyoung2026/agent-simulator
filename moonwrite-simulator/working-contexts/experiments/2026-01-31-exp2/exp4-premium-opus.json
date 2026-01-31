@@ -1,0 +1,1488 @@
+{
+  "condition": "Premium (opus)",
+  "model": "opus",
+  "resolution": "1-5 units/slide",
+  "methodology": "Self-Critique 4-Stage Deep Semantic Extraction",
+  "total_units": 127,
+  "avg_units_per_slide": 2.82,
+  "thesis": {
+    "core_question": "로봇 액추에이터의 열 관리를 통해 어떻게 장기 운용 안정성과 성능 간의 균형을 달성할 수 있는가?",
+    "core_claim": "Heat2Torque 시뮬레이션과 선제적 열 관리 프레임워크를 통해 모터 과열로 인한 토크 제한을 예방하고, sim-to-real gap을 줄이며 로봇의 장기 운용 안정성을 향상시킬 수 있다.",
+    "core_evidence": [
+      "모터 발열량 = 입력 전력 - 기계적 출력, 권선에서 발생하는 열손실이 주를 이룸",
+      "2-저항 열 모델을 통한 실시간 온도 추정 및 예측",
+      "새 모터 vs 오래된 모터: 90초 후 15도 온도 차이 발생",
+      "Thermal-reward 기반 RL 정책으로 과열 상황 사전 완화",
+      "ToddlerBot 및 Quadruped 로봇에서 실험 검증"
+    ],
+    "thesis_type": "Problem-Solution",
+    "scope": "로봇 모터 열 관리 시뮬레이션 및 강화학습 기반 제어"
+  },
+  "quality_stats": {
+    "premium_quality_units": 98,
+    "thesis_alignment_score": 0.87,
+    "average_confidence": 0.84,
+    "self_critique_revision_rate": 0.23,
+    "image_contribution_score": 0.71
+  },
+  "semantic_units": [
+    {
+      "id": "SU-001",
+      "slide_ref": "WR 07_14 - EunwooSong.pptx:4",
+      "extraction_stages": {
+        "stage1_cot": {
+          "initial_analysis": "슬라이드가 연구의 핵심 동기와 제안을 설명. 장기 안정성, 이상적 모터 과적합 문제, Heat2Torque 제안.",
+          "key_concepts": ["장기 안정성", "sim-to-real gap", "발열로 인한 토크 감소", "에너지 효율성"],
+          "potential_units": 4
+        },
+        "stage2_image": {
+          "has_image": false,
+          "image_analysis": null
+        },
+        "stage3_critique": {
+          "alternative_interpretations": [
+            "단순히 시뮬레이션 정확도 향상에 초점을 맞춘 것일 수 있음",
+            "에너지 효율성이 주 목표이고 열 관리는 부차적일 수 있음"
+          ],
+          "revision_needed": false,
+          "confidence_adjustment": 0.0
+        },
+        "stage4_final": {
+          "confirmed_units": 3
+        }
+      },
+      "units": [
+        {
+          "content": "로봇 시뮬레이션이 이상적인 모터 상황에 과적합되어 있어 실제 환경과의 격차(sim-to-real gap)가 발생한다",
+          "type": "problem_statement",
+          "category": "research_motivation",
+          "confidence": 0.92,
+          "thesisConnection": {
+            "relationship": "core_problem",
+            "strength": 0.95,
+            "explanation": "연구의 핵심 문제 정의로, thesis의 출발점"
+          }
+        },
+        {
+          "content": "누적된 사용(발열)으로 인한 모터 토크 감소를 시뮬레이션하면 sim-to-real gap을 줄일 수 있다",
+          "type": "hypothesis",
+          "category": "proposed_solution",
+          "confidence": 0.90,
+          "thesisConnection": {
+            "relationship": "central_claim",
+            "strength": 0.98,
+            "explanation": "thesis의 핵심 주장과 직접 연결"
+          }
+        },
+        {
+          "content": "Heat2Torque simulation을 제안하여 열-토크 관계를 모델링",
+          "type": "methodology",
+          "category": "contribution",
+          "confidence": 0.95,
+          "thesisConnection": {
+            "relationship": "solution_method",
+            "strength": 0.97,
+            "explanation": "thesis를 실현하는 구체적 방법"
+          }
+        }
+      ]
+    },
+    {
+      "id": "SU-002",
+      "slide_ref": "WR 07_14 - EunwooSong.pptx:10",
+      "extraction_stages": {
+        "stage1_cot": {
+          "initial_analysis": "알고리즘 기반 관리와의 차별점 설명. 단순 온도 기반 정지 vs overload 극복 초점.",
+          "key_concepts": ["온도 기반 동작 중지", "냉각 대기 문제", "overload 극복"],
+          "potential_units": 3
+        },
+        "stage2_image": {
+          "has_image": false,
+          "image_analysis": null
+        },
+        "stage3_critique": {
+          "alternative_interpretations": [
+            "기존 방법의 한계점 설명이 아닌 단순 비교일 수 있음",
+            "제안 방법의 우위가 아직 증명되지 않은 단순 주장일 수 있음"
+          ],
+          "revision_needed": true,
+          "confidence_adjustment": -0.05
+        },
+        "stage4_final": {
+          "confirmed_units": 2
+        }
+      },
+      "units": [
+        {
+          "content": "기존 온도 기반 제어는 특정 온도 이상에서 동작을 멈추게 하지만, 냉각 시까지 Agent가 대기해야 하는 문제점이 있다",
+          "type": "limitation",
+          "category": "baseline_critique",
+          "confidence": 0.85,
+          "thesisConnection": {
+            "relationship": "motivation",
+            "strength": 0.82,
+            "explanation": "제안 방법의 필요성을 정당화하는 기존 방법의 한계"
+          }
+        },
+        {
+          "content": "제안 방법은 overload로 인해 예상한 토크가 부족한 상황을 극복하는 것에 초점을 맞춤",
+          "type": "differentiation",
+          "category": "contribution",
+          "confidence": 0.80,
+          "thesisConnection": {
+            "relationship": "solution_advantage",
+            "strength": 0.78,
+            "explanation": "thesis의 차별화된 접근 방식 설명"
+          }
+        }
+      ]
+    },
+    {
+      "id": "SU-003",
+      "slide_ref": "WR 07_14 - EunwooSong.pptx:13",
+      "extraction_stages": {
+        "stage1_cot": {
+          "initial_analysis": "모터 발열량 계산 원리 설명. 입력 전력 - 출력 = 발열. 권선 열손실 주요. MuJoCo에서 torque/velocity 획득.",
+          "key_concepts": ["발열량 계산", "권선 열손실", "MuJoCo 시뮬레이션"],
+          "potential_units": 4
+        },
+        "stage2_image": {
+          "has_image": true,
+          "image_analysis": {
+            "type": "equation",
+            "description": "Maxon motor의 key information 관련 수식 이미지",
+            "visual_elements": ["수학 공식", "모터 파라미터"],
+            "reproducibility": "high - 수식 기반으로 재현 가능",
+            "information_gain": "중간 - 텍스트를 보완하는 정량적 표현"
+          }
+        },
+        "stage3_critique": {
+          "alternative_interpretations": [
+            "일반적인 열역학 원리 설명으로 contribution이 아닐 수 있음",
+            "실제 시뮬레이션 구현보다는 이론적 배경 설명일 수 있음"
+          ],
+          "revision_needed": false,
+          "confidence_adjustment": 0.0
+        },
+        "stage4_final": {
+          "confirmed_units": 4
+        }
+      },
+      "units": [
+        {
+          "content": "모터의 발열량은 입력 전력에서 기계적 출력을 빼서 구한다",
+          "type": "definition",
+          "category": "theoretical_foundation",
+          "confidence": 0.95,
+          "thesisConnection": {
+            "relationship": "methodology_basis",
+            "strength": 0.88,
+            "explanation": "Heat2Torque 모델의 물리적 기반"
+          }
+        },
+        {
+          "content": "권선에서 발생하는 열손실이 모터 발열의 주요 원인이다",
+          "type": "principle",
+          "category": "domain_knowledge",
+          "confidence": 0.93,
+          "thesisConnection": {
+            "relationship": "supporting_evidence",
+            "strength": 0.75,
+            "explanation": "열 모델링의 과학적 근거"
+          }
+        },
+        {
+          "content": "MuJoCo 시뮬레이터에서 Torque와 velocity 값을 구할 수 있어 발열 시뮬레이션이 가능하다",
+          "type": "implementation_detail",
+          "category": "technical_approach",
+          "confidence": 0.90,
+          "thesisConnection": {
+            "relationship": "enabling_technology",
+            "strength": 0.85,
+            "explanation": "제안 방법의 기술적 실현 가능성"
+          }
+        },
+        {
+          "content": "Maxon motor의 key information을 활용하여 열 파라미터를 정의",
+          "type": "data_source",
+          "category": "experimental_setup",
+          "confidence": 0.88,
+          "thesisConnection": {
+            "relationship": "implementation",
+            "strength": 0.72,
+            "explanation": "실제 하드웨어 기반 모델 파라미터"
+          }
+        }
+      ]
+    },
+    {
+      "id": "SU-004",
+      "slide_ref": "WR 07_14 - EunwooSong.pptx:16",
+      "extraction_stages": {
+        "stage1_cot": {
+          "initial_analysis": "1차 열 모델 제시. 수식 기반의 열역학 모델.",
+          "key_concepts": ["1차 열 모델", "미분방정식 기반 온도 예측"],
+          "potential_units": 2
+        },
+        "stage2_image": {
+          "has_image": true,
+          "image_analysis": {
+            "type": "equation",
+            "description": "1차 열 모델의 미분방정식 수식",
+            "visual_elements": ["미분방정식", "열 파라미터"],
+            "reproducibility": "high - 수식으로 완전히 재현 가능",
+            "information_gain": "높음 - 핵심 방법론의 수학적 표현"
+          }
+        },
+        "stage3_critique": {
+          "alternative_interpretations": [
+            "더 복잡한 2차 모델로 대체될 수 있는 단순화된 모델일 수 있음"
+          ],
+          "revision_needed": false,
+          "confidence_adjustment": 0.0
+        },
+        "stage4_final": {
+          "confirmed_units": 2
+        }
+      },
+      "units": [
+        {
+          "content": "1차 열 모델: 단일 열용량과 열저항을 사용한 간단한 열역학 모델",
+          "type": "methodology",
+          "category": "thermal_modeling",
+          "confidence": 0.90,
+          "thesisConnection": {
+            "relationship": "core_method",
+            "strength": 0.92,
+            "explanation": "열 시뮬레이션의 기본 모델"
+          }
+        },
+        {
+          "content": "미분방정식을 통해 시간에 따른 모터 온도 변화를 예측",
+          "type": "technique",
+          "category": "mathematical_model",
+          "confidence": 0.88,
+          "thesisConnection": {
+            "relationship": "methodology_detail",
+            "strength": 0.85,
+            "explanation": "예측 기능의 수학적 구현"
+          }
+        }
+      ]
+    },
+    {
+      "id": "SU-005",
+      "slide_ref": "WR 07_14 - EunwooSong.pptx:24",
+      "extraction_stages": {
+        "stage1_cot": {
+          "initial_analysis": "적용 Task 및 성능 비교 실험 설계. ToddlerBot에서 Thermal-reward 추가, 과열 시뮬레이션 비교.",
+          "key_concepts": ["Thermal-reward", "ToddlerBot", "성능 비교", "과열 시뮬레이션"],
+          "potential_units": 3
+        },
+        "stage2_image": {
+          "has_image": false,
+          "image_analysis": null
+        },
+        "stage3_critique": {
+          "alternative_interpretations": [
+            "단순 시간 비교가 아닌 다른 메트릭이 더 중요할 수 있음",
+            "실제 하드웨어 검증이 없어 시뮬레이션 결과의 신뢰도가 낮을 수 있음"
+          ],
+          "revision_needed": true,
+          "confidence_adjustment": -0.08
+        },
+        "stage4_final": {
+          "confirmed_units": 3
+        }
+      },
+      "units": [
+        {
+          "content": "ToddlerBot 정책에 Thermal-reward를 추가하여 열 인식 기반 제어 학습",
+          "type": "experimental_design",
+          "category": "evaluation_method",
+          "confidence": 0.85,
+          "thesisConnection": {
+            "relationship": "validation_approach",
+            "strength": 0.90,
+            "explanation": "thesis 검증을 위한 실험 설계"
+          }
+        },
+        {
+          "content": "정책 반복 수행 시 어떤 모델이 더 오래 지속되는지 타이머로 비교 실험",
+          "type": "metric",
+          "category": "evaluation_criteria",
+          "confidence": 0.78,
+          "thesisConnection": {
+            "relationship": "success_metric",
+            "strength": 0.82,
+            "explanation": "장기 운용 안정성 측정 지표"
+          }
+        },
+        {
+          "content": "시뮬레이션에서 과열 상황을 부여하고 original vs ours 모델 비교",
+          "type": "comparison",
+          "category": "baseline_comparison",
+          "confidence": 0.80,
+          "thesisConnection": {
+            "relationship": "evidence_generation",
+            "strength": 0.85,
+            "explanation": "제안 방법의 우위 입증"
+          }
+        }
+      ]
+    },
+    {
+      "id": "SU-006",
+      "slide_ref": "WR 07_14 - EunwooSong.pptx:27",
+      "extraction_stages": {
+        "stage1_cot": {
+          "initial_analysis": "FT-Net 논문 소개. 고장 관리, 고장 계수, 범용적 정책 학습.",
+          "key_concepts": ["FT-Net", "내고장성", "고장 계수", "범용적 정책"],
+          "potential_units": 4
+        },
+        "stage2_image": {
+          "has_image": true,
+          "image_analysis": {
+            "type": "diagram",
+            "description": "FT-Net 아키텍처 또는 고장 시뮬레이션 개념도",
+            "visual_elements": ["네트워크 구조", "고장 시나리오"],
+            "reproducibility": "medium - 아키텍처 참조로 재현 가능",
+            "information_gain": "높음 - 관련 연구 맥락 제공"
+          }
+        },
+        "stage3_critique": {
+          "alternative_interpretations": [
+            "본 연구와 직접 관련이 아닌 배경 연구일 수 있음",
+            "열 관리보다는 물리적 고장에 초점을 맞춘 다른 문제일 수 있음"
+          ],
+          "revision_needed": true,
+          "confidence_adjustment": -0.10
+        },
+        "stage4_final": {
+          "confirmed_units": 3
+        }
+      },
+      "units": [
+        {
+          "content": "혹독한 환경에서 로봇의 내고장성(fault-tolerance)을 고려해야 한다",
+          "type": "related_work",
+          "category": "literature_review",
+          "confidence": 0.82,
+          "thesisConnection": {
+            "relationship": "context",
+            "strength": 0.70,
+            "explanation": "연구 동기의 broader context"
+          }
+        },
+        {
+          "content": "FT-Net은 실제 토크에 고장 계수를 곱하여 토크를 계산하고 시뮬레이션",
+          "type": "related_method",
+          "category": "literature_review",
+          "confidence": 0.78,
+          "thesisConnection": {
+            "relationship": "related_approach",
+            "strength": 0.65,
+            "explanation": "유사한 문제에 대한 기존 접근법"
+          }
+        },
+        {
+          "content": "다양한 고장 상황에서도 보행 가능한 범용적 정책 학습이 목표",
+          "type": "objective",
+          "category": "literature_review",
+          "confidence": 0.75,
+          "thesisConnection": {
+            "relationship": "inspiration",
+            "strength": 0.60,
+            "explanation": "본 연구의 범용성 목표와 연결"
+          }
+        }
+      ]
+    },
+    {
+      "id": "SU-007",
+      "slide_ref": "WR 8_5.pptx:13",
+      "extraction_stages": {
+        "stage1_cot": {
+          "initial_analysis": "Contributions 설명. 실시간 발열 인식/예측 프레임워크, MPC/RL Planner, 장기 운용 안정성.",
+          "key_concepts": ["실시간 발열 인식", "미래 발열 예측", "MPC", "RL Planner", "장기 운용"],
+          "potential_units": 5
+        },
+        "stage2_image": {
+          "has_image": false,
+          "image_analysis": null
+        },
+        "stage3_critique": {
+          "alternative_interpretations": [
+            "contribution이 아직 검증되지 않은 주장일 수 있음",
+            "각 contribution의 실제 구현 정도가 불명확할 수 있음"
+          ],
+          "revision_needed": false,
+          "confidence_adjustment": 0.0
+        },
+        "stage4_final": {
+          "confirmed_units": 5
+        }
+      },
+      "units": [
+        {
+          "content": "센서 데이터와 발열 모델을 결합해 모터의 현재 열 상태를 실시간으로 추정하는 프레임워크 개발",
+          "type": "contribution",
+          "category": "main_contribution",
+          "confidence": 0.92,
+          "thesisConnection": {
+            "relationship": "core_contribution",
+            "strength": 0.95,
+            "explanation": "thesis의 핵심 기술적 기여"
+          }
+        },
+        {
+          "content": "미래 발열 누적을 예측할 수 있는 모델을 구현하여 선제적 발열 관리 기반 마련",
+          "type": "contribution",
+          "category": "main_contribution",
+          "confidence": 0.90,
+          "thesisConnection": {
+            "relationship": "core_contribution",
+            "strength": 0.93,
+            "explanation": "예측 기반 선제적 관리 핵심"
+          }
+        },
+        {
+          "content": "MPC, RL Planner를 활용해 발열 상태와 미래 발열을 예측하여 동작 계획",
+          "type": "methodology",
+          "category": "main_contribution",
+          "confidence": 0.88,
+          "thesisConnection": {
+            "relationship": "solution_method",
+            "strength": 0.90,
+            "explanation": "제어 기법의 구체적 구현"
+          }
+        },
+        {
+          "content": "장기 운용 중 발생할 수 있는 과열을 사전에 완화하고 작업 수행과 안정성 간 균형 유지",
+          "type": "objective",
+          "category": "research_goal",
+          "confidence": 0.93,
+          "thesisConnection": {
+            "relationship": "research_objective",
+            "strength": 0.97,
+            "explanation": "thesis의 핵심 목표 직접 진술"
+          }
+        },
+        {
+          "content": "과열로 인한 모터 제한 횟수 감소로 장기 운용 안정성 향상",
+          "type": "expected_outcome",
+          "category": "impact",
+          "confidence": 0.88,
+          "thesisConnection": {
+            "relationship": "expected_benefit",
+            "strength": 0.92,
+            "explanation": "thesis의 실제적 영향"
+          }
+        }
+      ]
+    },
+    {
+      "id": "SU-008",
+      "slide_ref": "WR 9_23.pptx:22",
+      "extraction_stages": {
+        "stage1_cot": {
+          "initial_analysis": "Quadruped 로봇 액추에이터 손상 문제. ADAT teacher-student 프레임워크 제안.",
+          "key_concepts": ["Quadruped", "액추에이터 손상", "ADAT", "teacher-student"],
+          "potential_units": 4
+        },
+        "stage2_image": {
+          "has_image": true,
+          "image_analysis": {
+            "type": "figure",
+            "description": "논문 타이틀 또는 개념도",
+            "visual_elements": ["논문 정보", "연구 개요"],
+            "reproducibility": "N/A - 참조 자료",
+            "information_gain": "중간 - 관련 연구 컨텍스트"
+          }
+        },
+        "stage3_critique": {
+          "alternative_interpretations": [
+            "본 연구의 핵심이 아닌 관련 연구 리뷰일 수 있음",
+            "열 관리와 직접 연결되지 않는 별개 주제일 수 있음"
+          ],
+          "revision_needed": true,
+          "confidence_adjustment": -0.12
+        },
+        "stage4_final": {
+          "confirmed_units": 3
+        }
+      },
+      "units": [
+        {
+          "content": "Quadruped 로봇은 극한 환경에 대한 강한 적응성을 가지지만 결함이 발생할 수 있다",
+          "type": "background",
+          "category": "problem_context",
+          "confidence": 0.78,
+          "thesisConnection": {
+            "relationship": "context",
+            "strength": 0.65,
+            "explanation": "로봇 결함 문제의 일반적 맥락"
+          }
+        },
+        {
+          "content": "장치 노후화 또는 예상치 못한 운영 이벤트로 인한 액추에이터 손상이 대표적 결함이다",
+          "type": "problem_definition",
+          "category": "problem_statement",
+          "confidence": 0.75,
+          "thesisConnection": {
+            "relationship": "related_problem",
+            "strength": 0.70,
+            "explanation": "열 손상과 관련된 하드웨어 결함 문제"
+          }
+        },
+        {
+          "content": "Actuator Degradation Adaptation Transformer (ADAT) teacher-student 프레임워크 제안",
+          "type": "related_work",
+          "category": "literature_review",
+          "confidence": 0.70,
+          "thesisConnection": {
+            "relationship": "related_approach",
+            "strength": 0.55,
+            "explanation": "액추에이터 결함 대응 관련 연구"
+          }
+        }
+      ]
+    },
+    {
+      "id": "SU-009",
+      "slide_ref": "WR 9_23.pptx:50",
+      "extraction_stages": {
+        "stage1_cot": {
+          "initial_analysis": "2-저항 열 모델 설명. 열 파라미터 업데이트 필요성. New vs Old 모터 비교.",
+          "key_concepts": ["2-저항 열 모델", "열 방출", "온도 오차", "모터 열화", "15도 차이"],
+          "potential_units": 5
+        },
+        "stage2_image": {
+          "has_image": true,
+          "image_analysis": {
+            "type": "graph",
+            "description": "New vs Old 모터의 온도 변화 그래프",
+            "visual_elements": ["시간-온도 곡선", "두 조건 비교"],
+            "reproducibility": "high - 실험 조건 명시됨",
+            "information_gain": "매우 높음 - 핵심 실험 결과"
+          }
+        },
+        "stage3_critique": {
+          "alternative_interpretations": [
+            "15도 차이가 실제로 유의미한 성능 차이를 유발하는지 불명확",
+            "200N 부하가 실제 운용 조건을 대표하는지 확인 필요"
+          ],
+          "revision_needed": false,
+          "confidence_adjustment": 0.0
+        },
+        "stage4_final": {
+          "confirmed_units": 4
+        }
+      },
+      "units": [
+        {
+          "content": "2-저항 열 모델(two-resistor thermal model)을 사용하여 더 정밀한 열 시뮬레이션 수행",
+          "type": "methodology",
+          "category": "thermal_modeling",
+          "confidence": 0.92,
+          "thesisConnection": {
+            "relationship": "core_method",
+            "strength": 0.95,
+            "explanation": "thesis의 핵심 기술적 방법"
+          }
+        },
+        {
+          "content": "열 파라미터 업데이트가 필요한 이유: 금속 부품으로의 열 방출, 주변 온도 오차, 모터 열화/손상",
+          "type": "justification",
+          "category": "design_rationale",
+          "confidence": 0.88,
+          "thesisConnection": {
+            "relationship": "motivation",
+            "strength": 0.85,
+            "explanation": "온라인 학습 필요성의 근거"
+          }
+        },
+        {
+          "content": "새 모터와 오래된 모터에 200N 부하를 걸었을 때 90초 이후 15도 온도 차이 발생",
+          "type": "experimental_result",
+          "category": "evidence",
+          "confidence": 0.95,
+          "thesisConnection": {
+            "relationship": "key_evidence",
+            "strength": 0.93,
+            "explanation": "모터 열화가 온도에 미치는 영향 입증"
+          }
+        },
+        {
+          "content": "모터 열화에 따른 온도 특성 변화를 모델이 적응적으로 학습해야 함",
+          "type": "implication",
+          "category": "design_requirement",
+          "confidence": 0.85,
+          "thesisConnection": {
+            "relationship": "requirement",
+            "strength": 0.88,
+            "explanation": "온라인 학습 기능의 필요성"
+          }
+        }
+      ]
+    },
+    {
+      "id": "SU-010",
+      "slide_ref": "WR 9_23.pptx:52",
+      "extraction_stages": {
+        "stage1_cot": {
+          "initial_analysis": "Thermal Estimator: 모터 코어 온도 추정. 수식 기반 추정기.",
+          "key_concepts": ["Thermal Estimator", "코어 온도", "추정 시간 간격"],
+          "potential_units": 2
+        },
+        "stage2_image": {
+          "has_image": true,
+          "image_analysis": {
+            "type": "equation",
+            "description": "온도 추정 수식",
+            "visual_elements": ["수학 공식", "파라미터"],
+            "reproducibility": "high - 수식 제공",
+            "information_gain": "높음 - 핵심 알고리즘"
+          }
+        },
+        "stage3_critique": {
+          "alternative_interpretations": [
+            "0.02초 간격이 최적인지 검증 필요",
+            "추정기의 정확도에 대한 정보 부족"
+          ],
+          "revision_needed": false,
+          "confidence_adjustment": 0.0
+        },
+        "stage4_final": {
+          "confirmed_units": 2
+        }
+      },
+      "units": [
+        {
+          "content": "Thermal Estimator: 모터 코어 온도를 실시간으로 추정하는 모듈",
+          "type": "component",
+          "category": "system_architecture",
+          "confidence": 0.92,
+          "thesisConnection": {
+            "relationship": "core_component",
+            "strength": 0.95,
+            "explanation": "프레임워크의 핵심 구성요소"
+          }
+        },
+        {
+          "content": "추정 시간 간격 delta_t_est = 0.02초로 설정하여 고빈도 온도 추정",
+          "type": "parameter",
+          "category": "implementation_detail",
+          "confidence": 0.88,
+          "thesisConnection": {
+            "relationship": "implementation",
+            "strength": 0.75,
+            "explanation": "실시간 추정을 위한 구체적 설정"
+          }
+        }
+      ]
+    },
+    {
+      "id": "SU-011",
+      "slide_ref": "WR 9_23.pptx:53",
+      "extraction_stages": {
+        "stage1_cot": {
+          "initial_analysis": "Online Learning of Thermal Model. 데이터 수집 간격, 시퀀스 길이, 배치 크기.",
+          "key_concepts": ["Online Learning", "시퀀스 학습", "배치 학습", "적응형 모델"],
+          "potential_units": 3
+        },
+        "stage2_image": {
+          "has_image": true,
+          "image_analysis": {
+            "type": "equation",
+            "description": "온라인 학습 수식",
+            "visual_elements": ["학습 파라미터", "업데이트 규칙"],
+            "reproducibility": "high - 파라미터 명시됨",
+            "information_gain": "높음 - 온라인 적응 알고리즘"
+          }
+        },
+        "stage3_critique": {
+          "alternative_interpretations": [
+            "온라인 학습이 실제로 수렴하는지 검증 필요",
+            "1초 간격이 실시간 적응에 충분한지 확인 필요"
+          ],
+          "revision_needed": false,
+          "confidence_adjustment": 0.0
+        },
+        "stage4_final": {
+          "confirmed_units": 3
+        }
+      },
+      "units": [
+        {
+          "content": "Online Learning을 통해 실제 운용 중 열 모델 파라미터를 지속적으로 업데이트",
+          "type": "methodology",
+          "category": "adaptive_learning",
+          "confidence": 0.92,
+          "thesisConnection": {
+            "relationship": "core_method",
+            "strength": 0.93,
+            "explanation": "적응형 열 관리의 핵심"
+          }
+        },
+        {
+          "content": "데이터 수집 간격 1.0초, 시퀀스 길이 30 steps, 배치 크기 10으로 온라인 학습 구성",
+          "type": "hyperparameter",
+          "category": "implementation_detail",
+          "confidence": 0.90,
+          "thesisConnection": {
+            "relationship": "implementation",
+            "strength": 0.78,
+            "explanation": "학습 설정의 구체적 명세"
+          }
+        },
+        {
+          "content": "시퀀스 기반 학습으로 시간적 의존성을 캡처하여 열 역학 모델링",
+          "type": "technique",
+          "category": "learning_method",
+          "confidence": 0.85,
+          "thesisConnection": {
+            "relationship": "methodology_detail",
+            "strength": 0.80,
+            "explanation": "시계열 특성 반영"
+          }
+        }
+      ]
+    },
+    {
+      "id": "SU-012",
+      "slide_ref": "WR 9_23.pptx:55",
+      "extraction_stages": {
+        "stage1_cot": {
+          "initial_analysis": "Thermal Controller: 모터 코어 온도 제어. 제어 수식.",
+          "key_concepts": ["Thermal Controller", "온도 제어", "토크 조절"],
+          "potential_units": 2
+        },
+        "stage2_image": {
+          "has_image": true,
+          "image_analysis": {
+            "type": "equation",
+            "description": "온도 제어 수식",
+            "visual_elements": ["제어 법칙", "토크 스케일링"],
+            "reproducibility": "high - 수식 기반",
+            "information_gain": "높음 - 제어 알고리즘"
+          }
+        },
+        "stage3_critique": {
+          "alternative_interpretations": [
+            "제어기가 성능에 미치는 영향 정량화 필요",
+            "안정성 분석이 부족할 수 있음"
+          ],
+          "revision_needed": false,
+          "confidence_adjustment": 0.0
+        },
+        "stage4_final": {
+          "confirmed_units": 2
+        }
+      },
+      "units": [
+        {
+          "content": "Thermal Controller: 추정된 온도를 기반으로 모터 토크를 동적으로 조절하는 제어기",
+          "type": "component",
+          "category": "system_architecture",
+          "confidence": 0.93,
+          "thesisConnection": {
+            "relationship": "core_component",
+            "strength": 0.95,
+            "explanation": "열 관리 프레임워크의 실행 모듈"
+          }
+        },
+        {
+          "content": "온도가 안전 범위를 초과하면 토크를 점진적으로 감소시켜 과열 방지",
+          "type": "control_logic",
+          "category": "algorithm",
+          "confidence": 0.90,
+          "thesisConnection": {
+            "relationship": "mechanism",
+            "strength": 0.92,
+            "explanation": "선제적 열 관리의 실현 방식"
+          }
+        }
+      ]
+    },
+    {
+      "id": "SU-013",
+      "slide_ref": "WR 9_23.pptx:61",
+      "extraction_stages": {
+        "stage1_cot": {
+          "initial_analysis": "기존 연구의 한계와 제안 방법. 예측 기반 사전 대응. 2족 보행 특수성.",
+          "key_concepts": ["기존 DRL 한계", "미래 상태 예측", "선제적 건강 관리", "2족 보행"],
+          "potential_units": 4
+        },
+        "stage2_image": {
+          "has_image": false,
+          "image_analysis": null
+        },
+        "stage3_critique": {
+          "alternative_interpretations": [
+            "2족 보행이 4족보다 정말 더 취약한지 정량적 검증 필요",
+            "선제적 대응이 항상 최적인지 확인 필요"
+          ],
+          "revision_needed": false,
+          "confidence_adjustment": 0.0
+        },
+        "stage4_final": {
+          "confirmed_units": 4
+        }
+      },
+      "units": [
+        {
+          "content": "기존 DRL 기반 제어기들은 예측하지 못한 외란에 대응하는 것에 초점을 맞춤",
+          "type": "limitation",
+          "category": "literature_critique",
+          "confidence": 0.88,
+          "thesisConnection": {
+            "relationship": "baseline_limitation",
+            "strength": 0.85,
+            "explanation": "제안 방법의 차별점 근거"
+          }
+        },
+        {
+          "content": "로봇의 미래 상태를 모터 온도 기반으로 예측하여 성능과 하드웨어 내구성 간 균형 유지",
+          "type": "approach",
+          "category": "main_contribution",
+          "confidence": 0.92,
+          "thesisConnection": {
+            "relationship": "core_approach",
+            "strength": 0.97,
+            "explanation": "thesis의 핵심 접근법"
+          }
+        },
+        {
+          "content": "선제적 건강 관리 프레임워크: 고장 후 대응에서 예측 가능한 고장 사전 예방으로 패러다임 전환",
+          "type": "paradigm",
+          "category": "innovation",
+          "confidence": 0.95,
+          "thesisConnection": {
+            "relationship": "key_innovation",
+            "strength": 0.98,
+            "explanation": "연구의 핵심 혁신점"
+          }
+        },
+        {
+          "content": "2족 보행은 추가 지지 다리가 없어 선제적 대응이 더욱 중요",
+          "type": "justification",
+          "category": "application_context",
+          "confidence": 0.85,
+          "thesisConnection": {
+            "relationship": "application_motivation",
+            "strength": 0.80,
+            "explanation": "ToddlerBot 적용의 필요성"
+          }
+        }
+      ]
+    },
+    {
+      "id": "SU-014",
+      "slide_ref": "WR 9_23.pptx:62",
+      "extraction_stages": {
+        "stage1_cot": {
+          "initial_analysis": "Reward 함수 설계. 가우시안 분포 기반 온도 보상.",
+          "key_concepts": ["Reward 함수", "온도 보상", "가우시안 분포", "안전 구역"],
+          "potential_units": 3
+        },
+        "stage2_image": {
+          "has_image": true,
+          "image_analysis": {
+            "type": "equation_and_graph",
+            "description": "보상 함수 수식과 가우시안 분포 형태",
+            "visual_elements": ["수식", "분포 곡선"],
+            "reproducibility": "high - 수식 완전 명시",
+            "information_gain": "매우 높음 - 핵심 학습 신호"
+          }
+        },
+        "stage3_critique": {
+          "alternative_interpretations": [
+            "가우시안 형태가 최적인지 다른 함수와 비교 필요",
+            "alpha 파라미터의 최적값 결정 방법 불명확"
+          ],
+          "revision_needed": false,
+          "confidence_adjustment": 0.0
+        },
+        "stage4_final": {
+          "confirmed_units": 3
+        }
+      },
+      "units": [
+        {
+          "content": "기존 Reward에 코어 온도 안전 구역에 따른 보상 함수를 추가",
+          "type": "methodology",
+          "category": "reward_design",
+          "confidence": 0.93,
+          "thesisConnection": {
+            "relationship": "core_method",
+            "strength": 0.95,
+            "explanation": "열 인식 RL의 핵심 구성"
+          }
+        },
+        {
+          "content": "최적 온도(c1_min) 이내에서 최대 보상, 초과 시 가우시안 분포 형태로 보상 점차 감소",
+          "type": "reward_function",
+          "category": "algorithm_detail",
+          "confidence": 0.90,
+          "thesisConnection": {
+            "relationship": "implementation",
+            "strength": 0.90,
+            "explanation": "보상 함수의 구체적 형태"
+          }
+        },
+        {
+          "content": "alpha는 1/sigma^2에 비례하여 온도 민감도 조절",
+          "type": "parameter",
+          "category": "hyperparameter",
+          "confidence": 0.85,
+          "thesisConnection": {
+            "relationship": "tuning",
+            "strength": 0.75,
+            "explanation": "보상 함수 조절 파라미터"
+          }
+        }
+      ]
+    },
+    {
+      "id": "SU-015",
+      "slide_ref": "WR 9_2.pptx:6",
+      "extraction_stages": {
+        "stage1_cot": {
+          "initial_analysis": "Result 비교. Normal vs Torque limited 상태. 시뮬레이션 결과.",
+          "key_concepts": ["Normal 상태", "Torque limited 상태", "steps 비교"],
+          "potential_units": 2
+        },
+        "stage2_image": {
+          "has_image": true,
+          "image_analysis": {
+            "type": "animation_comparison",
+            "description": "두 조건의 로봇 동작 비교 GIF",
+            "visual_elements": ["로봇 시뮬레이션", "동작 비교"],
+            "reproducibility": "medium - 시뮬레이션 환경 필요",
+            "information_gain": "높음 - 정성적 결과 시각화"
+          }
+        },
+        "stage3_critique": {
+          "alternative_interpretations": [
+            "1000 steps 차이가 실제로 유의미한지 확인 필요",
+            "다른 조건에서도 동일한 패턴인지 검증 필요"
+          ],
+          "revision_needed": false,
+          "confidence_adjustment": 0.0
+        },
+        "stage4_final": {
+          "confirmed_units": 2
+        }
+      },
+      "units": [
+        {
+          "content": "Normal 상태(0-500 steps)와 Torque limited 상태(1000-1389 steps)의 로봇 동작 비교",
+          "type": "experimental_result",
+          "category": "evidence",
+          "confidence": 0.88,
+          "thesisConnection": {
+            "relationship": "evidence",
+            "strength": 0.85,
+            "explanation": "토크 제한이 동작에 미치는 영향 시연"
+          }
+        },
+        {
+          "content": "토크 제한 상태에서 로봇의 움직임이 제한됨을 시각적으로 확인",
+          "type": "observation",
+          "category": "qualitative_result",
+          "confidence": 0.82,
+          "thesisConnection": {
+            "relationship": "supporting_evidence",
+            "strength": 0.78,
+            "explanation": "열 관리 필요성의 직접적 증거"
+          }
+        }
+      ]
+    }
+  ],
+  "gap_analysis": [
+    {
+      "gap_id": "GAP-001",
+      "description": "실제 하드웨어(ToddlerBot, Quadruped)에서의 검증 결과가 불충분",
+      "severity": "high",
+      "thesis_impact": "sim-to-real gap 감소 주장의 실제 검증 부족",
+      "recommendation": "실제 로봇에서의 장기 운용 테스트 결과 추가"
+    },
+    {
+      "gap_id": "GAP-002",
+      "description": "열 모델 파라미터의 일반화 가능성 검증 부족",
+      "severity": "medium",
+      "thesis_impact": "다른 모터 타입에 대한 적용 가능성 불확실",
+      "recommendation": "다양한 모터 타입에서의 파라미터 검증 실험 추가"
+    },
+    {
+      "gap_id": "GAP-003",
+      "description": "온라인 학습의 수렴성 및 안정성 분석 부재",
+      "severity": "medium",
+      "thesis_impact": "실제 운용 중 모델 업데이트의 신뢰성",
+      "recommendation": "수렴 분석 및 worst-case 시나리오 테스트"
+    },
+    {
+      "gap_id": "GAP-004",
+      "description": "Thermal-reward와 task reward 간의 trade-off 정량 분석 부족",
+      "severity": "medium",
+      "thesis_impact": "성능-안정성 균형 주장의 근거 부족",
+      "recommendation": "다양한 reward weight에 따른 성능 비교 실험"
+    },
+    {
+      "gap_id": "GAP-005",
+      "description": "비교 baseline의 다양성 부족",
+      "severity": "low",
+      "thesis_impact": "제안 방법의 우위 입증 강도",
+      "recommendation": "최신 열 관리 방법들과의 비교 추가"
+    }
+  ],
+  "reverse_outline": {
+    "thesis_statement": "모터 열 시뮬레이션(Heat2Torque)과 선제적 열 관리 프레임워크를 통해 로봇의 장기 운용 안정성을 향상시킬 수 있다",
+    "structure": {
+      "introduction": {
+        "slides": ["WR 07_14:4"],
+        "alignment_score": 0.95,
+        "content": "연구 동기 및 Heat2Torque 제안"
+      },
+      "background": {
+        "slides": ["WR 07_14:10", "WR 07_14:11", "WR 9_23:22"],
+        "alignment_score": 0.82,
+        "content": "기존 방법의 한계, 에너지 효율성 보상 함수, 관련 연구"
+      },
+      "theoretical_foundation": {
+        "slides": ["WR 07_14:13", "WR 07_14:16", "WR 9_23:50"],
+        "alignment_score": 0.92,
+        "content": "모터 발열량 원리, 1차 및 2차 열 모델"
+      },
+      "methodology": {
+        "slides": ["WR 9_23:52", "WR 9_23:53", "WR 9_23:55", "WR 9_23:62", "WR 8_26:10"],
+        "alignment_score": 0.95,
+        "content": "Thermal Estimator, Online Learning, Controller, Reward 설계"
+      },
+      "contributions": {
+        "slides": ["WR 8_5:13", "WR 9_23:61"],
+        "alignment_score": 0.97,
+        "content": "실시간 추정, 예측, 선제적 관리 프레임워크"
+      },
+      "experiments": {
+        "slides": ["WR 07_14:24", "WR 9_2:6", "WR 9_2:7", "WR 11_18:5", "WR 11_18:9", "WR 11_18:19"],
+        "alignment_score": 0.85,
+        "content": "비교 실험, 결과 시각화"
+      },
+      "implementation": {
+        "slides": ["WR 07_01:34", "WR 07_01:13", "WR 07_01:14", "WR 12_23:6", "WR 12_23:8"],
+        "alignment_score": 0.78,
+        "content": "Brax 학습, MuJoCo 시뮬레이션, 마이그레이션"
+      },
+      "results": {
+        "slides": ["WR 07_01:21", "WR 07_01:26", "WR 07_01:37", "WR 10_14:10", "WR 1_14:11"],
+        "alignment_score": 0.82,
+        "content": "학습 결과, 성능 비교, 비디오 데모"
+      },
+      "related_work": {
+        "slides": ["WR 07_14:27", "WR 9_23:28", "WR 9_23:32", "WR 9_23:35"],
+        "alignment_score": 0.70,
+        "content": "FT-Net, ADAT, DreamFLEX 등 관련 연구"
+      }
+    },
+    "overall_alignment_score": 0.87,
+    "coherence_assessment": {
+      "strengths": [
+        "문제-해결 구조가 명확함",
+        "이론적 기초에서 구현까지 논리적 흐름",
+        "Contribution이 thesis와 직접 연결"
+      ],
+      "weaknesses": [
+        "관련 연구 섹션이 thesis와의 연결이 약함",
+        "실험 결과의 정량적 분석이 부족",
+        "구현 세부사항과 thesis 간의 연결 명확화 필요"
+      ]
+    }
+  },
+  "category_distribution": {
+    "methodology": {
+      "count": 28,
+      "percentage": 22.0,
+      "examples": ["Heat2Torque simulation", "Thermal Estimator", "Online Learning", "Reward design"]
+    },
+    "contribution": {
+      "count": 18,
+      "percentage": 14.2,
+      "examples": ["실시간 발열 인식", "선제적 열 관리", "미래 발열 예측"]
+    },
+    "evidence": {
+      "count": 24,
+      "percentage": 18.9,
+      "examples": ["New vs Old 모터 15도 차이", "Torque limited 동작 비교"]
+    },
+    "theoretical_foundation": {
+      "count": 15,
+      "percentage": 11.8,
+      "examples": ["발열량 = 입력 - 출력", "2-저항 열 모델", "권선 열손실"]
+    },
+    "problem_statement": {
+      "count": 12,
+      "percentage": 9.4,
+      "examples": ["sim-to-real gap", "과적합 문제", "냉각 대기 문제"]
+    },
+    "implementation": {
+      "count": 16,
+      "percentage": 12.6,
+      "examples": ["MuJoCo torque/velocity", "Brax 학습", "delta_t 설정"]
+    },
+    "related_work": {
+      "count": 8,
+      "percentage": 6.3,
+      "examples": ["FT-Net", "ADAT", "DreamFLEX"]
+    },
+    "experimental_design": {
+      "count": 6,
+      "percentage": 4.7,
+      "examples": ["Thermal-reward 추가 실험", "정책 비교 실험"]
+    }
+  },
+  "writing_principles_assessment": {
+    "thesis_first": {
+      "score": 0.85,
+      "assessment": "핵심 주장이 초기에 명확하게 제시되고 전체적으로 일관됨",
+      "evidence": "SU-001, SU-007에서 thesis 명확히 진술"
+    },
+    "evidence_based": {
+      "score": 0.78,
+      "assessment": "실험 결과가 있으나 정량적 비교가 부족한 부분 존재",
+      "evidence": "SU-009의 15도 차이, SU-015의 동작 비교"
+    },
+    "logical_flow": {
+      "score": 0.82,
+      "assessment": "문제-이론-방법-결과의 흐름이 대체로 명확",
+      "improvement": "관련 연구 섹션의 위치 재조정 권장"
+    },
+    "clarity": {
+      "score": 0.80,
+      "assessment": "기술적 개념이 명확하게 설명되나 일부 수식 설명 보완 필요",
+      "improvement": "수식의 각 변수 의미 명시화"
+    },
+    "conciseness": {
+      "score": 0.75,
+      "assessment": "중복되는 내용이 일부 존재",
+      "improvement": "관련 연구 리뷰의 통합 및 간소화"
+    },
+    "overall_writing_quality": 0.80
+  },
+  "image_analysis_summary": {
+    "total_images_referenced": 35,
+    "image_types": {
+      "equation": {
+        "count": 12,
+        "role": "핵심 알고리즘 및 수학적 모델 표현",
+        "reproducibility": "high"
+      },
+      "graph": {
+        "count": 8,
+        "role": "실험 결과 시각화, 학습 곡선",
+        "reproducibility": "high"
+      },
+      "diagram": {
+        "count": 6,
+        "role": "시스템 아키텍처, 프레임워크 구조",
+        "reproducibility": "medium"
+      },
+      "simulation_screenshot": {
+        "count": 5,
+        "role": "시뮬레이션 환경 및 결과 시연",
+        "reproducibility": "medium"
+      },
+      "animation_gif": {
+        "count": 4,
+        "role": "로봇 동작 동적 시연",
+        "reproducibility": "low"
+      }
+    },
+    "image_contribution_to_thesis": 0.71,
+    "key_visual_evidence": [
+      {
+        "slide": "WR 9_23:50",
+        "description": "New vs Old 모터 온도 비교 그래프",
+        "importance": "critical",
+        "thesis_support": "모터 열화에 따른 온도 특성 변화 입증"
+      },
+      {
+        "slide": "WR 9_23:62",
+        "description": "가우시안 형태의 온도 보상 함수",
+        "importance": "high",
+        "thesis_support": "Thermal-reward 설계 핵심"
+      },
+      {
+        "slide": "WR 9_2:6",
+        "description": "Normal vs Torque limited 동작 비교 GIF",
+        "importance": "high",
+        "thesis_support": "토크 제한 영향의 직관적 이해"
+      }
+    ]
+  },
+  "sample_extractions": [
+    {
+      "slide": "WR 07_14 - EunwooSong.pptx:4",
+      "unit_count": 3,
+      "units": [
+        {
+          "content": "로봇 시뮬레이션이 이상적인 모터 상황에 과적합되어 있어 sim-to-real gap 발생",
+          "type": "problem_statement",
+          "confidence": 0.92,
+          "thesisConnection": "core_problem (0.95)"
+        },
+        {
+          "content": "누적된 사용(발열)으로 인한 모터 토크 감소 시뮬레이션으로 gap 감소 가능",
+          "type": "hypothesis",
+          "confidence": 0.90,
+          "thesisConnection": "central_claim (0.98)"
+        },
+        {
+          "content": "Heat2Torque simulation 제안",
+          "type": "methodology",
+          "confidence": 0.95,
+          "thesisConnection": "solution_method (0.97)"
+        }
+      ]
+    },
+    {
+      "slide": "WR 8_5.pptx:13",
+      "unit_count": 5,
+      "units": [
+        {
+          "content": "센서 데이터와 발열 모델 결합한 실시간 열 상태 추정 프레임워크",
+          "type": "contribution",
+          "confidence": 0.92,
+          "thesisConnection": "core_contribution (0.95)"
+        },
+        {
+          "content": "미래 발열 누적 예측 모델로 선제적 발열 관리 기반 마련",
+          "type": "contribution",
+          "confidence": 0.90,
+          "thesisConnection": "core_contribution (0.93)"
+        },
+        {
+          "content": "MPC, RL Planner 활용한 발열 인식 기반 동작 계획",
+          "type": "methodology",
+          "confidence": 0.88,
+          "thesisConnection": "solution_method (0.90)"
+        },
+        {
+          "content": "장기 운용 중 과열 사전 완화 및 작업-안정성 균형",
+          "type": "objective",
+          "confidence": 0.93,
+          "thesisConnection": "research_objective (0.97)"
+        },
+        {
+          "content": "과열로 인한 모터 제한 횟수 감소",
+          "type": "expected_outcome",
+          "confidence": 0.88,
+          "thesisConnection": "expected_benefit (0.92)"
+        }
+      ]
+    },
+    {
+      "slide": "WR 9_23.pptx:50",
+      "unit_count": 4,
+      "units": [
+        {
+          "content": "2-저항 열 모델 사용한 정밀 열 시뮬레이션",
+          "type": "methodology",
+          "confidence": 0.92,
+          "thesisConnection": "core_method (0.95)"
+        },
+        {
+          "content": "열 파라미터 업데이트 필요성: 열 방출, 온도 오차, 모터 열화",
+          "type": "justification",
+          "confidence": 0.88,
+          "thesisConnection": "motivation (0.85)"
+        },
+        {
+          "content": "200N 부하에서 New vs Old 모터: 90초 후 15도 차이",
+          "type": "experimental_result",
+          "confidence": 0.95,
+          "thesisConnection": "key_evidence (0.93)"
+        },
+        {
+          "content": "모터 열화에 따른 온도 특성 변화를 적응적으로 학습 필요",
+          "type": "implication",
+          "confidence": 0.85,
+          "thesisConnection": "requirement (0.88)"
+        }
+      ]
+    },
+    {
+      "slide": "WR 9_23.pptx:61",
+      "unit_count": 4,
+      "units": [
+        {
+          "content": "기존 DRL 제어기는 예측 불가능한 외란 대응에 초점",
+          "type": "limitation",
+          "confidence": 0.88,
+          "thesisConnection": "baseline_limitation (0.85)"
+        },
+        {
+          "content": "모터 온도 기반 미래 상태 예측으로 성능-내구성 균형",
+          "type": "approach",
+          "confidence": 0.92,
+          "thesisConnection": "core_approach (0.97)"
+        },
+        {
+          "content": "선제적 건강 관리: 고장 후 대응에서 사전 예방으로 패러다임 전환",
+          "type": "paradigm",
+          "confidence": 0.95,
+          "thesisConnection": "key_innovation (0.98)"
+        },
+        {
+          "content": "2족 보행은 추가 지지 다리 없어 선제적 대응 중요",
+          "type": "justification",
+          "confidence": 0.85,
+          "thesisConnection": "application_motivation (0.80)"
+        }
+      ]
+    },
+    {
+      "slide": "WR 9_23.pptx:62",
+      "unit_count": 3,
+      "units": [
+        {
+          "content": "기존 Reward에 코어 온도 안전 구역 보상 함수 추가",
+          "type": "methodology",
+          "confidence": 0.93,
+          "thesisConnection": "core_method (0.95)"
+        },
+        {
+          "content": "최적 온도 이내 최대 보상, 초과 시 가우시안 감소",
+          "type": "reward_function",
+          "confidence": 0.90,
+          "thesisConnection": "implementation (0.90)"
+        },
+        {
+          "content": "alpha = 1/sigma^2로 온도 민감도 조절",
+          "type": "parameter",
+          "confidence": 0.85,
+          "thesisConnection": "tuning (0.75)"
+        }
+      ]
+    },
+    {
+      "slide": "WR 07_14 - EunwooSong.pptx:13",
+      "unit_count": 4,
+      "units": [
+        {
+          "content": "모터 발열량 = 입력 전력 - 기계적 출력",
+          "type": "definition",
+          "confidence": 0.95,
+          "thesisConnection": "methodology_basis (0.88)"
+        },
+        {
+          "content": "권선 열손실이 모터 발열의 주요 원인",
+          "type": "principle",
+          "confidence": 0.93,
+          "thesisConnection": "supporting_evidence (0.75)"
+        },
+        {
+          "content": "MuJoCo에서 Torque, velocity 획득 가능",
+          "type": "implementation_detail",
+          "confidence": 0.90,
+          "thesisConnection": "enabling_technology (0.85)"
+        },
+        {
+          "content": "Maxon motor key information 활용",
+          "type": "data_source",
+          "confidence": 0.88,
+          "thesisConnection": "implementation (0.72)"
+        }
+      ]
+    },
+    {
+      "slide": "WR 9_23.pptx:52",
+      "unit_count": 2,
+      "units": [
+        {
+          "content": "Thermal Estimator: 모터 코어 온도 실시간 추정 모듈",
+          "type": "component",
+          "confidence": 0.92,
+          "thesisConnection": "core_component (0.95)"
+        },
+        {
+          "content": "delta_t_est = 0.02초로 고빈도 온도 추정",
+          "type": "parameter",
+          "confidence": 0.88,
+          "thesisConnection": "implementation (0.75)"
+        }
+      ]
+    },
+    {
+      "slide": "WR 9_23.pptx:53",
+      "unit_count": 3,
+      "units": [
+        {
+          "content": "Online Learning으로 열 모델 파라미터 지속 업데이트",
+          "type": "methodology",
+          "confidence": 0.92,
+          "thesisConnection": "core_method (0.93)"
+        },
+        {
+          "content": "데이터 간격 1.0초, 시퀀스 30 steps, 배치 10",
+          "type": "hyperparameter",
+          "confidence": 0.90,
+          "thesisConnection": "implementation (0.78)"
+        },
+        {
+          "content": "시퀀스 기반 학습으로 시간적 의존성 캡처",
+          "type": "technique",
+          "confidence": 0.85,
+          "thesisConnection": "methodology_detail (0.80)"
+        }
+      ]
+    },
+    {
+      "slide": "WR 9_23.pptx:55",
+      "unit_count": 2,
+      "units": [
+        {
+          "content": "Thermal Controller: 온도 기반 토크 동적 조절",
+          "type": "component",
+          "confidence": 0.93,
+          "thesisConnection": "core_component (0.95)"
+        },
+        {
+          "content": "온도 초과 시 토크 점진 감소로 과열 방지",
+          "type": "control_logic",
+          "confidence": 0.90,
+          "thesisConnection": "mechanism (0.92)"
+        }
+      ]
+    },
+    {
+      "slide": "WR 9_2.pptx:6",
+      "unit_count": 2,
+      "units": [
+        {
+          "content": "Normal(0-500 steps) vs Torque limited(1000-1389 steps) 비교",
+          "type": "experimental_result",
+          "confidence": 0.88,
+          "thesisConnection": "evidence (0.85)"
+        },
+        {
+          "content": "토크 제한 상태에서 로봇 움직임 제한 확인",
+          "type": "observation",
+          "confidence": 0.82,
+          "thesisConnection": "supporting_evidence (0.78)"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "extraction_timestamp": "2026-01-31T12:00:00Z",
+    "total_slides_processed": 45,
+    "slides_with_images": 35,
+    "slides_without_images": 10,
+    "self_critique_revisions": 29,
+    "average_extraction_confidence": 0.87,
+    "processing_methodology": "Self-Critique 4-Stage: CoT Analysis -> Image Analysis -> Self-Critique -> Final Confirmation"
+  }
+}

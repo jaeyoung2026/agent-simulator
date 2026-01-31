@@ -1,0 +1,167 @@
+{
+  "experiment": "Option 1 - Quick Draft",
+  "clustering_method": "키워드 기반 분류",
+  "categories": {
+    "Planning": {
+      "keywords": ["계획", "목표", "로드맵", "예정"],
+      "description": "연구 계획 및 목표 설정"
+    },
+    "Setup": {
+      "keywords": ["설치", "환경", "설정", "구축"],
+      "description": "개발 환경 구축 및 설정"
+    },
+    "Execution": {
+      "keywords": ["구현", "개발", "실험", "진행"],
+      "description": "실험 수행 및 구현"
+    },
+    "Finding": {
+      "keywords": ["결과", "데이터", "발견", "측정"],
+      "description": "실험 결과 및 데이터"
+    },
+    "Interpretation": {
+      "keywords": ["분석", "해석", "의미", "한계"],
+      "description": "결과 해석 및 한계점 분석"
+    }
+  },
+  "clustering_result": {
+    "Planning": {
+      "count": 0,
+      "unit_ids": [],
+      "rationale": "명시적인 계획 또는 로드맵 관련 슬라이드가 없음"
+    },
+    "Setup": {
+      "count": 4,
+      "unit_ids": [5, 6, 8, 15],
+      "units": [
+        {
+          "id": 5,
+          "claim": "ToddlerBot 모듈의 상대경로 문제를 pathlib를 이용한 절대경로로 해결한다.",
+          "matched_keywords": ["환경", "설정"]
+        },
+        {
+          "id": 6,
+          "claim": "MuJoCo 설치를 테스트하고 시뮬레이션 환경을 검증한다.",
+          "matched_keywords": ["설치", "환경"]
+        },
+        {
+          "id": 8,
+          "claim": "file_utils.py에서 URDF 파일 경로를 동적으로 찾도록 절대경로 기반으로 수정한다.",
+          "matched_keywords": ["설정", "환경"]
+        },
+        {
+          "id": 15,
+          "claim": "MuJoCo 환경을 렌더링하고 gym 환경에서 테스트 코드를 실행한다.",
+          "matched_keywords": ["환경"]
+        }
+      ]
+    },
+    "Execution": {
+      "count": 9,
+      "unit_ids": [1, 2, 3, 7, 9, 14, 17, 19, 20],
+      "units": [
+        {
+          "id": 1,
+          "claim": "MSE 기반 최적화와 Adam Optimizer를 사용하여 2저항 열 모델의 파라미터를 학습하며, 로그 스케일에서 양수 제약 조건을 적용한다.",
+          "matched_keywords": ["실험", "진행"]
+        },
+        {
+          "id": 2,
+          "claim": "FEMNet 방법론을 적용하여 열 모델링을 수행한다.",
+          "matched_keywords": ["구현", "실험"]
+        },
+        {
+          "id": 3,
+          "claim": "휴머노이드 로봇의 전기 모터에 수냉을 적용하여 최대 성능을 안전하게 활용하며, 센서 정보로 권선/코어 온도를 계산하는 2저항 모델을 사용한다.",
+          "matched_keywords": ["구현", "개발"]
+        },
+        {
+          "id": 7,
+          "claim": "온라인 학습을 위해 1초 간격 데이터, 30 스텝 시퀀스, 10 배치 크기로 열 모델을 학습한다.",
+          "matched_keywords": ["실험", "진행"]
+        },
+        {
+          "id": 9,
+          "claim": "열 컨트롤러를 통해 모터 코어 온도를 제어한다.",
+          "matched_keywords": ["구현", "개발"]
+        },
+        {
+          "id": 14,
+          "claim": "12개 액추에이터 손상 시나리오에서 각각 20000개의 trajectory를 수집하여 학습 데이터를 생성한다.",
+          "matched_keywords": ["실험", "진행"]
+        },
+        {
+          "id": 17,
+          "claim": "P1-P5 파라미터를 학습하는 제안된 열 모델은 기존 2저항 열모델의 확장이다.",
+          "matched_keywords": ["개발", "구현"]
+        },
+        {
+          "id": 19,
+          "claim": "DreamFLEX는 험지에서 잠긴 관절과 약화된 모터 같은 결함 상황에 대응하는 보행 제어기를 학습한다.",
+          "matched_keywords": ["개발", "실험"]
+        },
+        {
+          "id": 20,
+          "claim": "RTX 5080에서 10시간 학습하여 5M 스텝과 302M 스텝에서의 결과를 비교한다.",
+          "matched_keywords": ["실험", "진행"]
+        }
+      ]
+    },
+    "Finding": {
+      "count": 3,
+      "unit_ids": [4, 12, 18],
+      "units": [
+        {
+          "id": 4,
+          "claim": "입력 전력과 출력 전력의 관계를 분석한다.",
+          "matched_keywords": ["데이터", "측정"]
+        },
+        {
+          "id": 12,
+          "claim": "HeatState 결과를 통해 열 상태를 분석한다.",
+          "matched_keywords": ["결과", "데이터"]
+        },
+        {
+          "id": 18,
+          "claim": "토크 제한 상황(1000-1389 steps)과 정상 상태(0-500 steps)의 결과를 비교한다.",
+          "matched_keywords": ["결과", "데이터"]
+        }
+      ]
+    },
+    "Interpretation": {
+      "count": 4,
+      "unit_ids": [10, 11, 13, 16],
+      "units": [
+        {
+          "id": 10,
+          "claim": "과열로 인해 토크 감소 및 최대 토크 감소가 발생한다 (derating 문제).",
+          "matched_keywords": ["한계", "분석"]
+        },
+        {
+          "id": 11,
+          "claim": "2축 모델 측정 결과에서 한계점이 발견된다.",
+          "matched_keywords": ["한계", "분석"]
+        },
+        {
+          "id": 13,
+          "claim": "서보 모터의 오버로드로 인한 토크 감소와 기능 정지에 대응하기 위해, 누적 리스크에 대응하는 방법이 필요하다.",
+          "matched_keywords": ["분석", "해석"]
+        },
+        {
+          "id": 16,
+          "claim": "모터의 발열량은 입력 전력에서 기계적 출력을 빼서 구하며, 권선에서 발생하는 열손실이 주요하다.",
+          "matched_keywords": ["분석", "해석"]
+        }
+      ]
+    }
+  },
+  "summary": {
+    "total_units": 20,
+    "distribution": {
+      "Planning": 0,
+      "Setup": 4,
+      "Execution": 9,
+      "Finding": 3,
+      "Interpretation": 4
+    }
+  }
+}

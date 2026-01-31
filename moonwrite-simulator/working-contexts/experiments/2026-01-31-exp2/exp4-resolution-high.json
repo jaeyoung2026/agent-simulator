@@ -1,0 +1,202 @@
+{
+  "resolution": "high (1-5)",
+  "total_slides": 45,
+  "total_units": 163,
+  "avg_units_per_slide": 3.62,
+  "distribution": {
+    "1_unit": 8,
+    "2_units": 9,
+    "3_units": 11,
+    "4_units": 12,
+    "5_units": 5
+  },
+  "quality_assessment": {
+    "information_coverage": "high",
+    "redundancy": "낮음",
+    "small_unit_pct": 42.3,
+    "clustering_complexity": "복잡함 - 상세한 의미 단위로 분해되어 클러스터링 시 유사도 계산이 정교해야 함"
+  },
+  "detailed_breakdown_examples": [
+    {
+      "slide_id": "WR 07_14 - EunwooSong.pptx#13",
+      "original_content": "모터의 발열량\n모터의 발열량은 입력 전력에서 기계적인 출력을 빼어 구한다\n입력 전력과 출력의 차이를 발열로 가정\n권선에서 발생하는 열손실이 주를 이룸\nMujoco에서 Torque, velocity를 구할 수 있음\nmaxon motor - key information",
+      "units": [
+        {
+          "unit_id": 1,
+          "type": "text",
+          "content": "모터의 발열량 - 입력 전력에서 기계적인 출력을 빼어 구한다",
+          "semantic_role": "개념 정의"
+        },
+        {
+          "unit_id": 2,
+          "type": "text",
+          "content": "입력 전력과 출력의 차이를 발열로 가정, 권선에서 발생하는 열손실이 주를 이룸",
+          "semantic_role": "원리 설명"
+        },
+        {
+          "unit_id": 3,
+          "type": "text",
+          "content": "Mujoco에서 Torque, velocity를 구할 수 있음",
+          "semantic_role": "구현 방법"
+        },
+        {
+          "unit_id": 4,
+          "type": "image",
+          "content": "WR 07_14 - EunwooSong_13_8a98986e.png",
+          "semantic_role": "수식 표현"
+        },
+        {
+          "unit_id": 5,
+          "type": "image",
+          "content": "WR 07_14 - EunwooSong_13_67b13e92.png",
+          "semantic_role": "참고 정보"
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 9_23.pptx#53",
+      "original_content": "Δt_data = 1.0 (sec)\nN_seq = 30 (step)\nN_batch = 10 (seq)\nMethod - D. Online Learning of Thermal Model",
+      "units": [
+        {
+          "unit_id": 1,
+          "type": "text",
+          "content": "Method - D. Online Learning of Thermal Model",
+          "semantic_role": "섹션 제목"
+        },
+        {
+          "unit_id": 2,
+          "type": "text",
+          "content": "Δt_data = 1.0 (sec), N_seq = 30 (step), N_batch = 10 (seq)",
+          "semantic_role": "하이퍼파라미터"
+        },
+        {
+          "unit_id": 3,
+          "type": "image",
+          "content": "WR 9_23_53_a0222499.png",
+          "semantic_role": "수식 1"
+        },
+        {
+          "unit_id": 4,
+          "type": "image",
+          "content": "WR 9_23_53_ce4e9a48.png",
+          "semantic_role": "수식 2"
+        },
+        {
+          "unit_id": 5,
+          "type": "image",
+          "content": "WR 9_23_53_376d12aa.png",
+          "semantic_role": "수식 3"
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 9_23.pptx#22",
+      "original_content": "Quadruped 로봇은 극한 환경에 대해 강한 적응성을 가지고 있지만, 결함이 발생할 수 있다.\n결함 중 가장 대표적으로 장치 노후화 또는 예상치 못한 운영 이벤트와 같은 요인으로 액추에이터 손상이다.\nteacher-student 프레임워크인 Actuator Degradation Adaptation Transformer를 제안한다.\nAbstract",
+      "units": [
+        {
+          "unit_id": 1,
+          "type": "text",
+          "content": "Quadruped 로봇은 극한 환경에 대해 강한 적응성을 가지고 있지만, 결함이 발생할 수 있다",
+          "semantic_role": "문제 배경"
+        },
+        {
+          "unit_id": 2,
+          "type": "text",
+          "content": "결함 중 가장 대표적으로 장치 노후화 또는 예상치 못한 운영 이벤트와 같은 요인으로 액추에이터 손상이다",
+          "semantic_role": "구체적 문제"
+        },
+        {
+          "unit_id": 3,
+          "type": "text",
+          "content": "teacher-student 프레임워크인 Actuator Degradation Adaptation Transformer를 제안한다",
+          "semantic_role": "제안 솔루션"
+        },
+        {
+          "unit_id": 4,
+          "type": "image",
+          "content": "WR 9_23_22_38071dbb.png",
+          "semantic_role": "시각 자료"
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 8_5.pptx#13",
+      "original_content": "Contributions - 2\n실시간 발열 인식 및 예측 프레임워크 개발...",
+      "units": [
+        {
+          "unit_id": 1,
+          "type": "text",
+          "content": "실시간 발열 인식 및 예측 프레임워크 개발 - 센서 데이터와 발열 모델을 결합해 모터의 현재 열 상태를 실시간으로 추정",
+          "semantic_role": "기여 1"
+        },
+        {
+          "unit_id": 2,
+          "type": "text",
+          "content": "발열 인식을 통한 장기 동작 계획 제안 - MPC, RL Planner을 활용해 발열 상태와 미래 발열을 예측",
+          "semantic_role": "기여 2"
+        },
+        {
+          "unit_id": 3,
+          "type": "text",
+          "content": "장기 운용 안정성 향상 - 과열로 인한 모터 제한 횟수 감소",
+          "semantic_role": "기여 3"
+        }
+      ]
+    }
+  ],
+  "analysis": {
+    "text_content_breakdown": {
+      "single_concept_units": 69,
+      "multi_concept_units": 31,
+      "parameter_units": 18,
+      "title_units": 15
+    },
+    "image_content_breakdown": {
+      "equation_images": 24,
+      "visualization_images": 31,
+      "screenshot_images": 14
+    },
+    "semantic_granularity": {
+      "atomic_concepts": "매우 높음 - 개별 문장이나 개념 단위로 분해",
+      "contextual_independence": "낮음 - 작은 유닛들이 문맥에 의존적",
+      "reusability": "중간 - 일부 유닛은 재사용 가능하나 대부분 특정 맥락에 종속"
+    }
+  },
+  "pros": [
+    "정보의 상세한 구조화 - 각 개념과 요소를 명확하게 분리",
+    "높은 정보 커버리지 - 텍스트의 모든 의미 단위와 이미지 개별 요소 포함",
+    "정교한 의미 분석 가능 - 개념 간 관계를 세밀하게 파악 가능",
+    "검색 정밀도 향상 - 특정 개념이나 수식을 정확하게 찾을 수 있음",
+    "중복 최소화 - 각 유닛이 독립적인 정보를 담고 있음"
+  ],
+  "cons": [
+    "과도한 세분화 - 문맥 파악이 어려워질 수 있음",
+    "클러스터링 복잡도 증가 - 유닛 간 유사도 계산이 매우 정교해야 함",
+    "작은 유닛의 의미 손실 위험 - 단독으로는 이해가 어려운 유닛 발생",
+    "처리 비용 증가 - 유닛 수가 많아 임베딩 및 클러스터링 연산 부담",
+    "재구성 난이도 - 원본 슬라이드 맥락 복원이 어려울 수 있음"
+  ],
+  "suitable_for": [
+    "정밀한 개념 검색이 필요한 경우",
+    "수식이나 파라미터 중심의 기술 문서",
+    "상세한 의미 분석이 필요한 연구 자료",
+    "개념 간 관계 그래프 구축",
+    "특정 기술 용어나 방법론의 정확한 추출"
+  ],
+  "not_suitable_for": [
+    "맥락 중심의 이해가 필요한 경우",
+    "빠른 전체 개요 파악",
+    "스토리라인이 중요한 프레젠테이션",
+    "제한된 컴퓨팅 리소스 환경"
+  ],
+  "comparison_notes": {
+    "vs_medium": "Medium 대비 약 2배 많은 유닛 생성, 의미 단위가 더 세밀함",
+    "vs_low": "Low 대비 약 3.6배 많은 유닛 생성, 정보 손실은 거의 없으나 처리 복잡도 크게 증가"
+  },
+  "recommendations": {
+    "clustering_strategy": "계층적 클러스터링 적용 - 먼저 슬라이드 레벨에서 그룹화한 후 세부 유닛 매칭",
+    "similarity_threshold": "높은 임계값 필요 (0.7-0.8) - 작은 유닛 간 오매칭 방지",
+    "context_preservation": "슬라이드 메타데이터와 순서 정보 필수 유지",
+    "hybrid_approach": "제목/섹션은 Medium 해상도, 상세 내용은 High 해상도로 이원화 고려"
+  }
+}

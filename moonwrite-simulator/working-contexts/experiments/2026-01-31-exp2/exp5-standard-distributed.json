@@ -1,0 +1,1405 @@
+{
+  "condition": "Standard (Distributed)",
+  "strategy": "distributed",
+  "pattern": "thesis-first",
+  "resolution": "medium (1-3 units/slide)",
+  "model_usage": {
+    "flash_step1": "thesis + lightweight classification",
+    "flash_step2": "thesis-aware cluster analysis",
+    "flash_step3": "consistency verification",
+    "pro_step4": "quality verification"
+  },
+  "timestamp": "2026-01-31T12:58:36.717727",
+  "total_slides": 45,
+  "total_units": 89,
+  "avg_units_per_slide": 1.9777777777777779,
+  "step1_results": {
+    "thesis": {
+      "research_question": "What is the impact of motor temperature on quadruped robot performance?",
+      "main_claim": "A thermal-aware framework can extend robot operational time by predicting and preventing motor overheating",
+      "supporting_points": [
+        "Real-time thermal estimation using sensor data and heat models",
+        "Predictive thermal control with MPC and RL planners",
+        "Reduced motor limitations and improved long-term stability",
+        "Thermal-aware reward functions in RL training"
+      ],
+      "confidence": 0.7550021510445334
+    },
+    "units": [
+      {
+        "id": "unit_1",
+        "type": "result_main",
+        "content": "Result - Video\nCopyright 2024 Global School of Media\nRTX 5080: 3h 43m 43s",
+        "slide_source": "WR 07_01 - EunwooSong.pptx_37",
+        "confidence": 0.8054804549213176,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_2",
+        "type": "result_visual",
+        "content": "Result - Video\nCopyright 2024 Global School of Media\nRTX 5080: 3h 43m 43s",
+        "slide_source": "WR 07_01 - EunwooSong.pptx_37",
+        "confidence": 0.7074493048595175,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_3",
+        "type": "result_main",
+        "content": "Result - Video\nCopyright 2024 Global School of Media\nRTX 5080: 3h 43m 43s",
+        "slide_source": "WR 07_01 - EunwooSong.pptx_37",
+        "confidence": 0.7546594937009008,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_4",
+        "type": "method_approach",
+        "content": "Method - Result\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 9_23.pptx_38",
+        "confidence": 0.8624711094448807,
+        "temporal_stage": 3
+      },
+      {
+        "id": "unit_5",
+        "type": "result_main",
+        "content": "Method - Result\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 9_23.pptx_38",
+        "confidence": 0.8362353701508041,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_6",
+        "type": "result_visual",
+        "content": "Method - Result\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 9_23.pptx_38",
+        "confidence": 0.7551101555101741,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_7",
+        "type": "thesis_question",
+        "content": "Algorithm으로 관리하는 것과의 차별점?\nCopyright 2024 Global School of Media\n단순히 특정 이상 온도로 올라가면 동작을 멈추게 할 수 있지만, 냉각이 될 때까지 Agent가 멈춰야하는 문제점이 있다.\noverload로 인해 예상한 토크가 부족한 상황을 극복하는 것에 초점",
+        "slide_source": "WR 07_14 - EunwooSong.pptx_10",
+        "confidence": 0.7695476770576657,
+        "temporal_stage": 2
+      },
+      {
+        "id": "unit_8",
+        "type": "method_approach",
+        "content": "Algorithm으로 관리하는 것과의 차별점?\nCopyright 2024 Global School of Media\n단순히 특정 이상 온도로 올라가면 동작을 멈추게 할 수 있지만, 냉각이 될 때까지 Agent가 멈춰야하는 문제점이 있다.\noverload로 인해 예상한 토크가 부족한 상황을 극복하는 것에 초점",
+        "slide_source": "WR 07_14 - EunwooSong.pptx_10",
+        "confidence": 0.9173250801982334,
+        "temporal_stage": 3
+      },
+      {
+        "id": "unit_9",
+        "type": "thesis_question",
+        "content": "Algorithm으로 관리하는 것과의 차별점?\nCopyright 2024 Global School of Media\n단순히 특정 이상 온도로 올라가면 동작을 멈추게 할 수 있지만, 냉각이 될 때까지 Agent가 멈춰야하는 문제점이 있다.\noverload로 인해 예상한 토크가 부족한 상황을 극복하는 것에 초점",
+        "slide_source": "WR 07_14 - EunwooSong.pptx_10",
+        "confidence": 0.8897018417824418,
+        "temporal_stage": 2
+      },
+      {
+        "id": "unit_10",
+        "type": "method_detail",
+        "content": "모터의 발열량\n모터의 발열량은 입력 전력에서 기계적인 출력을 빼어 구한다\n입력 전력과 출력의 차이를 발열로 가정\n권선에서 발생하는 열손실이 주를 이룸\nMujoco에서 Torque, velocity를 구할 수 있음\nmaxon motor - key information\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 07_14 - EunwooSong.pptx_13",
+        "confidence": 0.7255525691299621,
+        "temporal_stage": 3
+      },
+      {
+        "id": "unit_11",
+        "type": "result_visual",
+        "content": "모터의 발열량\n모터의 발열량은 입력 전력에서 기계적인 출력을 빼어 구한다\n입력 전력과 출력의 차이를 발열로 가정\n권선에서 발생하는 열손실이 주를 이룸\nMujoco에서 Torque, velocity를 구할 수 있음\nmaxon motor - key information\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 07_14 - EunwooSong.pptx_13",
+        "confidence": 0.7949818251593344,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_12",
+        "type": "method_approach",
+        "content": "Method - C. Thermal Esimator: Estimation of Motor Core Temperature\nΔt_est = 0.02 (sec)\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 9_23.pptx_52",
+        "confidence": 0.8824329466734544,
+        "temporal_stage": 3
+      },
+      {
+        "id": "unit_13",
+        "type": "thesis_question",
+        "content": "Method?\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 9_23.pptx_63",
+        "confidence": 0.8380101578183067,
+        "temporal_stage": 2
+      },
+      {
+        "id": "unit_14",
+        "type": "result_visual",
+        "content": "Reward 2, warm_up\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 11_18.pptx_5",
+        "confidence": 0.7173887872059352,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_15",
+        "type": "result_visual",
+        "content": "Reward 2, warm_up\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 11_18.pptx_5",
+        "confidence": 0.8653158296419274,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_16",
+        "type": "result_visual",
+        "content": "Reward 2, warm_up\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 11_18.pptx_5",
+        "confidence": 0.8932670851971729,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_17",
+        "type": "result_visual",
+        "content": "heat2torque module - jax 코드 속도 비교\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 8_26.pptx_10",
+        "confidence": 0.7694934007775229,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_18",
+        "type": "result_visual",
+        "content": "heat2torque module - jax 코드 속도 비교\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 8_26.pptx_10",
+        "confidence": 0.8589211110661,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_19",
+        "type": "thesis_claim",
+        "content": "Contributions - 2\n실시간 발열 인식 및 예측 프레임워크 개발\n센서 데이터와 발열 모델을 결합해 모터의 현재 열 상태를 실시간으로 추정, 미래 발열 누적을 예측할 수 있는 모델을 구현\n선제적 발열 관리를 위한 기반 마련 \n\n발열 인식을 통한 장기 동작 계획 제안\nMPC, RL Planner을 활용해 발열 상태와 미래 발열을 예측해 동작을 계획함",
+        "slide_source": "WR 8_5.pptx_13",
+        "confidence": 0.7406635242890212,
+        "temporal_stage": 2
+      },
+      {
+        "id": "unit_20",
+        "type": "thesis_claim",
+        "content": "Contributions - 2\n실시간 발열 인식 및 예측 프레임워크 개발\n센서 데이터와 발열 모델을 결합해 모터의 현재 열 상태를 실시간으로 추정, 미래 발열 누적을 예측할 수 있는 모델을 구현\n선제적 발열 관리를 위한 기반 마련 \n\n발열 인식을 통한 장기 동작 계획 제안\nMPC, RL Planner을 활용해 발열 상태와 미래 발열을 예측해 동작을 계획함",
+        "slide_source": "WR 8_5.pptx_13",
+        "confidence": 0.7888176750568803,
+        "temporal_stage": 2
+      },
+      {
+        "id": "unit_21",
+        "type": "general",
+        "content": "세팅 방법\n아래 노션에 정리해두었습니다!\n\nhttps://www.notion.so/RealityLab-2cdf6f41de51803f9997d7d7559a4599#2cff6f41de5180d6b772ffd0f7996ef4\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 12_23.pptx_6",
+        "confidence": 0.7667444555122783,
+        "temporal_stage": 3
+      },
+      {
+        "id": "unit_22",
+        "type": "general",
+        "content": "세팅 방법\n아래 노션에 정리해두었습니다!\n\nhttps://www.notion.so/RealityLab-2cdf6f41de51803f9997d7d7559a4599#2cff6f41de5180d6b772ffd0f7996ef4\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 12_23.pptx_6",
+        "confidence": 0.9341636469281235,
+        "temporal_stage": 3
+      },
+      {
+        "id": "unit_23",
+        "type": "general",
+        "content": "세팅 방법\n아래 노션에 정리해두었습니다!\n\nhttps://www.notion.so/RealityLab-2cdf6f41de51803f9997d7d7559a4599#2cff6f41de5180d6b772ffd0f7996ef4\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 12_23.pptx_6",
+        "confidence": 0.8620088463116483,
+        "temporal_stage": 3
+      },
+      {
+        "id": "unit_24",
+        "type": "method_approach",
+        "content": "Δt_data = 1.0 (sec)\nN_seq = 30 (step)\nN_batch = 10 (seq)\nMethod - D. Online Learning of Thermal Model\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 9_23.pptx_53",
+        "confidence": 0.7572620179910261,
+        "temporal_stage": 3
+      },
+      {
+        "id": "unit_25",
+        "type": "result_main",
+        "content": "Result.\n19000000 policy\t\t\t\t\t\tbest policy\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 11_18.pptx_19",
+        "confidence": 0.9190919066181672,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_26",
+        "type": "result_visual",
+        "content": "Result.\n19000000 policy\t\t\t\t\t\tbest policy\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 11_18.pptx_19",
+        "confidence": 0.7786694701996194,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_27",
+        "type": "result_main",
+        "content": "Result.\n19000000 policy\t\t\t\t\t\tbest policy\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 11_18.pptx_19",
+        "confidence": 0.8638596663237199,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_28",
+        "type": "result_visual",
+        "content": "시뮬레이션 함수 테스트\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 07_22.pptx_4",
+        "confidence": 0.7349075798813766,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_29",
+        "type": "result_visual",
+        "content": "시뮬레이션 함수 테스트\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 07_22.pptx_4",
+        "confidence": 0.8862472455229016,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_30",
+        "type": "result_main",
+        "content": "Meta Learning - Result\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 10_14.pptx_10",
+        "confidence": 0.7998501262850992,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_31",
+        "type": "result_visual",
+        "content": "Meta Learning - Result\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 10_14.pptx_10",
+        "confidence": 0.7548301897893208,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_32",
+        "type": "result_main",
+        "content": "Meta Learning - Result\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 10_14.pptx_10",
+        "confidence": 0.9493844016237776,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_33",
+        "type": "thesis_claim",
+        "content": "Quadruped 로봇은 극한 환경에 대해 강한 적응성을 가지고 있지만, 결함이 발생할 수 있다.\n결함 중 가장 대표적으로 장치 노후화 또는 예상치 못한 운영 이벤트와 같은 요인으로 액추에이터 손상이다.\nteacher-student 프레임워크인 Actuator Degradation Adaptation Transformer를 제안한다.\nAbstract\nCop",
+        "slide_source": "WR 9_23.pptx_22",
+        "confidence": 0.9152757274166664,
+        "temporal_stage": 2
+      },
+      {
+        "id": "unit_34",
+        "type": "method_approach",
+        "content": "Method - F. Thermal Controller: Control of Motor Core Temperature\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 9_23.pptx_55",
+        "confidence": 0.848972107090282,
+        "temporal_stage": 3
+      },
+      {
+        "id": "unit_35",
+        "type": "result_visual",
+        "content": "Method - F. Thermal Controller: Control of Motor Core Temperature\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 9_23.pptx_55",
+        "confidence": 0.8170124719461693,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_36",
+        "type": "general",
+        "content": "Training ToddlerBot with Brax\n커스텀된 Brax를 사용하지 않고, 최신의 Brax를 이용해 간단한 샘플 코드 실행\ntoddlerbot/locomotion/train_mjx.py를 참고하여 코드 작성\nlearning_rate_schedule_fn, randomization_fn 등 여러 옵션 무시\nrandomization_fn 추가시 ",
+        "slide_source": "WR 07_01 - EunwooSong.pptx_34",
+        "confidence": 0.9427695944034045,
+        "temporal_stage": 3
+      },
+      {
+        "id": "unit_37",
+        "type": "general",
+        "content": "Training ToddlerBot with Brax\n커스텀된 Brax를 사용하지 않고, 최신의 Brax를 이용해 간단한 샘플 코드 실행\ntoddlerbot/locomotion/train_mjx.py를 참고하여 코드 작성\nlearning_rate_schedule_fn, randomization_fn 등 여러 옵션 무시\nrandomization_fn 추가시 ",
+        "slide_source": "WR 07_01 - EunwooSong.pptx_34",
+        "confidence": 0.9151949255586245,
+        "temporal_stage": 3
+      },
+      {
+        "id": "unit_38",
+        "type": "result_visual",
+        "content": "FT-Net: Learning Failure Recovery and Fault-Tolerant Locomotion for Quadruped Robots\nCopyright 2024 Global School of Media\n혹독하고 위험한 환경에서 발생할 수 있는 로봇의 내고장성을 고려해야한다.\nFT-Net을 통해 고장 관리\n실제 토크에 고장 계수를 곱하여 토",
+        "slide_source": "WR 07_14 - EunwooSong.pptx_27",
+        "confidence": 0.7850438682577613,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_39",
+        "type": "result_visual",
+        "content": "FT-Net: Learning Failure Recovery and Fault-Tolerant Locomotion for Quadruped Robots\nCopyright 2024 Global School of Media\n혹독하고 위험한 환경에서 발생할 수 있는 로봇의 내고장성을 고려해야한다.\nFT-Net을 통해 고장 관리\n실제 토크에 고장 계수를 곱하여 토",
+        "slide_source": "WR 07_14 - EunwooSong.pptx_27",
+        "confidence": 0.7733750321618564,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_40",
+        "type": "result_visual",
+        "content": "FT-Net: Learning Failure Recovery and Fault-Tolerant Locomotion for Quadruped Robots\nCopyright 2024 Global School of Media\n혹독하고 위험한 환경에서 발생할 수 있는 로봇의 내고장성을 고려해야한다.\nFT-Net을 통해 고장 관리\n실제 토크에 고장 계수를 곱하여 토",
+        "slide_source": "WR 07_14 - EunwooSong.pptx_27",
+        "confidence": 0.7395394385861673,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_41",
+        "type": "result_visual",
+        "content": "1차 열 모델\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 07_14 - EunwooSong.pptx_16",
+        "confidence": 0.8269157204944085,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_42",
+        "type": "result_visual",
+        "content": "1차 열 모델\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 07_14 - EunwooSong.pptx_16",
+        "confidence": 0.7497277754411832,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_43",
+        "type": "result_visual",
+        "content": "1차 열 모델\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 07_14 - EunwooSong.pptx_16",
+        "confidence": 0.7934784631477869,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_44",
+        "type": "general",
+        "content": "Migration 진행 상황\n버전 충돌 해결\n학습 가능\n\nToddlerbot sim to real 시, 오류 발생\nDynamicel SDK, C++로 이전한 코드에서 오류 발생\n마무리 이후, Endurance Test 진행\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 12_23.pptx_8",
+        "confidence": 0.8348447575299064,
+        "temporal_stage": 3
+      },
+      {
+        "id": "unit_45",
+        "type": "result_visual",
+        "content": "Problems\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 9_23.pptx_10",
+        "confidence": 0.7048691855964581,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_46",
+        "type": "result_visual",
+        "content": "Problems\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 9_23.pptx_10",
+        "confidence": 0.9322746540661542,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_47",
+        "type": "general",
+        "content": "Toddlerbot 학습 결과\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 10_14.pptx_3",
+        "confidence": 0.7598630775845147,
+        "temporal_stage": 3
+      },
+      {
+        "id": "unit_48",
+        "type": "general",
+        "content": "Toddlerbot 학습 결과\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 10_14.pptx_3",
+        "confidence": 0.7602178981118082,
+        "temporal_stage": 3
+      },
+      {
+        "id": "unit_49",
+        "type": "result_main",
+        "content": "Result (HeatState)\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 9_2.pptx_7",
+        "confidence": 0.8214976158291534,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_50",
+        "type": "result_visual",
+        "content": "Result (HeatState)\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 9_2.pptx_7",
+        "confidence": 0.7173031296170959,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_51",
+        "type": "result_main",
+        "content": "Result (HeatState)\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 9_2.pptx_7",
+        "confidence": 0.8901505413143078,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_52",
+        "type": "result_main",
+        "content": "Result (1000~1389 steps)\nCopyright 2024 Global School of Media\nNormal (0~500steps)\nTorque limited (1000~1389 steps)",
+        "slide_source": "WR 9_2.pptx_6",
+        "confidence": 0.9181082602713143,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_53",
+        "type": "result_visual",
+        "content": "Result (1000~1389 steps)\nCopyright 2024 Global School of Media\nNormal (0~500steps)\nTorque limited (1000~1389 steps)",
+        "slide_source": "WR 9_2.pptx_6",
+        "confidence": 0.8057844850502217,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_54",
+        "type": "result_main",
+        "content": "Result (1000~1389 steps)\nCopyright 2024 Global School of Media\nNormal (0~500steps)\nTorque limited (1000~1389 steps)",
+        "slide_source": "WR 9_2.pptx_6",
+        "confidence": 0.7529495513605204,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_55",
+        "type": "thesis_claim",
+        "content": "개요\nrobot이 특정 task를 잘 수행하는 것 또한 중요하지만, 장기적인 안정성 또한 고려되어야 한다.\n지금의 시뮬레이션에서는 이상적인 motor 상황에 너무 과적합되어 있다.\n누적된 사용(발열)으로 인한 motor의 torque 감소를 시뮬레이션 하면 sim to real gap을 줄이는데 유용할 것이다.\n추가로 로봇의 에너지 효율성을 개선할 수 있을",
+        "slide_source": "WR 07_14 - EunwooSong.pptx_4",
+        "confidence": 0.8888162991589513,
+        "temporal_stage": 2
+      },
+      {
+        "id": "unit_56",
+        "type": "background_context",
+        "content": "개요\nrobot이 특정 task를 잘 수행하는 것 또한 중요하지만, 장기적인 안정성 또한 고려되어야 한다.\n지금의 시뮬레이션에서는 이상적인 motor 상황에 너무 과적합되어 있다.\n누적된 사용(발열)으로 인한 motor의 torque 감소를 시뮬레이션 하면 sim to real gap을 줄이는데 유용할 것이다.\n추가로 로봇의 에너지 효율성을 개선할 수 있을",
+        "slide_source": "WR 07_14 - EunwooSong.pptx_4",
+        "confidence": 0.8724669080249053,
+        "temporal_stage": 1
+      },
+      {
+        "id": "unit_57",
+        "type": "thesis_claim",
+        "content": "개요\nrobot이 특정 task를 잘 수행하는 것 또한 중요하지만, 장기적인 안정성 또한 고려되어야 한다.\n지금의 시뮬레이션에서는 이상적인 motor 상황에 너무 과적합되어 있다.\n누적된 사용(발열)으로 인한 motor의 torque 감소를 시뮬레이션 하면 sim to real gap을 줄이는데 유용할 것이다.\n추가로 로봇의 에너지 효율성을 개선할 수 있을",
+        "slide_source": "WR 07_14 - EunwooSong.pptx_4",
+        "confidence": 0.8782372432047805,
+        "temporal_stage": 2
+      },
+      {
+        "id": "unit_58",
+        "type": "method_approach",
+        "content": "τ^i: i번째 actuator가 손상된 시나리오\nactuator가 12개이므로, 12개의 시나리오 고려\n\ntraj^i_n: i번째 시나리오에서의 n번째 trajectory\nN은 20000으로 설정\n각각의 traj은 (s, d, )     의 값으로 구성된다.\n\n학습된 teacher policy에서 데이터를 생성함\nMethod - Data Collectio",
+        "slide_source": "WR 9_23.pptx_28",
+        "confidence": 0.7561743342578893,
+        "temporal_stage": 3
+      },
+      {
+        "id": "unit_59",
+        "type": "method_approach",
+        "content": "Toddlerbot Thermal Weight\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 1_14.pptx_3",
+        "confidence": 0.7052585650017646,
+        "temporal_stage": 3
+      },
+      {
+        "id": "unit_60",
+        "type": "method_approach",
+        "content": "Toddlerbot Thermal Weight\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 1_14.pptx_3",
+        "confidence": 0.8384803806061198,
+        "temporal_stage": 3
+      },
+      {
+        "id": "unit_61",
+        "type": "result_main",
+        "content": "Results\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 1_14.pptx_11",
+        "confidence": 0.8769602366371134,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_62",
+        "type": "method_approach",
+        "content": "적용 Task 및 성능 비교\nCopyright 2024 Global School of Media\nToddlerBot에 있는 정책에서 Thermal-reward를 추가, 해당 정책을 반복 수행했을 때, 어떤 모델이 더 오래 지속되는지를 타이머로 비교 실험\n시뮬레이션에서 과열 상황을 부여하고, 각 모델(original, ours)를 비교",
+        "slide_source": "WR 07_14 - EunwooSong.pptx_24",
+        "confidence": 0.7572354459527886,
+        "temporal_stage": 3
+      },
+      {
+        "id": "unit_63",
+        "type": "result_visual",
+        "content": "기존의 에너지 효율성 보상 함수\nCopyright 2024 Global School of Media\nToddlerbot에서 사용하는 보상 함수는 system 총량",
+        "slide_source": "WR 07_14 - EunwooSong.pptx_11",
+        "confidence": 0.7595011585922488,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_64",
+        "type": "result_visual",
+        "content": "기존의 에너지 효율성 보상 함수\nCopyright 2024 Global School of Media\nToddlerbot에서 사용하는 보상 함수는 system 총량",
+        "slide_source": "WR 07_14 - EunwooSong.pptx_11",
+        "confidence": 0.8672444445740701,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_65",
+        "type": "result_visual",
+        "content": "기존의 에너지 효율성 보상 함수\nCopyright 2024 Global School of Media\nToddlerbot에서 사용하는 보상 함수는 system 총량",
+        "slide_source": "WR 07_14 - EunwooSong.pptx_11",
+        "confidence": 0.7535592018426096,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_66",
+        "type": "method_approach",
+        "content": "Method - DreamFLEX\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 9_23.pptx_35",
+        "confidence": 0.9018742494416608,
+        "temporal_stage": 3
+      },
+      {
+        "id": "unit_67",
+        "type": "result_visual",
+        "content": "Method - DreamFLEX\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 9_23.pptx_35",
+        "confidence": 0.7476024785904694,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_68",
+        "type": "general",
+        "content": "DreamFLEX: Learning Fault-Aware Quadrupedal Locomotion Controller for Anomaly Situation in Rough Terrains\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 9_23.pptx_32",
+        "confidence": 0.8647456873786658,
+        "temporal_stage": 3
+      },
+      {
+        "id": "unit_69",
+        "type": "general",
+        "content": "Rendering the “ToddlerBot” simulation\nCopyright 2024 Global School of Media\nUbuntu 24.04",
+        "slide_source": "WR 07_01 - EunwooSong.pptx_14",
+        "confidence": 0.8058946557549802,
+        "temporal_stage": 3
+      },
+      {
+        "id": "unit_70",
+        "type": "general",
+        "content": "Rendering the “ToddlerBot” simulation\nCopyright 2024 Global School of Media\nUbuntu 24.04",
+        "slide_source": "WR 07_01 - EunwooSong.pptx_14",
+        "confidence": 0.8167561670091688,
+        "temporal_stage": 3
+      },
+      {
+        "id": "unit_71",
+        "type": "method_approach",
+        "content": "two-resistor thermal model (2-저항 열 모델)\n열 파라미터의 업데이트 필요성은 다음과 같다.\n부착된 금속 부품으로의 열 방출, 주변 온도 오차, 모터의 열화 또는 손상 등\n\nNew와, Old에게 각각 200N의 부하를 걸었을 때 생기는 그래프는 다음과 같다\nNew: 새로운 모터, Old: 오래된 모터 (90초 이후 15℃ 차이를 보임",
+        "slide_source": "WR 9_23.pptx_50",
+        "confidence": 0.8006553205255671,
+        "temporal_stage": 3
+      },
+      {
+        "id": "unit_72",
+        "type": "result_main",
+        "content": "Result.\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 07_01 - EunwooSong.pptx_21",
+        "confidence": 0.7475522271102029,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_73",
+        "type": "result_visual",
+        "content": "obs(step by step… 1 to 4), torso_ang_vel, torso_euler\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 11_18.pptx_24",
+        "confidence": 0.7696362861667351,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_74",
+        "type": "result_main",
+        "content": "Result - 1\nCopyright 2024 Global School of Media\nRTX 5080: 3m 42s/ A100:6m",
+        "slide_source": "WR 07_01 - EunwooSong.pptx_26",
+        "confidence": 0.7244771820504,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_75",
+        "type": "result_visual",
+        "content": "Result - 1\nCopyright 2024 Global School of Media\nRTX 5080: 3m 42s/ A100:6m",
+        "slide_source": "WR 07_01 - EunwooSong.pptx_26",
+        "confidence": 0.8630362234996305,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_76",
+        "type": "result_main",
+        "content": "Result - 1\nCopyright 2024 Global School of Media\nRTX 5080: 3m 42s/ A100:6m",
+        "slide_source": "WR 07_01 - EunwooSong.pptx_26",
+        "confidence": 0.8351469845250762,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_77",
+        "type": "thesis_question",
+        "content": "Graphics..?\nCopyright 2024 Global School of Media\nnotion link",
+        "slide_source": "WR 07_01 - EunwooSong.pptx_38",
+        "confidence": 0.9422490643211878,
+        "temporal_stage": 2
+      },
+      {
+        "id": "unit_78",
+        "type": "result_visual",
+        "content": "Reward\n기존 Reward에 다음 core temp safe 구역에 따른 보상 함수를 추가한다.\n최적온도(c1, min) 이내는 최대 보상, 아니면 리워드 점차 감소(c1,max)\n가우시안 분포 꼴 이용\n( α∝1/σ2 )\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 9_23.pptx_62",
+        "confidence": 0.8203396044927598,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_79",
+        "type": "result_visual",
+        "content": "Reward\n기존 Reward에 다음 core temp safe 구역에 따른 보상 함수를 추가한다.\n최적온도(c1, min) 이내는 최대 보상, 아니면 리워드 점차 감소(c1,max)\n가우시안 분포 꼴 이용\n( α∝1/σ2 )\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 9_23.pptx_62",
+        "confidence": 0.9161625985075539,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_80",
+        "type": "thesis_claim",
+        "content": "Limitations of Prior Research & Our Method\n기존의 DRL 기반 제어기들은 예측하지 못한 외란에 대응하는 것에 초점을 맞췄다.\n이러한 문제를 해결하기 위해 로봇의 미래 상태를 모터의 온도에 기반해 예측하고, 성능과 하드웨어 내구성 사이의 균형을 맞춘다.\n과열에 대한 것도, 과열 상황이 발생한 뒤 생긴 토크 제한에 대응\n\n선제",
+        "slide_source": "WR 9_23.pptx_61",
+        "confidence": 0.7411592803503817,
+        "temporal_stage": 2
+      },
+      {
+        "id": "unit_81",
+        "type": "general",
+        "content": "실험 결과 (19456000 steps, high temperature)\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 11_18.pptx_9",
+        "confidence": 0.9463272109449314,
+        "temporal_stage": 3
+      },
+      {
+        "id": "unit_82",
+        "type": "method_approach",
+        "content": "Method - F. Thermal Controller: Control of Motor Core Temperature\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 9_23.pptx_46",
+        "confidence": 0.8447950727040641,
+        "temporal_stage": 3
+      },
+      {
+        "id": "unit_83",
+        "type": "general",
+        "content": "다른 Policy…\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 1_14.pptx_15",
+        "confidence": 0.715239392869129,
+        "temporal_stage": 3
+      },
+      {
+        "id": "unit_84",
+        "type": "general",
+        "content": "다른 Policy…\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 1_14.pptx_15",
+        "confidence": 0.7784012024424323,
+        "temporal_stage": 3
+      },
+      {
+        "id": "unit_85",
+        "type": "general",
+        "content": "다른 Policy…\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 1_14.pptx_15",
+        "confidence": 0.7125355843159884,
+        "temporal_stage": 3
+      },
+      {
+        "id": "unit_86",
+        "type": "result_visual",
+        "content": "But…\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 11_18.pptx_16",
+        "confidence": 0.7200278663101467,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_87",
+        "type": "result_visual",
+        "content": "But…\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 11_18.pptx_16",
+        "confidence": 0.7464562402451808,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_88",
+        "type": "result_visual",
+        "content": "But…\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 11_18.pptx_16",
+        "confidence": 0.8487587766125069,
+        "temporal_stage": 4
+      },
+      {
+        "id": "unit_89",
+        "type": "result_main",
+        "content": "Sample Code - Result\nmujoco 환경을 render해서 현재 shell의 display를 지우고 다시 plt를 출력한다.\nCopyright 2024 Global School of Media",
+        "slide_source": "WR 07_01 - EunwooSong.pptx_13",
+        "confidence": 0.9353990318072722,
+        "temporal_stage": 4
+      }
+    ],
+    "clusters": [
+      {
+        "id": "cluster_stage_1",
+        "name": "Background & Context",
+        "temporal_stage": 1,
+        "unit_ids": [
+          "unit_56"
+        ],
+        "size": 1
+      },
+      {
+        "id": "cluster_stage_2",
+        "name": "Problem & Thesis",
+        "temporal_stage": 2,
+        "unit_ids": [
+          "unit_7",
+          "unit_9",
+          "unit_13",
+          "unit_19",
+          "unit_20",
+          "unit_33",
+          "unit_55",
+          "unit_57",
+          "unit_77",
+          "unit_80"
+        ],
+        "size": 10
+      },
+      {
+        "id": "cluster_stage_3",
+        "name": "Method & Approach",
+        "temporal_stage": 3,
+        "unit_ids": [
+          "unit_4",
+          "unit_8",
+          "unit_10",
+          "unit_12",
+          "unit_21",
+          "unit_22",
+          "unit_23",
+          "unit_24",
+          "unit_34",
+          "unit_36",
+          "unit_37",
+          "unit_44",
+          "unit_47",
+          "unit_48",
+          "unit_58",
+          "unit_59",
+          "unit_60",
+          "unit_62",
+          "unit_66",
+          "unit_68",
+          "unit_69",
+          "unit_70",
+          "unit_71",
+          "unit_81",
+          "unit_82",
+          "unit_83",
+          "unit_84",
+          "unit_85"
+        ],
+        "size": 28
+      },
+      {
+        "id": "cluster_stage_4",
+        "name": "Results & Evaluation",
+        "temporal_stage": 4,
+        "unit_ids": [
+          "unit_1",
+          "unit_2",
+          "unit_3",
+          "unit_5",
+          "unit_6",
+          "unit_11",
+          "unit_14",
+          "unit_15",
+          "unit_16",
+          "unit_17",
+          "unit_18",
+          "unit_25",
+          "unit_26",
+          "unit_27",
+          "unit_28",
+          "unit_29",
+          "unit_30",
+          "unit_31",
+          "unit_32",
+          "unit_35",
+          "unit_38",
+          "unit_39",
+          "unit_40",
+          "unit_41",
+          "unit_42",
+          "unit_43",
+          "unit_45",
+          "unit_46",
+          "unit_49",
+          "unit_50",
+          "unit_51",
+          "unit_52",
+          "unit_53",
+          "unit_54",
+          "unit_61",
+          "unit_63",
+          "unit_64",
+          "unit_65",
+          "unit_67",
+          "unit_72",
+          "unit_73",
+          "unit_74",
+          "unit_75",
+          "unit_76",
+          "unit_78",
+          "unit_79",
+          "unit_86",
+          "unit_87",
+          "unit_88",
+          "unit_89"
+        ],
+        "size": 50
+      }
+    ],
+    "cross_references": [
+      {
+        "from_unit": "unit_73",
+        "to_unit": "unit_32",
+        "relation_type": "evaluates",
+        "strength": 0.8080817037367044
+      },
+      {
+        "from_unit": "unit_80",
+        "to_unit": "unit_11",
+        "relation_type": "implements",
+        "strength": 0.8300806075653828
+      },
+      {
+        "from_unit": "unit_73",
+        "to_unit": "unit_67",
+        "relation_type": "contradicts",
+        "strength": 0.9271471902077495
+      },
+      {
+        "from_unit": "unit_27",
+        "to_unit": "unit_87",
+        "relation_type": "contradicts",
+        "strength": 0.6835400834155461
+      },
+      {
+        "from_unit": "unit_51",
+        "to_unit": "unit_17",
+        "relation_type": "contradicts",
+        "strength": 0.7600286003996581
+      },
+      {
+        "from_unit": "unit_10",
+        "to_unit": "unit_2",
+        "relation_type": "implements",
+        "strength": 0.8174057394225824
+      },
+      {
+        "from_unit": "unit_73",
+        "to_unit": "unit_13",
+        "relation_type": "supports",
+        "strength": 0.7881720414355695
+      },
+      {
+        "from_unit": "unit_65",
+        "to_unit": "unit_34",
+        "relation_type": "extends",
+        "strength": 0.9266407822977981
+      },
+      {
+        "from_unit": "unit_9",
+        "to_unit": "unit_33",
+        "relation_type": "contradicts",
+        "strength": 0.6997455869258298
+      },
+      {
+        "from_unit": "unit_57",
+        "to_unit": "unit_71",
+        "relation_type": "contradicts",
+        "strength": 0.8140872180040826
+      },
+      {
+        "from_unit": "unit_84",
+        "to_unit": "unit_68",
+        "relation_type": "supports",
+        "strength": 0.8337521212994042
+      },
+      {
+        "from_unit": "unit_71",
+        "to_unit": "unit_39",
+        "relation_type": "supports",
+        "strength": 0.9286255013744864
+      },
+      {
+        "from_unit": "unit_18",
+        "to_unit": "unit_35",
+        "relation_type": "supports",
+        "strength": 0.9113994474519982
+      },
+      {
+        "from_unit": "unit_71",
+        "to_unit": "unit_20",
+        "relation_type": "contradicts",
+        "strength": 0.698614695010263
+      },
+      {
+        "from_unit": "unit_27",
+        "to_unit": "unit_45",
+        "relation_type": "extends",
+        "strength": 0.8406239950804657
+      }
+    ],
+    "image_analyses": [
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 07_01 - EunwooSong_37_b5f0342b.jpg",
+        "image_type": "chart",
+        "content_summary": "Visual showing method",
+        "role": "evidence"
+      },
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 07_01 - EunwooSong_37_b6730518.jpg",
+        "image_type": "graph",
+        "content_summary": "Visual showing results",
+        "role": "support"
+      },
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_23_38_2dbc9d7e.png",
+        "image_type": "screenshot",
+        "content_summary": "Visual showing results",
+        "role": "evidence"
+      },
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 07_14 - EunwooSong_13_8a98986e.png",
+        "image_type": "graph",
+        "content_summary": "Visual showing comparison",
+        "role": "illustration"
+      },
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 07_14 - EunwooSong_13_67b13e92.png",
+        "image_type": "chart",
+        "content_summary": "Visual showing method",
+        "role": "evidence"
+      },
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_23_52_97736198.png",
+        "image_type": "chart",
+        "content_summary": "Visual showing architecture",
+        "role": "illustration"
+      },
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_23_63_967cd35e.png",
+        "image_type": "screenshot",
+        "content_summary": "Visual showing results",
+        "role": "explanation"
+      },
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 11_18_5_afee9d27.png",
+        "image_type": "equation",
+        "content_summary": "Visual showing architecture",
+        "role": "evidence"
+      },
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 8_26_10_c12c32ef.png",
+        "image_type": "diagram",
+        "content_summary": "Visual showing method",
+        "role": "support"
+      },
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_23_53_a0222499.png",
+        "image_type": "screenshot",
+        "content_summary": "Visual showing method",
+        "role": "evidence"
+      },
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_23_53_ce4e9a48.png",
+        "image_type": "graph",
+        "content_summary": "Visual showing comparison",
+        "role": "explanation"
+      },
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_23_53_376d12aa.png",
+        "image_type": "chart",
+        "content_summary": "Visual showing method",
+        "role": "illustration"
+      },
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 11_18_19_d1b33a0f.png",
+        "image_type": "diagram",
+        "content_summary": "Visual showing architecture",
+        "role": "explanation"
+      },
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 11_18_19_26e90020.png",
+        "image_type": "chart",
+        "content_summary": "Visual showing results",
+        "role": "evidence"
+      },
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 07_22_4_fdad3f40.png",
+        "image_type": "photo",
+        "content_summary": "Visual showing comparison",
+        "role": "evidence"
+      },
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 10_14_10_99996ad6.png",
+        "image_type": "screenshot",
+        "content_summary": "Visual showing architecture",
+        "role": "explanation"
+      },
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_23_22_38071dbb.png",
+        "image_type": "screenshot",
+        "content_summary": "Visual showing comparison",
+        "role": "support"
+      },
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_23_55_2acda909.png",
+        "image_type": "graph",
+        "content_summary": "Visual showing method",
+        "role": "explanation"
+      },
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_23_55_35e9c7b2.png",
+        "image_type": "screenshot",
+        "content_summary": "Visual showing results",
+        "role": "explanation"
+      },
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 07_14 - EunwooSong_27_86526fe3.png",
+        "image_type": "diagram",
+        "content_summary": "Visual showing results",
+        "role": "illustration"
+      },
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 07_14 - EunwooSong_16_7190394d.png",
+        "image_type": "diagram",
+        "content_summary": "Visual showing architecture",
+        "role": "evidence"
+      },
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 07_14 - EunwooSong_16_bb4ef805.png",
+        "image_type": "screenshot",
+        "content_summary": "Visual showing results",
+        "role": "illustration"
+      },
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_23_10_22809029.gif",
+        "image_type": "screenshot",
+        "content_summary": "Visual showing results",
+        "role": "illustration"
+      },
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_2_7_038eea9f.png",
+        "image_type": "screenshot",
+        "content_summary": "Visual showing results",
+        "role": "support"
+      },
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_2_6_5fabdf36.gif",
+        "image_type": "graph",
+        "content_summary": "Visual showing method",
+        "role": "explanation"
+      },
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_2_6_859f42a8.gif",
+        "image_type": "screenshot",
+        "content_summary": "Visual showing method",
+        "role": "illustration"
+      },
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_23_28_89158026.png",
+        "image_type": "photo",
+        "content_summary": "Visual showing architecture",
+        "role": "explanation"
+      },
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_23_28_5c555da7.png",
+        "image_type": "screenshot",
+        "content_summary": "Visual showing comparison",
+        "role": "support"
+      },
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 1_14_11_d8a2605f.png",
+        "image_type": "screenshot",
+        "content_summary": "Visual showing method",
+        "role": "support"
+      },
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 07_14 - EunwooSong_11_78253d8c.png",
+        "image_type": "diagram",
+        "content_summary": "Visual showing architecture",
+        "role": "support"
+      },
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_23_35_d65ff318.png",
+        "image_type": "graph",
+        "content_summary": "Visual showing comparison",
+        "role": "evidence"
+      },
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_23_50_a7d1e556.png",
+        "image_type": "equation",
+        "content_summary": "Visual showing results",
+        "role": "support"
+      },
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 07_01 - EunwooSong_21_c9873443.png",
+        "image_type": "chart",
+        "content_summary": "Visual showing results",
+        "role": "evidence"
+      },
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 11_18_24_ab26d466.png",
+        "image_type": "photo",
+        "content_summary": "Visual showing method",
+        "role": "explanation"
+      },
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 07_01 - EunwooSong_26_aa83a804.png",
+        "image_type": "graph",
+        "content_summary": "Visual showing results",
+        "role": "explanation"
+      },
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_23_62_7b4e8ab7.png",
+        "image_type": "graph",
+        "content_summary": "Visual showing method",
+        "role": "explanation"
+      },
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_23_46_37d62c00.png",
+        "image_type": "chart",
+        "content_summary": "Visual showing comparison",
+        "role": "illustration"
+      },
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_23_46_37d62c00.png",
+        "image_type": "photo",
+        "content_summary": "Visual showing comparison",
+        "role": "evidence"
+      },
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 9_23_46_ecdfdc6a.png",
+        "image_type": "graph",
+        "content_summary": "Visual showing architecture",
+        "role": "evidence"
+      },
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 11_18_16_0e8351b1.png",
+        "image_type": "photo",
+        "content_summary": "Visual showing method",
+        "role": "support"
+      },
+      {
+        "image_path": "/Users/jaeyoungkang/workspace/moonwrite-simulator/working-contexts/experiments/2026-01-31-exp2/images-filtered/WR 07_01 - EunwooSong_13_ead050c1.png",
+        "image_type": "equation",
+        "content_summary": "Visual showing method",
+        "role": "explanation"
+      }
+    ]
+  },
+  "step2_results": {
+    "cluster_analyses": [
+      {
+        "cluster_id": "cluster_stage_1",
+        "description": "Background on motor thermal issues and limitations of current approaches",
+        "key_insight": "Motor thermal degradation is a critical but understudied issue in long-term robot operations",
+        "thesis_connection": "Establishes the context and motivation for the research question: 'What is the impact of motor temperature on quadruped robot performance?'",
+        "importance_score": 0.9132282038479743
+      },
+      {
+        "cluster_id": "cluster_stage_2",
+        "description": "Problem formulation and proposed thermal-aware framework thesis",
+        "key_insight": "Thermal-aware control can proactively prevent motor failures rather than reactively responding",
+        "thesis_connection": "Directly addresses the core thesis by proposing: 'A thermal-aware framework can extend robot operational time by predicting and preventing motor overheating'",
+        "importance_score": 0.8263522645244967
+      },
+      {
+        "cluster_id": "cluster_stage_3",
+        "description": "Detailed methodology including thermal estimation, prediction, and control strategies",
+        "key_insight": "Real-time thermal estimation and predictive control framework enables proactive thermal management",
+        "thesis_connection": "Implements the methodology to validate the claim: 'A thermal-aware framework can extend robot operational time by predicting and preventing motor overheating'",
+        "importance_score": 0.7627803130174735
+      },
+      {
+        "cluster_id": "cluster_stage_4",
+        "description": "Experimental results demonstrating performance improvements and validation",
+        "key_insight": "Thermal-aware policies demonstrate significant reduction in motor limitations and improved endurance",
+        "thesis_connection": "Provides empirical evidence supporting the thesis through experimental results",
+        "importance_score": 0.927039761554643
+      }
+    ]
+  },
+  "step3_results": {
+    "consistency_score": 0.797407387008937,
+    "flow_analysis": {
+      "temporal_flow": "Sequential progression from background through results",
+      "logical_coherence": "Strong logical connections between stages",
+      "narrative_strength": "Clear narrative arc supporting the thesis",
+      "transition_quality": "Smooth transitions between clusters",
+      "stage_completeness": {
+        "background": "Complete",
+        "problem": "Complete",
+        "method": "Complete",
+        "results": "Partial - needs more evaluation metrics",
+        "discussion": "Limited - needs deeper analysis"
+      }
+    },
+    "relation_analysis": {
+      "cross_reference_density": 3.75,
+      "relation_types": {
+        "evaluates": 1,
+        "implements": 2,
+        "contradicts": 6,
+        "supports": 4,
+        "extends": 2
+      },
+      "dominant_relations": [
+        [
+          "contradicts",
+          6
+        ],
+        [
+          "supports",
+          4
+        ],
+        [
+          "implements",
+          2
+        ]
+      ],
+      "network_connectivity": "Moderately connected with clear directional flow"
+    },
+    "issues_found": [
+      "Some cluster analyses show weak thesis alignment"
+    ]
+  },
+  "step4_results": {
+    "gap_analysis": [
+      {
+        "gap_type": "methodological_detail",
+        "description": "Thermal model parameter estimation process needs more detailed explanation",
+        "severity": "medium",
+        "affected_sections": [
+          "Method & Approach"
+        ]
+      },
+      {
+        "gap_type": "evaluation_completeness",
+        "description": "Missing comparison with baseline thermal management approaches",
+        "severity": "high",
+        "affected_sections": [
+          "Results & Evaluation"
+        ]
+      },
+      {
+        "gap_type": "thesis_alignment",
+        "description": "Some sections show weak connection to the main thesis",
+        "severity": "medium",
+        "affected_sections": [
+          "Multiple sections"
+        ]
+      }
+    ],
+    "quality_issues": [
+      {
+        "issue_type": "consistency",
+        "description": "Some cluster analyses show weak thesis alignment",
+        "location": "Multiple clusters",
+        "severity": "medium"
+      }
+    ],
+    "section_conversion": {
+      "overall_feasibility": "High - clear structure aligns with standard paper format",
+      "section_scores": {
+        "Introduction & Background": 0.7762745488731903,
+        "Problem Formulation": 0.6772972800493741,
+        "Methodology": 0.7223298389012947,
+        "Experiments & Results": 0.7641007467571851
+      },
+      "recommended_order": [
+        "Introduction & Background",
+        "Problem Formulation",
+        "Methodology",
+        "Experiments & Results",
+        "Discussion & Conclusion"
+      ],
+      "missing_sections": [
+        "Related Work - needs dedicated section"
+      ],
+      "notes": "Strong temporal flow supports natural section conversion"
+    }
+  },
+  "category_distribution": {
+    "result_main": 16,
+    "result_visual": 34,
+    "method_approach": 12,
+    "thesis_question": 4,
+    "method_detail": 1,
+    "thesis_claim": 6,
+    "general": 15,
+    "background_context": 1
+  },
+  "stage_distribution": {
+    "4": 50,
+    "3": 28,
+    "2": 10,
+    "1": 1
+  },
+  "sample_extractions": [
+    {
+      "id": "unit_57",
+      "type": "thesis_claim",
+      "content": "개요\nrobot이 특정 task를 잘 수행하는 것 또한 중요하지만, 장기적인 안정성 또한 고려되어야 한다.\n지금의 시뮬레이션에서는 이상적인 motor 상황에 너무 과적합되어 있다.\n누적된 사용(발열)으로 인한 motor의 torque 감소를 시뮬레이션 하면 sim to real gap을 줄이는데 유용할 것이다.\n추가로 로봇의 에너지 효율성을 개선할 수 있을",
+      "slide_source": "WR 07_14 - EunwooSong.pptx_4",
+      "confidence": 0.8782372432047805,
+      "temporal_stage": 2
+    },
+    {
+      "id": "unit_71",
+      "type": "method_approach",
+      "content": "two-resistor thermal model (2-저항 열 모델)\n열 파라미터의 업데이트 필요성은 다음과 같다.\n부착된 금속 부품으로의 열 방출, 주변 온도 오차, 모터의 열화 또는 손상 등\n\nNew와, Old에게 각각 200N의 부하를 걸었을 때 생기는 그래프는 다음과 같다\nNew: 새로운 모터, Old: 오래된 모터 (90초 이후 15℃ 차이를 보임",
+      "slide_source": "WR 9_23.pptx_50",
+      "confidence": 0.8006553205255671,
+      "temporal_stage": 3
+    },
+    {
+      "id": "unit_55",
+      "type": "thesis_claim",
+      "content": "개요\nrobot이 특정 task를 잘 수행하는 것 또한 중요하지만, 장기적인 안정성 또한 고려되어야 한다.\n지금의 시뮬레이션에서는 이상적인 motor 상황에 너무 과적합되어 있다.\n누적된 사용(발열)으로 인한 motor의 torque 감소를 시뮬레이션 하면 sim to real gap을 줄이는데 유용할 것이다.\n추가로 로봇의 에너지 효율성을 개선할 수 있을",
+      "slide_source": "WR 07_14 - EunwooSong.pptx_4",
+      "confidence": 0.8888162991589513,
+      "temporal_stage": 2
+    },
+    {
+      "id": "unit_72",
+      "type": "result_main",
+      "content": "Result.\nCopyright 2024 Global School of Media",
+      "slide_source": "WR 07_01 - EunwooSong.pptx_21",
+      "confidence": 0.7475522271102029,
+      "temporal_stage": 4
+    },
+    {
+      "id": "unit_2",
+      "type": "result_visual",
+      "content": "Result - Video\nCopyright 2024 Global School of Media\nRTX 5080: 3h 43m 43s",
+      "slide_source": "WR 07_01 - EunwooSong.pptx_37",
+      "confidence": 0.7074493048595175,
+      "temporal_stage": 4
+    }
+  ],
+  "cost_estimate": {
+    "flash_input_tokens": 29500,
+    "flash_output_tokens": 15150,
+    "pro_input_tokens": 6200,
+    "pro_output_tokens": 2000,
+    "flash_cost": 0.0067575,
+    "pro_cost": 0.0486,
+    "total_cost": 0.0553575
+  }
+}

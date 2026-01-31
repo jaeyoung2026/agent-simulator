@@ -1,0 +1,232 @@
+{
+  "clusteringMethod": "Thesis-First with thesisConnection",
+  "thesis": {
+    "title": "Thermal-Aware Fault-Tolerant Control for Humanoid Robot Locomotion",
+    "coreQuestion": "How can humanoid robots maintain stable locomotion when motor thermal limits or actuator failures occur during extended operation?",
+    "coreArgument": "By combining physics-based thermal modeling (two-resistor model with learnable parameters) with learned failure estimation networks (FEMNet), robots can predict motor degradation and adapt their control policy in real-time to maintain locomotion despite thermal constraints and actuator failures.",
+    "coreEvidence": [
+      "Two-resistor thermal model with online-learned P1-P5 parameters achieves accurate winding/core temperature prediction",
+      "FEMNet architecture (512x256x128 encoder + modulation network) successfully estimates fault vectors from observation history",
+      "Experimental results show maintained walking capability under torque-limited conditions (1000-1389 steps)",
+      "ToddlerBot platform demonstrates 19+ minute operation improvement with thermal-aware control"
+    ]
+  },
+  "researchStory": {
+    "motivation": "Humanoid robots experience motor overheating during locomotion, causing torque reduction and eventual failure. Like injured animals that adapt their gait, robots need intelligent strategies to continue operation under degraded conditions.",
+    "gap": "Existing thermal models are either too simplified (2-resistor without adaptation) or too complex for real-time control. Fault detection typically requires explicit sensors rather than learning from motion patterns.",
+    "contribution": "We propose a hybrid approach combining physics-based thermal modeling with learned parameters and a failure estimation network that infers actuator health from observation history alone.",
+    "validation": "Simulation experiments in MuJoCo demonstrate accurate temperature prediction and maintained locomotion under various fault scenarios."
+  },
+  "clusters": [
+    {
+      "id": "C1",
+      "name": "Introduction",
+      "paperSection": "1. Introduction",
+      "thesisConnection": {
+        "role": "Establishes the research problem and motivates the need for thermal-aware fault-tolerant control",
+        "keyQuestion": "Why is this problem important for humanoid robotics?"
+      },
+      "semanticUnits": ["SU-001", "SU-006"],
+      "structure": {
+        "opening": "Context of high-power motors in humanoid robots",
+        "problem": "Thermal limits constrain continuous operation",
+        "inspiration": "Bio-inspired adaptation from injured animal locomotion",
+        "preview": "Overview of proposed approach"
+      },
+      "writingGuidelines": {
+        "topicSentence": "State the challenge of motor thermal management in humanoid robots",
+        "bodyOutline": "1) Importance of motor performance, 2) Thermal constraints, 3) Biological analogy, 4) Research contribution preview",
+        "conclusionSentence": "Transition to related work by noting existing approaches' limitations"
+      }
+    },
+    {
+      "id": "C2",
+      "name": "Related Work",
+      "paperSection": "2. Related Work",
+      "thesisConnection": {
+        "role": "Positions the contribution against prior fault-tolerant locomotion research",
+        "keyQuestion": "What has been done before and what gaps remain?"
+      },
+      "semanticUnits": ["SU-019", "SU-009"],
+      "structure": {
+        "priorWork": "DreamFLEX and other fault-aware locomotion methods",
+        "thermalModeling": "Standard motor thermal models and derating approaches",
+        "gap": "Need for integrated thermal prediction and fault-aware control"
+      },
+      "writingGuidelines": {
+        "topicSentence": "Prior work has addressed either thermal modeling or fault tolerance, but rarely both in an integrated manner",
+        "bodyOutline": "1) Fault-tolerant locomotion methods, 2) Motor thermal modeling approaches, 3) Identified research gap",
+        "conclusionSentence": "This motivates our integrated approach combining physics-based thermal models with learned fault estimation"
+      }
+    },
+    {
+      "id": "C3",
+      "name": "Thermal Modeling",
+      "paperSection": "3.1 Thermal Model",
+      "thesisConnection": {
+        "role": "Presents the physics-based foundation with learnable extensions",
+        "keyQuestion": "How do we predict motor temperatures accurately in real-time?"
+      },
+      "semanticUnits": ["SU-002", "SU-007", "SU-008", "SU-011"],
+      "structure": {
+        "foundation": "Two-resistor thermal model basics",
+        "heatGeneration": "Power loss equations (P_loss = P_el - P_mech)",
+        "extension": "Learnable parameters P1-P5 for model adaptation",
+        "equations": "Differential equations (7') and (8') with exponential parameterization"
+      },
+      "writingGuidelines": {
+        "topicSentence": "We extend the classical two-resistor thermal model with five learnable parameters to capture real-world thermal dynamics",
+        "bodyOutline": "1) Standard 2-resistor model, 2) Heat generation physics, 3) Proposed extensions P1-P5, 4) Mathematical formulation",
+        "conclusionSentence": "This hybrid physics-learning approach enables accurate prediction while maintaining physical interpretability"
+      }
+    },
+    {
+      "id": "C4",
+      "name": "Online Learning",
+      "paperSection": "3.2 Online Parameter Learning",
+      "thesisConnection": {
+        "role": "Describes the mechanism for real-time model adaptation",
+        "keyQuestion": "How does the model adapt to specific motor characteristics during operation?"
+      },
+      "semanticUnits": ["SU-003", "SU-012"],
+      "structure": {
+        "objective": "MSE between measured and predicted housing temperature",
+        "optimizer": "Adam optimizer with log-scale parameterization",
+        "hyperparameters": "dt=1.0s, N_seq=30, N_batch=10",
+        "updateRule": "Gradient descent on P_{1,2,3,4,5}"
+      },
+      "writingGuidelines": {
+        "topicSentence": "To adapt the thermal model to individual motors, we employ online learning with carefully designed constraints",
+        "bodyOutline": "1) Loss function formulation, 2) Positivity constraints via log-scale, 3) Training hyperparameters, 4) Update procedure",
+        "conclusionSentence": "The online learning framework enables the model to continuously improve during robot operation"
+      }
+    },
+    {
+      "id": "C5",
+      "name": "Failure Estimation Network",
+      "paperSection": "3.3 FEMNet Architecture",
+      "thesisConnection": {
+        "role": "Presents the learned component for fault detection without explicit sensors",
+        "keyQuestion": "How can we detect actuator failures from motion patterns alone?"
+      },
+      "semanticUnits": ["SU-004", "SU-005"],
+      "structure": {
+        "overview": "Two-part architecture for failure estimation and modulation",
+        "encoder": "512x256x128 MLP producing v_t, f_t, z_t",
+        "modulation": "Context vector transformation with gamma parameters",
+        "dataCollection": "12 damage scenarios with 20000 trajectories each"
+      },
+      "writingGuidelines": {
+        "topicSentence": "FEMNet learns to estimate actuator health states from observation history, enabling fault-aware control without dedicated failure sensors",
+        "bodyOutline": "1) Architecture overview, 2) Encoder network details, 3) Modulation mechanism, 4) Training data generation",
+        "conclusionSentence": "The learned fault vector f_t provides actionable information for policy adaptation"
+      }
+    },
+    {
+      "id": "C6",
+      "name": "Thermal Controller",
+      "paperSection": "3.4 Thermal-Aware Control",
+      "thesisConnection": {
+        "role": "Integrates thermal prediction with control policy for safe operation",
+        "keyQuestion": "How do we use thermal predictions to limit torque commands appropriately?"
+      },
+      "semanticUnits": ["SU-010"],
+      "structure": {
+        "objective": "Control motor core temperature below damage threshold",
+        "lossFunction": "L_control combining temperature tracking and fault regularization",
+        "torqueModulation": "Temperature-dependent scaling of commanded torque"
+      },
+      "writingGuidelines": {
+        "topicSentence": "The thermal controller uses predicted core temperatures to modulate torque commands, preventing overheating while maximizing performance",
+        "bodyOutline": "1) Control objective formulation, 2) Loss function components, 3) Torque scaling mechanism",
+        "conclusionSentence": "This controller enables the robot to operate near thermal limits safely"
+      }
+    },
+    {
+      "id": "C7",
+      "name": "Experimental Setup",
+      "paperSection": "4.1 Implementation",
+      "thesisConnection": {
+        "role": "Provides reproducibility details for the experimental validation",
+        "keyQuestion": "What platform and tools were used for validation?"
+      },
+      "semanticUnits": ["SU-015", "SU-016", "SU-017"],
+      "structure": {
+        "platform": "ToddlerBot humanoid robot in MuJoCo simulation",
+        "software": "Python with pathlib, mujoco_py, gymnasium",
+        "visualization": "IPython display with matplotlib"
+      },
+      "writingGuidelines": {
+        "topicSentence": "We validate our approach using the ToddlerBot platform in MuJoCo simulation",
+        "bodyOutline": "1) Robot platform description, 2) Simulation environment setup, 3) Software dependencies and fixes",
+        "conclusionSentence": "This setup enables controlled experiments across multiple fault scenarios"
+      }
+    },
+    {
+      "id": "C8",
+      "name": "Results",
+      "paperSection": "4.2 Experimental Results",
+      "thesisConnection": {
+        "role": "Demonstrates the effectiveness of the proposed approach empirically",
+        "keyQuestion": "Does the system achieve its goals of thermal-aware fault-tolerant locomotion?"
+      },
+      "semanticUnits": ["SU-013", "SU-018", "SU-020"],
+      "structure": {
+        "heatState": "Temperature and torque time-series visualization",
+        "comparison": "Normal vs torque-limited walking performance",
+        "training": "Learning curves at 5M and 302M steps"
+      },
+      "writingGuidelines": {
+        "topicSentence": "Experimental results demonstrate successful thermal prediction and maintained locomotion under fault conditions",
+        "bodyOutline": "1) HeatState simulation results, 2) Normal vs limited comparison, 3) Training progression analysis",
+        "conclusionSentence": "These results validate the effectiveness of our integrated approach"
+      }
+    },
+    {
+      "id": "C9",
+      "name": "Discussion and Limitations",
+      "paperSection": "5. Discussion",
+      "thesisConnection": {
+        "role": "Provides honest assessment and future directions",
+        "keyQuestion": "What are the current limitations and how might they be addressed?"
+      },
+      "semanticUnits": ["SU-014"],
+      "structure": {
+        "limitations": "2-axis model measurement accuracy bounds",
+        "futureWork": "Extension to more complex thermal dynamics, real hardware validation"
+      },
+      "writingGuidelines": {
+        "topicSentence": "While our approach shows promising results, several limitations warrant discussion",
+        "bodyOutline": "1) Model accuracy limitations, 2) Simulation-to-real gap, 3) Future research directions",
+        "conclusionSentence": "Addressing these limitations will enable deployment on physical robots"
+      }
+    }
+  ],
+  "clusteringStatistics": {
+    "totalClusters": 9,
+    "totalSemanticUnits": 20,
+    "averageUnitsPerCluster": 2.2,
+    "coverageRate": 1.0,
+    "sectionMapping": {
+      "Introduction": 1,
+      "RelatedWork": 1,
+      "Methods": 4,
+      "Experiments": 2,
+      "Discussion": 1
+    }
+  },
+  "paperOutline": [
+    "1. Introduction (C1)",
+    "2. Related Work (C2)",
+    "3. Methods",
+    "   3.1 Thermal Model (C3)",
+    "   3.2 Online Parameter Learning (C4)",
+    "   3.3 FEMNet Architecture (C5)",
+    "   3.4 Thermal-Aware Control (C6)",
+    "4. Experiments",
+    "   4.1 Implementation (C7)",
+    "   4.2 Experimental Results (C8)",
+    "5. Discussion (C9)",
+    "6. Conclusion"
+  ]
+}

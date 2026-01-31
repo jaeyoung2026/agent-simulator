@@ -1,0 +1,73 @@
+{
+  "resolution": "low (1-2)",
+  "total_slides": 45,
+  "total_units": 69,
+  "avg_units": 1.53,
+  "quality_assessment": {
+    "information_coverage": "medium",
+    "coverage_detail": {
+      "complete_preservation": 29,
+      "partial_loss": 6,
+      "significant_loss": 10
+    },
+    "compression_level": "과도",
+    "compression_detail": {
+      "avg_missing_per_slide": 1.16,
+      "max_missing": 7,
+      "slides_with_no_loss": 29
+    },
+    "image_coverage_pct": 66.7,
+    "image_detail": {
+      "slides_with_images": 30,
+      "total_images": 41
+    },
+    "structure_completeness": "3/5 주요 섹션 보존",
+    "structure_detail": {
+      "preserved_sections": {
+        "Abstract": 0,
+        "Method": 7,
+        "Result": 10,
+        "Introduction": 0,
+        "Contribution": 1
+      }
+    }
+  },
+  "pros": [
+    "매우 간결한 형식으로 슬라이드 요약 가능 (1-2개 units)",
+    "빠른 검색과 브라우징에 최적화",
+    "66.7%의 슬라이드에서 이미지 정보 보존",
+    "명확한 제목과 주요 내용만 추출하면 이해 가능",
+    "저장 공간과 처리 시간 최소화"
+  ],
+  "cons": [
+    "12개 슬라이드(26.7%)에서 중요 정보 손실 발생",
+    "최대 7개의 information units 손실 가능성",
+    "Method, Result의 세부 사항 대부분 누락",
+    "숫자, 수식, 파라미터 등의 정량적 정보 제한적",
+    "멀티-파트 설명(예: 알고리즘 단계)의 완전성 보장 불가"
+  ],
+  "suitable_for": [
+    "전체 논문 구조의 빠른 이해",
+    "슬라이드의 주요 주제 파악",
+    "발표 개요 훑어보기",
+    "이미지 기반의 시각적 이해가 필요한 내용",
+    "슬라이드 간 관계도 파악"
+  ],
+  "recommended_use_cases": [
+    "AI 논문의 고속 스캔",
+    "여러 논문 비교 검토",
+    "프레젠테이션 개요 파악",
+    "모바일 환경에서의 자료 참고"
+  ],
+  "not_suitable_for": [
+    "논문의 상세 재현",
+    "정확한 수식/파라미터 확인이 필요한 경우",
+    "Method의 세부 알고리즘 이해",
+    "실험 결과의 정확한 분석"
+  ],
+  "metadata": {
+    "analysis_date": "2026-01-31",
+    "sample_size": 45,
+    "compression_ratio": 0.57
+  }
+}

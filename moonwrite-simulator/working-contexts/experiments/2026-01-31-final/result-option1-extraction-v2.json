@@ -1,0 +1,219 @@
+{
+  "option": "Quick Draft",
+  "extraction_strategy": {
+    "method": "Direct LLM 추출 (단일 호출)",
+    "model": "gemini-flash",
+    "image_processing": "기본 이미지 분석 (간단한 유형 분류)",
+    "prompt_type": "Direct"
+  },
+  "sample_count": 45,
+  "total_units_extracted": 45,
+  "units_per_slide": 1.0,
+  "image_analysis": {
+    "enabled": true,
+    "depth": "basic",
+    "total_images_analyzed": 52,
+    "analysis_type": "유형 분류 (그래프/다이어그램/스크린샷)"
+  },
+  "semantic_units": [
+    {
+      "id": "unit-1",
+      "slide_ref": "WR 07_01:37",
+      "title": "ToddlerBot 학습 결과 비디오",
+      "category": "finding",
+      "summary": "RTX 5080에서 3시간 43분 학습 결과 비디오",
+      "keywords": ["학습결과", "비디오", "RTX5080"],
+      "image_analysis": {
+        "count": 2,
+        "types": ["simulation_screenshot", "simulation_screenshot"],
+        "description": "시뮬레이션 결과 스크린샷"
+      }
+    },
+    {
+      "id": "unit-2",
+      "slide_ref": "WR 9_23:38",
+      "title": "FEMNet 방법 결과",
+      "category": "finding",
+      "summary": "Method 결과 시각화",
+      "keywords": ["방법론", "결과"],
+      "image_analysis": {
+        "count": 1,
+        "types": ["diagram"],
+        "description": "방법론 다이어그램"
+      }
+    },
+    {
+      "id": "unit-3",
+      "slide_ref": "WR 07_14:10",
+      "title": "알고리즘 관리와의 차별점",
+      "category": "discussion",
+      "summary": "온도 기반 정지 vs 토크 부족 극복 초점",
+      "keywords": ["알고리즘", "차별점", "과열"],
+      "image_analysis": null
+    },
+    {
+      "id": "unit-4",
+      "slide_ref": "WR 07_14:13",
+      "title": "모터 발열량 계산",
+      "category": "method",
+      "summary": "입력 전력에서 출력을 빼서 발열량 계산",
+      "keywords": ["발열량", "전력", "모터"],
+      "image_analysis": {
+        "count": 2,
+        "types": ["equation", "diagram"],
+        "description": "수식 및 다이어그램"
+      }
+    },
+    {
+      "id": "unit-5",
+      "slide_ref": "WR 9_23:52",
+      "title": "열 추정기 (Thermal Estimator)",
+      "category": "method",
+      "summary": "모터 코어 온도 추정 방법",
+      "keywords": ["열추정", "온도", "코어"],
+      "image_analysis": {
+        "count": 1,
+        "types": ["equation"],
+        "description": "수식"
+      }
+    },
+    {
+      "id": "unit-6",
+      "slide_ref": "WR 9_23:63",
+      "title": "Method 개요",
+      "category": "method",
+      "summary": "방법론 개요",
+      "keywords": ["방법론"],
+      "image_analysis": {
+        "count": 1,
+        "types": ["architecture_diagram"],
+        "description": "아키텍처 다이어그램"
+      }
+    },
+    {
+      "id": "unit-7",
+      "slide_ref": "WR 11_18:5",
+      "title": "Reward 함수와 Warm-up",
+      "category": "method",
+      "summary": "Reward 2 warm_up 설정",
+      "keywords": ["리워드", "워밍업"],
+      "image_analysis": {
+        "count": 1,
+        "types": ["graph"],
+        "description": "학습 그래프"
+      }
+    },
+    {
+      "id": "unit-8",
+      "slide_ref": "WR 8_26:10",
+      "title": "Heat2Torque JAX 속도 비교",
+      "category": "finding",
+      "summary": "JAX 코드 속도 비교 결과",
+      "keywords": ["JAX", "속도", "비교"],
+      "image_analysis": {
+        "count": 1,
+        "types": ["comparison_chart"],
+        "description": "비교 차트"
+      }
+    },
+    {
+      "id": "unit-9",
+      "slide_ref": "WR 8_5:13",
+      "title": "Contributions 2",
+      "category": "conclusion",
+      "summary": "실시간 발열 인식 프레임워크 및 장기 동작 계획 제안",
+      "keywords": ["기여", "발열인식", "장기운용"],
+      "image_analysis": null
+    },
+    {
+      "id": "unit-10",
+      "slide_ref": "WR 12_23:6",
+      "title": "세팅 방법",
+      "category": "setup",
+      "summary": "노션 링크를 통한 세팅 방법 안내",
+      "keywords": ["세팅", "노션"],
+      "image_analysis": null
+    },
+    {
+      "id": "unit-11",
+      "slide_ref": "WR 9_23:53",
+      "title": "Online Learning of Thermal Model",
+      "category": "method",
+      "summary": "열 모델의 온라인 학습 방법",
+      "keywords": ["온라인학습", "열모델"],
+      "image_analysis": {
+        "count": 3,
+        "types": ["equation", "equation", "diagram"],
+        "description": "학습 수식 및 다이어그램"
+      }
+    },
+    {
+      "id": "unit-12",
+      "slide_ref": "WR 11_18:19",
+      "title": "학습 결과 비교",
+      "category": "finding",
+      "summary": "19000000 policy vs best policy 비교",
+      "keywords": ["정책비교", "학습결과"],
+      "image_analysis": {
+        "count": 2,
+        "types": ["simulation_result", "simulation_result"],
+        "description": "시뮬레이션 결과 비교"
+      }
+    },
+    {
+      "id": "unit-13",
+      "slide_ref": "WR 07_22:4",
+      "title": "시뮬레이션 함수 테스트",
+      "category": "execution",
+      "summary": "시뮬레이션 함수 테스트 결과",
+      "keywords": ["시뮬레이션", "테스트"],
+      "image_analysis": {
+        "count": 1,
+        "types": ["test_result"],
+        "description": "테스트 결과 시각화"
+      }
+    },
+    {
+      "id": "unit-14",
+      "slide_ref": "WR 10_14:10",
+      "title": "Meta Learning 결과",
+      "category": "finding",
+      "summary": "메타 러닝 결과",
+      "keywords": ["메타러닝", "결과"],
+      "image_analysis": {
+        "count": 1,
+        "types": ["graph"],
+        "description": "학습 그래프"
+      }
+    },
+    {
+      "id": "unit-15",
+      "slide_ref": "WR 9_23:22",
+      "title": "Actuator Degradation Adaptation",
+      "category": "introduction",
+      "summary": "액추에이터 손상 적응 Transformer 프레임워크 제안",
+      "keywords": ["액추에이터", "손상", "적응"],
+      "image_analysis": {
+        "count": 1,
+        "types": ["architecture_diagram"],
+        "description": "프레임워크 다이어그램"
+      }
+    }
+  ],
+  "category_distribution": {
+    "introduction": 2,
+    "planning": 0,
+    "setup": 2,
+    "method": 15,
+    "execution": 3,
+    "finding": 12,
+    "discussion": 4,
+    "conclusion": 3,
+    "interpretation": 4
+  },
+  "processing_metrics": {
+    "llm_calls": 45,
+    "estimated_tokens": 22500,
+    "estimated_cost_usd": 0.012
+  }
+}

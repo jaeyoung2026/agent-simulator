@@ -1,0 +1,234 @@
+{
+  "resolution": "medium (1-3)",
+  "experiment_name": "Resolution Comparison - Medium",
+  "purpose": "Analyze how semantic granularity resolution affects quality",
+  "total_slides": 45,
+  "total_units": 92,
+  "avg_units": 2.04,
+  "quality_assessment": {
+    "information_coverage": "Medium resolution captures main topics and key supporting details. Most slides have 2-3 units covering primary concepts and visual elements. Some detail loss in complex technical slides.",
+    "granularity": "Balanced granularity - each unit represents a distinct concept (topic, supporting detail, or visual). Not too fine (avoids fragmentation) nor too coarse (avoids information loss).",
+    "structure_mapping": "Good alignment with paper sections: Method slides map to methodology, Result slides to experiments, Problem/Contribution slides to introduction. However, some nuanced technical details may be aggregated."
+  },
+  "distribution": {
+    "1_unit": 9,
+    "2_units": 25,
+    "3_units": 11
+  },
+  "concept_distribution": {
+    "result": 12,
+    "visual": 28,
+    "method": 10,
+    "detail": 19,
+    "technical_detail": 7,
+    "implementation": 4,
+    "contribution": 3,
+    "general": 8,
+    "problem": 1
+  },
+  "importance_distribution": {
+    "high": 45,
+    "low": 7,
+    "medium": 40
+  },
+  "visual_type_distribution": {
+    "diagram": 22,
+    "graph": 18,
+    "none": 34,
+    "equation": 14,
+    "animation": 4
+  },
+  "pros": [
+    "Balanced coverage - captures main ideas without excessive fragmentation",
+    "Manageable unit count for downstream processing",
+    "Clear hierarchy: high importance (topic) -> medium (details) -> visual context",
+    "Good mapping to paper structure (each unit ~= subsection or key point)",
+    "Preserves visual context association with content"
+  ],
+  "cons": [
+    "May lose fine-grained technical details (e.g., specific parameters)",
+    "Complex multi-concept slides might need more units",
+    "Some slides with minimal content get reduced to 1 unit (loss of context)",
+    "Visual descriptions are generic without image analysis",
+    "Aggregation may obscure specific formula/algorithm details"
+  ],
+  "sample_comparisons": [
+    {
+      "slide_id": "WR 07_14 - EunwooSong.pptx_slide16",
+      "original_content": "1차 열 모델\nCopyright 2024 Global School of Media",
+      "image_count": 2,
+      "extracted_units": [
+        {
+          "unit_id": "WR 07_14 - EunwooSong.pptx_16_u1",
+          "concept_type": "technical_detail",
+          "content": "1차 열 모델",
+          "key_terms": [],
+          "has_visual": true,
+          "visual_type": "equation",
+          "importance": "high"
+        }
+      ],
+      "unit_count": 1,
+      "coverage_assessment": "good_coverage"
+    },
+    {
+      "slide_id": "WR 12_23.pptx_slide8",
+      "original_content": "Migration 진행 상황\n버전 충돌 해결\n학습 가능\n\nToddlerbot sim to real 시, 오류 발생\nDynamicel SDK, C++로 이전한 코드에서 오류 발생\n마무리 이후, Endurance Test 진행\nCopyright 2024 Global School of Media",
+      "image_count": 0,
+      "extracted_units": [
+        {
+          "unit_id": "WR 12_23.pptx_8_u1",
+          "concept_type": "implementation",
+          "content": "Migration 진행 상황",
+          "key_terms": [
+            "SDK"
+          ],
+          "has_visual": false,
+          "visual_type": "none",
+          "importance": "high"
+        }
+      ],
+      "unit_count": 1,
+      "coverage_assessment": "good_coverage"
+    },
+    {
+      "slide_id": "WR 07_01 - EunwooSong.pptx_slide37",
+      "original_content": "Result - Video\nCopyright 2024 Global School of Media\nRTX 5080: 3h 43m 43s",
+      "image_count": 2,
+      "extracted_units": [
+        {
+          "unit_id": "WR 07_01 - EunwooSong.pptx_37_u1",
+          "concept_type": "result",
+          "content": "Result - Video",
+          "key_terms": [
+            "RTX"
+          ],
+          "has_visual": true,
+          "visual_type": "diagram",
+          "importance": "high"
+        },
+        {
+          "unit_id": "WR 07_01 - EunwooSong.pptx_37_u3",
+          "concept_type": "visual",
+          "content": "System/method diagram",
+          "key_terms": [],
+          "has_visual": true,
+          "visual_type": "diagram",
+          "importance": "low"
+        }
+      ],
+      "unit_count": 2,
+      "coverage_assessment": "good_coverage"
+    },
+    {
+      "slide_id": "WR 9_23.pptx_slide38",
+      "original_content": "Method - Result\nCopyright 2024 Global School of Media",
+      "image_count": 1,
+      "extracted_units": [
+        {
+          "unit_id": "WR 9_23.pptx_38_u1",
+          "concept_type": "result",
+          "content": "Method - Result",
+          "key_terms": [],
+          "has_visual": true,
+          "visual_type": "graph",
+          "importance": "high"
+        },
+        {
+          "unit_id": "WR 9_23.pptx_38_u3",
+          "concept_type": "visual",
+          "content": "Experimental results visualization",
+          "key_terms": [],
+          "has_visual": true,
+          "visual_type": "graph",
+          "importance": "medium"
+        }
+      ],
+      "unit_count": 2,
+      "coverage_assessment": "good_coverage"
+    },
+    {
+      "slide_id": "WR 9_23.pptx_slide53",
+      "original_content": "Δt_data = 1.0 (sec)\nN_seq = 30 (step)\nN_batch = 10 (seq)\nMethod - D. Online Learning of Thermal Model\nCopyright 2024 Global School of Media",
+      "image_count": 3,
+      "extracted_units": [
+        {
+          "unit_id": "WR 9_23.pptx_53_u1",
+          "concept_type": "method",
+          "content": "Δt_data = 1.0 (sec)",
+          "key_terms": [
+            "Δt_data",
+            "N_seq",
+            "N_batch"
+          ],
+          "has_visual": true,
+          "visual_type": "equation",
+          "importance": "high"
+        },
+        {
+          "unit_id": "WR 9_23.pptx_53_u2",
+          "concept_type": "detail",
+          "content": "N_seq = 30 (step) N_batch = 10 (seq)",
+          "key_terms": [],
+          "has_visual": false,
+          "visual_type": "none",
+          "importance": "medium"
+        },
+        {
+          "unit_id": "WR 9_23.pptx_53_u3",
+          "concept_type": "visual",
+          "content": "Mathematical formulation",
+          "key_terms": [],
+          "has_visual": true,
+          "visual_type": "equation",
+          "importance": "medium"
+        }
+      ],
+      "unit_count": 3,
+      "coverage_assessment": "good_coverage"
+    },
+    {
+      "slide_id": "WR 11_18.pptx_slide19",
+      "original_content": "Result.\n19000000 policy\t\t\t\t\t\tbest policy\nCopyright 2024 Global School of Media",
+      "image_count": 2,
+      "extracted_units": [
+        {
+          "unit_id": "WR 11_18.pptx_19_u1",
+          "concept_type": "result",
+          "content": "Result.",
+          "key_terms": [
+            "policy"
+          ],
+          "has_visual": true,
+          "visual_type": "diagram",
+          "importance": "high"
+        },
+        {
+          "unit_id": "WR 11_18.pptx_19_u2",
+          "concept_type": "detail",
+          "content": "19000000 policy\t\t\t\t\t\tbest policy",
+          "key_terms": [],
+          "has_visual": false,
+          "visual_type": "none",
+          "importance": "medium"
+        },
+        {
+          "unit_id": "WR 11_18.pptx_19_u3",
+          "concept_type": "visual",
+          "content": "System/method diagram",
+          "key_terms": [],
+          "has_visual": true,
+          "visual_type": "diagram",
+          "importance": "medium"
+        }
+      ],
+      "unit_count": 3,
+      "coverage_assessment": "good_coverage"
+    }
+  ],
+  "recommendations": {
+    "use_case": "Ideal for paper outline generation and section structuring",
+    "complement_with": "High resolution (4+) for specific technical sections requiring detail",
+    "avoid_for": "Detailed methodology extraction requiring all parameters and formulas"
+  }
+}

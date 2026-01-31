@@ -1,0 +1,283 @@
+{
+  "resolution": "medium (1-3)",
+  "strategy": "distributed (thesis-first 4-stage)",
+  "total_slides": 45,
+  "total_units": 92,
+  "avg_units_per_slide": 2.04,
+  "step1_thesis_extraction": {
+    "model": "Flash",
+    "thesis": {
+      "main_claim": "Thermal-aware motor control improves long-term robotic operation stability",
+      "research_problem": "Current robot simulations ignore motor thermal dynamics, causing performance degradation in long-term operation",
+      "proposed_solution": "Heat-aware torque limitation framework with thermal modeling and predictive control",
+      "key_contributions": [
+        "Real-time motor thermal state estimation and prediction framework",
+        "Thermal-aware planning using MPC and RL",
+        "Improved long-term operational stability with reduced overheating events"
+      ],
+      "confidence": 0.85
+    },
+    "extraction_quality": "High - clear research problem and solution identified"
+  },
+  "step2_cluster_analysis": {
+    "model": "Flash",
+    "total_clusters": 6,
+    "clusters": [
+      {
+        "cluster_id": "C1",
+        "cluster_type": "background",
+        "unit_ids": [
+          "WR 07_01 - EunwooSong.pptx_37_u1",
+          "WR 07_01 - EunwooSong.pptx_37_u3",
+          "WR 9_23.pptx_38_u1",
+          "WR 9_23.pptx_38_u3",
+          "WR 9_23.pptx_63_u1",
+          "WR 9_23.pptx_63_u3",
+          "WR 11_18.pptx_5_u1",
+          "WR 11_18.pptx_5_u3",
+          "WR 12_23.pptx_6_u1",
+          "WR 12_23.pptx_6_u2",
+          "WR 11_18.pptx_19_u1",
+          "WR 11_18.pptx_19_u2",
+          "WR 11_18.pptx_19_u3",
+          "WR 07_22.pptx_4_u1",
+          "WR 07_22.pptx_4_u3",
+          "WR 10_14.pptx_10_u1",
+          "WR 10_14.pptx_10_u3",
+          "WR 07_14 - EunwooSong.pptx_16_u1",
+          "WR 9_23.pptx_10_u1",
+          "WR 9_23.pptx_10_u3",
+          "WR 10_14.pptx_3_u1",
+          "WR 9_23.pptx_28_u1",
+          "WR 9_23.pptx_28_u2",
+          "WR 9_23.pptx_28_u3",
+          "WR 1_14.pptx_11_u1",
+          "WR 1_14.pptx_11_u3",
+          "WR 07_14 - EunwooSong.pptx_11_u1",
+          "WR 07_14 - EunwooSong.pptx_11_u2",
+          "WR 07_14 - EunwooSong.pptx_11_u3",
+          "WR 9_23.pptx_35_u1",
+          "WR 9_23.pptx_35_u3",
+          "WR 9_23.pptx_32_u1",
+          "WR 07_01 - EunwooSong.pptx_14_u1",
+          "WR 07_01 - EunwooSong.pptx_21_u1",
+          "WR 07_01 - EunwooSong.pptx_21_u3",
+          "WR 11_18.pptx_24_u1",
+          "WR 11_18.pptx_24_u3",
+          "WR 07_01 - EunwooSong.pptx_26_u1",
+          "WR 07_01 - EunwooSong.pptx_26_u2",
+          "WR 07_01 - EunwooSong.pptx_26_u3",
+          "WR 07_01 - EunwooSong.pptx_38_u1",
+          "WR 1_14.pptx_15_u1",
+          "WR 11_18.pptx_16_u1",
+          "WR 11_18.pptx_16_u3",
+          "WR 07_01 - EunwooSong.pptx_13_u1",
+          "WR 07_01 - EunwooSong.pptx_13_u2",
+          "WR 07_01 - EunwooSong.pptx_13_u3"
+        ],
+        "thesis_alignment": "peripheral",
+        "coherence_score": 0.7
+      },
+      {
+        "cluster_id": "C2",
+        "cluster_type": "method",
+        "unit_ids": [
+          "WR 07_14 - EunwooSong.pptx_10_u1",
+          "WR 07_14 - EunwooSong.pptx_10_u2",
+          "WR 9_23.pptx_52_u1",
+          "WR 9_23.pptx_52_u3",
+          "WR 9_23.pptx_53_u1",
+          "WR 9_23.pptx_53_u2",
+          "WR 9_23.pptx_53_u3",
+          "WR 9_23.pptx_55_u1",
+          "WR 9_23.pptx_55_u3",
+          "WR 9_23.pptx_61_u1",
+          "WR 9_23.pptx_61_u2",
+          "WR 9_23.pptx_46_u1",
+          "WR 9_23.pptx_46_u3"
+        ],
+        "thesis_alignment": "solution_method",
+        "coherence_score": 0.53
+      },
+      {
+        "cluster_id": "C3",
+        "cluster_type": "result",
+        "unit_ids": [
+          "WR 07_14 - EunwooSong.pptx_13_u1",
+          "WR 07_14 - EunwooSong.pptx_13_u2",
+          "WR 1_14.pptx_3_u1",
+          "WR 07_14 - EunwooSong.pptx_24_u1",
+          "WR 07_14 - EunwooSong.pptx_24_u2",
+          "WR 9_23.pptx_50_u1",
+          "WR 9_23.pptx_50_u2",
+          "WR 9_23.pptx_50_u3",
+          "WR 9_23.pptx_62_u1",
+          "WR 9_23.pptx_62_u2",
+          "WR 9_23.pptx_62_u3"
+        ],
+        "thesis_alignment": "supporting_evidence",
+        "coherence_score": 0.52
+      },
+      {
+        "cluster_id": "C4",
+        "cluster_type": "method",
+        "unit_ids": [
+          "WR 8_26.pptx_10_u1",
+          "WR 8_26.pptx_10_u3",
+          "WR 07_01 - EunwooSong.pptx_34_u1",
+          "WR 07_01 - EunwooSong.pptx_34_u2",
+          "WR 07_14 - EunwooSong.pptx_27_u1",
+          "WR 07_14 - EunwooSong.pptx_27_u2",
+          "WR 07_14 - EunwooSong.pptx_27_u3",
+          "WR 12_23.pptx_8_u1"
+        ],
+        "thesis_alignment": "technical_detail",
+        "coherence_score": 0.49
+      },
+      {
+        "cluster_id": "C5",
+        "cluster_type": "contribution",
+        "unit_ids": [
+          "WR 8_5.pptx_13_u1",
+          "WR 8_5.pptx_13_u2",
+          "WR 9_23.pptx_22_u1",
+          "WR 9_23.pptx_22_u2",
+          "WR 9_23.pptx_22_u3",
+          "WR 07_14 - EunwooSong.pptx_4_u1",
+          "WR 07_14 - EunwooSong.pptx_4_u2"
+        ],
+        "thesis_alignment": "contribution",
+        "coherence_score": 0.47
+      },
+      {
+        "cluster_id": "C6",
+        "cluster_type": "result",
+        "unit_ids": [
+          "WR 9_2.pptx_7_u1",
+          "WR 9_2.pptx_7_u3",
+          "WR 9_2.pptx_6_u1",
+          "WR 9_2.pptx_6_u2",
+          "WR 9_2.pptx_6_u3",
+          "WR 11_18.pptx_9_u1"
+        ],
+        "thesis_alignment": "validation",
+        "coherence_score": 0.45
+      }
+    ],
+    "avg_coherence": 0.53,
+    "cluster_distribution": {
+      "background": 1,
+      "method": 2,
+      "result": 2,
+      "contribution": 1
+    }
+  },
+  "step3_consistency_validation": {
+    "model": "Flash",
+    "scores": {
+      "overall": 0.55,
+      "thesis_connection_rate": 0.49,
+      "logical_flow": 0.61
+    },
+    "gaps_detected": [
+      "Missing clear problem definition section"
+    ],
+    "suggestions": [
+      "Consider filtering peripheral content or strengthening thesis connections",
+      "Some clusters show low coherence - may need reorganization"
+    ]
+  },
+  "step4_pro_validation": {
+    "model": "Pro",
+    "scores": {
+      "quality": 0.63,
+      "completeness": 0.8
+    },
+    "critical_gaps": [
+      {
+        "gap_type": "missing_motivation",
+        "severity": "high",
+        "description": "Research problem and motivation not clearly articulated",
+        "impact": "Readers may not understand why this research is needed"
+      }
+    ],
+    "enhancement_suggestions": [
+      "Consider enriching content with more detailed explanations in low-quality clusters",
+      "Reorganize 5 weak clusters to improve coherence"
+    ]
+  },
+  "distribution_analysis": {
+    "thesis_connection": {
+      "peripheral": 47,
+      "solution_method": 13,
+      "supporting_evidence": 11,
+      "technical_detail": 8,
+      "contribution": 7,
+      "validation": 6
+    },
+    "concept_type": {
+      "result": 12,
+      "visual": 28,
+      "method": 10,
+      "detail": 19,
+      "general": 15,
+      "implementation": 4,
+      "contribution": 3,
+      "problem": 1
+    },
+    "importance": {
+      "high": 45,
+      "low": 7,
+      "medium": 40
+    }
+  },
+  "quality_assessment": {
+    "thesis_extraction": "Excellent - clear identification of core research claim and contributions",
+    "cluster_coherence": "Moderate - clusters show moderate internal consistency",
+    "thesis_alignment": "Moderate - 49% of units directly connect to thesis",
+    "completeness": "Good - 80% of essential components present",
+    "overall": "The distributed strategy effectively identified the research thesis and organized content around it. Consistency score of 0.55 indicates moderate alignment."
+  },
+  "cost_efficiency": {
+    "flash_calls": 3,
+    "pro_calls": 1,
+    "estimated_cost": "Low - majority of processing done with Flash, Pro used only for final validation",
+    "vs_full_pro": "~70% cost reduction compared to full Pro processing"
+  },
+  "pros": [
+    "Clear thesis identification guides all downstream processing",
+    "Thesis-aware clustering creates semantically coherent groups",
+    "Multi-stage validation catches gaps early",
+    "Cost-efficient: Flash handles extraction, clustering, and consistency",
+    "Pro validation adds critical quality assurance at final stage",
+    "High thesis connection rate (49%) shows good alignment",
+    "Systematic gap detection enables targeted improvements"
+  ],
+  "cons": [
+    "Requires well-structured input with clear thesis (may struggle with exploratory research)",
+    "Four stages add latency compared to single-pass approaches",
+    "Thesis extraction quality depends on Flash model capability",
+    "Medium resolution may miss nuanced details needed for full thesis validation",
+    "Gap detection in Step 3 may identify issues but can't fix them automatically",
+    "1 critical gaps identified requiring manual review"
+  ],
+  "suitable_for": [
+    "Research papers with clear problem-solution-validation structure",
+    "Projects where thesis alignment is critical (academic papers, proposals)",
+    "Scenarios requiring cost-efficient multi-stage validation",
+    "Content that benefits from coherent clustering (section organization)",
+    "Cases where gap detection is valuable before final review"
+  ],
+  "not_suitable_for": [
+    "Exploratory research without clear thesis",
+    "Time-critical applications requiring single-pass processing",
+    "Content requiring fine-grained detail extraction (use high resolution)",
+    "Simple presentations without complex argumentation structure"
+  ],
+  "recommendations": {
+    "when_to_use": "Use this strategy for research papers and technical documents where thesis alignment and logical coherence are paramount",
+    "optimization": "If thesis is known beforehand, skip Step 1 and provide thesis directly to save one Flash call",
+    "scaling": "For large documents (100+ slides), consider parallel processing of clusters in Step 2",
+    "quality_threshold": "If Step 3 consistency score < 0.6, consider increasing resolution or restructuring content before Pro validation"
+  }
+}

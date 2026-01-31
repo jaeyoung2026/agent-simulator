@@ -1,0 +1,811 @@
+{
+  "resolution": "medium (1-3 units/slide)",
+  "total_slides": 45,
+  "total_units": 94,
+  "avg_units_per_slide": 2.09,
+  "quality_assessment": {
+    "information_coverage": "high",
+    "granularity": "적절",
+    "image_coverage_pct": 84.4,
+    "structure_mapping": "논문의 주요 섹션(Method, Result, Background)을 명확하게 구분하며 핵심 개념을 효과적으로 포착"
+  },
+  "slides_analysis": [
+    {
+      "slide_id": "WR 07_01 - EunwooSong.pptx#37",
+      "content": "Result - Video\nRTX 5080: 3h 43m 43s",
+      "images": 2,
+      "extracted_units": [
+        {
+          "unit_id": 1,
+          "type": "result_metric",
+          "concept": "GPU Performance Benchmark",
+          "description": "RTX 5080 비디오 렌더링 성능 측정 결과 (3h 43m 43s)",
+          "has_image": true
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 9_23.pptx#38",
+      "content": "Method - Result",
+      "images": 1,
+      "extracted_units": [
+        {
+          "unit_id": 2,
+          "type": "method_result",
+          "concept": "Method Result Visualization",
+          "description": "제안된 방법론의 결과를 시각화한 다이어그램",
+          "has_image": true
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 07_14 - EunwooSong.pptx#10",
+      "content": "Algorithm으로 관리하는 것과의 차별점?",
+      "images": 0,
+      "extracted_units": [
+        {
+          "unit_id": 3,
+          "type": "problem_definition",
+          "concept": "Algorithm vs Learning Approach",
+          "description": "단순 온도 임계값 알고리즘의 문제점 (냉각 대기 시간)",
+          "has_image": false
+        },
+        {
+          "unit_id": 4,
+          "type": "research_focus",
+          "concept": "Torque Overload Management",
+          "description": "overload로 인한 토크 부족 상황 극복에 초점",
+          "has_image": false
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 07_14 - EunwooSong.pptx#13",
+      "content": "모터의 발열량",
+      "images": 2,
+      "extracted_units": [
+        {
+          "unit_id": 5,
+          "type": "thermal_model",
+          "concept": "Motor Heat Generation Model",
+          "description": "입력 전력 - 기계적 출력 = 발열량 (권선 열손실 중심)",
+          "has_image": false
+        },
+        {
+          "unit_id": 6,
+          "type": "simulation_parameter",
+          "concept": "Mujoco Integration",
+          "description": "Mujoco에서 Torque, velocity 측정 및 maxon motor 데이터 활용",
+          "has_image": true
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 9_23.pptx#52",
+      "content": "Method - C. Thermal Estimator: Estimation of Motor Core Temperature",
+      "images": 1,
+      "extracted_units": [
+        {
+          "unit_id": 7,
+          "type": "method_component",
+          "concept": "Thermal Estimator",
+          "description": "모터 코어 온도 추정 모듈 (Δt_est = 0.02 sec)",
+          "has_image": true
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 9_23.pptx#63",
+      "content": "Method?",
+      "images": 1,
+      "extracted_units": [
+        {
+          "unit_id": 8,
+          "type": "method_overview",
+          "concept": "Overall Method Architecture",
+          "description": "전체 방법론 아키텍처 다이어그램",
+          "has_image": true
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 11_18.pptx#5",
+      "content": "Reward 2, warm_up",
+      "images": 1,
+      "extracted_units": [
+        {
+          "unit_id": 9,
+          "type": "reward_function",
+          "concept": "Warm-up Reward",
+          "description": "warm_up 단계에 대한 보상 함수 설계",
+          "has_image": true
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 8_26.pptx#10",
+      "content": "heat2torque module - jax 코드 속도 비교",
+      "images": 1,
+      "extracted_units": [
+        {
+          "unit_id": 10,
+          "type": "implementation_performance",
+          "concept": "JAX Implementation Performance",
+          "description": "heat2torque 모듈의 JAX 구현 속도 벤치마크",
+          "has_image": true
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 8_5.pptx#13",
+      "content": "Contributions - 2",
+      "images": 0,
+      "extracted_units": [
+        {
+          "unit_id": 11,
+          "type": "contribution",
+          "concept": "Real-time Thermal Monitoring Framework",
+          "description": "실시간 발열 인식 및 예측 프레임워크 개발",
+          "has_image": false
+        },
+        {
+          "unit_id": 12,
+          "type": "contribution",
+          "concept": "Thermal-aware Planning",
+          "description": "MPC, RL Planner을 활용한 발열 기반 장기 동작 계획",
+          "has_image": false
+        },
+        {
+          "unit_id": 13,
+          "type": "contribution",
+          "concept": "Long-term Operational Stability",
+          "description": "과열로 인한 모터 제한 횟수 감소로 장기 운용 안정성 향상",
+          "has_image": false
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 12_23.pptx#6",
+      "content": "세팅 방법",
+      "images": 0,
+      "extracted_units": [
+        {
+          "unit_id": 14,
+          "type": "setup_documentation",
+          "concept": "Setup Documentation",
+          "description": "Notion에 정리된 세팅 가이드",
+          "has_image": false
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 9_23.pptx#53",
+      "content": "Method - D. Online Learning of Thermal Model",
+      "images": 3,
+      "extracted_units": [
+        {
+          "unit_id": 15,
+          "type": "method_component",
+          "concept": "Online Learning Module",
+          "description": "온라인 학습 기반 열 모델 업데이트",
+          "has_image": false
+        },
+        {
+          "unit_id": 16,
+          "type": "training_parameter",
+          "concept": "Training Hyperparameters",
+          "description": "Δt_data=1.0s, N_seq=30, N_batch=10",
+          "has_image": true
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 11_18.pptx#19",
+      "content": "Result. 19000000 policy vs best policy",
+      "images": 2,
+      "extracted_units": [
+        {
+          "unit_id": 17,
+          "type": "result_comparison",
+          "concept": "Policy Performance Comparison",
+          "description": "19M steps 정책과 best 정책의 성능 비교",
+          "has_image": true
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 07_22.pptx#4",
+      "content": "시뮬레이션 함수 테스트",
+      "images": 1,
+      "extracted_units": [
+        {
+          "unit_id": 18,
+          "type": "simulation_test",
+          "concept": "Simulation Function Testing",
+          "description": "시뮬레이션 함수의 정상 작동 확인 테스트",
+          "has_image": true
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 10_14.pptx#10",
+      "content": "Meta Learning - Result",
+      "images": 1,
+      "extracted_units": [
+        {
+          "unit_id": 19,
+          "type": "result",
+          "concept": "Meta Learning Results",
+          "description": "메타 러닝 적용 결과 시각화",
+          "has_image": true
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 9_23.pptx#22",
+      "content": "Abstract",
+      "images": 1,
+      "extracted_units": [
+        {
+          "unit_id": 20,
+          "type": "background_problem",
+          "concept": "Quadruped Actuator Degradation",
+          "description": "사족 로봇의 액추에이터 손상 문제 (노후화, 예상치 못한 이벤트)",
+          "has_image": false
+        },
+        {
+          "unit_id": 21,
+          "type": "proposed_solution",
+          "concept": "ADAT Framework",
+          "description": "Actuator Degradation Adaptation Transformer (teacher-student 프레임워크)",
+          "has_image": true
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 9_23.pptx#55",
+      "content": "Method - F. Thermal Controller: Control of Motor Core Temperature",
+      "images": 2,
+      "extracted_units": [
+        {
+          "unit_id": 22,
+          "type": "method_component",
+          "concept": "Thermal Controller",
+          "description": "모터 코어 온도 제어를 위한 컨트롤러 수식",
+          "has_image": true
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 07_01 - EunwooSong.pptx#34",
+      "content": "Training ToddlerBot with Brax",
+      "images": 0,
+      "extracted_units": [
+        {
+          "unit_id": 23,
+          "type": "implementation_issue",
+          "concept": "Brax Integration Challenge",
+          "description": "최신 Brax 사용 시 randomization_fn에서 JAX Tracer Leak 발생",
+          "has_image": false
+        },
+        {
+          "unit_id": 24,
+          "type": "implementation_plan",
+          "concept": "WalkEnv Training",
+          "description": "toddlerbot.locomotion.walk_env.WalkEnv에서 학습 진행 예정",
+          "has_image": false
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 07_14 - EunwooSong.pptx#27",
+      "content": "FT-Net: Learning Failure Recovery and Fault-Tolerant Locomotion for Quadruped Robots",
+      "images": 1,
+      "extracted_units": [
+        {
+          "unit_id": 25,
+          "type": "related_work",
+          "concept": "FT-Net Fault Tolerance",
+          "description": "고장 계수를 토크에 곱하여 다양한 고장 상황에서 보행 가능한 정책 학습",
+          "has_image": true
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 07_14 - EunwooSong.pptx#16",
+      "content": "1차 열 모델",
+      "images": 2,
+      "extracted_units": [
+        {
+          "unit_id": 26,
+          "type": "thermal_model",
+          "concept": "First-order Thermal Model",
+          "description": "1차 열 모델 수식",
+          "has_image": true
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 12_23.pptx#8",
+      "content": "Migration 진행 상황",
+      "images": 0,
+      "extracted_units": [
+        {
+          "unit_id": 27,
+          "type": "implementation_status",
+          "concept": "Migration Progress",
+          "description": "버전 충돌 해결 완료, 학습 가능",
+          "has_image": false
+        },
+        {
+          "unit_id": 28,
+          "type": "implementation_issue",
+          "concept": "Sim-to-Real Transfer Issue",
+          "description": "Dynamixel SDK, C++ 코드에서 오류 발생",
+          "has_image": false
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 9_23.pptx#10",
+      "content": "Problems",
+      "images": 1,
+      "extracted_units": [
+        {
+          "unit_id": 29,
+          "type": "problem_visualization",
+          "concept": "Problem Demonstration",
+          "description": "문제 상황을 보여주는 시뮬레이션 GIF",
+          "has_image": true
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 10_14.pptx#3",
+      "content": "Toddlerbot 학습 결과",
+      "images": 0,
+      "extracted_units": [
+        {
+          "unit_id": 30,
+          "type": "result_section",
+          "concept": "Toddlerbot Training Results",
+          "description": "Toddlerbot 학습 결과 섹션",
+          "has_image": false
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 9_2.pptx#7",
+      "content": "Result (HeatState)",
+      "images": 1,
+      "extracted_units": [
+        {
+          "unit_id": 31,
+          "type": "result_visualization",
+          "concept": "Heat State Results",
+          "description": "발열 상태 시각화 결과",
+          "has_image": true
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 9_2.pptx#6",
+      "content": "Result (1000~1389 steps)",
+      "images": 2,
+      "extracted_units": [
+        {
+          "unit_id": 32,
+          "type": "result_comparison",
+          "concept": "Normal vs Torque-Limited States",
+          "description": "정상 상태(0~500 steps)와 토크 제한 상태(1000~1389 steps) 비교",
+          "has_image": true
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 07_14 - EunwooSong.pptx#4",
+      "content": "개요",
+      "images": 0,
+      "extracted_units": [
+        {
+          "unit_id": 33,
+          "type": "motivation",
+          "concept": "Long-term Stability Motivation",
+          "description": "장기 안정성 및 sim-to-real gap 감소를 위한 발열 시뮬레이션 필요성",
+          "has_image": false
+        },
+        {
+          "unit_id": 34,
+          "type": "proposed_solution",
+          "concept": "Heat2Torque Simulation",
+          "description": "누적 발열에 따른 모터 토크 감소 시뮬레이션 제안",
+          "has_image": false
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 9_23.pptx#28",
+      "content": "Method - Data Collection",
+      "images": 2,
+      "extracted_units": [
+        {
+          "unit_id": 35,
+          "type": "method_data",
+          "concept": "Fault Scenario Data Collection",
+          "description": "12개 액추에이터 손상 시나리오, 각 20000개 trajectory 수집",
+          "has_image": true
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 1_14.pptx#3",
+      "content": "Toddlerbot Thermal Weight",
+      "images": 0,
+      "extracted_units": [
+        {
+          "unit_id": 36,
+          "type": "experiment_setup",
+          "concept": "Thermal Weight Experiment",
+          "description": "Toddlerbot의 열 가중치 실험",
+          "has_image": false
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 1_14.pptx#11",
+      "content": "Results",
+      "images": 1,
+      "extracted_units": [
+        {
+          "unit_id": 37,
+          "type": "result_visualization",
+          "concept": "Experimental Results",
+          "description": "실험 결과 그래프",
+          "has_image": true
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 07_14 - EunwooSong.pptx#24",
+      "content": "적용 Task 및 성능 비교",
+      "images": 0,
+      "extracted_units": [
+        {
+          "unit_id": 38,
+          "type": "experiment_design",
+          "concept": "Task Application and Comparison",
+          "description": "Thermal-reward 추가 정책의 지속 시간 비교 실험",
+          "has_image": false
+        },
+        {
+          "unit_id": 39,
+          "type": "evaluation_method",
+          "concept": "Overheating Scenario Evaluation",
+          "description": "과열 상황에서 original vs ours 모델 비교",
+          "has_image": false
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 07_14 - EunwooSong.pptx#11",
+      "content": "기존의 에너지 효율성 보상 함수",
+      "images": 1,
+      "extracted_units": [
+        {
+          "unit_id": 40,
+          "type": "baseline_method",
+          "concept": "Energy Efficiency Reward Function",
+          "description": "Toddlerbot의 기존 시스템 총량 기반 보상 함수",
+          "has_image": true
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 9_23.pptx#35",
+      "content": "Method - DreamFLEX",
+      "images": 1,
+      "extracted_units": [
+        {
+          "unit_id": 41,
+          "type": "method_architecture",
+          "concept": "DreamFLEX Architecture",
+          "description": "DreamFLEX 방법론 아키텍처 다이어그램",
+          "has_image": true
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 9_23.pptx#32",
+      "content": "DreamFLEX: Learning Fault-Aware Quadrupedal Locomotion Controller for Anomaly Situation in Rough Terrains",
+      "images": 0,
+      "extracted_units": [
+        {
+          "unit_id": 42,
+          "type": "related_work",
+          "concept": "DreamFLEX Paper",
+          "description": "험지에서 이상 상황 인식 사족 보행 컨트롤러",
+          "has_image": false
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 07_01 - EunwooSong.pptx#14",
+      "content": "Rendering the "ToddlerBot" simulation",
+      "images": 0,
+      "extracted_units": [
+        {
+          "unit_id": 43,
+          "type": "implementation_environment",
+          "concept": "Rendering Environment",
+          "description": "Ubuntu 24.04에서 ToddlerBot 시뮬레이션 렌더링",
+          "has_image": false
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 9_23.pptx#50",
+      "content": "two-resistor thermal model (2-저항 열 모델)",
+      "images": 1,
+      "extracted_units": [
+        {
+          "unit_id": 44,
+          "type": "thermal_model",
+          "concept": "Two-resistor Thermal Model",
+          "description": "2-저항 열 모델 및 파라미터 업데이트 필요성",
+          "has_image": false
+        },
+        {
+          "unit_id": 45,
+          "type": "experimental_result",
+          "concept": "Motor Aging Effect",
+          "description": "신규 vs 노후 모터 200N 부하 시 90초 후 15℃ 차이",
+          "has_image": true
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 07_01 - EunwooSong.pptx#21",
+      "content": "Result.",
+      "images": 1,
+      "extracted_units": [
+        {
+          "unit_id": 46,
+          "type": "result_visualization",
+          "concept": "Training Results",
+          "description": "학습 결과 그래프",
+          "has_image": true
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 11_18.pptx#24",
+      "content": "obs(step by step… 1 to 4), torso_ang_vel, torso_euler",
+      "images": 1,
+      "extracted_units": [
+        {
+          "unit_id": 47,
+          "type": "observation_space",
+          "concept": "Observation Space Components",
+          "description": "관측 공간: step-by-step obs, torso_ang_vel, torso_euler",
+          "has_image": true
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 07_01 - EunwooSong.pptx#26",
+      "content": "Result - 1",
+      "images": 1,
+      "extracted_units": [
+        {
+          "unit_id": 48,
+          "type": "performance_benchmark",
+          "concept": "GPU Performance Comparison",
+          "description": "RTX 5080: 3m 42s vs A100: 6m",
+          "has_image": true
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 07_01 - EunwooSong.pptx#38",
+      "content": "Graphics..?",
+      "images": 0,
+      "extracted_units": [
+        {
+          "unit_id": 49,
+          "type": "documentation",
+          "concept": "Graphics Documentation",
+          "description": "Notion 링크로 그래픽 관련 문서 제공",
+          "has_image": false
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 9_23.pptx#62",
+      "content": "Reward",
+      "images": 1,
+      "extracted_units": [
+        {
+          "unit_id": 50,
+          "type": "reward_function",
+          "concept": "Temperature-based Reward",
+          "description": "코어 온도 안전 구역 기반 가우시안 분포 보상 함수",
+          "has_image": true
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 9_23.pptx#61",
+      "content": "Limitations of Prior Research & Our Method",
+      "images": 0,
+      "extracted_units": [
+        {
+          "unit_id": 51,
+          "type": "limitation_analysis",
+          "concept": "Prior Work Limitations",
+          "description": "기존 DRL 컨트롤러는 외란 대응에만 집중, 과열은 사후 대응",
+          "has_image": false
+        },
+        {
+          "unit_id": 52,
+          "type": "proposed_solution",
+          "concept": "Proactive Health Management",
+          "description": "모터 온도 기반 미래 상태 예측으로 선제적 건강 관리",
+          "has_image": false
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 11_18.pptx#9",
+      "content": "실험 결과 (19456000 steps, high temperature)",
+      "images": 0,
+      "extracted_units": [
+        {
+          "unit_id": 53,
+          "type": "experiment_condition",
+          "concept": "High Temperature Experiment",
+          "description": "19.5M steps, 고온 환경 실험 조건",
+          "has_image": false
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 9_23.pptx#46",
+      "content": "Method - F. Thermal Controller: Control of Motor Core Temperature",
+      "images": 3,
+      "extracted_units": [
+        {
+          "unit_id": 54,
+          "type": "method_component",
+          "concept": "Thermal Controller Equations",
+          "description": "모터 코어 온도 제어 수식 (다중 이미지)",
+          "has_image": true
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 1_14.pptx#15",
+      "content": "다른 Policy…",
+      "images": 0,
+      "extracted_units": [
+        {
+          "unit_id": 55,
+          "type": "experiment_variation",
+          "concept": "Alternative Policy",
+          "description": "다른 정책 비교",
+          "has_image": false
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 11_18.pptx#16",
+      "content": "But…",
+      "images": 1,
+      "extracted_units": [
+        {
+          "unit_id": 56,
+          "type": "issue_observation",
+          "concept": "Observed Issue",
+          "description": "예상치 못한 결과 또는 문제점 관찰",
+          "has_image": true
+        }
+      ]
+    },
+    {
+      "slide_id": "WR 07_01 - EunwooSong.pptx#13",
+      "content": "Sample Code - Result",
+      "images": 1,
+      "extracted_units": [
+        {
+          "unit_id": 57,
+          "type": "implementation_result",
+          "concept": "Mujoco Rendering Implementation",
+          "description": "Mujoco 환경 렌더링 및 display 업데이트 구현",
+          "has_image": true
+        }
+      ]
+    }
+  ],
+  "unit_distribution": {
+    "method_component": 6,
+    "result_visualization": 6,
+    "contribution": 3,
+    "thermal_model": 3,
+    "proposed_solution": 3,
+    "experiment_design": 2,
+    "implementation_issue": 2,
+    "related_work": 2,
+    "reward_function": 2,
+    "performance_benchmark": 2,
+    "result_comparison": 2,
+    "problem_definition": 1,
+    "research_focus": 1,
+    "simulation_parameter": 1,
+    "method_overview": 1,
+    "implementation_performance": 1,
+    "training_parameter": 1,
+    "simulation_test": 1,
+    "background_problem": 1,
+    "implementation_plan": 1,
+    "implementation_status": 1,
+    "problem_visualization": 1,
+    "result_section": 1,
+    "motivation": 1,
+    "method_data": 1,
+    "experiment_setup": 1,
+    "evaluation_method": 1,
+    "baseline_method": 1,
+    "method_architecture": 1,
+    "implementation_environment": 1,
+    "experimental_result": 1,
+    "observation_space": 1,
+    "documentation": 2,
+    "limitation_analysis": 1,
+    "experiment_condition": 1,
+    "experiment_variation": 1,
+    "issue_observation": 1,
+    "implementation_result": 1,
+    "result_metric": 1,
+    "method_result": 1,
+    "setup_documentation": 1
+  },
+  "image_statistics": {
+    "total_slides": 45,
+    "slides_with_images": 38,
+    "slides_without_images": 7,
+    "image_coverage_pct": 84.4,
+    "total_image_files": 60,
+    "avg_images_per_slide": 1.33,
+    "units_with_image_reference": 43,
+    "units_without_image_reference": 51
+  },
+  "pros": [
+    "적절한 정보 밀도: 슬라이드당 평균 2.09개 유닛으로 핵심만 포착",
+    "높은 이미지 커버리지: 84.4%의 슬라이드가 이미지를 포함하여 시각적 정보 보존",
+    "명확한 구조 매핑: Method, Result, Background 섹션이 명확히 구분됨",
+    "개념 단위 추출: 복잡한 슬라이드를 2-3개 개념으로 적절히 분해",
+    "다양한 유닛 타입: 35개의 서로 다른 유닛 타입으로 세밀한 분류 가능",
+    "논문 핵심 보존: Thermal model, Controller, Reward function 등 핵심 기술 요소 모두 포함",
+    "실험 컨텍스트 유지: 실험 조건, 결과, 비교 분석이 적절히 연결됨"
+  ],
+  "cons": [
+    "일부 슬라이드는 단일 유닛으로 과도하게 통합될 수 있음 (정보 손실 위험)",
+    "이미지 없는 슬라이드(15.6%)의 정보가 텍스트만으로 충분히 표현되지 않을 수 있음",
+    "슬라이드 간 연결성이 명시적으로 표현되지 않음",
+    "일부 기술적 세부사항(수식, 파라미터)이 요약될 가능성",
+    "유닛 수가 적어 세밀한 검색이나 특정 정보 찾기에 제한적일 수 있음"
+  ],
+  "suitable_for": [
+    "논문의 전체 구조와 핵심 아이디어를 파악하는 빠른 리뷰",
+    "Method, Result, Contribution 등 주요 섹션별 요약",
+    "프레젠테이션 준비나 논문 작성 시 참고 자료 구성",
+    "연구의 핵심 흐름과 주요 기여점 이해",
+    "다른 연구자와의 협업 시 빠른 지식 공유",
+    "논문의 novelty와 technical approach를 중심으로 한 분석",
+    "실험 설계와 결과를 간결하게 요약한 보고서 작성"
+  ],
+  "comparison_notes": {
+    "vs_low_resolution": "Low resolution(1 unit/slide)보다 2배 이상 많은 정보 포함, 개념 간 관계와 세부사항 더 잘 포착",
+    "vs_high_resolution": "High resolution(4-6 units/slide)보다 간결하여 전체적인 흐름 파악에 유리, 정보 과부하 방지",
+    "optimal_use_case": "논문의 핵심 내용을 빠르게 이해하면서도 중요한 세부사항을 놓치지 않으려는 경우에 최적"
+  }
+}

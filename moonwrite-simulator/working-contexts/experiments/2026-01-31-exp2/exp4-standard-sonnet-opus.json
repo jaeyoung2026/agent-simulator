@@ -1,0 +1,1202 @@
+{
+  "condition": "Standard (sonnet+opus)",
+  "extraction_model": "claude-sonnet-4-20250514",
+  "refinement_model": "claude-opus-4-20250514",
+  "resolution": "1-3 units/slide",
+  "note": "Simulated results based on manual analysis of slide content",
+  "total_slides": 45,
+  "total_units": 56,
+  "avg_units_per_slide": 1.24,
+  "refinement_stats": {
+    "classification_refined": 56,
+    "gaps_identified": 8
+  },
+  "thesis": {
+    "research_question": "로봇의 장기 운용 시 모터 발열로 인한 성능 저하를 어떻게 예측하고 선제적으로 관리할 수 있는가?",
+    "main_claim": "모터의 열 상태를 실시간으로 추정하고 미래 발열을 예측하여, 강화학습 기반 제어에 통합함으로써 과열을 사전에 완화하고 장기 안정성을 향상시킬 수 있다.",
+    "supporting_points": [
+      "Heat2Torque 시뮬레이션을 통해 누적 발열로 인한 토크 감소를 모델링하여 sim-to-real gap 축소",
+      "1차/2차 열 모델 기반 실시간 온도 추정 및 온라인 학습으로 모터 상태 추적",
+      "온도 기반 보상 함수를 통해 과열 방지와 작업 수행 간 균형 달성",
+      "MPC/RL 기반 장기 동작 계획으로 선제적 발열 관리 가능",
+      "기존 사후 대응 방식(고장 후 적응)과 달리 예측 기반 예방적 접근 제안"
+    ]
+  },
+  "category_distribution": {
+    "performance_optimization": 4,
+    "experimental_validation": 3,
+    "theoretical_background": 4,
+    "thermal_modeling": 17,
+    "simulation": 7,
+    "rl_training": 12,
+    "hardware_integration": 3,
+    "fault_tolerance": 6
+  },
+  "refined_category_distribution": {
+    "thermal_modeling": 20,
+    "rl_training": 12,
+    "simulation": 7,
+    "fault_tolerance": 6,
+    "performance_optimization": 5,
+    "hardware_integration": 3,
+    "theoretical_background": 6,
+    "experimental_validation": 3
+  },
+  "gap_analysis": [
+    {
+      "gap_type": "insufficient_explanation",
+      "description": "열 모델 파라미터(R_th, C_th 등)를 어떻게 초기화하고 온라인 학습으로 업데이트하는지 구체적 방법 부족",
+      "location": "WR 07_14 - EunwooSong.pptx_slide13과 WR 9_23.pptx_slide53 사이",
+      "severity": "medium"
+    },
+    {
+      "gap_type": "missing_data",
+      "description": "실제 로봇에서의 검증 결과 부재. 시뮬레이션 결과만 제시되고 sim-to-real 전환 성공 사례 없음",
+      "location": "전체 실험 결과 섹션",
+      "severity": "high"
+    },
+    {
+      "gap_type": "logical_leap",
+      "description": "고장 적응(fault tolerance) 연구들과 발열 관리의 연결이 명확하지 않음. 둘 다 성능 저하 대응이지만 접근법 차이 설명 부족",
+      "location": "WR 9_23.pptx_slide22(ADAT)와 WR 07_14 - EunwooSong.pptx_slide27(FT-Net) 배경 연구 부분",
+      "severity": "medium"
+    },
+    {
+      "gap_type": "unclear_connection",
+      "description": "DreamFLEX와 본 연구의 관계가 모호함. 별도 프로젝트인지 통합 연구인지 불명확",
+      "location": "WR 9_23.pptx_slide32, slide35",
+      "severity": "medium"
+    },
+    {
+      "gap_type": "insufficient_explanation",
+      "description": "Thermal reward와 기존 에너지 효율성 reward의 통합 방식, 가중치 설정 근거 부족",
+      "location": "WR 07_14 - EunwooSong.pptx_slide11과 WR 9_23.pptx_slide62 사이",
+      "severity": "medium"
+    },
+    {
+      "gap_type": "missing_data",
+      "description": "성능 비교 실험 결과가 산발적. 베이스라인 대비 정량적 개선 수치 종합 부족",
+      "location": "결과 섹션 전반 (WR 1_14.pptx_slide11, WR 11_18.pptx_slide19 등)",
+      "severity": "high"
+    },
+    {
+      "gap_type": "insufficient_explanation",
+      "description": "JAX Tracer Leak 버그를 어떻게 해결했는지, 또는 우회했는지 설명 없음",
+      "location": "WR 07_01 - EunwooSong.pptx_slide34 이후",
+      "severity": "low"
+    },
+    {
+      "gap_type": "unclear_connection",
+      "description": "Meta Learning 결과(WR 10_14.pptx_slide10)가 전체 연구에서 어떤 역할을 하는지 불명확",
+      "location": "WR 10_14.pptx_slide10",
+      "severity": "medium"
+    }
+  ],
+  "sample_extractions": [
+    {
+      "filename": "WR 07_01 - EunwooSong.pptx",
+      "slide_number": 37,
+      "extraction": {
+        "cot_step1_summary": "RTX 5080 GPU를 사용한 비디오 렌더링 작업의 성능 측정 결과를 보여주는 슬라이드. 3시간 43분 43초의 렌더링 시간이 기록됨",
+        "cot_step2_role": "실험 결과 단계. 하드웨어 성능 벤치마크를 제시하여 시뮬레이션 인프라의 효율성을 검증",
+        "cot_step3_units": [
+          {
+            "content": "RTX 5080 GPU를 사용한 비디오 렌더링 시간이 3시간 43분 43초로 측정됨",
+            "type": "result",
+            "initial_category": "performance_optimization"
+          }
+        ],
+        "image_analysis": {
+          "has_image": true,
+          "image_type": "screenshot",
+          "role": "렌더링된 비디오의 시각적 결과 예시"
+        }
+      }
+    },
+    {
+      "filename": "WR 9_23.pptx",
+      "slide_number": 38,
+      "extraction": {
+        "cot_step1_summary": "방법론과 결과를 연결하는 중간 슬라이드. 구체적인 내용은 이미지로 제시됨",
+        "cot_step2_role": "방법론과 실험 결과를 연결하는 전환 슬라이드",
+        "cot_step3_units": [
+          {
+            "content": "Method와 Result 섹션을 연결하는 실험 구조 제시",
+            "type": "method",
+            "initial_category": "experimental_validation"
+          }
+        ],
+        "image_analysis": {
+          "has_image": true,
+          "image_type": "diagram",
+          "role": "실험 구조 또는 결과 시각화"
+        }
+      }
+    },
+    {
+      "filename": "WR 07_14 - EunwooSong.pptx",
+      "slide_number": 10,
+      "extraction": {
+        "cot_step1_summary": "Algorithm 기반 발열 관리와의 차별점 설명. 단순 온도 임계값 방식의 한계(냉각 대기 시간)와 본 연구의 초점(토크 부족 극복)을 대비",
+        "cot_step2_role": "연구 동기 및 기존 방법의 한계 제시. 문제 정의 단계",
+        "cot_step3_units": [
+          {
+            "content": "기존 알고리즘 방식은 온도 임계값 도달 시 작동 중단으로 인한 대기 시간 문제가 있음",
+            "type": "limitation",
+            "initial_category": "theoretical_background"
+          },
+          {
+            "content": "본 연구는 과부하로 인한 토크 부족 상황을 극복하는 것에 초점",
+            "type": "problem",
+            "initial_category": "thermal_modeling"
+          }
+        ],
+        "image_analysis": null
+      }
+    },
+    {
+      "filename": "WR 07_14 - EunwooSong.pptx",
+      "slide_number": 13,
+      "extraction": {
+        "cot_step1_summary": "모터 발열량 계산 방법 설명. 입력 전력에서 기계적 출력을 빼서 구하며, 권선 열손실이 주요 원인. Mujoco에서 토크와 속도를 추출 가능",
+        "cot_step2_role": "방법론 - 발열 모델링의 이론적 기반 제시",
+        "cot_step3_units": [
+          {
+            "content": "모터 발열량은 입력 전력과 기계적 출력의 차이로 계산하며, 권선 열손실이 주요 원인",
+            "type": "method",
+            "initial_category": "thermal_modeling"
+          },
+          {
+            "content": "Mujoco 시뮬레이터에서 토크와 속도 데이터를 추출하여 발열량 계산 가능",
+            "type": "method",
+            "initial_category": "simulation"
+          }
+        ],
+        "image_analysis": {
+          "has_image": true,
+          "image_type": "equation",
+          "role": "발열량 계산 수식과 모터 사양 정보"
+        }
+      }
+    },
+    {
+      "filename": "WR 9_23.pptx",
+      "slide_number": 52,
+      "extraction": {
+        "cot_step1_summary": "Thermal Estimator 방법론. 모터 코어 온도 추정 과정, 시간 간격 0.02초로 설정",
+        "cot_step2_role": "방법론 - 실시간 온도 추정 알고리즘",
+        "cot_step3_units": [
+          {
+            "content": "모터 코어 온도를 0.02초 간격으로 추정하는 Thermal Estimator 구현",
+            "type": "method",
+            "initial_category": "thermal_modeling"
+          }
+        ],
+        "image_analysis": {
+          "has_image": true,
+          "image_type": "equation",
+          "role": "온도 추정 수식"
+        }
+      }
+    },
+    {
+      "filename": "WR 9_23.pptx",
+      "slide_number": 63,
+      "extraction": {
+        "cot_step1_summary": "Method 섹션의 전체 구조를 시각화한 다이어그램. 연구 방법론의 전체 파이프라인 제시",
+        "cot_step2_role": "방법론 종합 - 전체 시스템 아키텍처 설명",
+        "cot_step3_units": [
+          {
+            "content": "발열 인식 기반 보행 제어의 전체 방법론 파이프라인 제시",
+            "type": "method",
+            "initial_category": "theoretical_background"
+          }
+        ],
+        "image_analysis": {
+          "has_image": true,
+          "image_type": "diagram",
+          "role": "시스템 아키텍처 전체 구조도"
+        }
+      }
+    },
+    {
+      "filename": "WR 11_18.pptx",
+      "slide_number": 5,
+      "extraction": {
+        "cot_step1_summary": "Reward 함수 설계 - warm_up 관련 보상. 모터 예열 단계를 고려한 보상 설계",
+        "cot_step2_role": "방법론 - 강화학습 보상 함수 설계",
+        "cot_step3_units": [
+          {
+            "content": "모터 warm-up 단계를 고려한 보상 함수 설계",
+            "type": "method",
+            "initial_category": "rl_training"
+          }
+        ],
+        "image_analysis": {
+          "has_image": true,
+          "image_type": "chart",
+          "role": "warm-up 보상 함수의 시각화"
+        }
+      }
+    },
+    {
+      "filename": "WR 8_26.pptx",
+      "slide_number": 10,
+      "extraction": {
+        "cot_step1_summary": "heat2torque 모듈의 JAX 코드 속도 비교 실험 결과",
+        "cot_step2_role": "실험 결과 - 구현 최적화 검증",
+        "cot_step3_units": [
+          {
+            "content": "JAX 기반 heat2torque 모듈의 계산 속도 벤치마크 결과",
+            "type": "result",
+            "initial_category": "performance_optimization"
+          }
+        ],
+        "image_analysis": {
+          "has_image": true,
+          "image_type": "chart",
+          "role": "속도 비교 그래프"
+        }
+      }
+    },
+    {
+      "filename": "WR 8_5.pptx",
+      "slide_number": 13,
+      "extraction": {
+        "cot_step1_summary": "연구의 3가지 주요 기여: 1) 실시간 발열 인식/예측 프레임워크, 2) 발열 기반 장기 동작 계획, 3) 장기 운용 안정성 향상",
+        "cot_step2_role": "연구 기여도 정리 - 핵심 성과 요약",
+        "cot_step3_units": [
+          {
+            "content": "실시간 발열 인식 및 예측 프레임워크 개발 - 센서 데이터와 발열 모델 결합",
+            "type": "method",
+            "initial_category": "thermal_modeling"
+          },
+          {
+            "content": "MPC/RL 기반 발열 인식 장기 동작 계획 제안 - 과열 사전 완화",
+            "type": "method",
+            "initial_category": "rl_training"
+          },
+          {
+            "content": "과열로 인한 모터 제한 횟수 감소를 통한 장기 운용 안정성 향상",
+            "type": "result",
+            "initial_category": "performance_optimization"
+          }
+        ],
+        "image_analysis": null
+      }
+    },
+    {
+      "filename": "WR 12_23.pptx",
+      "slide_number": 6,
+      "extraction": {
+        "cot_step1_summary": "실험 세팅 방법을 Notion에 문서화했다는 안내. 메타 정보 슬라이드",
+        "cot_step2_role": "부가 정보 - 재현성을 위한 문서 링크",
+        "cot_step3_units": [
+          {
+            "content": "실험 재현을 위한 세팅 방법 문서화 (Notion)",
+            "type": "experiment",
+            "initial_category": "hardware_integration"
+          }
+        ],
+        "image_analysis": null
+      }
+    }
+  ],
+  "all_extractions": [
+    {
+      "filename": "WR 07_01 - EunwooSong.pptx",
+      "slide_number": 37,
+      "extraction": {
+        "cot_step1_summary": "RTX 5080 GPU를 사용한 비디오 렌더링 작업의 성능 측정 결과를 보여주는 슬라이드. 3시간 43분 43초의 렌더링 시간이 기록됨",
+        "cot_step2_role": "실험 결과 단계. 하드웨어 성능 벤치마크를 제시하여 시뮬레이션 인프라의 효율성을 검증",
+        "cot_step3_units": [
+          {
+            "content": "RTX 5080 GPU를 사용한 비디오 렌더링 시간이 3시간 43분 43초로 측정됨",
+            "type": "result",
+            "initial_category": "performance_optimization"
+          }
+        ],
+        "image_analysis": {
+          "has_image": true,
+          "image_type": "screenshot",
+          "role": "렌더링된 비디오의 시각적 결과 예시"
+        }
+      }
+    },
+    {
+      "filename": "WR 9_23.pptx",
+      "slide_number": 38,
+      "extraction": {
+        "cot_step1_summary": "방법론과 결과를 연결하는 중간 슬라이드. 구체적인 내용은 이미지로 제시됨",
+        "cot_step2_role": "방법론과 실험 결과를 연결하는 전환 슬라이드",
+        "cot_step3_units": [
+          {
+            "content": "Method와 Result 섹션을 연결하는 실험 구조 제시",
+            "type": "method",
+            "initial_category": "experimental_validation"
+          }
+        ],
+        "image_analysis": {
+          "has_image": true,
+          "image_type": "diagram",
+          "role": "실험 구조 또는 결과 시각화"
+        }
+      }
+    },
+    {
+      "filename": "WR 07_14 - EunwooSong.pptx",
+      "slide_number": 10,
+      "extraction": {
+        "cot_step1_summary": "Algorithm 기반 발열 관리와의 차별점 설명. 단순 온도 임계값 방식의 한계(냉각 대기 시간)와 본 연구의 초점(토크 부족 극복)을 대비",
+        "cot_step2_role": "연구 동기 및 기존 방법의 한계 제시. 문제 정의 단계",
+        "cot_step3_units": [
+          {
+            "content": "기존 알고리즘 방식은 온도 임계값 도달 시 작동 중단으로 인한 대기 시간 문제가 있음",
+            "type": "limitation",
+            "initial_category": "theoretical_background"
+          },
+          {
+            "content": "본 연구는 과부하로 인한 토크 부족 상황을 극복하는 것에 초점",
+            "type": "problem",
+            "initial_category": "thermal_modeling"
+          }
+        ],
+        "image_analysis": null
+      }
+    },
+    {
+      "filename": "WR 07_14 - EunwooSong.pptx",
+      "slide_number": 13,
+      "extraction": {
+        "cot_step1_summary": "모터 발열량 계산 방법 설명. 입력 전력에서 기계적 출력을 빼서 구하며, 권선 열손실이 주요 원인. Mujoco에서 토크와 속도를 추출 가능",
+        "cot_step2_role": "방법론 - 발열 모델링의 이론적 기반 제시",
+        "cot_step3_units": [
+          {
+            "content": "모터 발열량은 입력 전력과 기계적 출력의 차이로 계산하며, 권선 열손실이 주요 원인",
+            "type": "method",
+            "initial_category": "thermal_modeling"
+          },
+          {
+            "content": "Mujoco 시뮬레이터에서 토크와 속도 데이터를 추출하여 발열량 계산 가능",
+            "type": "method",
+            "initial_category": "simulation"
+          }
+        ],
+        "image_analysis": {
+          "has_image": true,
+          "image_type": "equation",
+          "role": "발열량 계산 수식과 모터 사양 정보"
+        }
+      }
+    },
+    {
+      "filename": "WR 9_23.pptx",
+      "slide_number": 52,
+      "extraction": {
+        "cot_step1_summary": "Thermal Estimator 방법론. 모터 코어 온도 추정 과정, 시간 간격 0.02초로 설정",
+        "cot_step2_role": "방법론 - 실시간 온도 추정 알고리즘",
+        "cot_step3_units": [
+          {
+            "content": "모터 코어 온도를 0.02초 간격으로 추정하는 Thermal Estimator 구현",
+            "type": "method",
+            "initial_category": "thermal_modeling"
+          }
+        ],
+        "image_analysis": {
+          "has_image": true,
+          "image_type": "equation",
+          "role": "온도 추정 수식"
+        }
+      }
+    },
+    {
+      "filename": "WR 9_23.pptx",
+      "slide_number": 63,
+      "extraction": {
+        "cot_step1_summary": "Method 섹션의 전체 구조를 시각화한 다이어그램. 연구 방법론의 전체 파이프라인 제시",
+        "cot_step2_role": "방법론 종합 - 전체 시스템 아키텍처 설명",
+        "cot_step3_units": [
+          {
+            "content": "발열 인식 기반 보행 제어의 전체 방법론 파이프라인 제시",
+            "type": "method",
+            "initial_category": "theoretical_background"
+          }
+        ],
+        "image_analysis": {
+          "has_image": true,
+          "image_type": "diagram",
+          "role": "시스템 아키텍처 전체 구조도"
+        }
+      }
+    },
+    {
+      "filename": "WR 11_18.pptx",
+      "slide_number": 5,
+      "extraction": {
+        "cot_step1_summary": "Reward 함수 설계 - warm_up 관련 보상. 모터 예열 단계를 고려한 보상 설계",
+        "cot_step2_role": "방법론 - 강화학습 보상 함수 설계",
+        "cot_step3_units": [
+          {
+            "content": "모터 warm-up 단계를 고려한 보상 함수 설계",
+            "type": "method",
+            "initial_category": "rl_training"
+          }
+        ],
+        "image_analysis": {
+          "has_image": true,
+          "image_type": "chart",
+          "role": "warm-up 보상 함수의 시각화"
+        }
+      }
+    },
+    {
+      "filename": "WR 8_26.pptx",
+      "slide_number": 10,
+      "extraction": {
+        "cot_step1_summary": "heat2torque 모듈의 JAX 코드 속도 비교 실험 결과",
+        "cot_step2_role": "실험 결과 - 구현 최적화 검증",
+        "cot_step3_units": [
+          {
+            "content": "JAX 기반 heat2torque 모듈의 계산 속도 벤치마크 결과",
+            "type": "result",
+            "initial_category": "performance_optimization"
+          }
+        ],
+        "image_analysis": {
+          "has_image": true,
+          "image_type": "chart",
+          "role": "속도 비교 그래프"
+        }
+      }
+    },
+    {
+      "filename": "WR 8_5.pptx",
+      "slide_number": 13,
+      "extraction": {
+        "cot_step1_summary": "연구의 3가지 주요 기여: 1) 실시간 발열 인식/예측 프레임워크, 2) 발열 기반 장기 동작 계획, 3) 장기 운용 안정성 향상",
+        "cot_step2_role": "연구 기여도 정리 - 핵심 성과 요약",
+        "cot_step3_units": [
+          {
+            "content": "실시간 발열 인식 및 예측 프레임워크 개발 - 센서 데이터와 발열 모델 결합",
+            "type": "method",
+            "initial_category": "thermal_modeling"
+          },
+          {
+            "content": "MPC/RL 기반 발열 인식 장기 동작 계획 제안 - 과열 사전 완화",
+            "type": "method",
+            "initial_category": "rl_training"
+          },
+          {
+            "content": "과열로 인한 모터 제한 횟수 감소를 통한 장기 운용 안정성 향상",
+            "type": "result",
+            "initial_category": "performance_optimization"
+          }
+        ],
+        "image_analysis": null
+      }
+    },
+    {
+      "filename": "WR 12_23.pptx",
+      "slide_number": 6,
+      "extraction": {
+        "cot_step1_summary": "실험 세팅 방법을 Notion에 문서화했다는 안내. 메타 정보 슬라이드",
+        "cot_step2_role": "부가 정보 - 재현성을 위한 문서 링크",
+        "cot_step3_units": [
+          {
+            "content": "실험 재현을 위한 세팅 방법 문서화 (Notion)",
+            "type": "experiment",
+            "initial_category": "hardware_integration"
+          }
+        ],
+        "image_analysis": null
+      }
+    },
+    {
+      "filename": "WR 9_23.pptx",
+      "slide_number": 53,
+      "extraction": {
+        "cot_step1_summary": "온라인 학습을 위한 열 모델 파라미터. 데이터 간격 1초, 시퀀스 30 스텝, 배치 10개",
+        "cot_step2_role": "방법론 - 온라인 학습 하이퍼파라미터",
+        "cot_step3_units": [
+          {
+            "content": "열 모델 온라인 학습 설정: 데이터 간격 1초, 시퀀스 30스텝, 배치 10개",
+            "type": "method",
+            "initial_category": "thermal_modeling"
+          }
+        ],
+        "image_analysis": {
+          "has_image": true,
+          "image_type": "equation",
+          "role": "학습 파라미터 수식"
+        }
+      }
+    },
+    {
+      "filename": "WR 11_18.pptx",
+      "slide_number": 19,
+      "extraction": {
+        "cot_step1_summary": "정책 학습 결과 비교. 19000000 스텝 정책과 최고 성능 정책의 비교",
+        "cot_step2_role": "실험 결과 - 정책 성능 비교",
+        "cot_step3_units": [
+          {
+            "content": "학습된 정책(19M steps)과 최고 성능 정책의 비교 결과",
+            "type": "result",
+            "initial_category": "rl_training"
+          }
+        ],
+        "image_analysis": {
+          "has_image": true,
+          "image_type": "screenshot",
+          "role": "두 정책의 시각적 비교"
+        }
+      }
+    },
+    {
+      "filename": "WR 07_22.pptx",
+      "slide_number": 4,
+      "extraction": {
+        "cot_step1_summary": "시뮬레이션 함수 테스트 결과",
+        "cot_step2_role": "실험 - 구현 검증",
+        "cot_step3_units": [
+          {
+            "content": "시뮬레이션 함수의 기본 동작 테스트 수행",
+            "type": "experiment",
+            "initial_category": "simulation"
+          }
+        ],
+        "image_analysis": {
+          "has_image": true,
+          "image_type": "chart",
+          "role": "테스트 결과 그래프"
+        }
+      }
+    },
+    {
+      "filename": "WR 10_14.pptx",
+      "slide_number": 10,
+      "extraction": {
+        "cot_step1_summary": "Meta Learning 적용 결과",
+        "cot_step2_role": "실험 결과 - 메타 학습 성능",
+        "cot_step3_units": [
+          {
+            "content": "메타 러닝 기법 적용 후 학습 성능 결과",
+            "type": "result",
+            "initial_category": "rl_training"
+          }
+        ],
+        "image_analysis": {
+          "has_image": true,
+          "image_type": "chart",
+          "role": "메타 학습 성능 그래프"
+        }
+      }
+    },
+    {
+      "filename": "WR 9_23.pptx",
+      "slide_number": 22,
+      "extraction": {
+        "cot_step1_summary": "관련 연구 - Quadruped 로봇의 액추에이터 손상 적응. Actuator Degradation Adaptation Transformer (teacher-student 프레임워크) 소개",
+        "cot_step2_role": "배경 연구 - 고장 적응 관련 선행 연구",
+        "cot_step3_units": [
+          {
+            "content": "Quadruped 로봇의 액추에이터 손상 문제 및 적응 필요성",
+            "type": "background",
+            "initial_category": "fault_tolerance"
+          },
+          {
+            "content": "Teacher-student 프레임워크 기반 Actuator Degradation Adaptation Transformer 제안",
+            "type": "background",
+            "initial_category": "fault_tolerance"
+          }
+        ],
+        "image_analysis": {
+          "has_image": true,
+          "image_type": "diagram",
+          "role": "Transformer 아키텍처 시각화"
+        }
+      }
+    },
+    {
+      "filename": "WR 9_23.pptx",
+      "slide_number": 55,
+      "extraction": {
+        "cot_step1_summary": "Thermal Controller 방법론. 모터 코어 온도 제어를 위한 컨트롤러 설계",
+        "cot_step2_role": "방법론 - 온도 제어 알고리즘",
+        "cot_step3_units": [
+          {
+            "content": "모터 코어 온도를 능동적으로 제어하는 Thermal Controller 설계",
+            "type": "method",
+            "initial_category": "thermal_modeling"
+          }
+        ],
+        "image_analysis": {
+          "has_image": true,
+          "image_type": "equation",
+          "role": "온도 제어 수식"
+        }
+      }
+    },
+    {
+      "filename": "WR 07_01 - EunwooSong.pptx",
+      "slide_number": 34,
+      "extraction": {
+        "cot_step1_summary": "ToddlerBot을 Brax로 학습시키는 과정. 최신 Brax 사용, randomization_fn 추가 시 JAX Tracer Leak 발생 이슈",
+        "cot_step2_role": "실험 과정 - 구현 상세 및 발생한 문제",
+        "cot_step3_units": [
+          {
+            "content": "최신 Brax를 사용한 ToddlerBot 학습 코드 작성",
+            "type": "method",
+            "initial_category": "rl_training"
+          },
+          {
+            "content": "randomization_fn 추가 시 JAX Tracer Leak 버그 발생",
+            "type": "limitation",
+            "initial_category": "simulation"
+          }
+        ],
+        "image_analysis": null
+      }
+    },
+    {
+      "filename": "WR 07_14 - EunwooSong.pptx",
+      "slide_number": 27,
+      "extraction": {
+        "cot_step1_summary": "관련 연구 - FT-Net (Fault-Tolerant Locomotion). 고장 계수를 곱한 토크 기반 시뮬레이션으로 내고장성 학습",
+        "cot_step2_role": "배경 연구 - 고장 대응 선행 연구",
+        "cot_step3_units": [
+          {
+            "content": "FT-Net: 고장 계수 기반 토크 시뮬레이션으로 내고장성 보행 정책 학습",
+            "type": "background",
+            "initial_category": "fault_tolerance"
+          }
+        ],
+        "image_analysis": {
+          "has_image": true,
+          "image_type": "diagram",
+          "role": "FT-Net 구조도"
+        }
+      }
+    },
+    {
+      "filename": "WR 07_14 - EunwooSong.pptx",
+      "slide_number": 16,
+      "extraction": {
+        "cot_step1_summary": "1차 열 모델 수식 제시. RC 회로 기반 온도 변화 모델",
+        "cot_step2_role": "방법론 - 열 모델링 이론",
+        "cot_step3_units": [
+          {
+            "content": "1차 RC 열 모델을 사용한 모터 온도 변화 수식",
+            "type": "method",
+            "initial_category": "thermal_modeling"
+          }
+        ],
+        "image_analysis": {
+          "has_image": true,
+          "image_type": "equation",
+          "role": "1차 열 모델 수식"
+        }
+      }
+    },
+    {
+      "filename": "WR 12_23.pptx",
+      "slide_number": 8,
+      "extraction": {
+        "cot_step1_summary": "Migration 진행 상황 - 버전 충돌 해결, 학습 가능. Sim-to-real 전환 시 Dynamixel SDK C++ 오류 발생",
+        "cot_step2_role": "실험 진행 상황 - 구현 이슈",
+        "cot_step3_units": [
+          {
+            "content": "버전 충돌 해결 및 학습 환경 구축 완료",
+            "type": "experiment",
+            "initial_category": "hardware_integration"
+          },
+          {
+            "content": "Sim-to-real 전환 시 Dynamixel SDK C++ 코드에서 오류 발생",
+            "type": "limitation",
+            "initial_category": "hardware_integration"
+          }
+        ],
+        "image_analysis": null
+      }
+    },
+    {
+      "filename": "WR 9_23.pptx",
+      "slide_number": 10,
+      "extraction": {
+        "cot_step1_summary": "문제 상황 시연 - GIF 이미지를 통한 발열로 인한 성능 저하 시각화",
+        "cot_step2_role": "문제 정의 - 연구 동기 제시",
+        "cot_step3_units": [
+          {
+            "content": "발열로 인한 로봇 성능 저하 문제 시각적 시연",
+            "type": "problem",
+            "initial_category": "thermal_modeling"
+          }
+        ],
+        "image_analysis": {
+          "has_image": true,
+          "image_type": "other",
+          "role": "문제 상황 GIF 애니메이션"
+        }
+      }
+    },
+    {
+      "filename": "WR 10_14.pptx",
+      "slide_number": 3,
+      "extraction": {
+        "cot_step1_summary": "Toddlerbot 학습 결과 섹션 제목",
+        "cot_step2_role": "섹션 구분 - 결과 파트 시작",
+        "cot_step3_units": [
+          {
+            "content": "Toddlerbot 학습 결과 섹션",
+            "type": "result",
+            "initial_category": "rl_training"
+          }
+        ],
+        "image_analysis": null
+      }
+    },
+    {
+      "filename": "WR 9_2.pptx",
+      "slide_number": 7,
+      "extraction": {
+        "cot_step1_summary": "HeatState 결과 시각화. 발열 상태 변화 그래프",
+        "cot_step2_role": "실험 결과 - 발열 상태 추적",
+        "cot_step3_units": [
+          {
+            "content": "시간에 따른 모터 발열 상태(HeatState) 변화 결과",
+            "type": "result",
+            "initial_category": "thermal_modeling"
+          }
+        ],
+        "image_analysis": {
+          "has_image": true,
+          "image_type": "chart",
+          "role": "발열 상태 시계열 그래프"
+        }
+      }
+    },
+    {
+      "filename": "WR 9_2.pptx",
+      "slide_number": 6,
+      "extraction": {
+        "cot_step1_summary": "정상 상태(0~500 스텝)와 토크 제한 상태(1000~1389 스텝) 비교 결과. GIF로 시각적 비교",
+        "cot_step2_role": "실험 결과 - 발열 영향 비교",
+        "cot_step3_units": [
+          {
+            "content": "정상 작동 상태와 토크 제한 상태에서의 보행 패턴 비교",
+            "type": "result",
+            "initial_category": "thermal_modeling"
+          }
+        ],
+        "image_analysis": {
+          "has_image": true,
+          "image_type": "other",
+          "role": "두 상태의 보행 비교 GIF"
+        }
+      }
+    },
+    {
+      "filename": "WR 07_14 - EunwooSong.pptx",
+      "slide_number": 4,
+      "extraction": {
+        "cot_step1_summary": "연구 개요 - 장기 안정성의 중요성, 이상적 모터 과적합 문제, 발열 시뮬레이션의 필요성, Heat2Torque 제안",
+        "cot_step2_role": "연구 동기 및 제안",
+        "cot_step3_units": [
+          {
+            "content": "현재 시뮬레이션이 이상적 모터에 과적합되어 sim-to-real gap 존재",
+            "type": "problem",
+            "initial_category": "simulation"
+          },
+          {
+            "content": "누적 발열로 인한 토크 감소를 시뮬레이션하는 Heat2Torque 제안",
+            "type": "method",
+            "initial_category": "thermal_modeling"
+          }
+        ],
+        "image_analysis": null
+      }
+    },
+    {
+      "filename": "WR 9_23.pptx",
+      "slide_number": 28,
+      "extraction": {
+        "cot_step1_summary": "데이터 수집 방법론. 12개 액추에이터 각각의 손상 시나리오, 각 시나리오당 20000개 trajectory 수집",
+        "cot_step2_role": "방법론 - 학습 데이터 구성",
+        "cot_step3_units": [
+          {
+            "content": "12개 액추에이터 손상 시나리오별로 20000개 trajectory 데이터 수집",
+            "type": "method",
+            "initial_category": "fault_tolerance"
+          }
+        ],
+        "image_analysis": {
+          "has_image": true,
+          "image_type": "equation",
+          "role": "데이터 수집 수식 표기"
+        }
+      }
+    },
+    {
+      "filename": "WR 1_14.pptx",
+      "slide_number": 3,
+      "extraction": {
+        "cot_step1_summary": "Toddlerbot Thermal Weight 섹션 제목",
+        "cot_step2_role": "섹션 구분",
+        "cot_step3_units": [
+          {
+            "content": "Toddlerbot에 대한 Thermal Weight 실험",
+            "type": "experiment",
+            "initial_category": "thermal_modeling"
+          }
+        ],
+        "image_analysis": null
+      }
+    },
+    {
+      "filename": "WR 1_14.pptx",
+      "slide_number": 11,
+      "extraction": {
+        "cot_step1_summary": "결과 섹션",
+        "cot_step2_role": "실험 결과",
+        "cot_step3_units": [
+          {
+            "content": "Thermal Weight 실험 결과 그래프",
+            "type": "result",
+            "initial_category": "thermal_modeling"
+          }
+        ],
+        "image_analysis": {
+          "has_image": true,
+          "image_type": "chart",
+          "role": "실험 결과 데이터 시각화"
+        }
+      }
+    },
+    {
+      "filename": "WR 07_14 - EunwooSong.pptx",
+      "slide_number": 24,
+      "extraction": {
+        "cot_step1_summary": "적용 Task 및 성능 비교 계획. ToddlerBot에 Thermal-reward 추가 후 지속 시간 비교 실험",
+        "cot_step2_role": "실험 계획 - 평가 방법",
+        "cot_step3_units": [
+          {
+            "content": "Thermal-reward 추가 모델과 원본 모델의 과열 상황 지속 시간 비교 실험",
+            "type": "experiment",
+            "initial_category": "rl_training"
+          }
+        ],
+        "image_analysis": null
+      }
+    },
+    {
+      "filename": "WR 07_14 - EunwooSong.pptx",
+      "slide_number": 11,
+      "extraction": {
+        "cot_step1_summary": "기존 에너지 효율성 보상 함수 - Toddlerbot의 시스템 총량 기반 보상",
+        "cot_step2_role": "배경 - 기존 방법",
+        "cot_step3_units": [
+          {
+            "content": "Toddlerbot의 기존 에너지 효율성 보상 함수는 시스템 전체 에너지를 고려",
+            "type": "background",
+            "initial_category": "rl_training"
+          }
+        ],
+        "image_analysis": {
+          "has_image": true,
+          "image_type": "equation",
+          "role": "기존 보상 함수 수식"
+        }
+      }
+    },
+    {
+      "filename": "WR 9_23.pptx",
+      "slide_number": 35,
+      "extraction": {
+        "cot_step1_summary": "DreamFLEX 방법론 다이어그램",
+        "cot_step2_role": "방법론 - 시스템 구조",
+        "cot_step3_units": [
+          {
+            "content": "DreamFLEX 프레임워크의 전체 구조 및 동작 방식",
+            "type": "method",
+            "initial_category": "fault_tolerance"
+          }
+        ],
+        "image_analysis": {
+          "has_image": true,
+          "image_type": "diagram",
+          "role": "DreamFLEX 아키텍처 도식"
+        }
+      }
+    },
+    {
+      "filename": "WR 9_23.pptx",
+      "slide_number": 32,
+      "extraction": {
+        "cot_step1_summary": "관련 연구 제목 - DreamFLEX: 험지에서의 고장 인식 보행 학습",
+        "cot_step2_role": "배경 연구 소개",
+        "cot_step3_units": [
+          {
+            "content": "DreamFLEX: 험지 환경에서 고장 상황을 인식하고 대응하는 보행 컨트롤러",
+            "type": "background",
+            "initial_category": "fault_tolerance"
+          }
+        ],
+        "image_analysis": null
+      }
+    },
+    {
+      "filename": "WR 07_01 - EunwooSong.pptx",
+      "slide_number": 14,
+      "extraction": {
+        "cot_step1_summary": "ToddlerBot 시뮬레이션 렌더링 - Ubuntu 24.04 환경",
+        "cot_step2_role": "실험 환경 정보",
+        "cot_step3_units": [
+          {
+            "content": "Ubuntu 24.04 환경에서 ToddlerBot 시뮬레이션 렌더링 수행",
+            "type": "experiment",
+            "initial_category": "simulation"
+          }
+        ],
+        "image_analysis": null
+      }
+    },
+    {
+      "filename": "WR 9_23.pptx",
+      "slide_number": 50,
+      "extraction": {
+        "cot_step1_summary": "2-저항 열 모델. 열 파라미터 업데이트 필요성(부착 부품, 온도 오차, 열화). 새/오래된 모터 비교 시 15도 차이",
+        "cot_step2_role": "방법론 - 열 모델 이론 및 검증",
+        "cot_step3_units": [
+          {
+            "content": "2-저항 열 모델 및 파라미터 업데이트 필요성(부착 부품, 온도 오차, 모터 열화)",
+            "type": "method",
+            "initial_category": "thermal_modeling"
+          },
+          {
+            "content": "새 모터와 오래된 모터 간 200N 부하 시 90초 후 15도 온도 차이 발생",
+            "type": "result",
+            "initial_category": "thermal_modeling"
+          }
+        ],
+        "image_analysis": {
+          "has_image": true,
+          "image_type": "chart",
+          "role": "새/오래된 모터 온도 비교 그래프"
+        }
+      }
+    },
+    {
+      "filename": "WR 07_01 - EunwooSong.pptx",
+      "slide_number": 21,
+      "extraction": {
+        "cot_step1_summary": "결과 그래프",
+        "cot_step2_role": "실험 결과",
+        "cot_step3_units": [
+          {
+            "content": "실험 결과 데이터 시각화",
+            "type": "result",
+            "initial_category": "experimental_validation"
+          }
+        ],
+        "image_analysis": {
+          "has_image": true,
+          "image_type": "chart",
+          "role": "결과 그래프"
+        }
+      }
+    },
+    {
+      "filename": "WR 11_18.pptx",
+      "slide_number": 24,
+      "extraction": {
+        "cot_step1_summary": "관측 벡터 구성 - step별 obs, torso_ang_vel, torso_euler",
+        "cot_step2_role": "방법론 - 강화학습 상태 공간",
+        "cot_step3_units": [
+          {
+            "content": "강화학습 관측 벡터: step별 obs, torso 각속도, torso euler 각도",
+            "type": "method",
+            "initial_category": "rl_training"
+          }
+        ],
+        "image_analysis": {
+          "has_image": true,
+          "image_type": "diagram",
+          "role": "관측 벡터 구조 시각화"
+        }
+      }
+    },
+    {
+      "filename": "WR 07_01 - EunwooSong.pptx",
+      "slide_number": 26,
+      "extraction": {
+        "cot_step1_summary": "결과 1 - RTX 5080: 3분 42초, A100: 6분. GPU 성능 비교",
+        "cot_step2_role": "실험 결과 - 하드웨어 성능",
+        "cot_step3_units": [
+          {
+            "content": "RTX 5080(3분 42초)이 A100(6분)보다 빠른 학습 속도 달성",
+            "type": "result",
+            "initial_category": "performance_optimization"
+          }
+        ],
+        "image_analysis": {
+          "has_image": true,
+          "image_type": "chart",
+          "role": "GPU 성능 비교 그래프"
+        }
+      }
+    },
+    {
+      "filename": "WR 07_01 - EunwooSong.pptx",
+      "slide_number": 38,
+      "extraction": {
+        "cot_step1_summary": "그래픽 관련 추가 정보 - Notion 링크 제공",
+        "cot_step2_role": "부가 정보",
+        "cot_step3_units": [
+          {
+            "content": "그래픽 관련 추가 정보 Notion 문서 링크",
+            "type": "experiment",
+            "initial_category": "simulation"
+          }
+        ],
+        "image_analysis": null
+      }
+    },
+    {
+      "filename": "WR 9_23.pptx",
+      "slide_number": 62,
+      "extraction": {
+        "cot_step1_summary": "Reward 함수 설계. 최적 온도 범위 내 최대 보상, 벗어날수록 감소. 가우시안 분포 형태",
+        "cot_step2_role": "방법론 - 보상 함수 설계",
+        "cot_step3_units": [
+          {
+            "content": "온도 기반 보상 함수: 최적 온도 범위에서 최대, 가우시안 분포 형태로 감소",
+            "type": "method",
+            "initial_category": "rl_training"
+          }
+        ],
+        "image_analysis": {
+          "has_image": true,
+          "image_type": "chart",
+          "role": "온도 기반 보상 함수 그래프"
+        }
+      }
+    },
+    {
+      "filename": "WR 9_23.pptx",
+      "slide_number": 61,
+      "extraction": {
+        "cot_step1_summary": "기존 연구의 한계 및 본 연구 방법. 기존은 사후 대응, 본 연구는 예측 기반 선제적 관리. 2족 보행은 지지 다리 부족으로 더 중요",
+        "cot_step2_role": "연구 차별성 - 문제의식 및 접근법",
+        "cot_step3_units": [
+          {
+            "content": "기존 DRL 제어기는 외란 사후 대응에 초점, 과열 이후 토크 제한 대응 방식",
+            "type": "limitation",
+            "initial_category": "theoretical_background"
+          },
+          {
+            "content": "선제적 건강 관리 프레임워크 제안: 모터 온도 기반 미래 상태 예측, 예방적 접근",
+            "type": "method",
+            "initial_category": "thermal_modeling"
+          },
+          {
+            "content": "2족 보행은 추가 지지 다리 없어 선제적 대응이 더 중요",
+            "type": "problem",
+            "initial_category": "theoretical_background"
+          }
+        ],
+        "image_analysis": null
+      }
+    },
+    {
+      "filename": "WR 11_18.pptx",
+      "slide_number": 9,
+      "extraction": {
+        "cot_step1_summary": "실험 결과 (19456000 steps, high temperature 조건)",
+        "cot_step2_role": "실험 결과",
+        "cot_step3_units": [
+          {
+            "content": "고온 환경에서 19456000 스텝 학습 결과",
+            "type": "result",
+            "initial_category": "rl_training"
+          }
+        ],
+        "image_analysis": null
+      }
+    },
+    {
+      "filename": "WR 9_23.pptx",
+      "slide_number": 46,
+      "extraction": {
+        "cot_step1_summary": "Thermal Controller 방법론 (F). 모터 코어 온도 제어 수식",
+        "cot_step2_role": "방법론 - 온도 제어",
+        "cot_step3_units": [
+          {
+            "content": "모터 코어 온도 제어를 위한 컨트롤러 수식 및 구현",
+            "type": "method",
+            "initial_category": "thermal_modeling"
+          }
+        ],
+        "image_analysis": {
+          "has_image": true,
+          "image_type": "equation",
+          "role": "온도 제어 수식"
+        }
+      }
+    },
+    {
+      "filename": "WR 1_14.pptx",
+      "slide_number": 15,
+      "extraction": {
+        "cot_step1_summary": "다른 정책 비교",
+        "cot_step2_role": "실험 결과 - 정책 비교",
+        "cot_step3_units": [
+          {
+            "content": "대안 정책들과의 성능 비교",
+            "type": "result",
+            "initial_category": "rl_training"
+          }
+        ],
+        "image_analysis": null
+      }
+    },
+    {
+      "filename": "WR 11_18.pptx",
+      "slide_number": 16,
+      "extraction": {
+        "cot_step1_summary": "예상치 못한 결과 또는 문제 제시 - 'But...'",
+        "cot_step2_role": "결과 분석 - 문제점 발견",
+        "cot_step3_units": [
+          {
+            "content": "실험 중 발견된 예상치 못한 문제 또는 결과",
+            "type": "limitation",
+            "initial_category": "experimental_validation"
+          }
+        ],
+        "image_analysis": {
+          "has_image": true,
+          "image_type": "chart",
+          "role": "문제 상황 시각화"
+        }
+      }
+    },
+    {
+      "filename": "WR 07_01 - EunwooSong.pptx",
+      "slide_number": 13,
+      "extraction": {
+        "cot_step1_summary": "샘플 코드 결과 - Mujoco 환경 렌더링 및 plt 출력",
+        "cot_step2_role": "구현 검증",
+        "cot_step3_units": [
+          {
+            "content": "Mujoco 환경 렌더링 및 matplotlib 시각화 성공",
+            "type": "experiment",
+            "initial_category": "simulation"
+          }
+        ],
+        "image_analysis": {
+          "has_image": true,
+          "image_type": "screenshot",
+          "role": "렌더링 결과 화면"
+        }
+      }
+    }
+  ]
+}

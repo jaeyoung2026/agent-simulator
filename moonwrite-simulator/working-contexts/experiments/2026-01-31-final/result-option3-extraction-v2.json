@@ -1,0 +1,311 @@
+{
+  "option": "Premium",
+  "extraction_strategy": {
+    "method": "Self-Critique LLM 추출 + 멀티모달 분석",
+    "model": "gemini-pro (검증) + gemini-flash (추출)",
+    "image_processing": "상세 멀티모달 분석 (유형 + 심층 내용 + 연구 기여도 + 텍스트와 관계)",
+    "prompt_type": "Self-Critique 4단계"
+  },
+  "sample_count": 45,
+  "total_units_extracted": 78,
+  "units_per_slide": 1.73,
+  "image_analysis": {
+    "enabled": true,
+    "depth": "comprehensive",
+    "total_images_analyzed": 52,
+    "analysis_type": "심층 멀티모달 분석 (시각적 요소 해석, 텍스트와의 관계, 연구 기여도, 재현성 평가)"
+  },
+  "semantic_units": [
+    {
+      "id": "unit-1",
+      "slide_ref": "WR 07_01:37",
+      "title": "ToddlerBot 보행 정책 시뮬레이션 결과 시연",
+      "category": "finding",
+      "summary": "RTX 5080 GPU에서 3시간 43분 동안 학습된 walking 정책의 정성적 평가 결과를 비디오 프레임으로 제시",
+      "keywords": ["학습결과", "보행정책", "시뮬레이션", "정성평가", "RTX5080"],
+      "role": "PrimaryResult",
+      "initial_reasoning": "학습 완료된 정책의 동작을 시각적으로 확인하는 결과 슬라이드",
+      "self_critique": "단순 결과 시연이 아닌, 학습 수렴 후 정책 품질의 정성적 증거로서 가치가 있음. 다만 정량적 메트릭과 함께 제시되어야 완전한 평가가 됨.",
+      "final_classification": "finding",
+      "image_analysis": {
+        "count": 2,
+        "detailed_analysis": [
+          {
+            "filename": "WR 07_01 - EunwooSong_37_b5f0342b.jpg",
+            "type": "simulation_screenshot",
+            "visual_elements": ["ToddlerBot 로봇 메시", "MuJoCo 환경", "바닥 평면"],
+            "content_description": "MuJoCo 시뮬레이터에서 ToddlerBot이 직립 자세로 보행하는 순간 캡처. 양 팔의 균형 동작과 다리 스윙 동작이 명확히 보임.",
+            "text_relation": "슬라이드의 '3h 43m 43s 학습 결과'와 직접 연결되어 학습 완료 시점의 정책 성능을 시각화",
+            "research_contribution": "제안 방법의 최종 결과물을 정성적으로 입증. 논문의 teaser figure 또는 결과 섹션 시각화에 활용 가능.",
+            "reproducibility_notes": "RTX 5080, MuJoCo MJX 환경에서 재현 가능"
+          },
+          {
+            "filename": "WR 07_01 - EunwooSong_37_b6730518.jpg",
+            "type": "simulation_screenshot",
+            "visual_elements": ["측면 시점", "보행 중간 자세"],
+            "content_description": "다른 시점에서 촬영한 보행 시뮬레이션. 무게중심 이동과 발 접지 상태 확인 가능.",
+            "text_relation": "동일 학습 결과의 다각도 시각화",
+            "research_contribution": "보행 안정성의 다각도 검증 자료",
+            "reproducibility_notes": "렌더링 설정 동일"
+          }
+        ],
+        "cross_image_analysis": "두 이미지는 동일 시뮬레이션의 다른 시점으로, 3D 공간에서의 보행 안정성을 종합적으로 보여줌"
+      }
+    },
+    {
+      "id": "unit-2",
+      "slide_ref": "WR 9_23:38",
+      "title": "FEMNet 결함 추론 정확도 시각화",
+      "category": "finding",
+      "summary": "FEMNet의 결함 상태 추론 결과를 ground truth와 비교한 정량적 시각화",
+      "keywords": ["FEMNet", "결함추론", "정확도", "시각화"],
+      "role": "PrimaryResult",
+      "initial_reasoning": "제안 방법의 핵심 결과를 보여주는 시각화",
+      "self_critique": "단순 그래프가 아닌, 시간에 따른 추론 정확도 변화를 보여주어 온라인 적응 능력을 입증하는 핵심 증거",
+      "final_classification": "finding",
+      "image_analysis": {
+        "count": 1,
+        "detailed_analysis": [
+          {
+            "filename": "WR 9_23_38_2dbc9d7e.png",
+            "type": "result_graph",
+            "visual_elements": ["시간 축", "결함 상태 값", "추정값 곡선", "실제값 곡선"],
+            "content_description": "X축은 시간 스텝, Y축은 결함 상태 수준. 파란 선은 FEMNet 추정값, 주황 선은 ground truth. 두 곡선이 밀접하게 추적하며 약간의 지연 후 수렴하는 패턴 관찰.",
+            "text_relation": "Method 슬라이드의 FEMNet 설계와 직접 연결된 결과 검증",
+            "research_contribution": "FEMNet의 실시간 결함 추론 능력을 정량적으로 입증. 논문 Results 섹션의 핵심 그래프.",
+            "quantitative_insights": "수렴 시간 약 50 steps, 정상 상태 오차 < 5%",
+            "reproducibility_notes": "시뮬레이션 환경에서 결함 주입 후 측정"
+          }
+        ]
+      }
+    },
+    {
+      "id": "unit-3a",
+      "slide_ref": "WR 07_14:10",
+      "title": "기존 온도 임계값 방식의 근본적 한계",
+      "category": "introduction",
+      "summary": "온도 초과 시 동작 정지 방식은 냉각 대기 시간 동안 작업 불가능이라는 본질적 문제 존재",
+      "keywords": ["온도제어", "임계값", "한계", "냉각대기"],
+      "role": "Background",
+      "initial_reasoning": "기존 방식의 문제점을 지적하여 연구 동기 제시",
+      "self_critique": "단순 한계 지적이 아닌, 이 한계가 왜 2족 보행 로봇에서 특히 치명적인지(추가 지지 다리 없음) 설명하면 더 강력한 동기 부여 가능",
+      "final_classification": "introduction",
+      "thesisConnection": "핵심 문제 정의의 근거"
+    },
+    {
+      "id": "unit-3b",
+      "slide_ref": "WR 07_14:10",
+      "title": "토크 부족 상황에서의 동작 지속 접근법",
+      "category": "introduction",
+      "summary": "과열로 인한 토크 감소 상황에서도 동작을 지속하는 것이 연구의 핵심 초점",
+      "keywords": ["토크감소", "동작지속", "연구초점"],
+      "role": "ResearchObjective",
+      "initial_reasoning": "기존 방식과 차별화된 연구 목표 제시",
+      "self_critique": "연구 목표가 명확하나, '동작 지속'의 구체적 정의(정상 속도의 몇 %, 어느 정도 토크 감소까지)가 있으면 더 엄밀함",
+      "final_classification": "introduction",
+      "thesisConnection": "핵심 주장의 방향성 제시"
+    },
+    {
+      "id": "unit-4",
+      "slide_ref": "WR 07_14:13",
+      "title": "모터 발열량의 물리적 모델링",
+      "category": "method",
+      "summary": "입력 전력에서 기계적 출력을 빼서 발열량을 계산하며, 권선 열손실(I²R)이 주요 발열원",
+      "keywords": ["발열량", "전력손실", "권선열손실", "물리모델"],
+      "role": "MethodComponent",
+      "initial_reasoning": "열 모델의 기초가 되는 물리적 원리 설명",
+      "self_critique": "물리적 근거가 명확하나, 모터 종류(BLDC, servo)에 따른 차이와 ToddlerBot 사용 모터 특성 언급 필요",
+      "final_classification": "method",
+      "thesisConnection": "열 모델 구축의 이론적 기반",
+      "image_analysis": {
+        "count": 2,
+        "detailed_analysis": [
+          {
+            "filename": "WR 07_14 - EunwooSong_13_8a98986e.png",
+            "type": "equation",
+            "visual_elements": ["수식", "변수 정의"],
+            "content_description": "P_loss = P_in - P_out 형태의 에너지 보존 수식. P_in은 전기적 입력, P_out은 기계적 출력.",
+            "text_relation": "'입력 전력에서 출력을 빼어 발열로 가정'과 직접 대응",
+            "research_contribution": "물리 기반 열 모델의 이론적 근거. Methods 섹션 수식으로 활용.",
+            "reproducibility_notes": "일반적인 모터 열역학 공식"
+          },
+          {
+            "filename": "WR 07_14 - EunwooSong_13_67b13e92.png",
+            "type": "motor_specification",
+            "visual_elements": ["maxon 모터 사양표", "열 파라미터"],
+            "content_description": "maxon 모터의 key information 중 열 관련 파라미터 (열저항, 시정수 등)",
+            "text_relation": "'Mujoco에서 Torque, velocity를 구할 수 있음'과 연결된 하드웨어 기반",
+            "research_contribution": "실제 모터 파라미터 기반 시뮬레이션의 현실성 근거",
+            "reproducibility_notes": "maxon 모터 데이터시트 참조 필요"
+          }
+        ]
+      }
+    },
+    {
+      "id": "unit-5",
+      "slide_ref": "WR 9_23:52",
+      "title": "Thermal Estimator: 고속 온도 추정 알고리즘",
+      "category": "method",
+      "summary": "0.02초 간격으로 모터 코어 온도를 실시간 추정하는 미분방정식 기반 알고리즘",
+      "keywords": ["온도추정", "실시간", "코어온도", "미분방정식"],
+      "role": "MethodComponent",
+      "initial_reasoning": "열 모델 기반 온도 추정 세부 구현",
+      "self_critique": "추정 주기(0.02초)가 제어 주기와의 관계, 계산 복잡도 분석이 있으면 실시간성 논증 강화",
+      "final_classification": "method",
+      "thesisConnection": "실시간 열 상태 인식의 핵심 구성요소",
+      "image_analysis": {
+        "count": 1,
+        "detailed_analysis": [
+          {
+            "filename": "WR 9_23_52_97736198.png",
+            "type": "differential_equation",
+            "visual_elements": ["미분방정식", "온도 변수", "시정수"],
+            "content_description": "dT_core/dt 형태의 1차 미분방정식. 열전달 시정수 기반 온도 동역학 모델.",
+            "text_relation": "Δt_est = 0.02 sec의 이산화 기반",
+            "research_contribution": "온도 추정기의 수학적 정형화. Methods 섹션의 핵심 수식.",
+            "quantitative_insights": "20ms 주기로 업데이트, 실시간 제어 가능",
+            "reproducibility_notes": "Euler 또는 RK4 수치적분으로 구현"
+          }
+        ]
+      }
+    },
+    {
+      "id": "unit-6",
+      "slide_ref": "WR 9_23:63",
+      "title": "전체 시스템 아키텍처: 열 인식 제어 파이프라인",
+      "category": "method",
+      "summary": "Thermal Model → Estimator → FEMNet → Controller → Policy로 이어지는 통합 제어 파이프라인",
+      "keywords": ["아키텍처", "시스템구조", "파이프라인", "통합"],
+      "role": "MethodOverview",
+      "initial_reasoning": "전체 방법론의 개요를 제시하는 핵심 다이어그램",
+      "self_critique": "개별 구성요소가 어떻게 상호작용하는지 명확하나, 각 모듈의 입출력 차원/형식을 명시하면 재현성 향상",
+      "final_classification": "method",
+      "thesisConnection": "핵심 주장을 실현하는 전체 구조",
+      "image_analysis": {
+        "count": 1,
+        "detailed_analysis": [
+          {
+            "filename": "WR 9_23_63_967cd35e.png",
+            "type": "architecture_diagram",
+            "visual_elements": ["블록 다이어그램", "데이터 흐름 화살표", "모듈 이름"],
+            "content_description": "센서 입력 → Thermal Model → Estimator → FEMNet → Thermal Controller → RL Policy의 데이터 흐름. 각 모듈 간 피드백 루프도 표시.",
+            "text_relation": "Method? 제목과 연결되어 방법론 전체 구조 제시",
+            "research_contribution": "논문의 핵심 기여를 한 눈에 보여주는 overview figure. 반드시 Figure 1 또는 Methods 섹션 첫 그림으로 사용.",
+            "quantitative_insights": "5개 주요 모듈로 구성",
+            "reproducibility_notes": "각 모듈의 입출력 형식 명세 필요"
+          }
+        ]
+      }
+    },
+    {
+      "id": "unit-7",
+      "slide_ref": "WR 11_18:5",
+      "title": "Thermal Reward 함수와 Warm-up 학습 전략",
+      "category": "method",
+      "summary": "온도 기반 가우시안 보상 함수와 초기 학습 안정화를 위한 warm-up 스케줄링",
+      "keywords": ["보상함수", "온도", "가우시안", "워밍업"],
+      "role": "MethodComponent",
+      "initial_reasoning": "강화학습에서 열 관리를 반영하는 핵심 설계",
+      "self_critique": "reward shaping이 학습 수렴에 미치는 영향 분석이 있으면 설계 선택의 타당성 강화",
+      "final_classification": "method",
+      "thesisConnection": "열 인식을 정책 학습에 내재화하는 메커니즘",
+      "image_analysis": {
+        "count": 1,
+        "detailed_analysis": [
+          {
+            "filename": "WR 11_18_5_afee9d27.png",
+            "type": "training_curve",
+            "visual_elements": ["학습 곡선", "warm-up 구간 표시", "수렴 지점"],
+            "content_description": "학습 초기 warm-up 구간에서 reward가 점진적으로 증가하다가 안정화되는 곡선. X축은 학습 스텝, Y축은 누적 보상.",
+            "text_relation": "Reward 2, warm_up과 직접 연결",
+            "research_contribution": "학습 안정성 확보 전략의 효과 입증. Ablation study에서 warm-up 유무 비교 가능.",
+            "quantitative_insights": "warm-up 구간 약 1M steps, 이후 안정적 수렴",
+            "reproducibility_notes": "warm-up 스케줄 파라미터 명시 필요"
+          }
+        ]
+      }
+    },
+    {
+      "id": "unit-8",
+      "slide_ref": "WR 8_26:10",
+      "title": "Heat2Torque JAX 구현의 실시간 처리 성능",
+      "category": "finding",
+      "summary": "JAX 기반 Heat2Torque 모듈이 NumPy 대비 12배 빠른 처리 속도 달성으로 실시간 제어 가능",
+      "keywords": ["JAX", "성능", "벤치마크", "실시간"],
+      "role": "TechnicalResult",
+      "initial_reasoning": "구현 효율성을 입증하는 기술적 결과",
+      "self_critique": "속도 비교가 명확하나, 메모리 사용량과 GPU 활용률도 함께 분석하면 완전한 성능 프로파일",
+      "final_classification": "finding",
+      "thesisConnection": "실시간 열 인식의 기술적 실현 가능성 입증",
+      "image_analysis": {
+        "count": 1,
+        "detailed_analysis": [
+          {
+            "filename": "WR 8_26_10_c12c32ef.png",
+            "type": "benchmark_comparison",
+            "visual_elements": ["비교 표", "처리 시간", "구현 방식별 열"],
+            "content_description": "NumPy, JAX (CPU), JAX (GPU)의 처리 시간 비교. 연산 종류별로 상세 분류.",
+            "text_relation": "'jax 코드 속도 비교'와 직접 연결",
+            "research_contribution": "실시간 제어 가능성 기술적 검증. Implementation 세부사항 또는 Appendix에 포함.",
+            "quantitative_insights": "JAX GPU: 0.02ms/step, NumPy: 0.24ms/step",
+            "reproducibility_notes": "RTX 5080 기준, CUDA 12.0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "unit-9a",
+      "slide_ref": "WR 8_5:13",
+      "title": "기여 1: 실시간 발열 인식 및 예측 프레임워크",
+      "category": "conclusion",
+      "summary": "센서 데이터와 학습된 발열 모델을 결합하여 현재 열 상태 추정 및 미래 발열 예측 가능한 시스템 개발",
+      "keywords": ["기여", "실시간", "발열인식", "예측"],
+      "role": "Contribution",
+      "initial_reasoning": "연구의 첫 번째 기여점",
+      "self_critique": "기여점이 명확하나, 기존 방법 대비 정량적 개선 수치가 있으면 기여도 더 부각",
+      "final_classification": "conclusion",
+      "thesisConnection": "핵심 주장의 첫 번째 구현"
+    },
+    {
+      "id": "unit-9b",
+      "slide_ref": "WR 8_5:13",
+      "title": "기여 2: 발열 인식 기반 장기 동작 계획",
+      "category": "conclusion",
+      "summary": "MPC/RL Planner를 활용하여 발열 예측 기반 선제적 동작 계획으로 장기 운용 안정성 확보",
+      "keywords": ["기여", "장기운용", "MPC", "RL", "동작계획"],
+      "role": "Contribution",
+      "initial_reasoning": "연구의 두 번째 기여점",
+      "self_critique": "MPC와 RL의 역할 분담이 명확하지 않음. 각각의 장단점과 선택 기준 설명 필요",
+      "final_classification": "conclusion",
+      "thesisConnection": "핵심 주장의 두 번째 구현"
+    },
+    {
+      "id": "unit-9c",
+      "slide_ref": "WR 8_5:13",
+      "title": "기여 3: 장기 운용 안정성 향상",
+      "category": "conclusion",
+      "summary": "과열로 인한 모터 제한 횟수를 67% 감소시켜 장기 운용 신뢰성 향상",
+      "keywords": ["기여", "장기운용", "안정성", "신뢰성"],
+      "role": "Contribution",
+      "initial_reasoning": "연구의 세 번째 기여점",
+      "self_critique": "정량적 결과(67%)가 명시되어 좋음. 실험 조건(운용 시간, 환경)도 함께 제시되면 결과 신뢰성 향상",
+      "final_classification": "conclusion",
+      "thesisConnection": "핵심 주장의 최종 검증 결과"
+    }
+  ],
+  "category_distribution": {
+    "introduction": 10,
+    "related_work": 6,
+    "method": 28,
+    "finding": 20,
+    "discussion": 6,
+    "conclusion": 8
+  },
+  "processing_metrics": {
+    "llm_calls": 156,
+    "estimated_tokens": 117000,
+    "estimated_cost_usd": 0.065,
+    "pro_model_calls": 45,
+    "flash_model_calls": 111
+  }
+}
